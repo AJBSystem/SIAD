@@ -104,7 +104,7 @@ if ($_GET['form']=='add') { ?>
               <input type="text" class="form-control" name="tel_hab" autocomplete="off" required> 
             </div>
 
-                        <div class="col-md-2">
+           <div class="col-md-2">
              <label for="exampleInputEmail1">Telefono Emergencias</label>
               <input type="text" class="form-control" name="tel_emerg" autocomplete="off" required> 
             </div>
@@ -164,36 +164,30 @@ elseif ($_GET['form']=='edit') {
           <!-- form start -->
           <form role="form" class="form-horizontal" action="modules/medicines/proses.php?act=update" method="POST">
             <div class="box-body">
-              
 
 
-              <div class="form-group">
-                <label class="col-sm-2 control-label">Codigo</label>
-                <div class="col-sm-5">
+              <div class="col-md-2">
+                <label for="exampleInputEmail1">Codigo</label>
                   <input type="text" class="form-control" name="codigo" value="<?php echo $data['codigo']; ?>" readonly required>
-                </div>
               </div>
 
-              <div class="form-group">
-                <label class="col-sm-2 control-label">Cedula</label>
-                <div class="col-sm-5">
+
+
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Cedula</label>
                   <input type="text" class="form-control" name="cedula" autocomplete="off" value="<?php echo $data['cedula']; ?>" required>
-                </div>
               </div>
 
-              <div class="form-group">
-                <label class="col-sm-2 control-label">N° de Credencial</label>
-                <div class="col-sm-5">
+             <div class="col-md-2">
+              <label for="exampleInputEmail1">Credencial</label>
                   <input type="text" class="form-control" name="credencial" autocomplete="off" value="<?php echo $data['credencial']; ?>" required>
-                </div>
               </div>
 
-              <div class="form-group">
-                <label class="col-sm-2 control-label">Rif</label>
-                <div class="col-sm-5">
+             <div class="col-md-2">
+              <label for="exampleInputEmail1">Rif</label>
                   <input type="text" class="form-control" name="rif" autocomplete="off" value="<?php echo $data['rif']; ?>" required>
-                </div>
               </div>
+
 
               <div class="form-group">
                 <label class="col-sm-2 control-label">Primer Nombre</label>
