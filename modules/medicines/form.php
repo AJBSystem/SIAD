@@ -5,7 +5,7 @@ if ($_GET['form']=='add') { ?>
   <section class="content-header">
     <h1>
 
-      <i class="fa fa-edit icon-title"></i> Agregaras Funcionario
+      <i class="fa fa-edit icon-title"></i> Agregar Funcionario
     </h1>
     <ol class="breadcrumb">
       <li><a href="?module=start"><i class="fa fa-home"></i> Inicio </a></li>
@@ -184,7 +184,7 @@ elseif ($_GET['form']=='edit') {
 
   <section class="content-header">
     <h1>
-      <i class="fa fa-edit icon-title"></i> Modificaras Funcionario
+      <i class="fa fa-edit icon-title"></i> Modificar Funcionario
     </h1>
     <ol class="breadcrumb">
       <li><a href="?module=start"><i class="fa fa-home"></i> Inicio </a></li>
