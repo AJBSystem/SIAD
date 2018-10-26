@@ -4,11 +4,15 @@ if ($_GET['form']=='add') { ?>
 
   <section class="content-header">
     <h1>
-      <i class="fa fa-edit icon-title"></i> Agregar Medicamentos
+      <i class="fa fa-edit icon-title"></i> Agregar Funcionarios
     </h1>
     <ol class="breadcrumb">
       <li><a href="?module=start"><i class="fa fa-home"></i> Inicio </a></li>
+<<<<<<< HEAD
       <li><a href="?module=medicines"> funcionarios </a></li>
+=======
+      <li><a href="?module=medicines"> Funcionarios </a></li>
+>>>>>>> test
       <li class="active"> Más </li>
     </ol>
   </section>
