@@ -4,24 +4,15 @@ if ($_GET['form']=='add') { ?>
 
   <section class="content-header">
     <h1>
-<<<<<<< HEAD
-      <i class="fa fa-edit icon-title"></i> Agregar Medicamentos
+
+      <i class="fa fa-edit icon-title"></i> Agregar Funcionario
     </h1>
     <ol class="breadcrumb">
       <li><a href="?module=start"><i class="fa fa-home"></i> Inicio </a></li>
-      <li><a href="?module=medicines"> Medicamentos </a></li>
+      <li><a href="?module=medicines"> Funcionario </a></li>
       <li class="active"> Más </li>
     </ol>
-=======
 
-      <i class="fa fa-edit icon-title"></i> Agregar Funcionarios
-    </h1>
-    <ol class="breadcrumb">
-      <li><a href="?module=start"><i class="fa fa-home"></i> Inicio </a></li>
-      <li><a href="?module=medicines"> Funcionarios </a></li>
-
-    
->>>>>>> develop
   </section>
 
   <!-- Main content -->
@@ -176,10 +167,11 @@ elseif ($_GET['form']=='edit') {
           <form role="form" class="form-horizontal" action="modules/medicines/proses.php?act=update" method="POST">
             <div class="box-body">
 
+<div class="form-group">
 
               <div class="col-md-2">
                 <label for="exampleInputEmail1">Codigo</label>
-                  <input type="text" class="form-control" name="codigo" value="<?php echo $data['codigo']; ?>" readonly required>
+                  <input type="text" class="form-control" name="codigo" value="<?php echo $data['codigo']; ?>" required>
               </div>
 
 
@@ -199,78 +191,55 @@ elseif ($_GET['form']=='edit') {
                   <input type="text" class="form-control" name="rif" autocomplete="off" value="<?php echo $data['rif']; ?>" required>
               </div>
 
-
-              <div class="form-group">
-                <label class="col-sm-2 control-label">Primer Nombre</label>
-                <div class="col-sm-5">
+               <div class="col-md-2">
+              <label for="exampleInputEmail1">Primer Nombre</label>
                   <input type="text" class="form-control" name="p_nombre" autocomplete="off" value="<?php echo $data['p_nombre']; ?>" required>
-                </div>
               </div>
 
-               <div class="form-group">
-                <label class="col-sm-2 control-label">Segundo Nombre</label>
-                <div class="col-sm-5">
+
+             <div class="col-md-2">
+              <label for="exampleInputEmail1">Segundo Nombre</label>
                   <input type="text" class="form-control" name="s_nombre" autocomplete="off" value="<?php echo $data['s_nombre']; ?>" required>
-                </div>
               </div>
 
-              <div class="form-group">
-                <label class="col-sm-2 control-label">Primer Apellido</label>
-                <div class="col-sm-5">
+               <div class="col-md-2">
+              <label for="exampleInputEmail1">Primer Apellido</label>
                   <input type="text" class="form-control" name="p_apellido" autocomplete="off" value="<?php echo $data['p_apellido']; ?>" required>
-                </div>
               </div>
 
-              <div class="form-group">
-                <label class="col-sm-2 control-label">Segundo Apellido</label>
-                <div class="col-sm-5">
+           <div class="col-md-2">
+              <label for="exampleInputEmail1">Segundo Apellido</label>
                   <input type="text" class="form-control" name="s_apellido" autocomplete="off" value="<?php echo $data['s_apellido']; ?>" required>
-                </div>
               </div>
 
-                <div class="form-group">
-                <label class="col-sm-2 control-label">Fecha de Nacimiento</label>
-                <div class="col-sm-5">
+                <div class="col-md-2">
+              <label for="exampleInputEmail1">Fecha de Nacimiento</label>
                   <input type="text" class="form-control" name="fec_nac" autocomplete="off" value="<?php echo $data['fec_nac']; ?>" required>
-                </div>
-              </div>          
+              </div>
 
-                <div class="form-group">
-                <label class="col-sm-2 control-label">Edad</label>
-                <div class="col-sm-5">
+                 <div class="col-md-2">
+              <label for="exampleInputEmail1">Edad</label>
                   <input type="text" class="form-control" name="edad" autocomplete="off" value="<?php echo $data['edad']; ?>" required>
-                </div>
               </div>
 
-              <div class="form-group">
-                <label class="col-sm-2 control-label">Telefono Celular</label>
-                <div class="col-sm-5">
+
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Telefono Celular</label>
                   <input type="text" class="form-control" name="tel_cel" autocomplete="off" value="<?php echo $data['tel_cel']; ?>" required>
-                </div>
               </div>
 
-                <div class="form-group">
-                <label class="col-sm-2 control-label">Telefono Habitacion</label>
-                <div class="col-sm-5">
+                 <div class="col-md-2">
+              <label for="exampleInputEmail1">Telefono de Habitacion</label>
                   <input type="text" class="form-control" name="tel_hab" autocomplete="off" value="<?php echo $data['tel_hab']; ?>" required>
-                </div>
               </div>
 
-                <div class="form-group">
-                <label class="col-sm-2 control-label">Telefono Emergencias</label>
-                <div class="col-sm-5">
+               <div class="col-md-2">
+              <label for="exampleInputEmail1">Telefono de Emergencia</label>
                   <input type="text" class="form-control" name="tel_emerg" autocomplete="off" value="<?php echo $data['tel_emerg']; ?>" required>
-                </div>
               </div>
 
-                  <div class="form-group">
-                  <label class="col-sm-2 control-label">Género</label>
-                  <div class="col-sm-5">
-                        <select class="form-control" name="genero" autocomplete="off" value="<?php echo $data['genero']; ?>" required>
-                          <option>Femenino</option>
-                          <option>Masculino</option>
-                        </select>
-  </div>
+
+
                   </div>
 
             </div><!-- /.box body -->
