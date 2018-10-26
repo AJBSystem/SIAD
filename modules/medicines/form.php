@@ -46,7 +46,7 @@ if ($_GET['form']=='add') { ?>
 
               <div class="col-md-2">
                 <label for="exampleInputEmail1">Codigo</label>
-                <input type="text" class="form-control" name="codigo" value="<?php echo $codigo; ?>" readonly required>
+                <input type="text" class="form-control" name="codigo" value="<?php echo $codigo; ?>"  required>
               </div>
 
              <div class="col-md-2">
@@ -94,6 +94,14 @@ if ($_GET['form']=='add') { ?>
               <input type="text" class="form-control" name="edad" autocomplete="off" required> 
             </div>
 
+                  <div class="col-md-2">
+                    <label for="exampleInputEmail1">Género</label>
+                        <select class="form-control" name="genero"  required>
+                          <option>Femenino</option>
+                          <option>Masculino</option>
+                        </select>
+                  </div>
+
             <div class="col-md-2">
              <label for="exampleInputEmail1">Telefono Celular</label>
               <input type="text" class="form-control" name="tel_cel" autocomplete="off" required> 
@@ -109,14 +117,41 @@ if ($_GET['form']=='add') { ?>
               <input type="text" class="form-control" name="tel_emerg" autocomplete="off" required> 
             </div>
 
-                  <div class="col-md-2">
-                    <label for="exampleInputEmail1">Género</label>
-                        <select class="form-control" name="genero"  required>
-                          <option>Femenino</option>
-                          <option>Masculino</option>
-                        </select>
-               
-                  </div>
+           <div class="col-md-2">
+             <label for="exampleInputEmail1">Estado</label>
+              <input type="text" class="form-control" name="estado" autocomplete="off" required> 
+            </div>
+
+            <div class="col-md-2">
+             <label for="exampleInputEmail1">Municipio</label>
+              <input type="text" class="form-control" name="municipio" autocomplete="off" required> 
+            </div>
+
+           <div class="col-md-2">
+             <label for="exampleInputEmail1">Parroquia</label>
+              <input type="text" class="form-control" name="parroquia" autocomplete="off" required> 
+            </div>
+
+           <div class="col-md-2">
+             <label for="exampleInputEmail1">Ciudad</label>
+              <input type="text" class="form-control" name="ciudad" autocomplete="off" required> 
+            </div>
+
+           <div class="col-md-2">
+             <label for="exampleInputEmail1">Avenida</label>
+              <input type="text" class="form-control" name="avenida" autocomplete="off" required> 
+            </div>
+
+            <div class="col-md-2">
+             <label for="exampleInputEmail1">Calle</label>
+              <input type="text" class="form-control" name="calle" autocomplete="off" required> 
+            </div>
+
+            <div class="col-md-2">
+             <label for="exampleInputEmail1">Casa N°</label>
+              <input type="text" class="form-control" name="casa" autocomplete="off" required> 
+            </div>
+
 
             </div><!-- /.box body -->
 
