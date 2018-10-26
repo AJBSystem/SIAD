@@ -104,6 +104,11 @@ if ($_GET['form']=='add') { ?>
               <input type="text" class="form-control" name="tel_hab" autocomplete="off" required> 
             </div>
 
+                        <div class="col-md-2">
+             <label for="exampleInputEmail1">Telefono Emergencias</label>
+              <input type="text" class="form-control" name="tel_emerg" autocomplete="off" required> 
+            </div>
+
                   <div class="col-md-2">
                     <label for="exampleInputEmail1">Género</label>
                         <select class="form-control" name="genero"  required>
@@ -134,7 +139,7 @@ if ($_GET['form']=='add') { ?>
 elseif ($_GET['form']=='edit') { 
   if (isset($_GET['id'])) {
 
-      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,tel_cel,tel_hab FROM medicamentos WHERE codigo='$_GET[id]'") 
+      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,tel_cel,tel_hab,tel_emerg FROM medicamentos WHERE codigo='$_GET[id]'") 
                                       or die('error: '.mysqli_error($mysqli));
       $data  = mysqli_fetch_assoc($query);
     }
@@ -243,6 +248,13 @@ elseif ($_GET['form']=='edit') {
                 <label class="col-sm-2 control-label">Telefono Habitacion</label>
                 <div class="col-sm-5">
                   <input type="text" class="form-control" name="tel_hab" autocomplete="off" value="<?php echo $data['tel_hab']; ?>" required>
+                </div>
+              </div>
+
+                <div class="form-group">
+                <label class="col-sm-2 control-label">Telefono Emergencias</label>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" name="tel_emerg" autocomplete="off" value="<?php echo $data['tel_emerg']; ?>" required>
                 </div>
               </div>
 

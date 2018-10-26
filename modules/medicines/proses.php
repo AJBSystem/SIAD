@@ -26,11 +26,12 @@ else {
             $genero  = mysqli_real_escape_string($mysqli, trim($_POST['genero']));
             $tel_cel  = mysqli_real_escape_string($mysqli, trim($_POST['tel_cel']));
             $tel_hab  = mysqli_real_escape_string($mysqli, trim($_POST['tel_hab']));
+            $tel_emerg  = mysqli_real_escape_string($mysqli, trim($_POST['tel_emerg']));
             $created_user = $_SESSION['id_user'];
 
   
-            $query = mysqli_query($mysqli, "INSERT INTO medicamentos(codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,tel_cel,tel_hab,created_user,updated_user) 
-                                            VALUES('$codigo','$cedula','$credencial','$rif','$p_nombre','$s_nombre','$p_apellido','$s_apellido','$fec_nac','$edad','$genero','$tel_cel','$tel_hab','$created_user','$created_user')")
+            $query = mysqli_query($mysqli, "INSERT INTO medicamentos(codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,tel_cel,tel_hab,tel_emerg,created_user,updated_user) 
+                                            VALUES('$codigo','$cedula','$credencial','$rif','$p_nombre','$s_nombre','$p_apellido','$s_apellido','$fec_nac','$edad','$genero','$tel_cel','$tel_hab','$tel_emerg','$created_user','$created_user')")
                                             or die('error '.mysqli_error($mysqli));    
 
         
@@ -59,6 +60,7 @@ else {
                 $genero  = mysqli_real_escape_string($mysqli, trim($_POST['genero']));
                 $tel_cel  = mysqli_real_escape_string($mysqli, trim($_POST['tel_cel']));
                 $tel_hab  = mysqli_real_escape_string($mysqli, trim($_POST['tel_hab']));
+                $tel_emerg  = mysqli_real_escape_string($mysqli, trim($_POST['tel_emerg']));
                 $updated_user = $_SESSION['id_user'];
 
                 $query = mysqli_query($mysqli, "UPDATE medicamentos SET  
@@ -74,6 +76,7 @@ else {
                                                                          genero       = '$genero',
                                                                          tel_cel       = '$tel_cel',
                                                                          tel_hab       = '$tel_hab',
+                                                                         tel_emerg       = '$tel_emerg',
                                                                     updated_user    = '$updated_user'
                                                               WHERE codigo       = '$codigo'")
                                                 or die('error: '.mysqli_error($mysqli));
