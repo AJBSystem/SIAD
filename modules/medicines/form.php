@@ -4,6 +4,7 @@ if ($_GET['form']=='add') { ?>
 
   <section class="content-header">
     <h1>
+<<<<<<< HEAD
       <i class="fa fa-edit icon-title"></i> Agregar Medicamentos
     </h1>
     <ol class="breadcrumb">
@@ -11,6 +12,16 @@ if ($_GET['form']=='add') { ?>
       <li><a href="?module=medicines"> Medicamentos </a></li>
       <li class="active"> Más </li>
     </ol>
+=======
+
+      <i class="fa fa-edit icon-title"></i> Agregar Funcionarios
+    </h1>
+    <ol class="breadcrumb">
+      <li><a href="?module=start"><i class="fa fa-home"></i> Inicio </a></li>
+      <li><a href="?module=medicines"> Funcionarios </a></li>
+
+    
+>>>>>>> develop
   </section>
 
   <!-- Main content -->
@@ -94,6 +105,21 @@ if ($_GET['form']=='add') { ?>
               <input type="text" class="form-control" name="edad" autocomplete="off" required> 
             </div>
 
+            <div class="col-md-2">
+             <label for="exampleInputEmail1">Telefono Celular</label>
+              <input type="text" class="form-control" name="tel_cel" autocomplete="off" required> 
+            </div>
+
+            <div class="col-md-2">
+             <label for="exampleInputEmail1">Telefono Habitacion</label>
+              <input type="text" class="form-control" name="tel_hab" autocomplete="off" required> 
+            </div>
+
+           <div class="col-md-2">
+             <label for="exampleInputEmail1">Telefono Emergencias</label>
+              <input type="text" class="form-control" name="tel_emerg" autocomplete="off" required> 
+            </div>
+
                   <div class="col-md-2">
                     <label for="exampleInputEmail1">Género</label>
                         <select class="form-control" name="genero"  required>
@@ -124,7 +150,7 @@ if ($_GET['form']=='add') { ?>
 elseif ($_GET['form']=='edit') { 
   if (isset($_GET['id'])) {
 
-      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero FROM medicamentos WHERE codigo='$_GET[id]'") 
+      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,tel_cel,tel_hab,tel_emerg FROM medicamentos WHERE codigo='$_GET[id]'") 
                                       or die('error: '.mysqli_error($mysqli));
       $data  = mysqli_fetch_assoc($query);
     }
@@ -132,11 +158,11 @@ elseif ($_GET['form']=='edit') {
 
   <section class="content-header">
     <h1>
-      <i class="fa fa-edit icon-title"></i> Modificar Medicamento
+      <i class="fa fa-edit icon-title"></i> Modificar Funcionario
     </h1>
     <ol class="breadcrumb">
       <li><a href="?module=start"><i class="fa fa-home"></i> Inicio </a></li>
-      <li><a href="?module=medicines"> Medicamentos </a></li>
+      <li><a href="?module=medicines"> Funcionario </a></li>
       <li class="active"> Modificar </li>
     </ol>
   </section>
@@ -149,36 +175,30 @@ elseif ($_GET['form']=='edit') {
           <!-- form start -->
           <form role="form" class="form-horizontal" action="modules/medicines/proses.php?act=update" method="POST">
             <div class="box-body">
-              
 
 
-              <div class="form-group">
-                <label class="col-sm-2 control-label">Codigo</label>
-                <div class="col-sm-5">
+              <div class="col-md-2">
+                <label for="exampleInputEmail1">Codigo</label>
                   <input type="text" class="form-control" name="codigo" value="<?php echo $data['codigo']; ?>" readonly required>
-                </div>
               </div>
 
-              <div class="form-group">
-                <label class="col-sm-2 control-label">Cedula</label>
-                <div class="col-sm-5">
+
+
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Cedula</label>
                   <input type="text" class="form-control" name="cedula" autocomplete="off" value="<?php echo $data['cedula']; ?>" required>
-                </div>
               </div>
 
-              <div class="form-group">
-                <label class="col-sm-2 control-label">N° de Credencial</label>
-                <div class="col-sm-5">
+             <div class="col-md-2">
+              <label for="exampleInputEmail1">Credencial</label>
                   <input type="text" class="form-control" name="credencial" autocomplete="off" value="<?php echo $data['credencial']; ?>" required>
-                </div>
               </div>
 
-              <div class="form-group">
-                <label class="col-sm-2 control-label">Rif</label>
-                <div class="col-sm-5">
+             <div class="col-md-2">
+              <label for="exampleInputEmail1">Rif</label>
                   <input type="text" class="form-control" name="rif" autocomplete="off" value="<?php echo $data['rif']; ?>" required>
-                </div>
               </div>
+
 
               <div class="form-group">
                 <label class="col-sm-2 control-label">Primer Nombre</label>
@@ -219,6 +239,27 @@ elseif ($_GET['form']=='edit') {
                 <label class="col-sm-2 control-label">Edad</label>
                 <div class="col-sm-5">
                   <input type="text" class="form-control" name="edad" autocomplete="off" value="<?php echo $data['edad']; ?>" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-sm-2 control-label">Telefono Celular</label>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" name="tel_cel" autocomplete="off" value="<?php echo $data['tel_cel']; ?>" required>
+                </div>
+              </div>
+
+                <div class="form-group">
+                <label class="col-sm-2 control-label">Telefono Habitacion</label>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" name="tel_hab" autocomplete="off" value="<?php echo $data['tel_hab']; ?>" required>
+                </div>
+              </div>
+
+                <div class="form-group">
+                <label class="col-sm-2 control-label">Telefono Emergencias</label>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" name="tel_emerg" autocomplete="off" value="<?php echo $data['tel_emerg']; ?>" required>
                 </div>
               </div>
 
