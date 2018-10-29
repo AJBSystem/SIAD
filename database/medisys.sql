@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 26-10-2018 a las 19:56:39
+-- Tiempo de generación: 29-10-2018 a las 15:58:56
 -- Versión del servidor: 10.1.36-MariaDB
 -- Versión de PHP: 5.6.38
 
@@ -51,26 +51,29 @@ CREATE TABLE `medicamentos` (
   `genero` int(11) NOT NULL,
   `tel_cel` int(11) NOT NULL,
   `tel_hab` int(11) NOT NULL,
-  `tel_emerg` int(11) NOT NULL
+  `tel_emerg` int(11) NOT NULL,
+  `municipio` varchar(50) NOT NULL,
+  `calle` varchar(50) NOT NULL,
+  `casa` varchar(50) NOT NULL,
+  `parroquia` varchar(50) NOT NULL,
+  `estado` varchar(50) NOT NULL,
+  `ciudad` varchar(50) NOT NULL,
+  `avenida` varchar(50) NOT NULL,
+  `codigo_cp` int(20) NOT NULL,
+  `serial_cp` int(20) NOT NULL,
+  `estado:_c` varchar(50) NOT NULL,
+  `lugar_nac` varchar(50) NOT NULL,
+  `correo_e` varchar(50) NOT NULL,
+  `grado_inst` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `medicamentos`
 --
 
-INSERT INTO `medicamentos` (`codigo`, `nombre`, `precio_compra`, `precio_venta`, `unidad`, `stock`, `created_user`, `created_date`, `updated_user`, `updated_date`, `p_nombre`, `cedula`, `credencial`, `p_apellido`, `fec_nac`, `edad`, `s_nombre`, `s_apellido`, `rif`, `genero`, `tel_cel`, `tel_hab`, `tel_emerg`) VALUES
-('B000377', '', 0, 0, '', 0, 1, '2018-10-22 19:21:22', 1, '2018-10-22 19:25:44', 'dsgf', 9590595, 4594094, 'dg', '20/10/2189', 26, 'as', '', 0, 0, 0, 0, 0),
-('B000379', '', 0, 0, '', 0, 1, '2018-10-22 19:29:37', 1, '2018-10-22 19:30:17', 'pop', 852, 582, 'ppo', '20/10/1995', 20, 'tu', '', 0, 0, 0, 0, 0),
-('B000380', '', 0, 0, '', 0, 1, '2018-10-22 19:31:26', 1, '2018-10-22 19:31:26', 'nai', 10, 20, 'dar', 'mar', 20, '20', '', 0, 0, 0, 0, 0),
-('B000383', '', 0, 0, '', 0, 1, '2018-10-22 19:35:37', 1, '2018-10-22 19:35:37', 'naiduth', 252, 2785, 'martinez', '20/1/1085', 10, '', '', 0, 0, 0, 0, 0),
-('B000384', '', 0, 0, '', 0, 1, '2018-10-22 19:38:06', 1, '2018-10-22 19:50:09', 'Darly', 5752, 525, 'Martinez', '20/10/1998', 20, 'Naiduth', 'Barreto', 0, 0, 0, 0, 0),
-('B000385', '', 0, 0, '', 0, 1, '2018-10-22 19:50:41', 1, '2018-10-22 19:55:45', 'Agustin', 10877210, 26949, 'Martinez', '20/08/1961', 45, 'Fortunato', 'Zapata', 20, 0, 0, 0, 0),
-('B000386', '', 0, 0, '', 0, 1, '2018-10-22 19:56:30', 1, '2018-10-22 19:56:30', 'bfd', 20, 20, 'fdg', '52', 1, 'dfdf', 'fdsgb', 25020, 0, 0, 0, 0),
-('B000387', '', 0, 0, '', 0, 1, '2018-10-22 20:04:17', 1, '2018-10-22 20:04:17', 'mjhk', 10, 10, 'hk', '20', 155, 'kjh', 'kh', 10, 0, 0, 0, 0),
-('B000388', '', 0, 0, '', 0, 1, '2018-10-24 16:13:25', 1, '2018-10-24 16:13:25', 'dwdd', 20096158, 30128, 'yfuyf', '20/10/2015', 26, 'tyff', 'yuf', 659096, 0, 0, 0, 0),
-('B000389', '', 0, 0, '', 0, 1, '2018-10-24 19:12:54', 1, '2018-10-24 19:12:54', 'Yarnelly', 19753205, 46890, 'Blanco', '12/03/1990', 28, 'Vanesa', 'Carias', 197532051, 0, 0, 0, 0),
-('B000390', '', 0, 0, '', 0, 1, '2018-10-26 17:45:30', 1, '2018-10-26 17:55:30', 'darly', 26435880, 2695095, 'martinez', '29/10/1998/', 20, 'naiduth', 'barreto', 49908, 0, 2147483647, 2124170277, 2147483647),
-('B000391', '', 0, 0, '', 0, 1, '2018-10-26 17:55:53', 1, '2018-10-26 17:55:53', 'gdh', 252572, 5252, 'hd', '63363', 6363, 'df', 'dhfh', 258, 0, 852852, 78527, 875);
+INSERT INTO `medicamentos` (`codigo`, `nombre`, `precio_compra`, `precio_venta`, `unidad`, `stock`, `created_user`, `created_date`, `updated_user`, `updated_date`, `p_nombre`, `cedula`, `credencial`, `p_apellido`, `fec_nac`, `edad`, `s_nombre`, `s_apellido`, `rif`, `genero`, `tel_cel`, `tel_hab`, `tel_emerg`, `municipio`, `calle`, `casa`, `parroquia`, `estado`, `ciudad`, `avenida`, `codigo_cp`, `serial_cp`, `estado:_c`, `lugar_nac`, `correo_e`, `grado_inst`) VALUES
+('141', '', 0, 0, '', 0, 1, '2018-10-29 14:30:10', 1, '2018-10-29 14:30:10', 'darly', 26435880, 10254, 'masrtinez', '29/10/1998', 20, 'naiduth', 'barreto', 2965956, 0, 2147483647, 2123174277, 2147483647, 'libertador', 'callejon', '88', 'antimano', 'distrito capital', 'caracas', 'primer carapot', 29659459, 4949, '', '', '', ''),
+('B000142', '', 0, 0, '', 0, 1, '2018-10-29 14:51:43', 1, '2018-10-29 14:51:43', 'fdfn', 15841949, 49049, 'fjgf', '19/140', 11, 'gg', 'tjfj', 4949, 0, 2147483647, 29292, 929, 'sfdsdf', 'fds', '22', 'fsaf', 'fsdf', 'fsfd', 'dfs', 29529, 295, '', '', '', '');
 
 -- --------------------------------------------------------
 
