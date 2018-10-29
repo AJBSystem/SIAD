@@ -34,11 +34,13 @@ else {
             $avenida  = mysqli_real_escape_string($mysqli, trim($_POST['avenida']));
             $calle  = mysqli_real_escape_string($mysqli, trim($_POST['calle']));
             $casa = mysqli_real_escape_string($mysqli, trim($_POST['casa']));
+            $codigo_cp = mysqli_real_escape_string($mysqli, trim($_POST['codigo_cp']));
+            $serial_cp = mysqli_real_escape_string($mysqli, trim($_POST['serial_cp']));
             $created_user = $_SESSION['id_user'];
 
   
-            $query = mysqli_query($mysqli, "INSERT INTO medicamentos(codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,tel_cel,tel_hab,tel_emerg,estado,municipio,parroquia,ciudad,avenida,calle,casa,created_user,updated_user) 
-                                            VALUES('$codigo','$cedula','$credencial','$rif','$p_nombre','$s_nombre','$p_apellido','$s_apellido','$fec_nac','$edad','$genero','$tel_cel','$tel_hab','$tel_emerg','$estado','$municipio','$parroquia','$ciudad','$avenida','$calle','$casa','$created_user','$created_user')")
+            $query = mysqli_query($mysqli, "INSERT INTO medicamentos(codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,tel_cel,tel_hab,tel_emerg,estado,municipio,parroquia,ciudad,avenida,calle,casa,codigo_cp,serial_cp,created_user,updated_user) 
+                                            VALUES('$codigo','$cedula','$credencial','$rif','$p_nombre','$s_nombre','$p_apellido','$s_apellido','$fec_nac','$edad','$genero','$tel_cel','$tel_hab','$tel_emerg','$estado','$municipio','$parroquia','$ciudad','$avenida','$calle','$casa','$codigo_cp','$serial_cp','$created_user','$created_user')")
                                             or die('error '.mysqli_error($mysqli));    
                                             
                                             
@@ -66,6 +68,10 @@ else {
                 $fec_nac  = mysqli_real_escape_string($mysqli, trim($_POST['fec_nac']));      
                 $edad  = mysqli_real_escape_string($mysqli, trim($_POST['edad']));
                 $genero  = mysqli_real_escape_string($mysqli, trim($_POST['genero']));
+                $lugar_nac  = mysqli_real_escape_string($mysqli, trim($_POST['lugar_nac']));
+                $estado_c  = mysqli_real_escape_string($mysqli, trim($_POST['estado_c']));
+                $grado_inst  = mysqli_real_escape_string($mysqli, trim($_POST['grado_inst']));
+                $correo_e  = mysqli_real_escape_string($mysqli, trim($_POST['correo_e']));
                 $tel_cel  = mysqli_real_escape_string($mysqli, trim($_POST['tel_cel']));
                 $tel_hab  = mysqli_real_escape_string($mysqli, trim($_POST['tel_hab']));
                 $tel_emerg  = mysqli_real_escape_string($mysqli, trim($_POST['tel_emerg']));
@@ -82,6 +88,10 @@ else {
                                                                          fec_nac       = '$fec_nac',
                                                                          edad       = '$edad',
                                                                          genero       = '$genero',
+                                                                         lugar_nac       = '$lugar_nac',
+                                                                         estado_c       = '$estado_c',
+                                                                         grado_inst       = '$grado_inst',
+                                                                         correo_e       = '$correo_e',
                                                                          tel_cel       = '$tel_cel',
                                                                          tel_hab       = '$tel_hab',
                                                                          tel_emerg       = '$tel_emerg',
