@@ -44,8 +44,28 @@ if ($_GET['form']=='add') { ?>
               $codigo = "B$buat_id";
               ?>
 
-         
-
+<nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-left">
+            <li><a href="#">Left</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-center">
+            <li><a href="">Center 1</a></li>
+            <li><a href="#">Center 2</a></li>
+            <li><a href="#">Center 3</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Right</a></li>
+        </ul>
+    </div>
+</nav>
               <div class="col-md-2">
                 <label for="exampleInputEmail1">Codigo</label>
                 <input type="text" class="form-control" name="codigo" value="<?php echo $codigo; ?>"  required>
@@ -107,8 +127,30 @@ if ($_GET['form']=='add') { ?>
                   <div class="col-md-2">
                     <label for="exampleInputEmail1">Lugar de Nacimiento</label>
                         <select class="form-control" name="lugar_nac"  required>
+                          <option>Amazonas</option>
+                          <option>Anzoategui</option>
+                          <option>Apure</option>
+                          <option>Aragua</option>
+                          <option>Barinas</option>
+                          <option>Bolívar</option>
+                          <option>Carabobo</option>
+                          <option>Cojedes</option>
+                          <option>Delta Amacuro</option>
                           <option>Distrito Capital</option>
-                          <option>Masculino</option>
+                          <option>Falcón</option>
+                          <option>Guárico</option>
+                          <option>Lara</option>
+                          <option>Mérida</option>
+                          <option>Miranda</option>
+                          <option>Monagas</option>
+                          <option>Nueva Esparta</option>
+                          <option>Portuguesa</option>
+                          <option>Sucre</option>
+                          <option>Táchira</option>
+                          <option>Trujillo</option>
+                          <option>Vargas</option>
+                          <option>Yaracuy</option>
+                          <option>Zulia</option>
                         </select>
                   </div>
 
@@ -117,14 +159,22 @@ if ($_GET['form']=='add') { ?>
                         <select class="form-control" name="estado_c"  required>
                           <option>Soltero/a </option>
                           <option>Casado/a</option>
+                          <option>Divorciado/a</option>
+                          <option>Viudo/a</option>
+                          <option>Concubinato/a</option>
                         </select>
                   </div>                  
 
                   <div class="col-md-2">
                     <label for="exampleInputEmail1">Grado de Instrucción</label>
                         <select class="form-control" name="grado_inst"  required>
-                          <option>Femenino</option>
-                          <option>Masculino</option>
+                          <option>Primaria</option>
+                          <option>Secundaria</option>
+                          <option>Tecnico Superior</option>
+                          <option>Universitario</option>
+                          <option>Grado</option>
+                          <option>Magister</option>
+                          <option>Doctorado</option>
                         </select>
                   </div>
 
@@ -221,7 +271,7 @@ if ($_GET['form']=='add') { ?>
 elseif ($_GET['form']=='edit') { 
   if (isset($_GET['id'])) {
 
-      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,tel_cel,tel_hab,tel_emerg FROM medicamentos WHERE codigo='$_GET[id]'") 
+      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,tel_cel,tel_hab,tel_emerg,correo_e FROM medicamentos WHERE codigo='$_GET[id]'") 
                                       or die('error: '.mysqli_error($mysqli));
       $data  = mysqli_fetch_assoc($query);
     }
@@ -318,7 +368,10 @@ elseif ($_GET['form']=='edit') {
                   <input type="text" class="form-control" name="tel_emerg" autocomplete="off" value="<?php echo $data['tel_emerg']; ?>" required>
               </div>
 
-
+               <div class="col-md-2">
+              <label for="exampleInputEmail1">Correo Electronico</label>
+                  <input type="text" class="form-control" name="correo_e" autocomplete="off" value="<?php echo $data['correo_e']; ?>" required>
+              </div>
 
                   </div>
 
