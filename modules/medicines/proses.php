@@ -37,15 +37,13 @@ else {
             $casa = mysqli_real_escape_string($mysqli, trim($_POST['casa']));
             $codigo_cp = mysqli_real_escape_string($mysqli, trim($_POST['codigo_cp']));
             $serial_cp = mysqli_real_escape_string($mysqli, trim($_POST['serial_cp']));
-            $correo_e = mysqli_real_escape_string($mysqli, trim($_POST['correo_e']));
-            $codigo_cp = mysqli_real_escape_string($mysqli, trim($_POST['codigo_cp']));
+
             $created_user = $_SESSION['id_user'];
 
   
             $query = mysqli_query($mysqli, "INSERT INTO medicamentos(codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,tel_cel,tel_hab,tel_emerg,estado,municipio,parroquia,ciudad,avenida,calle,casa,codigo_cp,serial_cp,correo_e,created_user,updated_user) 
-
-                                            VALUES('$codigo','$cedula','$credencial','$rif','$p_nombre','$s_nombre','$p_apellido','$s_apellido','$fec_nac','$edad','$genero','$tel_cel','$tel_hab','$tel_emerg','$estado','$municipio','$parroquia','$ciudad','$avenida','$calle','$correo_e','$casa','$codigo_cp','$serial_cp','$created_user','$created_user')")
-
+                                            VALUES('$codigo','$cedula','$credencial','$rif','$p_nombre','$s_nombre','$p_apellido','$s_apellido','$fec_nac','$edad','$genero','$tel_cel','$tel_hab','$tel_emerg','$estado','$municipio','$parroquia','$ciudad','$avenida','$calle','$casa','$codigo_cp','$serial_cp',$created_user','$created_user')")
+                                            or die('error '.mysqli_error($mysqli));    
                                             
                                             
         
@@ -79,7 +77,6 @@ else {
                 $tel_cel  = mysqli_real_escape_string($mysqli, trim($_POST['tel_cel']));
                 $tel_hab  = mysqli_real_escape_string($mysqli, trim($_POST['tel_hab']));
                 $tel_emerg  = mysqli_real_escape_string($mysqli, trim($_POST['tel_emerg']));
-                $codigo_cp = mysqli_real_escape_string($mysqli, trim($_POST['codigo_cp']));
                 $updated_user = $_SESSION['id_user'];
 
                 $query = mysqli_query($mysqli, "UPDATE medicamentos SET  
@@ -96,8 +93,7 @@ else {
                                                                          lugar_nac       = '$lugar_nac',
                                                                          estado_c       = '$estado_c',
                                                                          grado_inst       = '$grado_inst',
-                                                                         correo_e       = '$correo_e',
-                                                                         codigo_cp       = '$codigo_cp',
+                                                                            correo_e    = '$correo_e',
                                                                          tel_cel       = '$tel_cel',
                                                                          tel_hab       = '$tel_hab',
                                                                          tel_emerg       = '$tel_emerg',

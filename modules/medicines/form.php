@@ -341,14 +341,14 @@ elseif ($_GET['form']=='edit') {
                   <input type="text" class="form-control" name="tel_emerg" autocomplete="off" value="<?php echo $data['tel_emerg']; ?>" required>
               </div>
 
-               <div class="col-md-2">
-              <label for="exampleInputEmail1">Correo Electronico</label>
-                  <input type="text" class="form-control" name="correo_e" autocomplete="off" value="<?php echo $data['correo_e']; ?>" required>
-              </div>
-
               <div class="col-md-2">
               <label for="exampleInputEmail1">Codigo del CP</label>
                   <input type="text" class="form-control" name="codigo_cp" autocomplete="off" value="<?php echo $data['codigo_cp']; ?>" required>
+              </div>
+
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Correo Electronico</label>
+                  <input type="text" class="form-control" name="correo_e" autocomplete="off" value="<?php echo $data['correo_e']; ?>" required>
               </div>
 
                   </div>
