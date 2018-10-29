@@ -6,7 +6,7 @@ session_start();
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Panel de administración | Inventario de Medicamentos</title>
+    <title>Panel de administración | Sistema de Actualizacion de Datos</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="description" content="Inventario de Medicamentos">
@@ -85,7 +85,7 @@ session_start();
         <!-- Logo -->
         <a href="?module=beranda" class="logo">
           <img style="margin-top:-15px;margin-right:5px" src="assets/img/logo-blue.png" alt="Logo"> 
-          <span style="font-size:20px">MEDISYS</span>
+          <span style="font-size:20px">SIAD</span>
         </a>
 
         <nav class="navbar navbar-static-top" role="navigation">
