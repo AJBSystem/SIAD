@@ -5,7 +5,7 @@ if ($_GET['form']=='add') { ?>
   <section class="content-header">
     <h1>
 
-      <i class="fa fa-edit icon-title"></i> Agregar Funcionarias
+      <i class="fa fa-edit icon-title"></i> Agregar Funcionario
     </h1>
     <ol class="breadcrumb">
       <li><a href="?module=start"><i class="fa fa-home"></i> Inicio </a></li>
@@ -44,28 +44,6 @@ if ($_GET['form']=='add') { ?>
               $codigo = "B$buat_id";
               ?>
 
-<nav class="navbar navbar-default" role="navigation">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-    </div>
-    <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-left">
-            <li><a href="#">Left</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-center">
-            <li><a href="">Center 1</a></li>
-            <li><a href="#">Center 2</a></li>
-            <li><a href="#">Center 3</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Right</a></li>
-        </ul>
-    </div>
-</nav>
               <div class="col-md-2">
                 <label for="exampleInputEmail1">Codigo</label>
                 <input type="text" class="form-control" name="codigo" value="<?php echo $codigo; ?>"  required>
@@ -243,12 +221,7 @@ if ($_GET['form']=='add') { ?>
               <input type="text" class="form-control" name="serial_cp" autocomplete="off" required> 
             </div>
 
-          
-            <button type="submit">Adjuntar Foto del Funcionario</button>
-            <button type="submit">Adjuntar Foto de la Credencial</button>
-            <button type="submit">Adjuntar Foto de la cedula</button>
-            <button type="submit">Adjuntar Curriculum</button>
-            <input type='file' name='archivo1' id='archivo1' placeholder="carga tu boucher">
+
 
             </div><!-- /.box body -->
 
