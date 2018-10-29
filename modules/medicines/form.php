@@ -104,6 +104,35 @@ if ($_GET['form']=='add') { ?>
                         </select>
                   </div>
 
+                  <div class="col-md-2">
+                    <label for="exampleInputEmail1">Lugar de Nacimiento</label>
+                        <select class="form-control" name="lugar_nac"  required>
+                          <option>Distrito Capital</option>
+                          <option>Masculino</option>
+                        </select>
+                  </div>
+
+                  <div class="col-md-2">
+                    <label for="exampleInputEmail1">Estado Civil</label>
+                        <select class="form-control" name="estado_c"  required>
+                          <option>Soltero/a </option>
+                          <option>Casado/a</option>
+                        </select>
+                  </div>                  
+
+                  <div class="col-md-2">
+                    <label for="exampleInputEmail1">Grado de Instrucción</label>
+                        <select class="form-control" name="grado_inst"  required>
+                          <option>Femenino</option>
+                          <option>Masculino</option>
+                        </select>
+                  </div>
+
+            <div class="col-md-2">
+             <label for="exampleInputEmail1">Correo Electronico</label>
+              <input type="text" class="form-control" name="correo_e" autocomplete="off" required> 
+            </div>
+
             <div class="col-md-2">
              <label for="exampleInputEmail1">Telefono Celular</label>
               <input type="text" class="form-control" name="tel_cel" autocomplete="off" required> 
@@ -130,13 +159,13 @@ if ($_GET['form']=='add') { ?>
             </div>
 
            <div class="col-md-2">
-             <label for="exampleInputEmail1">Parroquia</label>
-              <input type="text" class="form-control" name="parroquia" autocomplete="off" required> 
+             <label for="exampleInputEmail1">Ciudad</label>
+              <input type="text" class="form-control" name="ciudad" autocomplete="off" required> 
             </div>
 
            <div class="col-md-2">
-             <label for="exampleInputEmail1">Ciudad</label>
-              <input type="text" class="form-control" name="ciudad" autocomplete="off" required> 
+             <label for="exampleInputEmail1">Parroquia</label>
+              <input type="text" class="form-control" name="parroquia" autocomplete="off" required> 
             </div>
 
            <div class="col-md-2">
@@ -153,6 +182,17 @@ if ($_GET['form']=='add') { ?>
              <label for="exampleInputEmail1">Casa N°</label>
               <input type="text" class="form-control" name="casa" autocomplete="off" required> 
             </div>
+
+            <div class="col-md-2">
+             <label for="exampleInputEmail1">Codigo del CP</label>
+              <input type="text" class="form-control" name="codigo_cp" autocomplete="off" required> 
+            </div>
+
+            <div class="col-md-2">
+             <label for="exampleInputEmail1">Serial del CP</label>
+              <input type="text" class="form-control" name="serial_cp" autocomplete="off" required> 
+            </div>
+
 
 
             </div><!-- /.box body -->
