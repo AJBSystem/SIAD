@@ -244,7 +244,7 @@ if ($_GET['form']=='add') { ?>
 elseif ($_GET['form']=='edit') { 
   if (isset($_GET['id'])) {
 
-      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,tel_cel,tel_hab,tel_emerg,correo_e FROM medicamentos WHERE codigo='$_GET[id]'") 
+      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,tel_cel,tel_hab,tel_emerg,correo_e,codigo_cp FROM medicamentos WHERE codigo='$_GET[id]'") 
                                       or die('error: '.mysqli_error($mysqli));
       $data  = mysqli_fetch_assoc($query);
     }
@@ -344,6 +344,11 @@ elseif ($_GET['form']=='edit') {
                <div class="col-md-2">
               <label for="exampleInputEmail1">Correo Electronico</label>
                   <input type="text" class="form-control" name="correo_e" autocomplete="off" value="<?php echo $data['correo_e']; ?>" required>
+              </div>
+
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Codigo del CP</label>
+                  <input type="text" class="form-control" name="codigo_cp" autocomplete="off" value="<?php echo $data['codigo_cp']; ?>" required>
               </div>
 
                   </div>
