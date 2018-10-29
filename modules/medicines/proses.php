@@ -37,6 +37,7 @@ else {
             $codigo_cp = mysqli_real_escape_string($mysqli, trim($_POST['codigo_cp']));
             $serial_cp = mysqli_real_escape_string($mysqli, trim($_POST['serial_cp']));
             $correo_e = mysqli_real_escape_string($mysqli, trim($_POST['correo_e']));
+            $codigo_cp = mysqli_real_escape_string($mysqli, trim($_POST['codigo_cp']));
             $created_user = $_SESSION['id_user'];
 
   
@@ -76,6 +77,7 @@ else {
                 $tel_cel  = mysqli_real_escape_string($mysqli, trim($_POST['tel_cel']));
                 $tel_hab  = mysqli_real_escape_string($mysqli, trim($_POST['tel_hab']));
                 $tel_emerg  = mysqli_real_escape_string($mysqli, trim($_POST['tel_emerg']));
+                $codigo_cp = mysqli_real_escape_string($mysqli, trim($_POST['codigo_cp']));
                 $updated_user = $_SESSION['id_user'];
 
                 $query = mysqli_query($mysqli, "UPDATE medicamentos SET  
@@ -93,6 +95,7 @@ else {
                                                                          estado_c       = '$estado_c',
                                                                          grado_inst       = '$grado_inst',
                                                                          correo_e       = '$correo_e',
+                                                                         codigo_cp       = '$codigo_cp',
                                                                          tel_cel       = '$tel_cel',
                                                                          tel_hab       = '$tel_hab',
                                                                          tel_emerg       = '$tel_emerg',
