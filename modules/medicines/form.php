@@ -193,12 +193,7 @@ if ($_GET['form']=='add') { ?>
               <input type="text" class="form-control" name="serial_cp" autocomplete="off" required> 
             </div>
 
-          
-            <button type="submit">Adjuntar Foto del Funcionario</button>
-            <button type="submit">Adjuntar Foto de la Credencial</button>
-            <button type="submit">Adjuntar Foto de la cedula</button>
-            <button type="submit">Adjuntar Curriculum</button>
-            <input type='file' name='archivo1' id='archivo1' placeholder="carga tu boucher">
+
 
             </div><!-- /.box body -->
 
@@ -221,7 +216,7 @@ if ($_GET['form']=='add') { ?>
 elseif ($_GET['form']=='edit') { 
   if (isset($_GET['id'])) {
 
-      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,tel_cel,tel_hab,tel_emerg FROM medicamentos WHERE codigo='$_GET[id]'") 
+      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,tel_cel,tel_hab,tel_emerg,correo_e FROM medicamentos WHERE codigo='$_GET[id]'") 
                                       or die('error: '.mysqli_error($mysqli));
       $data  = mysqli_fetch_assoc($query);
     }
@@ -301,35 +296,7 @@ elseif ($_GET['form']=='edit') {
               <label for="exampleInputEmail1">Edad</label>
                   <input type="text" class="form-control" name="edad" autocomplete="off" value="<?php echo $data['edad']; ?>" required>
               </div>
-              <div class="col-md-2">
-              <label for="exampleInputEmail1">Genero</label>
-                  <input type="text" class="form-control" name="genero" autocomplete="off" value="<?php echo $data['genero']; ?>" required>
-              </div>
 
-              <div class="col-md-2">
-              <label for="exampleInputEmail1">Lugar de Nacimiento</label>
-                  <input type="text" class="form-control" name="lugar_nac" autocomplete="off" value="<?php echo $data['lugar_nac']; ?>" required>
-
-              </div>
-
-              <div class="col-md-2">
-              <label for="exampleInputEmail1">Estado Civil</label>
-                  <input type="text" class="form-control" name="estado_c" autocomplete="off" value="<?php echo $data['estado_c']; ?>" required>
-              </div>
-
-               </div>
-              <div class="col-md-2">
-              <label for="exampleInputEmail1">Grado de Instruccion</label>
-                  <input type="text" class="form-control" name="grado_inst" autocomplete="off" value="<?php echo $data['grado_inst']; ?>" required>
-              </div>
-              
-
-              
-              <div class="col-md-2">
-              <label for="exampleInputEmail1">Correo Electronico</label>
-                  <input type="text" class="form-control" name="correo_e" autocomplete="off" value="<?php echo $data['correo_e']; ?>" required>
-              </div>
-              
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Telefono Celular</label>
@@ -341,57 +308,17 @@ elseif ($_GET['form']=='edit') {
                   <input type="text" class="form-control" name="tel_hab" autocomplete="off" value="<?php echo $data['tel_hab']; ?>" required>
               </div>
 
-               </div>
-              <div class="col-md-2">
+               <div class="col-md-2">
               <label for="exampleInputEmail1">Telefono de Emergencia</label>
                   <input type="text" class="form-control" name="tel_emerg" autocomplete="off" value="<?php echo $data['tel_emerg']; ?>" required>
               </div>
-              
 
                <div class="col-md-2">
-              <label for="exampleInputEmail1">Estado</label>
-                  <input type="text" class="form-control" name="Estado" autocomplete="off" value="<?php echo $data['estado']; ?>" required>
+              <label for="exampleInputEmail1">Correo Electronico</label>
+                  <input type="text" class="form-control" name="correo_e" autocomplete="off" value="<?php echo $data['correo_e']; ?>" required>
               </div>
 
-              <div class="col-md-2">
-              <label for="exampleInputEmail1">Municipio</label>
-                  <input type="text" class="form-control" name="municipio" autocomplete="off" value="<?php echo $data['tel_emerg']; ?>" required>
-              </div>
 
-              <div class="col-md-2">
-              <label for="exampleInputEmail1">Ciudad</label>
-                  <input type="text" class="form-control" name="ciudad" autocomplete="off" value="<?php echo $data['ciudad']; ?>" required>
-              </div>
-
-              <div class="col-md-2">
-              <label for="exampleInputEmail1">Parroquia</label>
-                  <input type="text" class="form-control" name="parroquia" autocomplete="off" value="<?php echo $data['parroquia']; ?>" required>
-              </div>
-
-              <div class="col-md-2">
-              <label for="exampleInputEmail1">Avenida</label>
-                  <input type="text" class="form-control" name="avenida" autocomplete="off" value="<?php echo $data['avenida']; ?>" required>
-              </div>
-
-              <div class="col-md-2">
-              <label for="exampleInputEmail1">Calle</label>
-                  <input type="text" class="form-control" name="calle" autocomplete="off" value="<?php echo $data['calle']; ?>" required>
-              </div>
-
-              <div class="col-md-2">
-              <label for="exampleInputEmail1">Casa N°</label>
-                  <input type="text" class="form-control" name="casa" autocomplete="off" value="<?php echo $data['casa']; ?>" required>
-              </div>
-
-              <div class="col-md-2">
-              <label for="exampleInputEmail1">Codido del CP</label>
-                  <input type="text" class="form-control" name="codigo_cp" autocomplete="off" value="<?php echo $data['codigo_cp']; ?>" required>
-              </div>
-
-              <div class="col-md-2">
-              <label for="exampleInputEmail1">Serial del CP</label>
-                  <input type="text" class="form-control" name="serial_cp" autocomplete="off" value="<?php echo $data['Serial']; ?>" required>
-              </div>
 
                   </div>
 
