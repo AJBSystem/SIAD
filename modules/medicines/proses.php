@@ -41,8 +41,8 @@ else {
             $created_user = $_SESSION['id_user'];
 
   
-            $query = mysqli_query($mysqli, "INSERT INTO medicamentos(codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,tel_cel,tel_hab,tel_emerg,estado,municipio,parroquia,ciudad,avenida,calle,casa,codigo_cp,serial_cp,correo_e,created_user,updated_user) 
-                                            VALUES('$codigo','$cedula','$credencial','$rif','$p_nombre','$s_nombre','$p_apellido','$s_apellido','$fec_nac','$edad','$genero','$tel_cel','$tel_hab','$tel_emerg','$estado','$municipio','$parroquia','$ciudad','$avenida','$calle','$casa','$codigo_cp','$serial_cp',$created_user','$created_user')")
+            $query = mysqli_query($mysqli, "INSERT INTO medicamentos(codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,municipio,parroquia,ciudad,avenida,calle,casa,codigo_cp,serial_cp, estado_c,grado_inst,correo_e,created_user,updated_user) 
+                                            VALUES('$codigo','$cedula','$credencial','$rif','$p_nombre','$s_nombre','$p_apellido','$s_apellido','$fec_nac','$edad','$lugar_nac','$genero','$tel_cel','$tel_hab','$tel_emerg','$estado','$municipio','$parroquia','$ciudad','$avenida','$calle','$casa','$estado_c','$codigo_cp','$serial_cp',$created_user','$created_user')")
                                             or die('error '.mysqli_error($mysqli));    
                                             
                                             
@@ -72,11 +72,20 @@ else {
                 $genero  = mysqli_real_escape_string($mysqli, trim($_POST['genero']));
                 $lugar_nac  = mysqli_real_escape_string($mysqli, trim($_POST['lugar_nac']));
                 $estado_c  = mysqli_real_escape_string($mysqli, trim($_POST['estado_c']));
+                $estado  = mysqli_real_escape_string($mysqli, trim($_POST['estado']));
                 $grado_inst  = mysqli_real_escape_string($mysqli, trim($_POST['grado_inst']));
                 $correo_e  = mysqli_real_escape_string($mysqli, trim($_POST['correo_e']));
                 $tel_cel  = mysqli_real_escape_string($mysqli, trim($_POST['tel_cel']));
                 $tel_hab  = mysqli_real_escape_string($mysqli, trim($_POST['tel_hab']));
                 $tel_emerg  = mysqli_real_escape_string($mysqli, trim($_POST['tel_emerg']));
+                $municipio  = mysqli_real_escape_string($mysqli, trim($_POST['municipio']));
+                $ciudad  = mysqli_real_escape_string($mysqli, trim($_POST['ciudad']));
+                $parroquia  = mysqli_real_escape_string($mysqli, trim($_POST['parroquia']));
+                $avenida = mysqli_real_escape_string($mysqli, trim($_POST['avenida']));
+                $calle = mysqli_real_escape_string($mysqli, trim($_POST['calle']));
+                $casa = mysqli_real_escape_string($mysqli, trim($_POST['casa']));
+                $serial_cp  = mysqli_real_escape_string($mysqli, trim($_POST['serial_cp']));
+                $codigo_cp  = mysqli_real_escape_string($mysqli, trim($_POST['codigo_cp']));
                 $updated_user = $_SESSION['id_user'];
 
                 $query = mysqli_query($mysqli, "UPDATE medicamentos SET  
@@ -92,11 +101,20 @@ else {
                                                                          genero       = '$genero',
                                                                          lugar_nac       = '$lugar_nac',
                                                                          estado_c       = '$estado_c',
+                                                                          estado       = '$estado',
                                                                          grado_inst       = '$grado_inst',
-                                                                            correo_e    = '$correo_e',
+                                                                         correo_e    = '$correo_e',
                                                                          tel_cel       = '$tel_cel',
                                                                          tel_hab       = '$tel_hab',
                                                                          tel_emerg       = '$tel_emerg',
+                                                                         parroquia       = '$parroquia',
+                                                                         municipio       = '$municipio',
+                                                                         ciudad      = '$ciudad',
+                                                                        avenida      = '$avenida',
+                                                                        calle      = '$calle',
+                                                                         casa      = '$casa',
+                                                                         codigo_cp    = '$codigo_cp',
+                                                                         serial_cp    = '$serial_cp',
                                                                     updated_user    = '$updated_user'
                                                               WHERE codigo       = '$codigo'")
                                                 or die('error: '.mysqli_error($mysqli));
