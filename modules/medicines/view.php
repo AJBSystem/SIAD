@@ -24,7 +24,7 @@
       echo "<div class='alert alert-success alert-dismissable'>
               <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
               <h4>  <i class='icon fa fa-check-circle'></i> Exito!</h4>
-             Nuevos datos de medicamentos ha sido  almacenado correctamente.
+             Nuevos datos de funcionario ha sido  almacenado correctamente.
             </div>";
     }
 
@@ -32,7 +32,7 @@
       echo "<div class='alert alert-success alert-dismissable'>
               <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
               <h4>  <i class='icon fa fa-check-circle'></i> Exito!</h4>
-             Datos del Medicamento modificados correcamente.
+             Datos del Funcionario modificados correcamente.
             </div>";
     }
 
@@ -40,7 +40,7 @@
       echo "<div class='alert alert-success alert-dismissable'>
               <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
               <h4>  <i class='icon fa fa-check-circle'></i> Exito!</h4>
-            Se eliminaron los datos del Medicamento
+            Se eliminaron los datos del Funcionario
             </div>";
     }
     ?>

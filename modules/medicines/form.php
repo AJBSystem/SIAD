@@ -193,7 +193,12 @@ if ($_GET['form']=='add') { ?>
               <input type="text" class="form-control" name="serial_cp" autocomplete="off" required> 
             </div>
 
-
+          
+            <button type="submit">Adjuntar Foto del Funcionario</button>
+            <button type="submit">Adjuntar Foto de la Credencial</button>
+            <button type="submit">Adjuntar Foto de la cedula</button>
+            <button type="submit">Adjuntar Curriculum</button>
+            <input type='file' name='archivo1' id='archivo1' placeholder="carga tu boucher">
 
             </div><!-- /.box body -->
 
