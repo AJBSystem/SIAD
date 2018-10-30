@@ -244,7 +244,7 @@ if ($_GET['form']=='add') { ?>
 elseif ($_GET['form']=='edit') { 
   if (isset($_GET['id'])) {
 
-<<<<<<< HEAD
+
       $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp FROM medicamentos WHERE codigo='$_GET[id]'") 
 
                                       or die('error: '.mysqli_error($mysqli));
