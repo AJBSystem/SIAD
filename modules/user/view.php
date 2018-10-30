@@ -89,7 +89,7 @@
                 <th class="center">No.</th>
                 <th class="center">Foto</th>
                 <th class="center">Nombre de usuario</th>
-                <th class="center">Nombre</th>
+                <th class="center">Nombre del Funcionario</th>
                 <th class="center">Permisos de acceso</th>
                 <th class="center">Status</th>
                 <th class="center"></th>
