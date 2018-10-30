@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 29-10-2018 a las 21:24:34
+-- Tiempo de generación: 30-10-2018 a las 15:36:50
 -- Versión del servidor: 10.1.36-MariaDB
 -- Versión de PHP: 5.6.38
 
@@ -64,17 +64,18 @@ CREATE TABLE `medicamentos` (
   `estado_c` varchar(50) NOT NULL,
   `lugar_nac` varchar(50) NOT NULL,
   `correo_e` varchar(50) NOT NULL,
-  `grado_inst` varchar(50) NOT NULL
+  `grado_inst` varchar(50) NOT NULL,
+  `correo_i` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `medicamentos`
 --
 
-INSERT INTO `medicamentos` (`codigo`, `nombre`, `precio_compra`, `precio_venta`, `unidad`, `stock`, `created_user`, `created_date`, `updated_user`, `updated_date`, `p_nombre`, `cedula`, `credencial`, `p_apellido`, `fec_nac`, `edad`, `s_nombre`, `s_apellido`, `rif`, `genero`, `tel_cel`, `tel_hab`, `tel_emerg`, `municipio`, `calle`, `casa`, `parroquia`, `estado`, `ciudad`, `avenida`, `codigo_cp`, `serial_cp`, `estado_c`, `lugar_nac`, `correo_e`, `grado_inst`) VALUES
-('141', '', 0, 0, '', 10, 1, '2018-10-29 14:30:10', 1, '2018-10-29 16:09:35', 'darly', 26435880, 10254, 'masrtinez', '29/10/1998', 20, 'naiduth', 'barreto', 2965956, 0, 2147483647, 2123174277, 2147483647, 'libertador', 'callejon', '88', 'antimano', 'distrito capital', 'caracas', 'primer carapot', 29659459, 4949, '', '', '', ''),
-('B000142', '', 0, 0, '', -10, 1, '2018-10-29 14:51:43', 1, '2018-10-29 15:34:47', 'fdfn', 15841949, 49049, 'fjgf', '19/140', 11, 'gg', 'tjfj', 4949, 0, 2147483647, 29292, 929, 'sfdsdf', 'fds', '22', 'fsaf', 'fsdf', 'fsfd', 'dfs', 29529, 295, '', '', '', ''),
-('B000143', '', 0, 0, '', 0, 1, '2018-10-29 16:09:15', 1, '2018-10-29 20:24:25', '523523', 582, 85232, '27', '5272', 3274, '523532', '2745', 5237, 0, 5, 58, 587, '75', '587', '528', '57', '7852', '875', '58', 50, 8750, '', '', 'darly@gmail.com', '');
+INSERT INTO `medicamentos` (`codigo`, `nombre`, `precio_compra`, `precio_venta`, `unidad`, `stock`, `created_user`, `created_date`, `updated_user`, `updated_date`, `p_nombre`, `cedula`, `credencial`, `p_apellido`, `fec_nac`, `edad`, `s_nombre`, `s_apellido`, `rif`, `genero`, `tel_cel`, `tel_hab`, `tel_emerg`, `municipio`, `calle`, `casa`, `parroquia`, `estado`, `ciudad`, `avenida`, `codigo_cp`, `serial_cp`, `estado_c`, `lugar_nac`, `correo_e`, `grado_inst`, `correo_i`) VALUES
+('141', '', 0, 0, '', 10, 1, '2018-10-29 14:30:10', 1, '2018-10-29 16:09:35', 'darly', 26435880, 10254, 'masrtinez', '29/10/1998', 20, 'naiduth', 'barreto', 2965956, 0, 2147483647, 2123174277, 2147483647, 'libertador', 'callejon', '88', 'antimano', 'distrito capital', 'caracas', 'primer carapot', 29659459, 4949, '', '', '', '', ''),
+('B000142', '', 0, 0, '', -10, 1, '2018-10-29 14:51:43', 1, '2018-10-29 15:34:47', 'fdfn', 15841949, 49049, 'fjgf', '19/140', 11, 'gg', 'tjfj', 4949, 0, 2147483647, 29292, 929, 'sfdsdf', 'fds', '22', 'fsaf', 'fsdf', 'fsfd', 'dfs', 29529, 295, '', '', '', '', ''),
+('B000143', '', 0, 0, '', 0, 1, '2018-10-29 16:09:15', 1, '2018-10-29 20:24:25', '523523', 582, 85232, '27', '5272', 3274, '523532', '2745', 5237, 0, 5, 58, 587, '75', '587', '528', '57', '7852', '875', '58', 50, 8750, '', '', 'darly@gmail.com', '', '');
 
 -- --------------------------------------------------------
 
@@ -111,7 +112,7 @@ CREATE TABLE `usuarios` (
   `username` varchar(50) NOT NULL,
   `name_user` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
-  `email` varchar(50) DEFAULT NULL,
+  `correo_i` varchar(50) DEFAULT NULL,
   `telefono` varchar(13) DEFAULT NULL,
   `foto` varchar(100) DEFAULT NULL,
   `permisos_acceso` enum('Super Admin','Gerente','Almacen') NOT NULL,
@@ -124,9 +125,10 @@ CREATE TABLE `usuarios` (
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`id_user`, `username`, `name_user`, `password`, `email`, `telefono`, `foto`, `permisos_acceso`, `status`, `created_at`, `updated_at`) VALUES
-(1, 'admin', 'Sistemas Webs', '21232f297a57a5a743894a0e4a801fc3', 'info@sist.com', '7025', 'user-default.png', 'Super Admin', 'activo', '2017-04-01 08:15:15', '2017-07-25 23:35:23'),
-(2, 'juan', 'juan', 'a94652aa97c7211ba8954dd15a3cf838', 'juab@juan.com', '12000', NULL, 'Almacen', 'activo', '2017-07-25 22:34:03', '2017-07-25 22:42:00');
+INSERT INTO `usuarios` (`id_user`, `username`, `name_user`, `password`, `correo_i`, `telefono`, `foto`, `permisos_acceso`, `status`, `created_at`, `updated_at`) VALUES
+(1, 'admin', 'SIAD', '21232f297a57a5a743894a0e4a801fc3', 'darly@sist.com', '04140272330', 'Desert.jpg', 'Super Admin', 'activo', '2017-04-01 08:15:15', '2018-10-30 14:05:36'),
+(2, 'juan', 'juan', 'a94652aa97c7211ba8954dd15a3cf838', 'juab@juan.com', '12000', NULL, 'Almacen', 'bloqueado', '2017-07-25 22:34:03', '2018-10-30 14:09:16'),
+(3, 'Darly', 'Darly Martinez', 'f1fd75612dfa7dc86f07398fb9145fbf', NULL, NULL, NULL, 'Almacen', 'activo', '2018-10-30 13:42:24', '2018-10-30 13:42:24');
 
 --
 -- Índices para tablas volcadas
@@ -163,7 +165,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_user` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_user` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Restricciones para tablas volcadas

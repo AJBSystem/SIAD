@@ -18,7 +18,7 @@ else {
 				$id_user            = mysqli_real_escape_string($mysqli, trim($_POST['id_user']));
 				$username           = mysqli_real_escape_string($mysqli, trim($_POST['username']));
 				$name_user          = mysqli_real_escape_string($mysqli, trim($_POST['name_user']));
-				$correo_i              = mysqli_real_escape_string($mysqli, trim($_POST['correo_i']));
+				$email              = mysqli_real_escape_string($mysqli, trim($_POST['email']));
 				$telefono            = mysqli_real_escape_string($mysqli, trim($_POST['telefono']));
 				
 				$name_file          = $_FILES['foto']['name'];
@@ -41,7 +41,7 @@ else {
 			       
                     $query = mysqli_query($mysqli, "UPDATE usuarios SET username 	= '$username',
                     													name_user 	= '$name_user',
-                    													correo_i       = '$correo_i',
+                    													email       = '$email',
                     													telefono     = '$telefono'
                                                                   WHERE id_user 	= '$id_user'")
                                                     or die('error: '.mysqli_error($mysqli));
@@ -64,7 +64,7 @@ else {
                         		
 			                    $query = mysqli_query($mysqli, "UPDATE usuarios SET username 	= '$username',
 			                    													name_user 	= '$name_user',
-			                    													correo_i       = '$correo_i',
+			                    													email       = '$email',
 			                    													telefono     = '$telefono',
 			                    													foto     	= '$name_file'
 			                                                                  WHERE id_user 	= '$id_user'")

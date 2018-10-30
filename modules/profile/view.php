@@ -95,23 +95,22 @@ if (isset($_SESSION['id_user'])) {
             </div>
 
             <div class="form-group">
-              <label class="col-sm-2 control-label">Correo Institucional</label>
-              <label style="text-align:left" class="col-sm-8 control-label">: <?php echo $data['correo_i']; ?></label>
+              <label class="col-sm-2 control-label">Email</label>
+              <label style="text-align:left" class="col-sm-8 control-label">: <?php echo $data['email']; ?></label>
             </div>
           
             <div class="form-group">
-              <label class="col-sm-2 control-label">Teléfono</label>
+              <label class="col-sm-2 control-label">Telefono</label>
               <label style="text-align:left" class="col-sm-8 control-label">: <?php echo $data['telefono']; ?></label>
             </div>
 
-
             <div class="form-group">
-              <label class="col-sm-2 control-label">Permisos de Acceso</label>
+              <label class="col-sm-2 control-label">Permisos de acceso</label>
               <label style="text-align:left" class="col-sm-8 control-label">: <?php echo $data['permisos_acceso']; ?></label>
             </div>
 
             <div class="form-group">
-              <label class="col-sm-2 control-label">Estado del Funcionario</label>
+              <label class="col-sm-2 control-label">Status</label>
               <label style="text-align:left" class="col-sm-8 control-label">: <?php echo $data['status']; ?></label>
             </div>
           </div><!-- /.box body -->

@@ -14,7 +14,7 @@ if (isset($_POST['id_user'])) {
     </h1>
     <ol class="breadcrumb">
       <li><a href="?module=start"><i class="fa fa-home"></i> Inicio </a></li>
-      <li><a href="?module=profile"> Perfil de Usuario </a></li>
+      <li><a href="?module=profile"> Perfil de usuario </a></li>
       <li class="active"> Modificar </li>
     </ol>
   </section>
@@ -45,19 +45,18 @@ if (isset($_POST['id_user'])) {
               </div>
 
               <div class="form-group">
-                <label class="col-sm-2 control-label">Correo Institucional</label>
+                <label class="col-sm-2 control-label">Email</label>
                 <div class="col-sm-5">
-                  <input type="email" class="form-control" name="correo_i" autocomplete="off" value="<?php echo $data['correo_i']; ?>">
+                  <input type="email" class="form-control" name="email" autocomplete="off" value="<?php echo $data['email']; ?>">
                 </div>
               </div>
             
               <div class="form-group">
                 <label class="col-sm-2 control-label">Telefono</label>
                 <div class="col-sm-5">
-                  <input type="text" class="form-control" name="telefono" autocomplete="off" maxlength="11" onKeyPress="return goodchars(event,'0123456789',this)" value="<?php echo $data['telefono']; ?>">
+                  <input type="text" class="form-control" name="telefono" autocomplete="off" maxlength="13" onKeyPress="return goodchars(event,'0123456789',this)" value="<?php echo $data['telefono']; ?>">
                 </div>
               </div>
-
 
             <div class="form-group">
                 <label class="col-sm-2 control-label">Foto</label>
