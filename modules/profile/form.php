@@ -45,9 +45,9 @@ if (isset($_POST['id_user'])) {
               </div>
 
               <div class="form-group">
-                <label class="col-sm-2 control-label">Email</label>
+                <label class="col-sm-2 control-label">Correo Institucional</label>
                 <div class="col-sm-5">
-                  <input type="email" class="form-control" name="email" autocomplete="off" value="<?php echo $data['email']; ?>">
+                  <input type="email" class="form-control" name="correo_i" autocomplete="off" value="<?php echo $data['correo_i']; ?>">
                 </div>
               </div>
             

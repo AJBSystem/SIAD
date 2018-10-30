@@ -95,8 +95,8 @@ if (isset($_SESSION['id_user'])) {
             </div>
 
             <div class="form-group">
-              <label class="col-sm-2 control-label">Email</label>
-              <label style="text-align:left" class="col-sm-8 control-label">: <?php echo $data['email']; ?></label>
+              <label class="col-sm-2 control-label">Correo institucional</label>
+              <label style="text-align:left" class="col-sm-8 control-label">: <?php echo $data['correo_i']; ?></label>
             </div>
           
             <div class="form-group">
