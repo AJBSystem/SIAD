@@ -78,7 +78,6 @@ else {
                 $tel_cel  = mysqli_real_escape_string($mysqli, trim($_POST['tel_cel']));
                 $tel_hab  = mysqli_real_escape_string($mysqli, trim($_POST['tel_hab']));
                 $tel_emerg  = mysqli_real_escape_string($mysqli, trim($_POST['tel_emerg']));
-
                 $municipio  = mysqli_real_escape_string($mysqli, trim($_POST['municipio']));
                 $ciudad  = mysqli_real_escape_string($mysqli, trim($_POST['ciudad']));
                 $parroquia  = mysqli_real_escape_string($mysqli, trim($_POST['parroquia']));
@@ -106,13 +105,6 @@ else {
                                                                          estado_c       = '$estado_c',
                                                                           estado       = '$estado',
                                                                          grado_inst       = '$grado_inst',
-<<<<<<< HEAD
-                                                                         correo_e    = '$correo_e',
-=======
-                                                                         correo_e       = '$correo_e',
-                                                                         codigo_cp       = '$codigo_cp',
-                                                                         serial_cp       = '$serial_cp',
->>>>>>> 8344e27d559213a055cc2adc9655d63fcb26eeab
                                                                          tel_cel       = '$tel_cel',
                                                                          tel_hab       = '$tel_hab',
                                                                          tel_emerg       = '$tel_emerg',
