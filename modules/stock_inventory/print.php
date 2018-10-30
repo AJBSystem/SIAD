@@ -13,7 +13,7 @@ $hari_ini = date("d-m-Y");
 
 $no = 1;
 
-$query = mysqli_query($mysqli, "SELECT cedula,credencial,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,tel_cel,correo_e,precio_compra,precio_venta,unidad,stock FROM medicamentos ORDER BY nombre ASC")
+$query = mysqli_query($mysqli, "SELECT cedula,credencial,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,tel_cel,correo_e FROM medicamentos ORDER BY nombre ASC")
                                 or die('Error '.mysqli_error($mysqli));
 $count  = mysqli_num_rows($query);
 ?>
@@ -46,33 +46,28 @@ $count  = mysqli_num_rows($query);
                         
                         <th height="20" align="center" valign="middle"><small>Telefono Celular</small></th>
                         <th height="20" align="center" valign="middle"><small>Correo Electronico</small></th>
-                        <th height="20" align="center" valign="middle"><small>STOCK</small></th>
-                        <th height="20" align="center" valign="middle"><small>UNIDAD</small></th>
                     </tr>
                 </thead>
                 <tbody>
         <?php
        
         while ($data = mysqli_fetch_assoc($query)) {
-            $precio_compra = format_rupiah($data['precio_compra']);
-            $precio_venta = format_rupiah($data['precio_venta']);
+        
           
             echo "  <tr>
                         <td width='40' height='13' align='center' valign='middle'>$no</td>
                         <td width='80' height='13' align='center' valign='middle'>$data[cedula]</td>
                         <td width='80' height='13' align='center' valign='middle'>$data[credencial]</td>
-                        <td style='padding-left:5px;' width='140' height='13' valign='middle'>$data[p_nombre]</td>
-                        <td style='padding-left:5px;' width='140' height='13' valign='middle'>$data[s_nombre]</td>
-                        <td style='padding-left:5px;' width='140' height='13' valign='middle'>$data[p_apellido]</td>
-                        <td style='padding-left:5px;' width='140' height='13' valign='middle'>$data[s_apellido]</td>
-                        <td style='padding-left:5px;' width='100' height='13' valign='middle'>$data[fec_nac]</td>
-                        <td style='padding-left:5px;' width='80' height='13' valign='middle'>$data[edad]</td>
-                        <td style='padding-left:5px;' width='100' height='13' valign='middle'>$data[tel_cel]</td>
-                        <td style='padding-left:5px;' width='100' height='13' valign='middle'>$data[correo_e]</td>
-                        <td style='padding-right:10px;' width='80' height='13' align='right' valign='middle'>$. $precio_compra</td>
-                        <td style='padding-right:10px;' width='80' height='13' align='right' valign='middle'>$. $precio_venta</td>
-                        <td style='padding-right:10px;' width='80' height='13' align='right' valign='middle'>$data[stock]</td>
-                        <td width='80' height='13' align='center' valign='middle'>$data[unidad]</td>
+                        <td style='padding-left:5px;' width='80' height='13' valign='middle'>$data[p_nombre]</td>
+                        <td style='padding-left:5px;' width='80' height='13' valign='middle'>$data[s_nombre]</td>
+                        <td style='padding-left:5px;' width='80' height='13' valign='middle'>$data[p_apellido]</td>
+                        <td style='padding-left:5px;' width='80' height='13' valign='middle'>$data[s_apellido]</td>
+                        <td style='padding-left:5px;' width='90' height='13' valign='middle'>$data[fec_nac]</td>
+                        <td style='padding-left:5px;' width='45' height='13' valign='middle'>$data[edad]</td>
+                        <td style='padding-left:5px;' width='80' height='13' valign='middle'>$data[tel_cel]</td>
+                        <td style='padding-left:5px;' width='85' height='13' valign='middle'>$data[correo_e]</td>
+
+            
                     </tr>";
             $no++;
         }
