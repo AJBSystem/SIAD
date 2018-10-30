@@ -39,7 +39,7 @@ else {
 				$username           = mysqli_real_escape_string($mysqli, trim($_POST['username']));
 				$password           = md5(mysqli_real_escape_string($mysqli, trim($_POST['password'])));
 				$name_user          = mysqli_real_escape_string($mysqli, trim($_POST['name_user']));
-				$email              = mysqli_real_escape_string($mysqli, trim($_POST['email']));
+				$correo_i              = mysqli_real_escape_string($mysqli, trim($_POST['correo_i']));
 				$telefono            = mysqli_real_escape_string($mysqli, trim($_POST['telefono']));
 				$permisos_acceso          = mysqli_real_escape_string($mysqli, trim($_POST['permisos_acceso']));
 				
@@ -61,7 +61,7 @@ else {
 					
                     $query = mysqli_query($mysqli, "UPDATE usuarios SET username 	= '$username',
                     													name_user 	= '$name_user',
-                    													email       = '$email',
+                    													correo_i       = '$correo_i',
                     													telefono     = '$telefono',
                     													permisos_acceso   = '$permisos_acceso'
                                                                   WHERE id_user 	= '$id_user'")
@@ -79,7 +79,7 @@ else {
                     $query = mysqli_query($mysqli, "UPDATE usuarios SET username 	= '$username',
                     													name_user 	= '$name_user',
                     													password 	= '$password',
-                    													email       = '$email',
+                    													correo_i       = '$correo_i',
                     													telefono     = '$telefono',
                     													permisos_acceso   = '$permisos_acceso'
                                                                   WHERE id_user 	= '$id_user'")
@@ -102,7 +102,7 @@ else {
                         		
 			                    $query = mysqli_query($mysqli, "UPDATE usuarios SET username 	= '$username',
 			                    													name_user 	= '$name_user',
-			                    													email       = '$email',
+			                    													correo_i       = '$correo_i',
 			                    													telefono     = '$telefono',
 			                    													foto 		= '$name_file',
 			                    													permisos_acceso   = '$permisos_acceso'
@@ -138,7 +138,7 @@ else {
 			                    $query = mysqli_query($mysqli, "UPDATE usuarios SET username 	= '$username',
 			                    													name_user 	= '$name_user',
 			                    													password    = '$password',
-			                    													email       = '$email',
+			                    													correo_i       = '$correo_i',
 			                    													telefono     = '$telefono',
 			                    													foto 		= '$name_file',
 			                    													permisos_acceso   = '$permisos_acceso'
