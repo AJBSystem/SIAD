@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-10-2018 a las 15:36:50
+-- Tiempo de generación: 30-10-2018 a las 16:56:20
 -- Versión del servidor: 10.1.36-MariaDB
 -- Versión de PHP: 5.6.38
 
@@ -21,6 +21,33 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `medisys`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `familiares`
+--
+
+CREATE TABLE `familiares` (
+  `cedula` int(15) NOT NULL,
+  `p_nombre` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `s_nombre` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `p_apellido` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `s_apellido` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `fec_nac` date NOT NULL,
+  `edad` int(3) NOT NULL,
+  `parentesco` varchar(20) COLLATE utf8_spanish_ci NOT NULL,
+  `estudiante` varchar(3) COLLATE utf8_spanish_ci NOT NULL,
+  `funcionario` varchar(3) COLLATE utf8_spanish_ci NOT NULL,
+  `inf_med` varchar(200) COLLATE utf8_spanish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `familiares`
+--
+
+INSERT INTO `familiares` (`cedula`, `p_nombre`, `s_nombre`, `p_apellido`, `s_apellido`, `fec_nac`, `edad`, `parentesco`, `estudiante`, `funcionario`, `inf_med`) VALUES
+(26435880, 'darly', 'naiduth', 'martinez', 'barreto', '2017-05-24', 20, 'Hija', 'Si', 'Si', 'Ninguna');
 
 -- --------------------------------------------------------
 
@@ -126,7 +153,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id_user`, `username`, `name_user`, `password`, `correo_i`, `telefono`, `foto`, `permisos_acceso`, `status`, `created_at`, `updated_at`) VALUES
-(1, 'admin', 'SIAD', '21232f297a57a5a743894a0e4a801fc3', 'darly@sist.com', '04140272330', 'Desert.jpg', 'Super Admin', 'activo', '2017-04-01 08:15:15', '2018-10-30 14:05:36'),
+(1, 'admin', 'Administrador', '21232f297a57a5a743894a0e4a801fc3', 'darly@sist.com', '04140272330', 'Desert.jpg', 'Super Admin', 'activo', '2017-04-01 08:15:15', '2018-10-30 15:11:13'),
 (2, 'juan', 'juan', 'a94652aa97c7211ba8954dd15a3cf838', 'juab@juan.com', '12000', NULL, 'Almacen', 'bloqueado', '2017-07-25 22:34:03', '2018-10-30 14:09:16'),
 (3, 'Darly', 'Darly Martinez', 'f1fd75612dfa7dc86f07398fb9145fbf', NULL, NULL, NULL, 'Almacen', 'activo', '2018-10-30 13:42:24', '2018-10-30 13:42:24');
 
