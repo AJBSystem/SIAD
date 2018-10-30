@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-10-2018 a las 16:56:20
+-- Tiempo de generación: 30-10-2018 a las 21:09:17
 -- Versión del servidor: 10.1.36-MariaDB
 -- Versión de PHP: 5.6.38
 
@@ -102,7 +102,7 @@ CREATE TABLE `medicamentos` (
 INSERT INTO `medicamentos` (`codigo`, `nombre`, `precio_compra`, `precio_venta`, `unidad`, `stock`, `created_user`, `created_date`, `updated_user`, `updated_date`, `p_nombre`, `cedula`, `credencial`, `p_apellido`, `fec_nac`, `edad`, `s_nombre`, `s_apellido`, `rif`, `genero`, `tel_cel`, `tel_hab`, `tel_emerg`, `municipio`, `calle`, `casa`, `parroquia`, `estado`, `ciudad`, `avenida`, `codigo_cp`, `serial_cp`, `estado_c`, `lugar_nac`, `correo_e`, `grado_inst`, `correo_i`) VALUES
 ('141', '', 0, 0, '', 10, 1, '2018-10-29 14:30:10', 1, '2018-10-29 16:09:35', 'darly', 26435880, 10254, 'masrtinez', '29/10/1998', 20, 'naiduth', 'barreto', 2965956, 0, 2147483647, 2123174277, 2147483647, 'libertador', 'callejon', '88', 'antimano', 'distrito capital', 'caracas', 'primer carapot', 29659459, 4949, '', '', '', '', ''),
 ('B000142', '', 0, 0, '', -10, 1, '2018-10-29 14:51:43', 1, '2018-10-29 15:34:47', 'fdfn', 15841949, 49049, 'fjgf', '19/140', 11, 'gg', 'tjfj', 4949, 0, 2147483647, 29292, 929, 'sfdsdf', 'fds', '22', 'fsaf', 'fsdf', 'fsfd', 'dfs', 29529, 295, '', '', '', '', ''),
-('B000143', '', 0, 0, '', 0, 1, '2018-10-29 16:09:15', 1, '2018-10-29 20:24:25', '523523', 582, 85232, '27', '5272', 3274, '523532', '2745', 5237, 0, 5, 58, 587, '75', '587', '528', '57', '7852', '875', '58', 50, 8750, '', '', 'darly@gmail.com', '', '');
+('B000143', '', 0, 0, '', 0, 1, '2018-10-29 16:09:15', 1, '2018-10-30 16:24:48', '523523', 582, 85232, '27', '5272', 3274, '523532', '2745', 5237, 0, 5, 581281, 587, '75', '587', '528', '57', 'Amazonas', '875', '58', 0, 8750, 'Soltero/a', 'Amazonas', 'darly@gmail.com', 'Primaria', '');
 
 -- --------------------------------------------------------
 
