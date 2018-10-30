@@ -15,7 +15,7 @@
         <div class="alert alert-info alert-dismissable">
           <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
           <p style="font-size:15px">
-            <i class="icon fa fa-user"></i> Bienvenido <strong><?php echo $_SESSION['name_user']; ?></strong> a la aplicación de inventario de medicamentos.
+            <i class="icon fa fa-user"></i> Bienvenido <strong><?php echo $_SESSION['name_user']; ?></strong> al sistema de actualización de datos dirección de tecnologia.
           </p>        
         </div>
       </div>  
@@ -244,7 +244,7 @@
             $data = mysqli_fetch_assoc($query);
             ?>
             <h3><?php echo $data['numero']; ?></h3>
-            <p>Stock Medicamentos</p>
+            <p>Datos de Reporte</p>
           </div>
           <div class="icon">
             <i class="fa fa-file-text-o"></i>
@@ -267,7 +267,7 @@
             $data = mysqli_fetch_assoc($query);
             ?>
             <h3><?php echo $data['numero']; ?></h3>
-            <p>Registros de Medicamentos</p>
+            <p>Reporte de Registros</p>
           </div>
           <div class="icon">
             <i class="fa fa-clone"></i>
