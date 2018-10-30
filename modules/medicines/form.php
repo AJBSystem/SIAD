@@ -403,17 +403,17 @@ elseif ($_GET['form']=='edit') {
 
 
               <div class="col-md-2">
-              <label for="exampleInputEmail1">Telefono Celular</label>
+              <label for="exampleInputEmail1">Teléfono Celular</label>
                   <input type="text" class="form-control" name="tel_cel" autocomplete="off" value="<?php echo $data['tel_cel']; ?>" required>
               </div>
 
                  <div class="col-md-2">
-              <label for="exampleInputEmail1">Telefono de Habitacion</label>
+              <label for="exampleInputEmail1">Teléfono de Habitacion</label>
                   <input type="text" class="form-control" name="tel_hab" autocomplete="off" value="<?php echo $data['tel_hab']; ?>" required>
               </div>
 
                <div class="col-md-2">
-              <label for="exampleInputEmail1">Telefono de Emergencia</label>
+              <label for="exampleInputEmail1">Teléfono de Emergencia</label>
                   <input type="text" class="form-control" name="tel_emerg" autocomplete="off" value="<?php echo $data['tel_emerg']; ?>" required>
               </div>
 
