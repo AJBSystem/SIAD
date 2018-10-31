@@ -320,8 +320,14 @@ if ($_GET['form']=='add') { ?>
 
             <div class="col-md-2">
               <label for="exampleInputEmail1">Seleccionar División</label>
-                  <input type="text" class="form-control" name="tipo_s" autocomplete="off" value="<?php echo $data['tipo_s']; ?>" required>
-              </div>
+                  <select type="text" class="form-control" name="tipo_s" autocomplete="off" value="<?php echo $data['tipo_s']; ?>" required>       
+                    <option>División de Base de Datos</option>
+                    <option>División de Operaciones</option>
+                    <option>División de Proyectos Especiales</option>
+                    <option>División de Sistemas</option> 
+                    <option>División de Telematica</option>                                                                                        
+                  </select>
+             </div>
 
             <div class="col-md-2">
               <label for="exampleInputEmail1">Fecha de Ingreso</label>
@@ -335,7 +341,39 @@ if ($_GET['form']=='add') { ?>
 
             <div class="col-md-2">
               <label for="exampleInputEmail1">Cargo</label>
-                  <input type="text" class="form-control" name="tipo_s" autocomplete="off" value="<?php echo $data['tipo_s']; ?>" required>
+                  <select type="text" class="form-control" name="tipo_s" autocomplete="off" value="<?php echo $data['tipo_s']; ?>" required>
+                  <option>Agente de Seguridad I</option>
+              <option>Agente de Seguridad II </option>
+              <option>Adjunto</option>
+              <option>Asesor Juridico General</option> 
+              <option>Director</option> 
+              <option>Director de Investigaciones</option>
+              <option>Experto Profesional Especialista I</option>
+              <option>Experto Profesional Especialista II</option> 
+              <option>Experto Profesional Especialista III</option>
+              <option>Jefe de Área</option>
+              <option>Jefe de Bloque</option>
+              <option>Jefe de Delegacion</option>
+              <option>Jefe de Departamento</option>
+              <option>Jefe de División</option>
+              <option>Jefe de Escolta</option>
+              <option>Jefe del Eje</option>
+              <option>Jefe de Inspectoría</option>
+              <option>Jefe de Investigaciones</option>
+              <option>Jefe de Sub Delegacion</option>
+              <option>Miembro Principal Comisión Permanente Eval. y Seguimiento</option>
+              <option>Miembro Principal del Consejo Disciplinario</option>
+              <option>Secretario General</option>
+              <option>Secretario General Nacional</option>
+               <option>Secretario Principal Consejo Disciplinario</option>
+              <option>Sub Director General</option>
+              <option>Supervisor</option>
+              <option>Supervisor de Investigaciones</option>
+              <option>Supervisor de Región</option>
+              <option>Supervisor de los Servicios</option>
+              <option>Supervisor de Sub Delegaciones</option>
+              <option>No Aplica</option>
+            </select>
               </div>    
 
             <div class="col-md-2">
