@@ -58,10 +58,10 @@ if ($_GET['form']=='add') { ?>
 
         <div class="" role="tabpanel" data-example-id="togglable-tabs">
           <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">Datos Basicos</a>
+            <li  role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true" class="fa fa-user"> Datos Basicos</a>
             </li>
 
-            <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">Información Médica</a>
+            <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false" class="fa fa-user-md"> Información Médica</a>
             </li>
 
             <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false">Datos Laborales</a>
@@ -470,7 +470,7 @@ if ($_GET['form']=='add') { ?>
 
 <!-- Aqui empieza el activador 6 -->  
 
-<div role="tabpanel" class="tab-pane fade" id="tab_content6" aria-labelledby="profile-tab">
+<div role="tabpanel" class="tab-pane fade" id="tab_content6"  aria-labelledby="profile-tab">
 				
             <div class="col-md-2">
               <label for="exampleInputEmail1">Tipo</label>
