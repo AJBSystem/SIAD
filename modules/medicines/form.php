@@ -73,7 +73,7 @@ if ($_GET['form']=='add') { ?>
             <li role="presentation" class=""><a href="#tab_content5" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-automobile"> Datos de Vehiculos</a>
             </li>
 
-            <li role="presentation" class=""><a href="#tab_content6" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-file"> Dotaciones</a>
+            <li role="presentation" class=""><a href="#tab_content6" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-clipboard"> Dotaciones</a>
             </li>
 
           </ul>
