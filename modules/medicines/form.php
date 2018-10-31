@@ -318,7 +318,7 @@ if ($_GET['form']=='add') { ?>
 
             <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
 
-            <div class="col-md-2">
+            <div class="col-md-3">
               <label for="exampleInputEmail1">Seleccionar División</label>
                   <select type="text" class="form-control" name="tipo_s" autocomplete="off" value="<?php echo $data['tipo_s']; ?>" required>       
                     <option>División de Base de Datos</option>
@@ -339,7 +339,7 @@ if ($_GET['form']=='add') { ?>
                   <input type="text" class="form-control" name="tipo_s" autocomplete="off" value="<?php echo $data['tipo_s']; ?>" required>
               </div>    
 
-            <div class="col-md-2">
+            <div class="col-md-3">
               <label for="exampleInputEmail1">Cargo</label>
                   <select type="text" class="form-control" name="tipo_s" autocomplete="off" value="<?php echo $data['tipo_s']; ?>" required>
                   <option>Agente de Seguridad I</option>
@@ -376,9 +376,51 @@ if ($_GET['form']=='add') { ?>
             </select>
               </div>    
 
-            <div class="col-md-2">
+            <div class="col-md-3">
               <label for="exampleInputEmail1">Rango</label>
-                  <input type="text" class="form-control" name="tipo_s" autocomplete="off" value="<?php echo $data['tipo_s']; ?>" required>
+                  <select type="text" class="form-control" name="tipo_s" autocomplete="off" value="<?php echo $data['tipo_s']; ?>" required>
+                  <option>Asesor Jurídico</option>
+              <option>Asist. Admninistrativo I</option>
+              <option>Asist. Admninistrativo II</option>
+              <option>Asist. Admninistrativo III</option>
+              <option>Asist. Admninistrativo IV</option>
+              <option>Asist. Admninistrativo V</option>
+              <option>Asist. Admninistrativo VI</option>
+              <option>Asist. Admninistrativo VII</option>
+              <option>Aspirante</option>
+              <option>Auxiliar Admin I</option>
+              <option>Auxiliar Admin II</option>
+              <option>Auxiliar Admin III</option>
+              <option>Auxiliar Admin IV</option>
+              <option>Auxiliar Admin V</option>
+              <option>Auxiliar Admin VI</option>
+              <option>Auxiliar Admin VII</option>
+              <option>Comisario</option>
+              <option>Comisario General</option>
+              <option>Comsario Jefe</option>
+              <option>Detective</option>
+              <option>Detecive Agregado</option>
+              <option>Detective Jefe</option>
+              <option>Director General Nacional</option>
+              <option>Experto Profesional I</option>
+              <option>Experto Profesional II</option>
+              <option>Experto Profesional III </option>
+              <option>Experto Profesional IV </option>
+              <option>Experto Tecnico I</option>
+              <option>Experto Tecnico II </option>
+              <option>Experto Tecnico III</option>
+              <option>Experto Tecnico IV</option>
+              <option>Experto Tecnico V</option>
+              <option>Experto Tecnico VI </option>
+              <option>Experto Tecnico VII </option>
+              <option>Inspector</option>
+              <option>Inspector Agregado</option>
+              <option>Inspector General </option>
+              <option>Inspector Jefe </option>
+              <option>Sub-Director </option>
+              <option>Pasantes </option>
+              <option>No Aplica </option>                                                          
+            </select>
               </div>  
 
             <div class="col-md-2">
@@ -436,18 +478,31 @@ if ($_GET['form']=='add') { ?>
 
             <div class="col-md-2">
               <label for="exampleInputEmail1">Parentesco</label>
-                  <input type="text" class="form-control" name="tipo_s" autocomplete="off" value="<?php echo $data['tipo_s']; ?>" required>
-              </div> 
+                  <select type="text" class="form-control" name="tipo_s" autocomplete="off" value="<?php echo $data['tipo_s']; ?>" required>
+                  <option>Madre</option>
+                    <option>Padre</option>
+                    <option>Hijos</option>
+                    <option>Cónyuge</option> 
+                    <option>Hermano/a</option> 
+                    <option>Otro</option>                                                                                         
+                  </select>
+             </div> 
 
             <div class="col-md-2">
               <label for="exampleInputEmail1">Estudiante</label>
-                  <input type="text" class="form-control" name="estudiante" autocomplete="off" value="<?php echo $data['estudiante']; ?>" required>
+                  <select type="text" class="form-control" name="estudiante" autocomplete="off" value="<?php echo $data['estudiante']; ?>" required>
+                  <option>Si</option>
+                  <option>No</option>                                                                                      
+                </select>
               </div>
 
             <div class="col-md-2">
               <label for="exampleInputEmail1">Funcionario</label>
-                  <input type="text" class="form-control" name="tipo_s" autocomplete="off" value="<?php echo $data['tipo_s']; ?>" required>
-              </div>
+                  <select type="text" class="form-control" name="tipo_s" autocomplete="off" value="<?php echo $data['tipo_s']; ?>" required>
+                  <option>Si</option>
+                        <option>No</option>                                                                                      
+                      </select>
+             </div>
 
             <div class="col-md-2">
               <label for="exampleInputEmail1">Información Médica</label>
