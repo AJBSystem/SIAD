@@ -634,6 +634,9 @@ elseif ($_GET['form']=='edit') {
 
           </ul>
           <div id="myTabContent" class="tab-content">
+
+<!-- Aqui empieza el activador 1 -->
+
             <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
 
             <div class="col-md-12 col-sm-6 col-xs-12">
@@ -858,6 +861,10 @@ elseif ($_GET['form']=='edit') {
               </div>
             </div>
 
+<!-- Aqui termina el activador 1 -->
+
+<!-- Aqui empieza el activador 2 -->
+
             <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
 
             <div class="col-md-2">
@@ -889,6 +896,9 @@ elseif ($_GET['form']=='edit') {
 
             </div>
 
+<!-- Aqui termina el activador 2 -->
+
+<!-- Aqui empieza el activador 3 -->
 
             <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
 
@@ -929,6 +939,49 @@ elseif ($_GET['form']=='edit') {
 
 
             </div>
+
+<!-- Aqui termina el activador 3 -->           
+
+<!-- Aqui empieza el activador 4 -->
+
+            <div role="tabpanel" class="tab-pane fade" id="tab_content4" aria-labelledby="profile-tab">
+
+                           <div class="col-md-2">
+              <label for="exampleInputEmail1">Seleccionar Division</label>
+                  <input type="text" class="form-control" name=seleccionar_d autocomplete="off" value="<?php echo $data['seleccionar_d']; ?>" required>
+              </div>
+
+</div>
+
+<!-- Aqui termina el activador 4 -->
+
+<!-- Aqui empieza el activador 5 -->
+
+            <div role="tabpanel" class="tab-pane fade" id="tab_content5" aria-labelledby="profile-tab">
+
+                           <div class="col-md-2">
+              <label for="exampleInputEmail1">Seleccionar Division</label>
+                  <input type="text" class="form-control" name=seleccionar_d autocomplete="off" value="<?php echo $data['seleccionar_d']; ?>" required>
+              </div>
+
+</div>
+
+<!-- Aqui termina el activador 5 -->
+
+<!-- Aqui empieza el activador 6 -->
+
+            <div role="tabpanel" class="tab-pane fade" id="tab_content6" aria-labelledby="profile-tab">
+
+                           <div class="col-md-2">
+              <label for="exampleInputEmail1">Seleccionar Division</label>
+                  <input type="text" class="form-control" name=seleccionar_d autocomplete="off" value="<?php echo $data['seleccionar_d']; ?>" required>
+              </div>
+
+</div>
+
+<!-- Aqui termina el activador 6 -->
+
+
 
             </div>
           </div>
