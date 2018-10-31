@@ -619,6 +619,7 @@ elseif ($_GET['form']=='edit') {
             </li>
             <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false">Datos Laborales</a>
             </li>
+            
           </ul>
           <div id="myTabContent" class="tab-content">
             <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
@@ -882,9 +883,6 @@ elseif ($_GET['form']=='edit') {
                            <div class="col-md-2">
               <label for="exampleInputEmail1">Seleccionar Division</label>
                   <input type="text" class="form-control" name=seleccionar_d autocomplete="off" value="<?php echo $data['seleccionar_d']; ?>" required>
-                  <select type="text" class="form-control" name="grado_inst" autocomplete="off" value="<?php echo $data['grado_inst']; ?>" required>
-                         <option></option>
-                          <option></option>
               </div>
 
                <div class="col-md-2">
