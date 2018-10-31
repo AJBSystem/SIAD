@@ -44,7 +44,41 @@ if ($_GET['form']=='add') { ?>
               $codigo = "B$buat_id";
               ?>
 
-              <div class="col-md-2">
+
+<div class="">
+  <div class="col-md-12 col-sm-6 col-xs-12">
+    <div class="x_panel">
+      <div class="x_title">
+        <ul class="nav navbar-right panel_toolbox">
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+      <div class="x_content">
+
+
+        <div class="" role="tabpanel" data-example-id="togglable-tabs">
+          <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">Datos Basicos</a>
+            </li>
+            <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">Profile</a>
+            </li>
+            <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false">Profile</a>
+            </li>
+          </ul>
+          <div id="myTabContent" class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
+
+            <div class="col-md-12 col-sm-6 col-xs-12">
+            
+                <div class="x_panel">
+                 
+                    <ul class="nav navbar-right panel_toolbox">
+
+                    </ul>
+                    <div class="clearfix"></div>
+             
+                  <div class="x_content">
+                  <div class="col-md-2">
                 <label for="exampleInputEmail1">Codigo</label>
                 <input type="text" class="form-control" name="codigo" value="<?php echo $codigo; ?>"  required>
               </div>
@@ -222,6 +256,26 @@ if ($_GET['form']=='add') { ?>
             </div>
 
 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
+              <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo
+                booth letterpress, commodo enim craft beer mlkshk aliquip</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
+              <p>xxFood truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo
+                booth letterpress, commodo enim craft beer mlkshk </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+              
+
 
             </div><!-- /.box body -->
 
@@ -274,24 +328,55 @@ elseif ($_GET['form']=='edit') {
 
 <div class="form-group">
 
-              <div class="col-md-2">
+<div class="">
+  <div class="col-md-12 col-sm-6 col-xs-12">
+    <div class="x_panel">
+      <div class="x_title">
+        <ul class="nav navbar-right panel_toolbox">
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+      <div class="x_content">
+
+
+        <div class="" role="tabpanel" data-example-id="togglable-tabs">
+          <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">Datos Basicos</a>
+            </li>
+            <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">Información Médica</a>
+            </li>
+            <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false">Datos Laborales</a>
+            </li>
+          </ul>
+          <div id="myTabContent" class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
+
+            <div class="col-md-12 col-sm-6 col-xs-12">
+            
+                <div class="x_panel">
+                 
+                    <ul class="nav navbar-right panel_toolbox">
+
+                    </ul>
+                    <div class="clearfix"></div>
+             
+                  <div class="x_content">
+                  <div class="col-md-2">
                 <label for="exampleInputEmail1">Codigo</label>
                   <input type="text" class="form-control" name="codigo" value="<?php echo $data['codigo']; ?>" required>
               </div>
 
-
-
-              <div class="col-md-2">
+             <div class="col-md-2">
               <label for="exampleInputEmail1">Cedula</label>
                   <input type="text" class="form-control" name="cedula" autocomplete="off" value="<?php echo $data['cedula']; ?>" required>
               </div>
 
              <div class="col-md-2">
-              <label for="exampleInputEmail1">Credencial</label>
+              <label for="exampleInputEmail1">N° de Credencial</label>
                   <input type="text" class="form-control" name="credencial" autocomplete="off" value="<?php echo $data['credencial']; ?>" required>
               </div>
 
-             <div class="col-md-2">
+            <div class="col-md-2">
               <label for="exampleInputEmail1">Rif</label>
                   <input type="text" class="form-control" name="rif" autocomplete="off" value="<?php echo $data['rif']; ?>" required>
               </div>
@@ -312,7 +397,7 @@ elseif ($_GET['form']=='edit') {
                   <input type="text" class="form-control" name="p_apellido" autocomplete="off" value="<?php echo $data['p_apellido']; ?>" required>
               </div>
 
-           <div class="col-md-2">
+              <div class="col-md-2">
               <label for="exampleInputEmail1">Segundo Apellido</label>
                   <input type="text" class="form-control" name="s_apellido" autocomplete="off" value="<?php echo $data['s_apellido']; ?>" required>
               </div>
@@ -334,10 +419,8 @@ elseif ($_GET['form']=='edit') {
                           <option>Masculino</option>
                         </select>
                   </div>
-          
 
-
-              <div class="col-md-2">
+                <div class="col-md-2">
               <label for="exampleInputEmail1">Lugar de Nacimiento</label>
                   <select type="text" class="form-control" name="lugar_nac" autocomplete="off" value="<?php echo $data['lugar_nac']; ?>" required>
                           <option>Amazonas</option>
@@ -367,8 +450,6 @@ elseif ($_GET['form']=='edit') {
                         </select>
               </div>
 
-
-
               <div class="col-md-2">
               <label for="exampleInputEmail1">Estado Civil</label>
                   <select type="text" class="form-control" name="estado_c" autocomplete="off" value="<?php echo $data['estado_c']; ?>" required>
@@ -379,7 +460,6 @@ elseif ($_GET['form']=='edit') {
                   <option>Concubinato/a</option>
                  </select>
               </div>
-
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Grado de Instruccion</label>
@@ -407,7 +487,7 @@ elseif ($_GET['form']=='edit') {
                   <input type="text" class="form-control" name="tel_cel" autocomplete="off" value="<?php echo $data['tel_cel']; ?>" required>
               </div>
 
-                 <div class="col-md-2">
+              <div class="col-md-2">
               <label for="exampleInputEmail1">Teléfono de Habitacion</label>
                   <input type="text" class="form-control" name="tel_hab" autocomplete="off" value="<?php echo $data['tel_hab']; ?>" required>
               </div>
@@ -458,8 +538,7 @@ elseif ($_GET['form']=='edit') {
                   <input type="text" class="form-control" name="ciudad" autocomplete="off" value="<?php echo $data['ciudad']; ?>" required>
               </div>
 
-
-               <div class="col-md-2">
+            <div class="col-md-2">
               <label for="exampleInputEmail1">Parroquia</label>
                   <input type="text" class="form-control" name="parroquia" autocomplete="off" value="<?php echo $data['parroquia']; ?>" required>
               </div>
@@ -479,9 +558,7 @@ elseif ($_GET['form']=='edit') {
                   <input type="text" class="form-control" name="casa" autocomplete="off" value="<?php echo $data['casa']; ?>" required>
               </div>
 
-            
-
-        <div class="col-md-2">
+           <div class="col-md-2">
               <label for="exampleInputEmail1">Serial del CP</label>
                   <input type="text" class="form-control" name="serial_cp" autocomplete="off" value="<?php echo $data['serial_cp']; ?>" required>
               </div>
@@ -491,6 +568,36 @@ elseif ($_GET['form']=='edit') {
                   <input type="text" class="form-control" name="serial_cp" autocomplete="off" value="<?php echo $data['serial_cp']; ?>" required>
               </div>
 
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
+
+            <div class="col-md-2">
+              <label for="exampleInputEmail1">Tipo de Sangre</label>
+                  <input type="text" class="form-control" name="tipo_s" autocomplete="off" value="<?php echo $data['tipo_s']; ?>" required>
+              </div>
+            </div>
+
+
+            <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
+
+            <div class="col-md-2">
+              <label for="exampleInputEmail1">Datos laborales</label>
+                  <input type="text" class="form-control" name="tipo_s" autocomplete="off" value="<?php echo $data['tipo_s']; ?>" required>
+              </div>
+            </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
                   </div>
 
             </div><!-- /.box body -->

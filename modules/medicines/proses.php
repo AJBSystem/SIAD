@@ -59,7 +59,6 @@ else {
             if (isset($_POST['codigo'])) {
         
                 $codigo  = mysqli_real_escape_string($mysqli, trim($_POST['codigo']));
-              
                 $cedula  = mysqli_real_escape_string($mysqli, trim($_POST['cedula']));
                 $credencial  = mysqli_real_escape_string($mysqli, trim($_POST['credencial']));
                 $rif  = mysqli_real_escape_string($mysqli, trim($_POST['rif']));
