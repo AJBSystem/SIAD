@@ -73,9 +73,8 @@ if ($_GET['form']=='add') { ?>
             <li role="presentation" class=""><a href="#tab_content5" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-automobile"> Datos de Vehiculos</a>
             </li>
 
-            <li role="presentation" class=""><a href="#tab_content6" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-clipboard"> Dotaciones</a>
+            <li role="presentation" class=""><a href="#tab_content5" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-automobile">Dotaciones</a>
             </li>
-
           </ul>
           <div id="myTabContent" class="tab-content">
 
@@ -624,13 +623,15 @@ elseif ($_GET['form']=='edit') {
             </li>
 
             <li role="presentation" class=""><a href="#tab_content4" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-users"> Datos Familiares</a>
+            </li> 
+
+            <li role="presentation" class=""><a href="#tab_content5" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-users"> Datos de Vehiculo</a>
             </li>
 
-            <li role="presentation" class=""><a href="#tab_content5" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-automobile"> Datos de Vehiculos</a>
+             <li role="presentation" class=""><a href="#tab_content6" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-users"> Dotaciones</a>
             </li>
 
-            <li role="presentation" class=""><a href="#tab_content6" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-clipboard"> Dotaciones</a>
-            </li>
+
 
           </ul>
           <div id="myTabContent" class="tab-content">
@@ -946,9 +947,64 @@ elseif ($_GET['form']=='edit') {
 
             <div role="tabpanel" class="tab-pane fade" id="tab_content4" aria-labelledby="profile-tab">
 
-                           <div class="col-md-2">
-              <label for="exampleInputEmail1">Seleccionar Division</label>
-                  <input type="text" class="form-control" name=seleccionar_d autocomplete="off" value="<?php echo $data['seleccionar_d']; ?>" required>
+            <div class="col-md-2">
+              <label for="exampleInputEmail1">Cedula</label>
+                  <input type="text" class="form-control" name=cedula autocomplete="off" value="<?php echo $data['cedula']; ?>" required>
+              </div>
+
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Primer Nombre</label>
+                  <input type="text" class="form-control" name=p_nombre autocomplete="off" value="<?php echo $data['p_nombre']; ?>" required>
+              </div>
+
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Segundo Nombre</label>
+                  <input type="text" class="form-control" name=s_nombre autocomplete="off" value="<?php echo $data['s_nombre']; ?>" required>
+              </div>
+
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Pimer Apellido</label>
+                  <input type="text" class="form-control" name=p_apellido autocomplete="off" value="<?php echo $data['p_apellido']; ?>" required>
+              </div>
+
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Segundo Apellido</label>
+                  <input type="text" class="form-control" name=s_apellido autocomplete="off" value="<?php echo $data['s_apellido']; ?>" required>
+              </div>
+
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Fecha de Nacimiento</label>
+                  <input type="text" class="form-control" name=fec_nac autocomplete="off" value="<?php echo $data['fec_nac']; ?>" required>
+              </div>
+
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Edad</label>
+                  <input type="text" class="form-control" name=edad autocomplete="off" value="<?php echo $data['edad']; ?>" required>
+              </div>
+
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Genero</label>
+                  <input type="text" class="form-control" name=genero autocomplete="off" value="<?php echo $data['genero']; ?>" required>
+              </div>
+
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Parantesco</label>
+                  <input type="text" class="form-control" name=parentesco autocomplete="off" value="<?php echo $data['parentesco']; ?>" required>
+              </div>
+
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Estudiante</label>
+                  <input type="text" class="form-control" name=estudiante autocomplete="off" value="<?php echo $data['estudiante']; ?>" required>
+              </div>
+
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Funcionario</label>
+                  <input type="text" class="form-control" name=funcionario autocomplete="off" value="<?php echo $data['funcionario']; ?>" required>
+              </div>
+
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Informacion Medica</label>
+                  <input type="text" class="form-control" name=i_medica autocomplete="off" value="<?php echo $data['i_medica']; ?>" required>
               </div>
 
 </div>
@@ -957,27 +1013,85 @@ elseif ($_GET['form']=='edit') {
 
 <!-- Aqui empieza el activador 5 -->
 
-            <div role="tabpanel" class="tab-pane fade" id="tab_content5" aria-labelledby="profile-tab">
+<div role="tabpanel" class="tab-pane fade" id="tab_content5" aria-labelledby="profile-tab">
 
-                           <div class="col-md-2">
-              <label for="exampleInputEmail1">Seleccionar Division</label>
-                  <input type="text" class="form-control" name=seleccionar_d autocomplete="off" value="<?php echo $data['seleccionar_d']; ?>" required>
+                    <div class="col-md-2">
+              <label for="exampleInputEmail1">Tipo de Vehiculo</label>
+                  <input type="text" class="form-control" name=t_vehiculo autocomplete="off" value="<?php echo $data['t_vehiculo']; ?>" required>
               </div>
 
-</div>
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Placa</label>
+                  <input type="text" class="form-control" name=placa autocomplete="off" value="<?php echo $data['placa']; ?>" required>
+              </div>
+
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Combustible</label>
+                  <input type="text" class="form-control" name=combustible autocomplete="off" value="<?php echo $data['combustible']; ?>" required>
+              </div>
+
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Serial de la Carroceria</label>
+                  <input type="text" class="form-control" name=s_carroceria autocomplete="off" value="<?php echo $data['s_carroceria']; ?>" required>
+              </div> 
+
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Marca</label>
+                  <input type="text" class="form-control" name=marca autocomplete="off" value="<?php echo $data['marca']; ?>" required>
+              </div>
+
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Modelo</label>
+                  <input type="text" class="form-control" name=modelo autocomplete="off" value="<?php echo $data['modelo']; ?>" required>
+              </div>
+
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Color</label>
+                  <input type="text" class="form-control" name=color autocomplete="off" value="<?php echo $data['color']; ?>" required>
+              </div>
+
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Año</label>
+                  <input type="text" class="form-control" name=año autocomplete="off" value="<?php echo $data['año']; ?>" required>
+              </div>
+
+            </div>
 
 <!-- Aqui termina el activador 5 -->
 
 <!-- Aqui empieza el activador 6 -->
 
-            <div role="tabpanel" class="tab-pane fade" id="tab_content6" aria-labelledby="profile-tab">
+<div role="tabpanel" class="tab-pane fade" id="tab_content6" aria-labelledby="profile-tab">
 
-                           <div class="col-md-2">
-              <label for="exampleInputEmail1">Seleccionar Division</label>
-                  <input type="text" class="form-control" name=seleccionar_d autocomplete="off" value="<?php echo $data['seleccionar_d']; ?>" required>
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Tipo</label>
+                  <input type="text" class="form-control" name=tipo autocomplete="off" value="<?php echo $data['tipo']; ?>" required>
               </div>
 
-</div>
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">N° de Serial</label>
+                  <input type="text" class="form-control" name=n°_serial autocomplete="off" value="<?php echo $data['n°_serial']; ?>" required>
+              </div>
+
+
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Marca</label>
+                  <input type="text" class="form-control" name=marca autocomplete="off" value="<?php echo $data['marca']; ?>" required>
+              </div>
+
+               <div class="col-md-2">
+              <label for="exampleInputEmail1">Modelo</label>
+                  <input type="text" class="form-control" name=modelo autocomplete="off" value="<?php echo $data['modelo']; ?>" required>
+              </div>
+
+               <div class="col-md-2">
+              <label for="exampleInputEmail1">Calibre</label>
+                  <input type="text" class="form-control" name=calibre autocomplete="off" value="<?php echo $data['calibre']; ?>" required>
+              </div>
+
+            </div>
+
+
 
 <!-- Aqui termina el activador 6 -->
 
