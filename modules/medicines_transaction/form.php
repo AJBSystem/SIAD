@@ -103,16 +103,27 @@ if ($_GET['form']=='add') { ?>
 
         <div class="" role="tabpanel" data-example-id="togglable-tabs">
           <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">Datos Basicos</a>
+          <li  role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true" class="fa fa-user"> Datos Basicos</a>
             </li>
-            <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">Profile</a>
+
+            <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false" class="fa fa-heart"> Información Médica</a>
             </li>
-            <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false">Profile</a>
+
+            <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-suitcase"> Datos Laborales</a>
+            </li>
+
+            <li role="presentation" class=""><a href="#tab_content4" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-users"> Datos Familiares</a>
+            </li>
+
+            <li role="presentation" class=""><a href="#tab_content5" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-automobile"> Datos de Vehiculos</a>
+            </li>
+
+            <li role="presentation" class=""><a href="#tab_content6" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-clipboard"> Dotaciones</a>
             </li>
           </ul>
           <div id="myTabContent" class="tab-content">
             <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
-            <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="col-md-12 col-sm-6 col-xs-12">
                 <div class="x_panel">
                  
                     <ul class="nav navbar-right panel_toolbox">
@@ -122,51 +133,66 @@ if ($_GET['form']=='add') { ?>
              
                   <div class="x_content">
 
-                    <table class="table table-bordered">
-                      <thead>
-                        <tr>
-                          <th>Cedula</th>
-                          <th>Credencial N°</th>
-                          <th>Rif</th>
-                          <th>Primer Nombre</th>
-                          <th>Segundo Nombre</th>
-                          <th>Primer Apellido</th>
-                          <th>Segundo Apellido</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">1</th>
-                          <td>Marka</td>
-                          <td>Otto</td>
-                          <td>@mdo</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">2</th>
-                          <td>Jacob</td>
-                          <td>Thornton</td>
-                          <td>@fat</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td width='80' align='left'>$data[p_nombre]</td>
-                          <td>the Bird</td>
-                          <td>@twitter</td>
-                        </tr>
-                      </tbody>
-                    </table>
-
+                    <table id="datatable" class="table table-striped table-bordered">
+                        <thead>
+                          <tr>
+                            <th width='80'>Cedula</th>
+                            <th width='140'> N° de Credencial</th>
+                            <th width='80'>Rif</th>
+                            <th width='130'>Primer Nombre</th>
+                            <th width='150'>Segundo Nombre</th>
+                            <th width='130'>Primer Apellido</th>
+                            <th width='130'>Segundo Apellido</th>
+                            <th width='150'>Fecha de Nacimiento</th>
+                            <th width='70'>Edad</th>
+                          
+                          </tr>
+                        </thead>
+                        
+                        <tbody>
+                          <tr>
+                            <td>26435880</td>
+                            <td>Darly</td>
+                            <td>Naiduth</td>
+                            <td>Martinez</td>
+                            <td>Barreto</td>
+                            <td>29/10/1998</td>
+                            <td>19 años</td>
+                            <td>Hija</td>
+                    
+                          </tr>
+                          </tbody>
+                      </table>
                   </div>
                 </div>
               </div>
             </div>
+
             <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
               <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo
                 booth letterpress, commodo enim craft beer mlkshk aliquip</p>
             </div>
+
             <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
               <p>xxFood truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo
                 booth letterpress, commodo enim craft beer mlkshk </p>
+            </div>
+
+                <div role="tabpanel" class="tab-pane fade" id="tab_content4" aria-labelledby="profile-tab">
+              <p>xxFood truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo
+                booth letterpress, commodo enim craft beer mlkshk </p>
+            </div>
+
+            <div role="tabpanel" class="tab-pane fade" id="tab_content5" aria-labelledby="profile-tab">
+              <p>xxFood truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo
+                booth letterpress, commodo enim craft beer mlkshk </p>
+            </div>     
+
+            <div role="tabpanel" class="tab-pane fade" id="tab_content6" aria-labelledby="profile-tab">
+              <p>xxFood truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo
+                booth letterpress, commodo enim craft beer mlkshk </p>
+            </div>
+
             </div>
           </div>
         </div>
