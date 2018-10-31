@@ -580,15 +580,73 @@ elseif ($_GET['form']=='edit') {
               <label for="exampleInputEmail1">Tipo de Sangre</label>
                   <input type="text" class="form-control" name="tipo_s" autocomplete="off" value="<?php echo $data['tipo_s']; ?>" required>
               </div>
+
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Medicamentos</label>
+                  <input type="text" class="form-control" name="medicamentos" autocomplete="off" value="<?php echo $data['medicamentos']; ?>" required>
+              </div>
+
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Discapacidad</label>
+                  <input type="text" class="form-control" name="discapacidad" autocomplete="off" value="<?php echo $data['discapacidad']; ?>" required>
+              </div>
+
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Alergias</label>
+                  <input type="text" class="form-control" name="alergias" autocomplete="off" value="<?php echo $data['alergias']; ?>" required>
+              </div>
+
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Notas</label>
+                  <input type="text" class="form-control" name="notas" autocomplete="off" value="<?php echo $data['notas']; ?>" required>
+              </div>
+
+
+
             </div>
 
 
             <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
 
-            <div class="col-md-2">
-              <label for="exampleInputEmail1">Datos laborales</label>
-                  <input type="text" class="form-control" name="tipo_s" autocomplete="off" value="<?php echo $data['tipo_s']; ?>" required>
+                           <div class="col-md-2">
+              <label for="exampleInputEmail1">Seleccionar Division</label>
+                  <input type="text" class="form-control" name=seleccionar_d autocomplete="off" value="<?php echo $data['seleccionar_d']; ?>" required>
+                  <select type="text" class="form-control" name="grado_inst" autocomplete="off" value="<?php echo $data['grado_inst']; ?>" required>
+                         <option></option>
+                          <option></option>
               </div>
+
+               <div class="col-md-2">
+              <label for="exampleInputEmail1">Fecha de Ingreso</label>
+                  <input type="text" class="form-control" name="fecha_i" autocomplete="off" value="<?php echo $data['fecha_i']; ?>" required>
+              </div>
+
+               <div class="col-md-2">
+              <label for="exampleInputEmail1">Tiempo de Servicio</label>
+                  <input type="text" class="form-control" name="tiempo_s" autocomplete="off" value="<?php echo $data['tiempo_s']; ?>" required>
+              </div>
+
+               <div class="col-md-2">
+              <label for="exampleInputEmail1">Cargo</label>
+                  <input type="text" class="form-control" name="cargo" autocomplete="off" value="<?php echo $data['cargo']; ?>" required>
+              </div>
+
+               <div class="col-md-2">
+              <label for="exampleInputEmail1">Rango</label>
+                  <input type="text" class="form-control" name="rango" autocomplete="off" value="<?php echo $data['rango']; ?>" required>
+              </div>
+
+               <div class="col-md-2">
+              <label for="exampleInputEmail1">Ubicacion Fisica</label>
+                  <input type="text" class="form-control" name="ubicacion_f" autocomplete="off" value="<?php echo $data['ubicacion_f']; ?>" required>
+              </div>
+
+               <div class="col-md-2">
+              <label for="exampleInputEmail1">Correo Institucional</label>
+                  <input type="text" class="form-control" name="correo_i" autocomplete="off" value="<?php echo $data['correo_i']; ?>" required>
+              </div>
+
+
             </div>
 
             </div>
