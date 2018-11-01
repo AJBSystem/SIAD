@@ -148,7 +148,7 @@ if ($_GET['form']=='add') { ?>
                           
                           </tr>
                         </thead>
-                        
+
                         <tbody>
                           <tr>
                             <td>26435880</td>
@@ -159,6 +159,36 @@ if ($_GET['form']=='add') { ?>
                             <td>29/10/1998</td>
                             <td>19 años</td>
                             <td>Hija</td>
+                    
+                          </tr>
+                          </tbody>
+                      </table>
+
+                      <table id="datatable" class="table table-striped table-bordered">
+                        <thead>
+                          <tr>
+                            <th width='80'>Género</th>
+                            <th width='140'>Lugar de Nacimiento</th>
+                            <th width='80'>Estado Civil</th>
+                            <th width='130'>Grado de Instrucción</th>
+                            <th width='150'>Correo Electronico</th>
+                            <th width='130'>Telefono Celular</th>
+                            <th width='130'>Telefono de Habitación</th>
+                            <th width='150'>Telefono de Emergencias</th>
+                  
+                          
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>26435880</td>
+                            <td>Darly</td>
+                            <td>Naiduth</td>
+                            <td>Martinez</td>
+                            <td>Barreto</td>
+                            <td>29/10/1998</td>
+                  
                     
                           </tr>
                           </tbody>
