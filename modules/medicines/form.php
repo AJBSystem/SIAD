@@ -431,7 +431,18 @@ if ($_GET['form']=='add') { ?>
             <div class="col-md-2">
               <label for="exampleInputEmail1">Correo Institucional</label>
                   <input type="text" class="form-control" name="tipo_s" autocomplete="off" value="<?php echo $data['tipo_s']; ?>" required>
-              </div>                                                         
+              </div>         
+
+            <div class="col-md-2">
+              <label for="exampleInputEmail1">Status</label>
+                  <select type="text" class="form-control" name="tipo_s" autocomplete="off" value="<?php echo $data['tipo_s']; ?>" required>       
+                    <option>Activo</option>
+                    <option>Permiso</option>
+                    <option>Reposo</option>
+                    <option>Vacaciones</option> 
+                    <option>Comisión</option>                                                                                         
+                  </select>
+             </div>                                                
 
             </div>
 
