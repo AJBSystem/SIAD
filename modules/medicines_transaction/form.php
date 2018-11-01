@@ -244,13 +244,73 @@ if ($_GET['form']=='add') { ?>
             </div>
 
             <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
-              <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo
-                booth letterpress, commodo enim craft beer mlkshk aliquip</p>
+
+            <table id="datatable" class="table table-striped table-bordered">
+                        <thead>
+                          <tr>
+                            <th width='50'>Tipo de Sangre</th>
+                            <th width='20'>Medicamentos</th>
+                            <th width='50'>Discapacidad</th>
+                            <th width='20'>Alergias</th>
+                            <th width='20'>Nota</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>26435880</td>
+                            <td>Distrito Capital</td>
+                            <td>26435880</td>
+                            <td>Distrito Capital</td>
+                            <td>Distrito Capital</td>
+                          </tr>
+                          </tbody>
+                      </table>
             </div>
 
             <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
-              <p>xxFood truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo
-                booth letterpress, commodo enim craft beer mlkshk </p>
+           
+            <table class="table table-striped table-bordered">
+                        <thead>
+                          <tr>
+                            <th width='50'>Seleccionar División</th>
+                            <th width='20'>Fecha de Ingreso</th>
+                            <th width='50'>Tiempo de Servicio</th>
+                            <th width='20'>Cargo</th>
+                            <th width='20'>Rango</th>
+                            <th width='20'>Ubicación Fisica</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>26435880</td>
+                            <td>Distrito Capital</td>
+                            <td>26435880</td>
+                            <td>Distrito Capital</td>
+                            <td>Distrito Capital</td>
+                            <td>Distrito Capital</td>
+                          </tr>
+                          </tbody>
+                      </table>
+
+                      <table class="table table-striped table-bordered">
+                        <thead>
+                          <tr>
+                            <th width='50'>Correo Institucional</th>
+                            <th width='20'>Status</th>
+
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>26435880</td>
+                            <td>Distrito Capital</td>
+                          </tr>
+                          </tbody>
+                      </table>
+
             </div>
 
                 <div role="tabpanel" class="tab-pane fade" id="tab_content4" aria-labelledby="profile-tab">
