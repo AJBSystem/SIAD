@@ -14,14 +14,17 @@ else {
         if (isset($_POST['Guardar'])) {
      
             $codigo  = mysqli_real_escape_string($mysqli, trim($_POST['codigo']));
+            $cedula  = mysqli_real_escape_string($mysqli, trim($_POST['cedula']));
+            $credencial  = mysqli_real_escape_string($mysqli, trim($_POST['credencial']));
+            $rif  = mysqli_real_escape_string($mysqli, trim($_POST['rif']));
             $p_nombre  = mysqli_real_escape_string($mysqli, trim($_POST['p_nombre']));
-
+            $s_nombre  = mysqli_real_escape_string($mysqli, trim($_POST['s_nombre']));
 
             $created_user = $_SESSION['id_user'];
 
   
-            $query = mysqli_query($mysqli, "INSERT INTO medicamentos(codigo,p_nombre,created_user,updated_user) 
-                                            VALUES('$codigo','$p_nombre','$created_user','$created_user')")
+            $query = mysqli_query($mysqli, "INSERT INTO medicamentos(codigo,cedula,credencial,rif,p_nombre,s_nombre,created_user,updated_user) 
+                                            VALUES('$codigo','$cedula','$credencial','$rif','$p_nombre','$s_nombre','$created_user','$created_user')")
                                             or die('error '.mysqli_error($mysqli));    
 
         
