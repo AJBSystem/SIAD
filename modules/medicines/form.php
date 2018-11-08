@@ -272,7 +272,21 @@ if ($_GET['form']=='add') { ?>
 
 <!-- Aqui empieza el activador 2 -->  
 
+ <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
 
+            <div class="col-md-2">
+             <label for="exampleInputEmail1">Tipo de Sangre</label>
+              <input type="text" class="form-control" name="tipo_s" autocomplete="off" required> 
+            </div>
+
+            <div class="col-md-2">
+             <label for="exampleInputEmail1">Medicamentos</label>
+              <input type="text" class="form-control" name="medicamen" autocomplete="off" required> 
+            </div>
+
+
+
+</div>
 
 <!-- Aqui termina el activador 2 -->  
 
@@ -311,7 +325,7 @@ elseif ($_GET['form']=='edit') {
   if (isset($_GET['id'])) {
 
 
-      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp FROM medicamentos WHERE codigo='$_GET[id]'") 
+      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen FROM medicamentos WHERE codigo='$_GET[id]'") 
 
                                       or die('error: '.mysqli_error($mysqli));
       $data  = mysqli_fetch_assoc($query);
@@ -616,7 +630,7 @@ elseif ($_GET['form']=='edit') {
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Medicamentos</label>
-                  <input type="text" class="form-control" name="medicamentos" autocomplete="off" value="<?php echo $data['medicamentos']; ?>" required>
+                  <input type="text" class="form-control" name="medicamen" autocomplete="off" value="<?php echo $data['medicamen']; ?>" required>
               </div>
 
               <div class="col-md-2">
