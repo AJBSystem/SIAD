@@ -31,11 +31,18 @@ else {
             $tel_cel  = mysqli_real_escape_string($mysqli, trim($_POST['tel_cel']));
             $tel_hab  = mysqli_real_escape_string($mysqli, trim($_POST['tel_hab']));
             $tel_emerg  = mysqli_real_escape_string($mysqli, trim($_POST['tel_emerg']));
+            $estado  = mysqli_real_escape_string($mysqli, trim($_POST['estado']));
+            $municipio  = mysqli_real_escape_string($mysqli, trim($_POST['municipio']));
+            $ciudad  = mysqli_real_escape_string($mysqli, trim($_POST['ciudad']));
+            $parroquia  = mysqli_real_escape_string($mysqli, trim($_POST['parroquia']));
+            $avenida  = mysqli_real_escape_string($mysqli, trim($_POST['avenida']));
+            $calle  = mysqli_real_escape_string($mysqli, trim($_POST['calle']));
+            $casa  = mysqli_real_escape_string($mysqli, trim($_POST['casa']));
             $created_user = $_SESSION['id_user'];
 
   
-            $query = mysqli_query($mysqli, "INSERT INTO medicamentos(codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,lugar_nac,estado_c,grado_inst,correo_e,tel_cel,tel_hab,tel_emerg,created_user,updated_user) 
-                                            VALUES('$codigo','$cedula','$credencial','$rif','$p_nombre','$s_nombre','$p_apellido','$s_apellido','$fec_nac','$edad','$genero','$lugar_nac','$estado_c','$grado_inst','$correo_e','$tel_cel','$tel_hab','$tel_emerg','$created_user','$created_user')")
+            $query = mysqli_query($mysqli, "INSERT INTO medicamentos(codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,lugar_nac,estado_c,grado_inst,correo_e,tel_cel,tel_hab,tel_emerg,estado,municipio,ciudad,parroquia,avenida,calle,casa,created_user,updated_user) 
+                                            VALUES('$codigo','$cedula','$credencial','$rif','$p_nombre','$s_nombre','$p_apellido','$s_apellido','$fec_nac','$edad','$genero','$lugar_nac','$estado_c','$grado_inst','$correo_e','$tel_cel','$tel_hab','$tel_emerg','$estado','$municipio','$ciudad','$parroquia','$avenida','$calle','$casa','$created_user','$created_user')")
                                             or die('error '.mysqli_error($mysqli));    
 
         
