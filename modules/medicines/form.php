@@ -58,9 +58,12 @@ if ($_GET['form']=='add') { ?>
 
         <div class="" role="tabpanel" data-example-id="togglable-tabs">
           <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
+           
             <li  role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true" class="fa fa-user"> Datos Basicos</a>
             </li>
 
+            <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false" class="fa fa-heart"> Información Médica</a>
+            </li>
 
 
 
@@ -267,6 +270,11 @@ if ($_GET['form']=='add') { ?>
 
 <!-- Aqui termina el activador 1 -->  
 
+<!-- Aqui empieza el activador 2 -->  
+
+
+
+<!-- Aqui termina el activador 2 -->  
 
 
 
