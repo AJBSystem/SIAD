@@ -148,7 +148,7 @@ if ($_GET['form']=='add') { ?>
                           
                           </tr>
                         </thead>
-                        
+
                         <tbody>
                           <tr>
                             <td>26435880</td>
@@ -163,19 +163,154 @@ if ($_GET['form']=='add') { ?>
                           </tr>
                           </tbody>
                       </table>
+
+                      <table id="datatable" class="table table-striped table-bordered">
+                        <thead>
+                          <tr>
+                            <th width='60'>Género</th>
+                            <th width='140'>Lugar de Nacimiento</th>
+                            <th width='90'>Estado Civil</th>
+                            <th width='140'>Grado de Instrucción</th>
+                            <th width='150'>Correo Electronico</th>
+                            <th width='115'>Telefono Celular</th>
+                            <th width='155'>Telefono de Habitación</th>
+                  
+                          
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>26435880</td>
+                            <td>Darly</td>
+                            <td>Naiduth</td>
+                            <td>Martinez</td>
+                            <td>Barreto</td>
+                            <td>29/10/1998</td>
+                            <td>29/10/1998</td>
+                          </tr>
+                          </tbody>
+                      </table>
+
+                                            <table id="datatable" class="table table-striped table-bordered">
+                        <thead>
+                          <tr>
+                            <th width='140'>Telefono de Emergencias</th>
+                            <th width='60'>Estado</th>
+                            <th width='90'>Municipio</th>
+                            <th width='110'>Ciudad</th>
+                            <th width='100'>Parroquia</th>
+                            <th width='100'>Avenida</th>
+                            <th width='95'>Calle</th>
+                            <th width='40'>Casa N°</th>
+                          
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>26435880</td>
+                            <td>Distrito Capital</td>
+                            <td>Libertador</td>
+                            <td>Valles del Tuy</td>
+                            <td>Antimano</td>
+                            <td>Principal de carapita</td>
+                            <td>callejon pinto salina</td>
+                            <td>88</td>
+                          </tr>
+                          </tbody>
+                      </table>
+
+                  <table id="datatable" class="table table-striped table-bordered">
+                        <thead>
+                          <tr>
+                            <th width='50'>Codigo del CP</th>
+                            <th width='20'>Serial del CP</th>
+                          
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>26435880</td>
+                            <td>Distrito Capital</td>
+                          </tr>
+                          </tbody>
+                      </table>
+
                   </div>
                 </div>
               </div>
             </div>
 
             <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
-              <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo
-                booth letterpress, commodo enim craft beer mlkshk aliquip</p>
+
+            <table id="datatable" class="table table-striped table-bordered">
+                        <thead>
+                          <tr>
+                            <th width='50'>Tipo de Sangre</th>
+                            <th width='20'>Medicamentos</th>
+                            <th width='50'>Discapacidad</th>
+                            <th width='20'>Alergias</th>
+                            <th width='20'>Nota</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>26435880</td>
+                            <td>Distrito Capital</td>
+                            <td>26435880</td>
+                            <td>Distrito Capital</td>
+                            <td>Distrito Capital</td>
+                          </tr>
+                          </tbody>
+                      </table>
             </div>
 
             <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
-              <p>xxFood truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo
-                booth letterpress, commodo enim craft beer mlkshk </p>
+           
+            <table class="table table-striped table-bordered">
+                        <thead>
+                          <tr>
+                            <th width='50'>Seleccionar División</th>
+                            <th width='20'>Fecha de Ingreso</th>
+                            <th width='50'>Tiempo de Servicio</th>
+                            <th width='20'>Cargo</th>
+                            <th width='20'>Rango</th>
+                            <th width='20'>Ubicación Fisica</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>26435880</td>
+                            <td>Distrito Capital</td>
+                            <td>26435880</td>
+                            <td>Distrito Capital</td>
+                            <td>Distrito Capital</td>
+                            <td>Distrito Capital</td>
+                          </tr>
+                          </tbody>
+                      </table>
+
+                      <table class="table table-striped table-bordered">
+                        <thead>
+                          <tr>
+                            <th width='50'>Correo Institucional</th>
+                            <th width='20'>Status</th>
+
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>26435880</td>
+                            <td>Distrito Capital</td>
+                          </tr>
+                          </tbody>
+                      </table>
+
             </div>
 
                 <div role="tabpanel" class="tab-pane fade" id="tab_content4" aria-labelledby="profile-tab">
