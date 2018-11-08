@@ -702,6 +702,11 @@ elseif ($_GET['form']=='edit') {
                   <input type="text" class="form-control" name="correo_i" autocomplete="off" value="<?php echo $data['correo_i']; ?>" required>
               </div>
 
+              <div class="col-md-2">
+              <label for="exampleInputEmail1">Estatus</label>
+                  <input type="text" class="form-control" name="estatus" autocomplete="off" value="<?php echo $data['estatus']; ?>" required>
+              </div>
+
 
             </div>
 
