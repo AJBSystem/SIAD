@@ -38,11 +38,13 @@ else {
             $avenida  = mysqli_real_escape_string($mysqli, trim($_POST['avenida']));
             $calle  = mysqli_real_escape_string($mysqli, trim($_POST['calle']));
             $casa  = mysqli_real_escape_string($mysqli, trim($_POST['casa']));
+            $codigo_cp  = mysqli_real_escape_string($mysqli, trim($_POST['codigo_cp']));
+            $serial_cp  = mysqli_real_escape_string($mysqli, trim($_POST['serial_cp']));
             $created_user = $_SESSION['id_user'];
 
   
-            $query = mysqli_query($mysqli, "INSERT INTO medicamentos(codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,lugar_nac,estado_c,grado_inst,correo_e,tel_cel,tel_hab,tel_emerg,estado,municipio,ciudad,parroquia,avenida,calle,casa,created_user,updated_user) 
-                                            VALUES('$codigo','$cedula','$credencial','$rif','$p_nombre','$s_nombre','$p_apellido','$s_apellido','$fec_nac','$edad','$genero','$lugar_nac','$estado_c','$grado_inst','$correo_e','$tel_cel','$tel_hab','$tel_emerg','$estado','$municipio','$ciudad','$parroquia','$avenida','$calle','$casa','$created_user','$created_user')")
+            $query = mysqli_query($mysqli, "INSERT INTO medicamentos(codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,lugar_nac,estado_c,grado_inst,correo_e,tel_cel,tel_hab,tel_emerg,estado,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,created_user,updated_user) 
+                                            VALUES('$codigo','$cedula','$credencial','$rif','$p_nombre','$s_nombre','$p_apellido','$s_apellido','$fec_nac','$edad','$genero','$lugar_nac','$estado_c','$grado_inst','$correo_e','$tel_cel','$tel_hab','$tel_emerg','$estado','$municipio','$ciudad','$parroquia','$avenida','$calle','$casa','$codigo_cp','$serial_cp','$created_user','$created_user')")
                                             or die('error '.mysqli_error($mysqli));    
 
         
