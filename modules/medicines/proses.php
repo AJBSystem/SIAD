@@ -25,12 +25,13 @@ else {
             $edad  = mysqli_real_escape_string($mysqli, trim($_POST['edad']));
             $genero  = mysqli_real_escape_string($mysqli, trim($_POST['genero']));
             $lugar_nac  = mysqli_real_escape_string($mysqli, trim($_POST['lugar_nac']));
-
+            $estado_c  = mysqli_real_escape_string($mysqli, trim($_POST['estado_c']));
+            $grado_inst  = mysqli_real_escape_string($mysqli, trim($_POST['grado_inst']));
             $created_user = $_SESSION['id_user'];
 
   
-            $query = mysqli_query($mysqli, "INSERT INTO medicamentos(codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,lugar_nac,created_user,updated_user) 
-                                            VALUES('$codigo','$cedula','$credencial','$rif','$p_nombre','$s_nombre','$p_apellido','$s_apellido','$fec_nac','$edad','$genero','$lugar_nac','$created_user','$created_user')")
+            $query = mysqli_query($mysqli, "INSERT INTO medicamentos(codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,lugar_nac,estado_c,grado_inst,created_user,updated_user) 
+                                            VALUES('$codigo','$cedula','$credencial','$rif','$p_nombre','$s_nombre','$p_apellido','$s_apellido','$fec_nac','$edad','$genero','$lugar_nac','$estado_c','$grado_inst','$created_user','$created_user')")
                                             or die('error '.mysqli_error($mysqli));    
 
         
