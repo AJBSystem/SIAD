@@ -13,7 +13,7 @@ $hari_ini = date("d-m-Y");
 
 $no = 1;
 
-$query = mysqli_query($mysqli, "SELECT cedula,credencial,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,tel_cel,correo_e FROM medicamentos ORDER BY nombre ASC")
+$query = mysqli_query($mysqli, "SELECT cedula,credencial,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,tel_cel,correo_e FROM medicamentos ORDER BY nombre ASC")
                                 or die('Error '.mysqli_error($mysqli));
 $count  = mysqli_num_rows($query);
 ?>
@@ -43,7 +43,7 @@ $count  = mysqli_num_rows($query);
                         <th height="20" align="center" valign="middle"><small>Segundo Apellido</small></th>
                         <th height="20" align="center" valign="middle"><small>Fecha de Nacimiento</small></th>
                         <th height="20" align="center" valign="middle"><small>Edad</small></th>
-                        
+                        <th height="20" align="center" valign="middle"><small>Genero</small></th>
                         <th height="20" align="center" valign="middle"><small>Telefono Celular</small></th>
                         <th height="20" align="center" valign="middle"><small>Correo Electronico</small></th>
                     </tr>
@@ -64,6 +64,7 @@ $count  = mysqli_num_rows($query);
                         <td style='padding-left:5px;' width='80' height='13' valign='middle'>$data[s_apellido]</td>
                         <td style='padding-left:5px;' width='90' height='13' valign='middle'>$data[fec_nac]</td>
                         <td style='padding-left:5px;' width='45' height='13' valign='middle'>$data[edad]</td>
+                        <td style='padding-left:5px;' width='45' height='13' valign='middle'>$data[genero]</td>
                         <td style='padding-left:5px;' width='80' height='13' valign='middle'>$data[tel_cel]</td>
                         <td style='padding-left:5px;' width='85' height='13' valign='middle'>$data[correo_e]</td>
 
