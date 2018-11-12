@@ -47,11 +47,13 @@ else {
             $notas  = mysqli_real_escape_string($mysqli, trim($_POST['notas']));
             $fec_ing  = mysqli_real_escape_string($mysqli, trim($_POST['fec_ing']));
             $tiempo_s  = mysqli_real_escape_string($mysqli, trim($_POST['tiempo_s']));
+            $ubic_fis  = mysqli_real_escape_string($mysqli, trim($_POST['ubic_fis']));
+            $correo_i  = mysqli_real_escape_string($mysqli, trim($_POST['correo_i']));
             $created_user = $_SESSION['id_user'];
 
   
-            $query = mysqli_query($mysqli, "INSERT INTO medicamentos(codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,lugar_nac,estado_c,grado_inst,correo_e,tel_cel,tel_hab,tel_emerg,estado,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,fec_ing,tiempo_s,created_user,updated_user) 
-                                            VALUES('$codigo','$cedula','$credencial','$rif','$p_nombre','$s_nombre','$p_apellido','$s_apellido','$fec_nac','$edad','$genero','$lugar_nac','$estado_c','$grado_inst','$correo_e','$tel_cel','$tel_hab','$tel_emerg','$estado','$municipio','$ciudad','$parroquia','$avenida','$calle','$casa','$codigo_cp','$serial_cp','$tipo_s','$medicamen','$discapacidad','$alergias','$notas','$fec_ing','$tiempo_s','$created_user','$created_user')")
+            $query = mysqli_query($mysqli, "INSERT INTO medicamentos(codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,lugar_nac,estado_c,grado_inst,correo_e,tel_cel,tel_hab,tel_emerg,estado,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,fec_ing,tiempo_s,ubic_fis,correo_i,created_user,updated_user) 
+                                            VALUES('$codigo','$cedula','$credencial','$rif','$p_nombre','$s_nombre','$p_apellido','$s_apellido','$fec_nac','$edad','$genero','$lugar_nac','$estado_c','$grado_inst','$correo_e','$tel_cel','$tel_hab','$tel_emerg','$estado','$municipio','$ciudad','$parroquia','$avenida','$calle','$casa','$codigo_cp','$serial_cp','$tipo_s','$medicamen','$discapacidad','$alergias','$notas','$fec_ing','$tiempo_s','$ubic_fis','$correo_i','$created_user','$created_user')")
                                             or die('error '.mysqli_error($mysqli));    
 
         

@@ -412,6 +412,16 @@ if ($_GET['form']=='add') { ?>
                         </select>
                   </div>  
 
+            <div class="col-md-2">
+             <label for="exampleInputEmail1">Ubicación Fisica</label>
+              <input type="text" class="form-control" name="ubic_fis" autocomplete="off" required> 
+            </div>
+
+             <div class="col-md-2">
+             <label for="exampleInputEmail1">Correo Institucional</label>
+              <input type="text" class="form-control" name="correo_i" autocomplete="off" required> 
+            </div>               
+
  </div>
 
 <!-- Aqui empieza el activador 3 -->  
@@ -448,7 +458,7 @@ elseif ($_GET['form']=='edit') {
   if (isset($_GET['id'])) {
 
 
-      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,fec_ing,tiempo_s FROM medicamentos WHERE codigo='$_GET[id]'") 
+      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,fec_ing,tiempo_s,ubic_fis,correo_i FROM medicamentos WHERE codigo='$_GET[id]'") 
 
                                       or die('error: '.mysqli_error($mysqli));
       $data  = mysqli_fetch_assoc($query);
@@ -808,7 +818,7 @@ elseif ($_GET['form']=='edit') {
 
                <div class="col-md-2">
               <label for="exampleInputEmail1">Ubicacion Fisica</label>
-                  <input type="text" class="form-control" name="ubicacion_f" autocomplete="off" value="<?php echo $data['ubicacion_f']; ?>" required>
+                  <input type="text" class="form-control" name="ubic_fis" autocomplete="off" value="<?php echo $data['ubic_fis']; ?>" required>
               </div>
 
                <div class="col-md-2">
