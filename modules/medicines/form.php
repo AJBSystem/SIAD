@@ -65,6 +65,9 @@ if ($_GET['form']=='add') { ?>
             <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false" class="fa fa-heart"> Información Médica</a>
             </li>
 
+            <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-suitcase"> Datos Laborales</a>
+            </li>
+
           </ul>
           <div id="myTabContent" class="tab-content">
 
@@ -300,8 +303,118 @@ if ($_GET['form']=='add') { ?>
 
 <!-- Aqui termina el activador 2 -->  
 
+<!-- Aqui empieza el activador 3 -->  
 
+ <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
 
+                  <div class="col-md-2">
+                    <label for="exampleInputEmail1">Seleccionar División</label>
+                        <select class="form-control" name="selec_div"  required>
+                          <option>Base de Datos</option>
+                          <option>Dirección</option>
+                          <option>División de Operaciones</option>
+                          <option>División de Proyectos</option>
+                          <option>División de Sistemas</option>
+                          <option>División de Telematica</option>
+                        </select>
+                  </div>
+
+            <div class="col-md-2">
+             <label for="exampleInputEmail1">Fecha de Ingreso</label>
+              <input type="text" class="form-control" name="fec_ing" autocomplete="off" required> 
+            </div>                  
+
+            <div class="col-md-2">
+             <label for="exampleInputEmail1">Tiempo de Servicio</label>
+              <input type="text" class="form-control" name="tiempo_s" autocomplete="off" required> 
+            </div>     
+
+            <div class="col-md-2">
+                    <label for="exampleInputEmail1">Cargo</label>
+                        <select class="form-control" name="cargo"  required>
+                          <option>Adjunto</option>
+                          <option>Agente de Seguridad I</option>
+                          <option>Agente de Seguridad II</option>
+                          <option>Asesor Juridico General</option>
+                          <option>Director</option>
+                          <option>Director de Investigaciones</option>
+                          <option>Experto Profesional Especialista I</option>
+                          <option>Experto Profesional Especialista II</option>
+                          <option>Experto Profesional Especialista III</option>
+                          <option>Jefe de Área</option>
+                          <option>Jefe de Bloque</option>
+                          <option>Jefe de Delegación</option>
+                          <option>Jefe de Departamento</option>
+                          <option>Jefe de División</option>
+                          <option>Jefe de Escolta</option>
+                          <option>Jefe de Inspectoría</option>
+                          <option>Jefe de Investigaciones</option>
+                          <option>Jefe de Sub Delegación</option>                            
+                          <option>Jefe del Eje</option>
+                          <option>Miembro Principal  Comisión Permanente Evaluación Y Seguim</option>
+                          <option>Miembro Principal del Consejo Disciplinario</option>
+                          <option>No Aplica</option>
+                          <option>Secretario General</option>
+                          <option>Secretario General Nacional</option>
+                          <option>Secretario Principal Consejo Disciplinario</option>
+                          <option>Sub Director General</option>
+                          <option>Supervisor</option>
+                          <option>Supervisor de Investigaciones</option>
+                          <option>Supervisor de los Servicios</option>
+                          <option>Supervisor de Región</option>
+                          <option>Supervisor de Sub Delegaciones</option>
+                        </select>
+                  </div>                         
+
+            <div class="col-md-2">
+                    <label for="exampleInputEmail1">Rango</label>
+                        <select class="form-control" name="rango"  required>
+                          <option>Asesor Juridico</option>
+                          <option>Asist. Administrativo I</option>
+                          <option>Asist. Administrativo II</option>
+                          <option>Asist. Administrativo III</option>
+                          <option>Asist. Administrativo IIIV</option>
+                          <option>Asist. Administrativo V</option>
+                          <option>Asist. Administrativo VI</option>
+                          <option>Asist. Administrativo VII</option>
+                          <option>Aspirante</option>
+                          <option>Auxiliar Adm. I</option>
+                          <option>Auxiliar Adm. II</option>
+                          <option>Auxiliar Adm. III</option>
+                          <option>Auxiliar Adm. IV</option>
+                          <option>Auxiliar Adm. V</option>
+                          <option>Auxiliar Adm. VI</option>                  
+                          <option>Auxiliar Adm. VII</option>
+                          <option>Comisario</option>                        
+                          <option>Comisario General</option>
+                          <option>Comisario Jefe</option>
+                          <option>Detective</option>
+                          <option>Detective Agregado</option>
+                          <option>Detective Jefe</option>
+                          <option>Director General Nacional</option>
+                          <option>Experto Profesional  I</option>
+                          <option>Experto Profesional  II</option>
+                          <option>Experto Profesional  III</option>
+                          <option>Experto Profesional IV</option>
+                          <option>Experto Tecnico I</option>
+                          <option>Experto Tecnico II</option>
+                          <option>Experto Tecnico III</option>
+                          <option>Experto Tecnico IV</option>
+                          <option>Experto Tecnico VI</option>
+                          <option>Experto Tecnico VII</option>
+                          <option>Inspector</option>
+                          <option>Inspector Agregado</option>
+                          <option>Inspector General</option>
+                          <option>Inspector Jefe</option>
+                          <option>Sub-Director</option>
+                          <option>Pasantes</option>
+                          <option>No Aplica</option>
+                        </select>
+                  </div>  
+
+ </div>
+
+<!-- Aqui empieza el activador 3 -->  
 
             
           </div>
@@ -335,7 +448,7 @@ elseif ($_GET['form']=='edit') {
   if (isset($_GET['id'])) {
 
 
-      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas FROM medicamentos WHERE codigo='$_GET[id]'") 
+      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,fec_ing,tiempo_s FROM medicamentos WHERE codigo='$_GET[id]'") 
 
                                       or die('error: '.mysqli_error($mysqli));
       $data  = mysqli_fetch_assoc($query);
@@ -675,7 +788,7 @@ elseif ($_GET['form']=='edit') {
 
                <div class="col-md-2">
               <label for="exampleInputEmail1">Fecha de Ingreso</label>
-                  <input type="text" class="form-control" name="fecha_i" autocomplete="off" value="<?php echo $data['fecha_i']; ?>" required>
+                  <input type="text" class="form-control" name="fec_ing" autocomplete="off" value="<?php echo $data['fec_ing']; ?>" required>
               </div>
 
                <div class="col-md-2">
