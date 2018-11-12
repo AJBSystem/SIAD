@@ -65,9 +65,6 @@ if ($_GET['form']=='add') { ?>
             <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false" class="fa fa-heart"> Información Médica</a>
             </li>
 
-
-
-
           </ul>
           <div id="myTabContent" class="tab-content">
 
