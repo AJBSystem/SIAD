@@ -513,7 +513,17 @@ if ($_GET['form']=='add') { ?>
           <div class="col-md-2">
              <label for="exampleInputEmail1">Placa</label>
               <input type="text" class="form-control" name="placa" autocomplete="off" required> 
-            </div>     
+            </div> 
+
+          <div class="col-md-2">
+             <label for="exampleInputEmail1">Combustible</label>
+              <input type="text" class="form-control" name="combustible" autocomplete="off" required> 
+            </div>  
+
+           <div class="col-md-2">
+             <label for="exampleInputEmail1">Serial de la Carroceria</label>
+              <input type="text" class="form-control" name="serial_carro" autocomplete="off" required> 
+            </div>                             
 
 </div>
 
@@ -549,7 +559,7 @@ if ($_GET['form']=='add') { ?>
 elseif ($_GET['form']=='edit') { 
   if (isset($_GET['id'])) {
 
-      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,fec_ing,tiempo_s,ubic_fis,correo_i,cedulaf,p_nombref,s_nombref,p_apellidof,s_apellidof,fec_nacf,edadf,generof,parentesco,estudiante,funcionario,inf_medf,tipo_v,placa FROM medicamentos WHERE codigo='$_GET[id]'") 
+      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,fec_ing,tiempo_s,ubic_fis,correo_i,cedulaf,p_nombref,s_nombref,p_apellidof,s_apellidof,fec_nacf,edadf,generof,parentesco,estudiante,funcionario,inf_medf,tipo_v,placa,combustible,serial_carro FROM medicamentos WHERE codigo='$_GET[id]'") 
 
 
                                       or die('error: '.mysqli_error($mysqli));
@@ -1017,7 +1027,7 @@ elseif ($_GET['form']=='edit') {
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Serial de la Carroceria</label>
-                  <input type="text" class="form-control" name=s_carroceria autocomplete="off" value="<?php echo $data['s_carroceria']; ?>" required>
+                  <input type="text" class="form-control" name="serial_carro" autocomplete="off" value="<?php echo $data['serial_carro']; ?>" required>
               </div> 
 
               <div class="col-md-2">
