@@ -525,6 +525,26 @@ if ($_GET['form']=='add') { ?>
               <input type="text" class="form-control" name="serial_carro" autocomplete="off" required> 
             </div>                             
 
+           <div class="col-md-2">
+             <label for="exampleInputEmail1">Marca</label>
+              <input type="text" class="form-control" name="marca" autocomplete="off" required> 
+            </div> 
+
+           <div class="col-md-2">
+             <label for="exampleInputEmail1">Modelo</label>
+              <input type="text" class="form-control" name="modelo" autocomplete="off" required> 
+            </div> 
+
+           <div class="col-md-2">
+             <label for="exampleInputEmail1">Color</label>
+              <input type="text" class="form-control" name="color" autocomplete="off" required> 
+            </div> 
+
+           <div class="col-md-2">
+             <label for="exampleInputEmail1">Año</label>
+              <input type="text" class="form-control" name="alo" autocomplete="off" required> 
+            </div> 
+
 </div>
 
 <!-- Aqui termina el activador 5 -->  
@@ -559,7 +579,7 @@ if ($_GET['form']=='add') { ?>
 elseif ($_GET['form']=='edit') { 
   if (isset($_GET['id'])) {
 
-      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,fec_ing,tiempo_s,ubic_fis,correo_i,cedulaf,p_nombref,s_nombref,p_apellidof,s_apellidof,fec_nacf,edadf,generof,parentesco,estudiante,funcionario,inf_medf,tipo_v,placa,combustible,serial_carro FROM medicamentos WHERE codigo='$_GET[id]'") 
+      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,fec_ing,tiempo_s,ubic_fis,correo_i,cedulaf,p_nombref,s_nombref,p_apellidof,s_apellidof,fec_nacf,edadf,generof,parentesco,estudiante,funcionario,inf_medf,tipo_v,placa,combustible,serial_carro,marca,modelo,color,alo FROM medicamentos WHERE codigo='$_GET[id]'") 
 
 
                                       or die('error: '.mysqli_error($mysqli));
@@ -1032,22 +1052,22 @@ elseif ($_GET['form']=='edit') {
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Marca</label>
-                  <input type="text" class="form-control" name=marca autocomplete="off" value="<?php echo $data['marca']; ?>" required>
+                  <input type="text" class="form-control" name="marca" autocomplete="off" value="<?php echo $data['marca']; ?>" required>
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Modelo</label>
-                  <input type="text" class="form-control" name=modelo autocomplete="off" value="<?php echo $data['modelo']; ?>" required>
+                  <input type="text" class="form-control" name="modelo" autocomplete="off" value="<?php echo $data['modelo']; ?>" required>
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Color</label>
-                  <input type="text" class="form-control" name=color autocomplete="off" value="<?php echo $data['color']; ?>" required>
+                  <input type="text" class="form-control" name="color" autocomplete="off" value="<?php echo $data['color']; ?>" required>
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Año</label>
-                  <input type="text" class="form-control" name=año autocomplete="off" value="<?php echo $data['año']; ?>" required>
+                  <input type="text" class="form-control" name="alo" autocomplete="off" value="<?php echo $data['alo']; ?>" required>
               </div>
 
             </div>
