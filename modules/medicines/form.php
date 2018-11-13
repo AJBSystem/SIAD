@@ -492,6 +492,11 @@ if ($_GET['form']=='add') { ?>
           <div class="col-md-2">
              <label for="exampleInputEmail1">Información Medica</label>
               <input type="text" class="form-control" name="inf_medf" autocomplete="off" required> 
+            </div>  
+
+                      <div class="col-md-2">
+             <label for="exampleInputEmail1">Nuevo</label>
+              <input type="text" class="form-control" name="p_nombre" autocomplete="off" required> 
             </div>                                     
 
 </div>
