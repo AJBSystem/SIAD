@@ -443,6 +443,57 @@ if ($_GET['form']=='add') { ?>
               <input type="text" class="form-control" name="p_nombref" autocomplete="off" required> 
             </div> 
 
+           <div class="col-md-2">
+             <label for="exampleInputEmail1">Segundo Nombre</label>
+              <input type="text" class="form-control" name="s_nombref" autocomplete="off" required> 
+            </div> 
+
+            <div class="col-md-2">
+             <label for="exampleInputEmail1">Primer Apellido</label>
+              <input type="text" class="form-control" name="p_apellidof" autocomplete="off" required> 
+            </div> 
+
+            <div class="col-md-2">
+             <label for="exampleInputEmail1">Segundo Apellido</label>
+              <input type="text" class="form-control" name="s_apellidof" autocomplete="off" required> 
+            </div> 
+
+            <div class="col-md-2">
+             <label for="exampleInputEmail1">Fecha de Nacimiento</label>
+              <input type="text" class="form-control" name="fec_nacf" autocomplete="off" required> 
+            </div> 
+
+            <div class="col-md-2">
+             <label for="exampleInputEmail1">Edad</label>
+              <input type="text" class="form-control" name="edadf" autocomplete="off" required> 
+            </div> 
+
+            <div class="col-md-2">
+             <label for="exampleInputEmail1">Genero</label>
+              <input type="text" class="form-control" name="generof" autocomplete="off" required> 
+            </div>  
+
+             <div class="col-md-2">
+             <label for="exampleInputEmail1">Parentesco</label>
+              <input type="text" class="form-control" name="parentesco" autocomplete="off" required> 
+            </div>
+
+          
+          <div class="col-md-2">
+             <label for="exampleInputEmail1">Estudiante</label>
+              <input type="text" class="form-control" name="estudiante" autocomplete="off" required> 
+            </div> 
+   
+          <div class="col-md-2">
+             <label for="exampleInputEmail1">Funcionario</label>
+              <input type="text" class="form-control" name="funcionario" autocomplete="off" required> 
+            </div> 
+
+          <div class="col-md-2">
+             <label for="exampleInputEmail1">Información Medica</label>
+              <input type="text" class="form-control" name="inf_medf" autocomplete="off" required> 
+            </div>                                     
+
 </div>
 
 <!-- Aqui termina el activador 4 -->  
@@ -481,12 +532,16 @@ elseif ($_GET['form']=='edit') {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas FROM medicamentos WHERE codigo='$_GET[id]'") 
 =======
       $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,fec_ing,tiempo_s FROM medicamentos WHERE codigo='$_GET[id]'") 
 >>>>>>> darly
 =======
       $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,fec_ing,tiempo_s,ubic_fis,correo_i,cedulaf,p_nombref FROM medicamentos WHERE codigo='$_GET[id]'") 
+>>>>>>> Darly
+=======
+      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,fec_ing,tiempo_s,ubic_fis,correo_i,cedulaf,p_nombref,s_nombref,p_apellidof,s_apellidof,fec_nacf,edadf,generof,parentesco,estudiante,funcionario,inf_medf FROM medicamentos WHERE codigo='$_GET[id]'") 
 >>>>>>> Darly
 
                                       or die('error: '.mysqli_error($mysqli));
@@ -881,32 +936,32 @@ elseif ($_GET['form']=='edit') {
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Segundo Nombre</label>
-                  <input type="text" class="form-control" name=s_nombre autocomplete="off" value="<?php echo $data['s_nombre']; ?>" required>
+                  <input type="text" class="form-control" name=s_nombref autocomplete="off" value="<?php echo $data['s_nombref']; ?>" required>
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Pimer Apellido</label>
-                  <input type="text" class="form-control" name=p_apellido autocomplete="off" value="<?php echo $data['p_apellido']; ?>" required>
+                  <input type="text" class="form-control" name=p_apellidof autocomplete="off" value="<?php echo $data['p_apellidof']; ?>" required>
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Segundo Apellido</label>
-                  <input type="text" class="form-control" name=s_apellido autocomplete="off" value="<?php echo $data['s_apellido']; ?>" required>
+                  <input type="text" class="form-control" name=s_apellidof autocomplete="off" value="<?php echo $data['s_apellidof']; ?>" required>
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Fecha de Nacimiento</label>
-                  <input type="text" class="form-control" name=fec_nac autocomplete="off" value="<?php echo $data['fec_nac']; ?>" required>
+                  <input type="text" class="form-control" name=fec_nacf autocomplete="off" value="<?php echo $data['fec_nacf']; ?>" required>
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Edad</label>
-                  <input type="text" class="form-control" name=edad autocomplete="off" value="<?php echo $data['edad']; ?>" required>
+                  <input type="text" class="form-control" name=edadf autocomplete="off" value="<?php echo $data['edadf']; ?>" required>
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Genero</label>
-                  <input type="text" class="form-control" name=genero autocomplete="off" value="<?php echo $data['genero']; ?>" required>
+                  <input type="text" class="form-control" name=genero autocomplete="off" value="<?php echo $data['generof']; ?>" required>
               </div>
 
               <div class="col-md-2">
@@ -926,7 +981,7 @@ elseif ($_GET['form']=='edit') {
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Informacion Medica</label>
-                  <input type="text" class="form-control" name=i_medica autocomplete="off" value="<?php echo $data['i_medica']; ?>" required>
+                  <input type="text" class="form-control" name=inf_medf autocomplete="off" value="<?php echo $data['inf_medf']; ?>" required>
               </div>
 
 </div>
