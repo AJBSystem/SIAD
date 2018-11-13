@@ -458,6 +458,16 @@ if ($_GET['form']=='add') { ?>
               <input type="text" class="form-control" name="s_apellidof" autocomplete="off" required> 
             </div> 
 
+            <div class="col-md-2">
+             <label for="exampleInputEmail1">Fecha de Nacimiento</label>
+              <input type="text" class="form-control" name="fec_nacf" autocomplete="off" required> 
+            </div> 
+
+            <div class="col-md-2">
+             <label for="exampleInputEmail1">Edad</label>
+              <input type="text" class="form-control" name="edadf" autocomplete="off" required> 
+            </div>            
+
 </div>
 
 <!-- Aqui termina el activador 4 -->  
@@ -494,7 +504,7 @@ elseif ($_GET['form']=='edit') {
   if (isset($_GET['id'])) {
 
 
-      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,fec_ing,tiempo_s,ubic_fis,correo_i,cedulaf,p_nombref,s_nombref,p_apellidof,s_apellidof FROM medicamentos WHERE codigo='$_GET[id]'") 
+      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,fec_ing,tiempo_s,ubic_fis,correo_i,cedulaf,p_nombref,s_nombref,p_apellidof,s_apellidof,fec_nacf,edadf FROM medicamentos WHERE codigo='$_GET[id]'") 
 
                                       or die('error: '.mysqli_error($mysqli));
       $data  = mysqli_fetch_assoc($query);
@@ -898,12 +908,12 @@ elseif ($_GET['form']=='edit') {
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Fecha de Nacimiento</label>
-                  <input type="text" class="form-control" name=fec_nac autocomplete="off" value="<?php echo $data['fec_nac']; ?>" required>
+                  <input type="text" class="form-control" name=fec_nacf autocomplete="off" value="<?php echo $data['fec_nacf']; ?>" required>
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Edad</label>
-                  <input type="text" class="form-control" name=edad autocomplete="off" value="<?php echo $data['edad']; ?>" required>
+                  <input type="text" class="form-control" name=edadf autocomplete="off" value="<?php echo $data['edadf']; ?>" required>
               </div>
 
               <div class="col-md-2">
