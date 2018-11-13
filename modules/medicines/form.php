@@ -466,7 +466,33 @@ if ($_GET['form']=='add') { ?>
             <div class="col-md-2">
              <label for="exampleInputEmail1">Edad</label>
               <input type="text" class="form-control" name="edadf" autocomplete="off" required> 
-            </div>            
+            </div> 
+
+            <div class="col-md-2">
+             <label for="exampleInputEmail1">Genero</label>
+              <input type="text" class="form-control" name="generof" autocomplete="off" required> 
+            </div>  
+
+             <div class="col-md-2">
+             <label for="exampleInputEmail1">Parentesco</label>
+              <input type="text" class="form-control" name="parentesco" autocomplete="off" required> 
+            </div>
+
+          
+          <div class="col-md-2">
+             <label for="exampleInputEmail1">Estudiante</label>
+              <input type="text" class="form-control" name="estudiante" autocomplete="off" required> 
+            </div> 
+   
+          <div class="col-md-2">
+             <label for="exampleInputEmail1">Funcionario</label>
+              <input type="text" class="form-control" name="funcionario" autocomplete="off" required> 
+            </div> 
+
+          <div class="col-md-2">
+             <label for="exampleInputEmail1">Información Medica</label>
+              <input type="text" class="form-control" name="inf_medf" autocomplete="off" required> 
+            </div>                                     
 
 </div>
 
@@ -504,7 +530,7 @@ elseif ($_GET['form']=='edit') {
   if (isset($_GET['id'])) {
 
 
-      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,fec_ing,tiempo_s,ubic_fis,correo_i,cedulaf,p_nombref,s_nombref,p_apellidof,s_apellidof,fec_nacf,edadf FROM medicamentos WHERE codigo='$_GET[id]'") 
+      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,fec_ing,tiempo_s,ubic_fis,correo_i,cedulaf,p_nombref,s_nombref,p_apellidof,s_apellidof,fec_nacf,edadf,generof,parentesco,estudiante,funcionario,inf_medf FROM medicamentos WHERE codigo='$_GET[id]'") 
 
                                       or die('error: '.mysqli_error($mysqli));
       $data  = mysqli_fetch_assoc($query);
@@ -918,7 +944,7 @@ elseif ($_GET['form']=='edit') {
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Genero</label>
-                  <input type="text" class="form-control" name=genero autocomplete="off" value="<?php echo $data['genero']; ?>" required>
+                  <input type="text" class="form-control" name=genero autocomplete="off" value="<?php echo $data['generof']; ?>" required>
               </div>
 
               <div class="col-md-2">
@@ -938,7 +964,7 @@ elseif ($_GET['form']=='edit') {
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Informacion Medica</label>
-                  <input type="text" class="form-control" name=i_medica autocomplete="off" value="<?php echo $data['i_medica']; ?>" required>
+                  <input type="text" class="form-control" name=inf_medf autocomplete="off" value="<?php echo $data['inf_medf']; ?>" required>
               </div>
 
 </div>
