@@ -69,6 +69,9 @@ if ($_GET['form']=='add') { ?>
             </li>
 
             <li role="presentation" class=""><a href="#tab_content4" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-users"> Datos Familiares</a>
+            </li>
+
+            <li role="presentation" class=""><a href="#tab_content5" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-users"> Datos de Vehiculo</a>
             </li> 
 
           </ul>
@@ -498,6 +501,23 @@ if ($_GET['form']=='add') { ?>
 
 <!-- Aqui termina el activador 4 -->  
 
+<!-- Aqui empieza el activador 5 -->  
+
+<div role="tabpanel" class="tab-pane fade" id="tab_content5" aria-labelledby="profile-tab">
+
+          <div class="col-md-2">
+             <label for="exampleInputEmail1">Tipo de Vehiculo</label>
+              <input type="text" class="form-control" name="tipo_v" autocomplete="off" required> 
+            </div>
+
+          <div class="col-md-2">
+             <label for="exampleInputEmail1">Placa</label>
+              <input type="text" class="form-control" name="placa" autocomplete="off" required> 
+            </div>     
+
+</div>
+
+<!-- Aqui termina el activador 5 -->  
             
           </div>
         </div>
@@ -529,7 +549,7 @@ if ($_GET['form']=='add') { ?>
 elseif ($_GET['form']=='edit') { 
   if (isset($_GET['id'])) {
 
-      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,fec_ing,tiempo_s,ubic_fis,correo_i,cedulaf,p_nombref,s_nombref,p_apellidof,s_apellidof,fec_nacf,edadf,generof,parentesco,estudiante,funcionario,inf_medf FROM medicamentos WHERE codigo='$_GET[id]'") 
+      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,fec_ing,tiempo_s,ubic_fis,correo_i,cedulaf,p_nombref,s_nombref,p_apellidof,s_apellidof,fec_nacf,edadf,generof,parentesco,estudiante,funcionario,inf_medf,tipo_v,placa FROM medicamentos WHERE codigo='$_GET[id]'") 
 
 
                                       or die('error: '.mysqli_error($mysqli));
@@ -982,12 +1002,12 @@ elseif ($_GET['form']=='edit') {
 
                     <div class="col-md-2">
               <label for="exampleInputEmail1">Tipo de Vehiculo</label>
-                  <input type="text" class="form-control" name=t_vehiculo autocomplete="off" value="<?php echo $data['t_vehiculo']; ?>" required>
+                  <input type="text" class="form-control" name="tipo_v" autocomplete="off" value="<?php echo $data['tipo_v']; ?>" required>
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Placa</label>
-                  <input type="text" class="form-control" name=placa autocomplete="off" value="<?php echo $data['placa']; ?>" required>
+                  <input type="text" class="form-control" name="placa" autocomplete="off" value="<?php echo $data['placa']; ?>" required>
               </div>
 
               <div class="col-md-2">
