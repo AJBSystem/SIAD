@@ -443,6 +443,21 @@ if ($_GET['form']=='add') { ?>
               <input type="text" class="form-control" name="p_nombref" autocomplete="off" required> 
             </div> 
 
+           <div class="col-md-2">
+             <label for="exampleInputEmail1">Segundo Nombre</label>
+              <input type="text" class="form-control" name="s_nombref" autocomplete="off" required> 
+            </div> 
+
+            <div class="col-md-2">
+             <label for="exampleInputEmail1">Primer Apellido</label>
+              <input type="text" class="form-control" name="p_apellidof" autocomplete="off" required> 
+            </div> 
+
+            <div class="col-md-2">
+             <label for="exampleInputEmail1">Segundo Apellido</label>
+              <input type="text" class="form-control" name="s_apellidof" autocomplete="off" required> 
+            </div> 
+
 </div>
 
 <!-- Aqui termina el activador 4 -->  
@@ -479,7 +494,7 @@ elseif ($_GET['form']=='edit') {
   if (isset($_GET['id'])) {
 
 
-      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,fec_ing,tiempo_s,ubic_fis,correo_i,cedulaf,p_nombref FROM medicamentos WHERE codigo='$_GET[id]'") 
+      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,fec_ing,tiempo_s,ubic_fis,correo_i,cedulaf,p_nombref,s_nombref,p_apellidof,s_apellidof FROM medicamentos WHERE codigo='$_GET[id]'") 
 
                                       or die('error: '.mysqli_error($mysqli));
       $data  = mysqli_fetch_assoc($query);
@@ -868,17 +883,17 @@ elseif ($_GET['form']=='edit') {
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Segundo Nombre</label>
-                  <input type="text" class="form-control" name=s_nombre autocomplete="off" value="<?php echo $data['s_nombre']; ?>" required>
+                  <input type="text" class="form-control" name=s_nombref autocomplete="off" value="<?php echo $data['s_nombref']; ?>" required>
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Pimer Apellido</label>
-                  <input type="text" class="form-control" name=p_apellido autocomplete="off" value="<?php echo $data['p_apellido']; ?>" required>
+                  <input type="text" class="form-control" name=p_apellidof autocomplete="off" value="<?php echo $data['p_apellidof']; ?>" required>
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Segundo Apellido</label>
-                  <input type="text" class="form-control" name=s_apellido autocomplete="off" value="<?php echo $data['s_apellido']; ?>" required>
+                  <input type="text" class="form-control" name=s_apellidof autocomplete="off" value="<?php echo $data['s_apellidof']; ?>" required>
               </div>
 
               <div class="col-md-2">
