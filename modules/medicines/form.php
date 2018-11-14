@@ -101,17 +101,17 @@ if ($_GET['form']=='add') { ?>
 
              <div class="col-md-2">
                 <label for="exampleInputEmail1">Cedula</label>
-                <input type="text" class="form-control" name="cedula" autocomplete="off" required> 
+                <input type="number" class="form-control" name="cedula" autocomplete="off" required> 
               </div>
 
               <div class="col-md-2">
                 <label for="exampleInputEmail1">N° de Credencial</label>
-                <input type="text" class="form-control" name="credencial" autocomplete="off" required> 
+                <input type="number" class="form-control" name="credencial" autocomplete="off" required> 
               </div>
 
              <div class="col-md-2">
                 <label for="exampleInputEmail1">Rif</label>
-                <input type="text" class="form-control" name="rif" autocomplete="off" required> 
+                <input type="number" class="form-control" name="rif" autocomplete="off" required> 
               </div>
 
              <div class="col-md-2">
@@ -121,7 +121,7 @@ if ($_GET['form']=='add') { ?>
 
              <div class="col-md-2">
                 <label for="exampleInputEmail1">Segundo Nombre</label>
-                <input type="text" class="form-control" name="s_nombre" autocomplete="off" required> 
+                <input type="text" class="form-control" name="s_nombre" autocomplete="off"> 
               </div>
 
              <div class="col-md-2">
@@ -131,17 +131,17 @@ if ($_GET['form']=='add') { ?>
 
              <div class="col-md-2">
                 <label for="exampleInputEmail1">Segundo Apellido</label>
-                <input type="text" class="form-control" name="s_apellido" autocomplete="off" required> 
+                <input type="text" class="form-control" name="s_apellido" autocomplete="off"> 
               </div>
 
              <div class="col-md-2">
              <label for="exampleInputEmail1">Fecha de Nacimiento</label>
-              <input type="text" class="form-control" name="fec_nac" autocomplete="off" required> 
+              <input type="date" class="form-control" name="fec_nac" autocomplete="off" required> 
             </div>
 
             <div class="col-md-2">
              <label for="exampleInputEmail1">Edad</label>
-              <input type="text" class="form-control" name="edad" autocomplete="off" required> 
+              <input type="number" class="form-control" name="edad" autocomplete="off" required> 
             </div>
 
                   <div class="col-md-2">
@@ -258,17 +258,17 @@ if ($_GET['form']=='add') { ?>
 
             <div class="col-md-2">
              <label for="exampleInputEmail1">Casa N°</label>
-              <input type="text" class="form-control" name="casa" autocomplete="off" required> 
+              <input type="number" class="form-control" name="casa" autocomplete="off" required> 
             </div>
 
             <div class="col-md-2">
              <label for="exampleInputEmail1">Codigo del CP</label>
-              <input type="text" class="form-control" name="codigo_cp" autocomplete="off" required> 
+              <input type="number" class="form-control" name="codigo_cp" autocomplete="off" required> 
             </div>
 
             <div class="col-md-2">
              <label for="exampleInputEmail1">Serial del CP</label>
-              <input type="text" class="form-control" name="serial_cp" autocomplete="off" required> 
+              <input type="number" class="form-control" name="serial_cp" autocomplete="off" required> 
             </div>
 
 
