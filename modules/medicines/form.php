@@ -208,7 +208,7 @@ if ($_GET['form']=='add') { ?>
 
             <div class="col-md-2">
              <label for="exampleInputEmail1">Correo Electronico</label>
-              <input type="text" class="form-control" name="correo_e" autocomplete="off" required> 
+              <input type="email" class="form-control" name="correo_e" autocomplete="off" required> 
             </div>
 
             <div class="col-md-2">
@@ -228,7 +228,32 @@ if ($_GET['form']=='add') { ?>
 
            <div class="col-md-2">
              <label for="exampleInputEmail1">Estado</label>
-              <input type="text" class="form-control" name="estado" autocomplete="off" required> 
+              <select type="text" class="form-control" name="estado" autocomplete="off" required> 
+                        <option>Amazonas</option>
+                          <option>Anzoategui</option>
+                          <option>Apure</option>
+                          <option>Aragua</option>
+                          <option>Barinas</option>
+                          <option>Bolívar</option>
+                          <option>Carabobo</option>
+                          <option>Cojedes</option>
+                          <option>Delta Amacuro</option>
+                          <option>Distrito Capital</option>
+                          <option>Falcón</option>
+                          <option>Guárico</option>
+                          <option>Lara</option>
+                          <option>Mérida</option>
+                          <option>Miranda</option>
+                          <option>Monagas</option>
+                          <option>Nueva Esparta</option>
+                          <option>Portuguesa</option>
+                          <option>Sucre</option>
+                          <option>Táchira</option>
+                          <option>Trujillo</option>
+                          <option>Vargas</option>
+                          <option>Yaracuy</option>
+                          <option>Zulia</option>
+                        </select>
             </div>
 
             <div class="col-md-2">
@@ -330,12 +355,12 @@ if ($_GET['form']=='add') { ?>
 
             <div class="col-md-2">
              <label for="exampleInputEmail1">Fecha de Ingreso</label>
-              <input type="text" class="form-control" name="fec_ing" autocomplete="off" required> 
+              <input type="date" class="form-control" name="fec_ing" autocomplete="off" required> 
             </div>                  
 
             <div class="col-md-2">
              <label for="exampleInputEmail1">Tiempo de Servicio</label>
-              <input type="text" class="form-control" name="tiempo_s" autocomplete="off" required> 
+              <input type="number" class="form-control" name="tiempo_s" autocomplete="off" required> 
             </div>     
 
             <div class="col-md-2">
@@ -428,7 +453,7 @@ if ($_GET['form']=='add') { ?>
 
              <div class="col-md-2">
              <label for="exampleInputEmail1">Correo Institucional</label>
-              <input type="text" class="form-control" name="correo_i" autocomplete="off" required> 
+              <input type="email" class="form-control" name="correo_i" autocomplete="off" required> 
             </div>               
 
  </div>
@@ -441,7 +466,7 @@ if ($_GET['form']=='add') { ?>
 
              <div class="col-md-2">
              <label for="exampleInputEmail1">Cedula</label>
-              <input type="text" class="form-control" name="cedulaf" autocomplete="off" required> 
+              <input type="number" class="form-control" name="cedulaf" autocomplete="off" required> 
             </div> 
 
             <div class="col-md-2">
@@ -451,7 +476,7 @@ if ($_GET['form']=='add') { ?>
 
            <div class="col-md-2">
              <label for="exampleInputEmail1">Segundo Nombre</label>
-              <input type="text" class="form-control" name="s_nombref" autocomplete="off" required> 
+              <input type="text" class="form-control" name="s_nombref" autocomplete="off"> 
             </div> 
 
             <div class="col-md-2">
@@ -461,39 +486,54 @@ if ($_GET['form']=='add') { ?>
 
             <div class="col-md-2">
              <label for="exampleInputEmail1">Segundo Apellido</label>
-              <input type="text" class="form-control" name="s_apellidof" autocomplete="off" required> 
+              <input type="text" class="form-control" name="s_apellidof" autocomplete="off"> 
             </div> 
 
             <div class="col-md-2">
              <label for="exampleInputEmail1">Fecha de Nacimiento</label>
-              <input type="text" class="form-control" name="fec_nacf" autocomplete="off" required> 
+              <input type="date" class="form-control" name="fec_nacf" autocomplete="off" required> 
             </div> 
 
             <div class="col-md-2">
              <label for="exampleInputEmail1">Edad</label>
-              <input type="text" class="form-control" name="edadf" autocomplete="off" required> 
+              <input type="number" class="form-control" name="edadf" autocomplete="off" required> 
             </div> 
 
             <div class="col-md-2">
              <label for="exampleInputEmail1">Genero</label>
-              <input type="text" class="form-control" name="generof" autocomplete="off" required> 
+              <select type="text" class="form-control" name="generof" autocomplete="off" required> 
+                <option>Femenina</option>
+                <option>Masculino</option>
+              </select> 
             </div>  
 
              <div class="col-md-2">
              <label for="exampleInputEmail1">Parentesco</label>
-              <input type="text" class="form-control" name="parentesco" autocomplete="off" required> 
+              <select type="text" class="form-control" name="parentesco" autocomplete="off" required> 
+                <option>Hijo/a</option>
+                <option>Padre</option>
+                <option>Madre</option>
+                <option>Hermano/a</option>
+                <option>Otro/a</option>
+              </select>
             </div>
 
           
-          <div class="col-md-2">
+          <div class="col-md-1">
              <label for="exampleInputEmail1">Estudiante</label>
-              <input type="text" class="form-control" name="estudiante" autocomplete="off" required> 
-            </div> 
+              <select type="text" class="form-control" name="estudiante" autocomplete="off" required> 
+                <option>Si</option>
+                <option>No</option>
+              </select>
+          </div> 
    
-          <div class="col-md-2">
+          <div class="col-md-1">
              <label for="exampleInputEmail1">Funcionario</label>
-              <input type="text" class="form-control" name="funcionario" autocomplete="off" required> 
-            </div> 
+              <select type="text" class="form-control" name="funcionario" autocomplete="off" required> 
+                <option>Si</option>
+                <option>No</option>
+              </select>  
+          </div> 
 
           <div class="col-md-2">
              <label for="exampleInputEmail1">Información Medica</label>
@@ -510,42 +550,45 @@ if ($_GET['form']=='add') { ?>
 
           <div class="col-md-2">
              <label for="exampleInputEmail1">Tipo de Vehiculo</label>
-              <input type="text" class="form-control" name="tipo_v" autocomplete="off" required> 
+              <input type="text" class="form-control" name="tipo_v" autocomplete="off"> 
             </div>
 
           <div class="col-md-2">
              <label for="exampleInputEmail1">Placa</label>
-              <input type="text" class="form-control" name="placa" autocomplete="off" required> 
+              <input type="text" class="form-control" name="placa" autocomplete="off"> 
             </div> 
 
           <div class="col-md-2">
              <label for="exampleInputEmail1">Combustible</label>
-              <input type="text" class="form-control" name="combustible" autocomplete="off" required> 
+              <select type="text" class="form-control" name="combustible" autocomplete="off"> 
+                <option>Gasolina</option>
+                <option>Gasoil</option>
+              </select>
             </div>  
 
            <div class="col-md-2">
              <label for="exampleInputEmail1">Serial de la Carroceria</label>
-              <input type="text" class="form-control" name="serial_carro" autocomplete="off" required> 
+              <input type="text" class="form-control" name="serial_carro" autocomplete="off"> 
             </div>                             
 
            <div class="col-md-2">
              <label for="exampleInputEmail1">Marca</label>
-              <input type="text" class="form-control" name="marca" autocomplete="off" required> 
+              <input type="text" class="form-control" name="marca" autocomplete="off"> 
             </div> 
 
            <div class="col-md-2">
              <label for="exampleInputEmail1">Modelo</label>
-              <input type="text" class="form-control" name="modelo" autocomplete="off" required> 
+              <input type="text" class="form-control" name="modelo" autocomplete="off"> 
             </div> 
 
            <div class="col-md-2">
              <label for="exampleInputEmail1">Color</label>
-              <input type="text" class="form-control" name="color" autocomplete="off" required> 
+              <input type="text" class="form-control" name="color" autocomplete="off"> 
             </div> 
 
            <div class="col-md-2">
              <label for="exampleInputEmail1">Año</label>
-              <input type="text" class="form-control" name="alo" autocomplete="off" required> 
+              <input type="number" class="form-control" name="alo" autocomplete="off"> 
             </div> 
 
 </div>
@@ -558,27 +601,27 @@ if ($_GET['form']=='add') { ?>
 
            <div class="col-md-2">
              <label for="exampleInputEmail1">Tipo</label>
-              <input type="text" class="form-control" name="tipo_d" autocomplete="off" required> 
+              <input type="text" class="form-control" name="tipo_d" autocomplete="off"> 
             </div> 
 
            <div class="col-md-2">
              <label for="exampleInputEmail1">N° de Serial</label>
-              <input type="text" class="form-control" name="n_serial" autocomplete="off" required> 
+              <input type="number" class="form-control" name="n_serial" autocomplete="off"> 
             </div> 
 
            <div class="col-md-2">
              <label for="exampleInputEmail1">Marca</label>
-              <input type="text" class="form-control" name="marca_d" autocomplete="off" required> 
+              <input type="text" class="form-control" name="marca_d" autocomplete="off"> 
             </div> 
 
            <div class="col-md-2">
              <label for="exampleInputEmail1">Modelo</label>
-              <input type="text" class="form-control" name="modelo_d" autocomplete="off" required> 
+              <input type="text" class="form-control" name="modelo_d" autocomplete="off"> 
             </div> 
 
            <div class="col-md-2">
              <label for="exampleInputEmail1">Calibre</label>
-              <input type="text" class="form-control" name="calibre" autocomplete="off" required> 
+              <input type="text" class="form-control" name="calibre" autocomplete="off"> 
             </div> 
 
 </div>
