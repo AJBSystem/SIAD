@@ -55,7 +55,7 @@ $count  = mysqli_num_rows($query);
         
           
             echo "  <tr>
-                        <td width='40' height='13' align='center' valign='middle'>$no</td>
+                        <td width='25' height='13' align='center' valign='middle'>$no</td>
                         <td width='80' height='13' align='center' valign='middle'>$data[cedula]</td>
                         <td width='80' height='13' align='center' valign='middle'>$data[credencial]</td>
                         <td style='padding-left:5px;' width='80' height='13' valign='middle'>$data[p_nombre]</td>
@@ -66,7 +66,7 @@ $count  = mysqli_num_rows($query);
                         <td style='padding-left:5px;' width='45' height='13' valign='middle'>$data[edad]</td>
                         <td style='padding-left:5px;' width='45' height='13' valign='middle'>$data[genero]</td>
                         <td style='padding-left:5px;' width='80' height='13' valign='middle'>$data[tel_cel]</td>
-                        <td style='padding-left:5px;' width='85' height='13' valign='middle'>$data[correo_e]</td>
+                        <td style='padding-left:5px;' width='150' height='13' valign='middle'>$data[correo_e]</td>
 
             
                     </tr>";
