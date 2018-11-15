@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-11-2018 a las 19:54:07
+-- Tiempo de generación: 15-11-2018 a las 15:43:07
 -- Versión del servidor: 10.1.36-MariaDB
 -- Versión de PHP: 5.6.38
 
@@ -102,12 +102,12 @@ CREATE TABLE `medicamentos` (
   `fec_ing` varchar(100) NOT NULL,
   `tiempo_s` varchar(50) NOT NULL,
   `ubic_fis` varchar(150) NOT NULL,
-  `p_nombref` varchar(100) NOT NULL,
+  `p_nombref` varchar(50) NOT NULL,
   `s_nombref` varchar(100) NOT NULL,
   `p_apellidof` varchar(100) NOT NULL,
   `s_apellidof` varchar(50) NOT NULL,
   `cedulaf` int(9) NOT NULL,
-  `fec_nacf` varchar(50) NOT NULL,
+  `fec_nacf` varchar(100) NOT NULL,
   `edadf` varchar(3) NOT NULL,
   `generof` varchar(50) NOT NULL,
   `parentesco` varchar(50) NOT NULL,
@@ -120,23 +120,26 @@ CREATE TABLE `medicamentos` (
   `serial_carro` varchar(50) NOT NULL,
   `marca` varchar(50) NOT NULL,
   `modelo` varchar(50) NOT NULL,
-  `color` varchar(50) NOT NULL
+  `color` varchar(50) NOT NULL,
+  `alo` varchar(50) NOT NULL,
+  `tipo_d` varchar(50) NOT NULL,
+  `n_serial` varchar(50) NOT NULL,
+  `marca_d` varchar(50) NOT NULL,
+  `modelo_d` varchar(50) NOT NULL,
+  `calibre` varchar(50) NOT NULL,
+  `estatus` varchar(50) NOT NULL,
+  `selec_div` varchar(50) NOT NULL,
+  `cargo` varchar(50) NOT NULL,
+  `rango` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `medicamentos`
 --
 
-INSERT INTO `medicamentos` (`codigo`, `nombre`, `precio_compra`, `precio_venta`, `unidad`, `stock`, `created_user`, `created_date`, `updated_user`, `updated_date`, `p_nombre`, `cedula`, `credencial`, `p_apellido`, `fec_nac`, `edad`, `s_nombre`, `s_apellido`, `rif`, `genero`, `tel_cel`, `tel_hab`, `tel_emerg`, `municipio`, `calle`, `casa`, `parroquia`, `estado`, `ciudad`, `avenida`, `codigo_cp`, `serial_cp`, `estado_c`, `lugar_nac`, `correo_e`, `grado_inst`, `correo_i`, `tipo_s`, `medicamen`, `discapacidad`, `alergias`, `nota`, `notas`, `fec_ing`, `tiempo_s`, `ubic_fis`, `p_nombref`, `s_nombref`, `p_apellidof`, `s_apellidof`, `cedulaf`, `fec_nacf`, `edadf`, `generof`, `parentesco`, `estudiante`, `funcionario`, `inf_medf`, `tipo_v`, `placa`, `combustible`, `serial_carro`, `marca`, `modelo`, `color`) VALUES
-('B000002', '', 0, 0, '', 0, 1, '2018-11-08 15:19:17', 1, '2018-11-08 15:19:17', '5', 659, 59, '498', '45', 9845, '985', '98', 59, 0, 489, 8, 89, 'jhk', '8', '98', '78', '4789', '889', 'yjt', 8, 798, 'Soltero/a', 'Amazonas', '89', 'Primaria', '', 'bd', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
-('B000005', '', 0, 0, '', 0, 1, '2018-11-12 18:48:52', 1, '2018-11-13 14:04:18', '6556', 11201693, 269510, '56', '65', 65, '56', '565', 6565, 0, 65, 6, 56, '56', '56', '6565', '6', 'Amazonas', '55', '56', 0, 56, 'Soltero/a', 'Amazonas', '5', 'Primaria', 'pruebas@cicpc.com', 'gf', 'gdg', 'gfdg', 'gsd', '', 'gfd', '655965', '5+5656', 'prueba', '', '', '', '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
-('B000006', '', 0, 0, '', 0, 1, '2018-11-13 15:35:05', 1, '2018-11-13 15:35:05', 'Agustin', 10877210, 10877, 'Martinez', '20/10/1975', 50, 'Fortunato', 'Zapata', 10877210, 0, 498, 909, 49, '4', '99', '5', '905', '0', '9', '9', 959, 595, 'Soltero/a', 'Amazonas', 'agustin', 'Primaria', 'dsf', 'sdf', 'dsf', 'dfs', 'dsf', '', 'df', 'dfs', 'dsf', 'df', 'fds', 'zapata', 'martinez', '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
-('B000007', '', 0, 0, '', 0, 1, '2018-11-13 15:36:58', 1, '2018-11-13 15:36:58', 'f', 0, 0, 'fy', 'yfy', 0, 'y', 'gf', 0, 0, 0, 0, 0, 'fy', 'f', 'yu', 'yf', 'fy', 'f', 'y', 0, 0, 'Soltero/a', 'Yaracuy', 'fyf', 'Primaria', 'ig', 'jkg', 'gigi', 'ug', 'uigui', '', 's', 'uig', 'iu', 'ugh', 'sdggds', 'gf', 'carvajal', 'zapata', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
-('B000008', '', 0, 0, '', 0, 1, '2018-11-13 15:42:48', 1, '2018-11-13 15:42:48', '84', 6, 64, '4', '89', 489, '0498', '894', 45, 0, 89, 0, 894, '8949', '89', '8', '4', '89189', '8', '894', 9, 4, 'Soltero/a', 'Amazonas', '4', 'Primaria', 'fyj', 'u', 'fy', 'f', 'yf', '', 'y', 'utfy', 'h', 'f', 'Agustin', 'Fortunato', 'Martinez', 'Zapata', 10877210, '10/10/1975', '50 ', '', '', '', '', '', '', '', '', '', '', '', ''),
-('B000009', '', 0, 0, '', 0, 1, '2018-11-13 15:47:44', 1, '2018-11-13 15:47:44', '654', 6545, 4, '64', '56456', 654, '65', '5465', 654, 0, 54, 65465, 4, '54', '56', '65', '56', '566', '6', '4', 588, 5656, 'Soltero/a', 'Amazonas', '646', 'Primaria', '5', 'ohoh', 'ihi', 'oh', 'ihio', '', 'oii', '54864', '4554', '455', 'Yoseida', 'Maria', 'Barreto', 'Carvajal', 11201693, '21/12/1971', '40', 'femenina', 'madre', '', '', '', '', '', '', '', '', '', ''),
-('B000010', '', 0, 0, '', 0, 1, '2018-11-13 15:55:44', 1, '2018-11-13 15:55:44', 'Dauli', 23641099, 23641, 'Martinez', '15/12/1980', 25, 'Agustin', 'Barreto', 23641099, 0, 2147483647, 2124170277, 2147483647, 'Libertador', 'callejon pinto saluna', '88', 'Antimano', 'Distrito Capital', 'Caracas', 'Primera entrada de carapita', 21695965, 596, 'Soltero/a', 'Amazonas', 'daulimartinez3@gmail.com', 'Primaria', 'daulimartinez@cicpc.com.ve', 'B+', 'Antibioticos', 'Ninguna', 'NP', '', 'NP', '01/10/2015', '5 aÃ±os', 'Homicidios', 'Yoseida', 'Maria', 'Barreto', 'Carvajal', 11201693, '29/10/1998', '40', 'Femenina', 'Madre', 'No', 'No', 'Ninguna', '', '', '', '', '', '', ''),
-('B000011', '', 0, 0, '', 0, 1, '2018-11-13 18:46:43', 1, '2018-11-13 18:46:43', '4', 54165, 45, '984', '84', 894, '4', '894', 4, 0, 894, 4, 894, 'ds', '8848', '484', '498', '88', '88', '48', 884, 84, 'Soltero/a', 'Amazonas', '894', 'Primaria', 'ugu', 'yhufgyj', 'f', 'gfiu', 'gu', '', 'gu', 'ujgui', 'guig', 'g', 'hui', 'uiui', 'iu', 'gu', 0, 'iug', 'ui', 'gg', 'u', 'guig', 'ui', 'uig', 'camion', 'xsd15', '', '', '', '', ''),
-('B000012', '', 0, 0, '', 0, 1, '2018-11-13 18:53:50', 1, '2018-11-13 18:53:50', 'gui', 0, 0, 'ug', 'uig', 0, 'gui', 'uguig', 0, 0, 0, 0, 0, 'ugu', 'gugui', 'gu', 'g', 'ug', 'giui', 'iguguiugi', 0, 0, 'Soltero/a', 'Amazonas', 'guiug', 'Universitario', 'g', 'iugu', 'g', 'ug', 'ui', '', 'ui', 'iygu', 'gugi', 'gui', 'uf', 'uyf', 'yuf', 'yfyuf', 0, 'yf', 'f', 'yuf', 'uf', 'fyu', 'fuyf', 'f', 'ddsa', 'dsa', 'gasolina', 'pruebasss', '', '', '');
+INSERT INTO `medicamentos` (`codigo`, `nombre`, `precio_compra`, `precio_venta`, `unidad`, `stock`, `created_user`, `created_date`, `updated_user`, `updated_date`, `p_nombre`, `cedula`, `credencial`, `p_apellido`, `fec_nac`, `edad`, `s_nombre`, `s_apellido`, `rif`, `genero`, `tel_cel`, `tel_hab`, `tel_emerg`, `municipio`, `calle`, `casa`, `parroquia`, `estado`, `ciudad`, `avenida`, `codigo_cp`, `serial_cp`, `estado_c`, `lugar_nac`, `correo_e`, `grado_inst`, `correo_i`, `tipo_s`, `medicamen`, `discapacidad`, `alergias`, `nota`, `notas`, `fec_ing`, `tiempo_s`, `ubic_fis`, `p_nombref`, `s_nombref`, `p_apellidof`, `s_apellidof`, `cedulaf`, `fec_nacf`, `edadf`, `generof`, `parentesco`, `estudiante`, `funcionario`, `inf_medf`, `tipo_v`, `placa`, `combustible`, `serial_carro`, `marca`, `modelo`, `color`, `alo`, `tipo_d`, `n_serial`, `marca_d`, `modelo_d`, `calibre`, `estatus`, `selec_div`, `cargo`, `rango`) VALUES
+('B000002', '', 0, 0, '', 0, 1, '2018-11-08 15:19:17', 1, '2018-11-15 14:42:14', '5', 659, 59, '498', '2018-11-15', 9845, '985', '98', 59, 0, 489, 8, 89, 'jhk', '8', '98', '78', 'Amazonas', '889', 'yjt', 8, 798, 'Soltero/a', 'Amazonas', '89', 'Primaria', 'fds@ff.con', 'bd', 'fds', 'dfsf', 'sdf', '', 'fsd', '2018-11-30', '2', 'dsa', 'Agustin', 'Fortunato', 'Martinez', 'ggdf', 10887210, '2018-11-09', '50', '', '', '', '', 'ninguna', 'carro', 'sfaaf25', '', 'sad1D', 'mazda', '3', 'rojo', '2015', 'arma', 'sfs41585', 'glock', 'vereta', '.47', '', '', '', ''),
+('B000003', '', 0, 0, '', 0, 1, '2018-11-13 19:39:54', 1, '2018-11-15 14:12:44', 'Darly', 26435885, 26480, 'Martinez', '29/10/1998', 20, 'Naiduth', 'Barreto', 264358803, 0, 2147483647, 2124170277, 2147483647, 'Libertador', 'callejojn pinto salina', '88', 'Antimano', 'Amazonas', 'Caracas', 'Primera entrada de carapita subida del caballo', 0, 98986, 'Soltero/a', 'Amazonas', 'darlynmartinezb@gmail.com', 'Primaria', 'darlynmartinezb@cicpc.com.ve', 'B+', 'Antibioticos', 'Ninguna', 'Zancudo', '', 'NP', '2018-11-08', '2', 'Direccion de tecnologia', 'Yoseida', 'Maria', 'Barreto', 'Carvajal', 11201693, '21/12/1972', '40', 'Femenino', 'Madre', 'No', 'No', 'NP', 'Particular', '564da64', 'Gasolina', '456d69df5s96', 'Mazda', '3', 'Rojo', '2018', 'Arma', '54654da6', 'Glock', '47', '20', '', '', '', '');
 
 -- --------------------------------------------------------
 
