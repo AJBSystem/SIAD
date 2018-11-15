@@ -130,6 +130,14 @@ else {
                 $tiempo_s  = mysqli_real_escape_string($mysqli, trim($_POST['tiempo_s']));
                 $ubic_fis  = mysqli_real_escape_string($mysqli, trim($_POST['ubic_fis']));
                 $correo_i  = mysqli_real_escape_string($mysqli, trim($_POST['correo_i']));
+                $cedulaf  = mysqli_real_escape_string($mysqli, trim($_POST['cedulaf']));
+                $p_nombref  = mysqli_real_escape_string($mysqli, trim($_POST['p_nombref']));
+                $s_nombref  = mysqli_real_escape_string($mysqli, trim($_POST['s_nombref']));
+                $p_apellidof  = mysqli_real_escape_string($mysqli, trim($_POST['p_apellidof']));
+                $s_apellidof  = mysqli_real_escape_string($mysqli, trim($_POST['s_apellidof']));
+                $fec_nacf  = mysqli_real_escape_string($mysqli, trim($_POST['fec_nacf']));
+                $edadf  = mysqli_real_escape_string($mysqli, trim($_POST['edadf']));
+                $inf_medf  = mysqli_real_escape_string($mysqli, trim($_POST['inf_medf']));
                 $updated_user = $_SESSION['id_user'];
 
                 $query = mysqli_query($mysqli, "UPDATE medicamentos SET  
@@ -167,6 +175,14 @@ else {
                                                                          tiempo_s   = '$tiempo_s',
                                                                          ubic_fis   = '$ubic_fis',
                                                                          correo_i   = '$correo_i',
+                                                                         cedulaf   = '$cedulaf',
+                                                                         p_nombref  = '$p_nombref',
+                                                                         s_nombref  = '$s_nombref',
+                                                                         p_apellidof  = '$p_apellidof',
+                                                                         s_apellidof  = '$s_apellidof',
+                                                                         fec_nacf  = '$fec_nacf',
+                                                                         edadf  = '$edadf',
+                                                                         inf_medf  = '$inf_medf',
                                                                     updated_user    = '$updated_user'
                                                               WHERE codigo       = '$codigo'")
                                                 or die('error: '.mysqli_error($mysqli));
