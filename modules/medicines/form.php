@@ -454,7 +454,17 @@ if ($_GET['form']=='add') { ?>
              <div class="col-md-2">
              <label for="exampleInputEmail1">Correo Institucional</label>
               <input type="email" class="form-control" name="correo_i" autocomplete="off" required> 
-            </div>               
+            </div>  
+
+               <div class="col-md-2">
+              <label for="exampleInputEmail1">Estatus</label>
+              <select type="text" class="form-control" name="estatus" autocomplete="off" required>
+                    <option>Activo</option>
+                    <option>Reposo</option>
+                    <option>Vacaciones</option>
+                    <option>Comision</option>
+                  </select>
+              </div>                        
 
  </div>
 
@@ -1128,7 +1138,7 @@ elseif ($_GET['form']=='edit') {
 
             <div class="col-md-2">
               <label for="exampleInputEmail1">Cedula</label>
-                  <input type="text" class="form-control" name="cedulaf" autocomplete="off" value="<?php echo $data['cedulaf']; ?>" required>
+                  <input type="number" class="form-control" name="cedulaf" autocomplete="off" value="<?php echo $data['cedulaf']; ?>" required>
               </div>
 
               <div class="col-md-2">
