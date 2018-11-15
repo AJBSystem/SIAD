@@ -126,6 +126,10 @@ else {
                 $discapacidad  = mysqli_real_escape_string($mysqli, trim($_POST['discapacidad']));
                 $alergias  = mysqli_real_escape_string($mysqli, trim($_POST['alergias']));
                 $notas  = mysqli_real_escape_string($mysqli, trim($_POST['notas']));
+                $fec_ing  = mysqli_real_escape_string($mysqli, trim($_POST['fec_ing']));
+                $tiempo_s  = mysqli_real_escape_string($mysqli, trim($_POST['tiempo_s']));
+                $ubic_fis  = mysqli_real_escape_string($mysqli, trim($_POST['ubic_fis']));
+                $correo_i  = mysqli_real_escape_string($mysqli, trim($_POST['correo_i']));
                 $updated_user = $_SESSION['id_user'];
 
                 $query = mysqli_query($mysqli, "UPDATE medicamentos SET  
@@ -159,6 +163,10 @@ else {
                                                                          discapacidad   = '$discapacidad',
                                                                          alergias   = '$alergias',
                                                                          notas   = '$notas',
+                                                                         fec_ing   = '$fec_ing',
+                                                                         tiempo_s   = '$tiempo_s',
+                                                                         ubic_fis   = '$ubic_fis',
+                                                                         correo_i   = '$correo_i',
                                                                     updated_user    = '$updated_user'
                                                               WHERE codigo       = '$codigo'")
                                                 or die('error: '.mysqli_error($mysqli));

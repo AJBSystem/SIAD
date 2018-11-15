@@ -658,7 +658,7 @@ if ($_GET['form']=='add') { ?>
 elseif ($_GET['form']=='edit') { 
   if (isset($_GET['id'])) {
 
-      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,fec_ing,tiempo_s,ubic_fis,correo_i,cedulaf,p_nombref,s_nombref,p_apellidof,s_apellidof,fec_nacf,edadf,generof,parentesco,estudiante,funcionario,inf_medf,tipo_v,placa,combustible,serial_carro,marca,modelo,color,alo,tipo_d,n_serial,marca_d,modelo_d,calibre FROM medicamentos WHERE codigo='$_GET[id]'") 
+      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,selec_div,cargo,rango,fec_ing,tiempo_s,ubic_fis,correo_i,estatus,cedulaf,p_nombref,s_nombref,p_apellidof,s_apellidof,fec_nacf,edadf,generof,parentesco,estudiante,funcionario,inf_medf,tipo_v,placa,combustible,serial_carro,marca,modelo,color,alo,tipo_d,n_serial,marca_d,modelo_d,calibre FROM medicamentos WHERE codigo='$_GET[id]'") 
 
 
                                       or die('error: '.mysqli_error($mysqli));
@@ -992,29 +992,109 @@ elseif ($_GET['form']=='edit') {
 
             <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
 
-                           <div class="col-md-2">
+            <div class="col-md-2">
               <label for="exampleInputEmail1">Seleccionar Division</label>
-                  <input type="text" class="form-control" name=seleccionar_d autocomplete="off" value="<?php echo $data['seleccionar_d']; ?>" required>
+                  <select type="text" class="form-control" name="selec_div" autocomplete="off" value="<?php echo $data['selec_div']; ?>" required>
+                  <option>Base de Datos</option>
+                          <option>Dirección</option>
+                          <option>División de Operaciones</option>
+                          <option>División de Proyectos</option>
+                          <option>División de Sistemas</option>
+                          <option>División de Telematica</option>
+                        </select>
               </div>
 
                <div class="col-md-2">
               <label for="exampleInputEmail1">Fecha de Ingreso</label>
-                  <input type="text" class="form-control" name="fec_ing" autocomplete="off" value="<?php echo $data['fec_ing']; ?>" required>
+                  <input type="date" class="form-control" name="fec_ing" autocomplete="off" value="<?php echo $data['fec_ing']; ?>" required>
               </div>
 
                <div class="col-md-2">
               <label for="exampleInputEmail1">Tiempo de Servicio</label>
-                  <input type="text" class="form-control" name="tiempo_s" autocomplete="off" value="<?php echo $data['tiempo_s']; ?>" required>
+                  <input type="number" class="form-control" name="tiempo_s" autocomplete="off" value="<?php echo $data['tiempo_s']; ?>" required>
               </div>
 
                <div class="col-md-2">
               <label for="exampleInputEmail1">Cargo</label>
-                  <input type="text" class="form-control" name="cargo" autocomplete="off" value="<?php echo $data['cargo']; ?>" required>
+                  <select type="text" class="form-control" name="cargo" autocomplete="off" value="<?php echo $data['cargo']; ?>" required>
+                          <option>Adjunto</option>
+                          <option>Agente de Seguridad I</option>
+                          <option>Agente de Seguridad II</option>
+                          <option>Asesor Juridico General</option>
+                          <option>Director</option>
+                          <option>Director de Investigaciones</option>
+                          <option>Experto Profesional Especialista I</option>
+                          <option>Experto Profesional Especialista II</option>
+                          <option>Experto Profesional Especialista III</option>
+                          <option>Jefe de Área</option>
+                          <option>Jefe de Bloque</option>
+                          <option>Jefe de Delegación</option>
+                          <option>Jefe de Departamento</option>
+                          <option>Jefe de División</option>
+                          <option>Jefe de Escolta</option>
+                          <option>Jefe de Inspectoría</option>
+                          <option>Jefe de Investigaciones</option>
+                          <option>Jefe de Sub Delegación</option>                            
+                          <option>Jefe del Eje</option>
+                          <option>Miembro Principal  Comisión Permanente Evaluación Y Seguim</option>
+                          <option>Miembro Principal del Consejo Disciplinario</option>
+                          <option>No Aplica</option>
+                          <option>Secretario General</option>
+                          <option>Secretario General Nacional</option>
+                          <option>Secretario Principal Consejo Disciplinario</option>
+                          <option>Sub Director General</option>
+                          <option>Supervisor</option>
+                          <option>Supervisor de Investigaciones</option>
+                          <option>Supervisor de los Servicios</option>
+                          <option>Supervisor de Región</option>
+                          <option>Supervisor de Sub Delegaciones</option>
+                        </select>
               </div>
 
                <div class="col-md-2">
               <label for="exampleInputEmail1">Rango</label>
-                  <input type="text" class="form-control" name="rango" autocomplete="off" value="<?php echo $data['rango']; ?>" required>
+                  <select type="text" class="form-control" name="rango" autocomplete="off" value="<?php echo $data['rango']; ?>" required>
+                          <option>Asesor Juridico</option>
+                          <option>Asist. Administrativo I</option>
+                          <option>Asist. Administrativo II</option>
+                          <option>Asist. Administrativo III</option>
+                          <option>Asist. Administrativo IIIV</option>
+                          <option>Asist. Administrativo V</option>
+                          <option>Asist. Administrativo VI</option>
+                          <option>Asist. Administrativo VII</option>
+                          <option>Aspirante</option>
+                          <option>Auxiliar Adm. I</option>
+                          <option>Auxiliar Adm. II</option>
+                          <option>Auxiliar Adm. III</option>
+                          <option>Auxiliar Adm. IV</option>
+                          <option>Auxiliar Adm. V</option>
+                          <option>Auxiliar Adm. VI</option>                  
+                          <option>Auxiliar Adm. VII</option>
+                          <option>Comisario</option>                        
+                          <option>Comisario General</option>
+                          <option>Comisario Jefe</option>
+                          <option>Detective</option>
+                          <option>Detective Agregado</option>
+                          <option>Detective Jefe</option>
+                          <option>Director General Nacional</option>
+                          <option>Experto Profesional  I</option>
+                          <option>Experto Profesional  II</option>
+                          <option>Experto Profesional  III</option>
+                          <option>Experto Profesional IV</option>
+                          <option>Experto Tecnico I</option>
+                          <option>Experto Tecnico II</option>
+                          <option>Experto Tecnico III</option>
+                          <option>Experto Tecnico IV</option>
+                          <option>Experto Tecnico VI</option>
+                          <option>Experto Tecnico VII</option>
+                          <option>Inspector</option>
+                          <option>Inspector Agregado</option>
+                          <option>Inspector General</option>
+                          <option>Inspector Jefe</option>
+                          <option>Sub-Director</option>
+                          <option>Pasantes</option>
+                          <option>No Aplica</option>
+                        </select>
               </div>
 
                <div class="col-md-2">
@@ -1024,12 +1104,17 @@ elseif ($_GET['form']=='edit') {
 
                <div class="col-md-2">
               <label for="exampleInputEmail1">Correo Institucional</label>
-                  <input type="text" class="form-control" name="correo_i" autocomplete="off" value="<?php echo $data['correo_i']; ?>" required>
+                  <input type="email" class="form-control" name="correo_i" autocomplete="off" value="<?php echo $data['correo_i']; ?>" required>
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Estatus</label>
-                  <input type="text" class="form-control" name="estatus" autocomplete="off" value="<?php echo $data['estatus']; ?>" required>
+                  <select type="text" class="form-control" name="estatus" autocomplete="off" value="<?php echo $data['estatus']; ?>" required>
+                    <option>Activo</option>
+                    <option>Reposo</option>
+                    <option>Vacaciones</option>
+                    <option>Comision</option>
+                  </select>
               </div>
 
 
@@ -1043,62 +1128,62 @@ elseif ($_GET['form']=='edit') {
 
             <div class="col-md-2">
               <label for="exampleInputEmail1">Cedula</label>
-                  <input type="text" class="form-control" name=cedulaf autocomplete="off" value="<?php echo $data['cedulaf']; ?>" required>
+                  <input type="text" class="form-control" name="cedulaf" autocomplete="off" value="<?php echo $data['cedulaf']; ?>" required>
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Primer Nombre</label>
-                  <input type="text" class="form-control" name=p_nombref autocomplete="off" value="<?php echo $data['p_nombref']; ?>" required>
+                  <input type="text" class="form-control" name="p_nombref "autocomplete="off" value="<?php echo $data['p_nombref']; ?>" required>
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Segundo Nombre</label>
-                  <input type="text" class="form-control" name=s_nombref autocomplete="off" value="<?php echo $data['s_nombref']; ?>">
+                  <input type="text" class="form-control" name="s_nombref" autocomplete="off" value="<?php echo $data['s_nombref']; ?>">
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Pimer Apellido</label>
-                  <input type="text" class="form-control" name=p_apellidof autocomplete="off" value="<?php echo $data['p_apellidof']; ?>" required>
+                  <input type="text" class="form-control" name="p_apellidof" autocomplete="off" value="<?php echo $data['p_apellidof']; ?>" required>
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Segundo Apellido</label>
-                  <input type="text" class="form-control" name=s_apellidof autocomplete="off" value="<?php echo $data['s_apellidof']; ?>">
+                  <input type="text" class="form-control" name="s_apellidof" autocomplete="off" value="<?php echo $data['s_apellidof']; ?>">
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Fecha de Nacimiento</label>
-                  <input type="text" class="form-control" name=fec_nacf autocomplete="off" value="<?php echo $data['fec_nacf']; ?>" required>
+                  <input type="text" class="form-control" name="fec_nacf" autocomplete="off" value="<?php echo $data['fec_nacf']; ?>" required>
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Edad</label>
-                  <input type="text" class="form-control" name=edadf autocomplete="off" value="<?php echo $data['edadf']; ?>" required>
+                  <input type="text" class="form-control" name="edadf" autocomplete="off" value="<?php echo $data['edadf']; ?>" required>
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Genero</label>
-                  <input type="text" class="form-control" name=genero autocomplete="off" value="<?php echo $data['generof']; ?>" required>
+                  <input type="text" class="form-control" name="genero" autocomplete="off" value="<?php echo $data['generof']; ?>" required>
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Parantesco</label>
-                  <input type="text" class="form-control" name=parentesco autocomplete="off" value="<?php echo $data['parentesco']; ?>" required>
+                  <input type="text" class="form-control" name="parentesco" autocomplete="off" value="<?php echo $data['parentesco']; ?>" required>
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Estudiante</label>
-                  <input type="text" class="form-control" name=estudiante autocomplete="off" value="<?php echo $data['estudiante']; ?>" required>
+                  <input type="text" class="form-control" name="estudiante" autocomplete="off" value="<?php echo $data['estudiante']; ?>" required>
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Funcionario</label>
-                  <input type="text" class="form-control" name=funcionario autocomplete="off" value="<?php echo $data['funcionario']; ?>" required>
+                  <input type="text" class="form-control" name="funcionario" autocomplete="off" value="<?php echo $data['funcionario']; ?>" required>
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Informacion Medica</label>
-                  <input type="text" class="form-control" name=inf_medf autocomplete="off" value="<?php echo $data['inf_medf']; ?>" required>
+                  <input type="text" class="form-control" name="inf_medf" autocomplete="off" value="<?php echo $data['inf_medf']; ?>" required>
               </div>
 
 </div>
