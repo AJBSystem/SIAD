@@ -138,6 +138,13 @@ else {
                 $fec_nacf  = mysqli_real_escape_string($mysqli, trim($_POST['fec_nacf']));
                 $edadf  = mysqli_real_escape_string($mysqli, trim($_POST['edadf']));
                 $inf_medf  = mysqli_real_escape_string($mysqli, trim($_POST['inf_medf']));
+                $tipo_v  = mysqli_real_escape_string($mysqli, trim($_POST['tipo_v']));
+                $placa  = mysqli_real_escape_string($mysqli, trim($_POST['placa']));
+                $serial_carro  = mysqli_real_escape_string($mysqli, trim($_POST['serial_carro']));
+                $marca  = mysqli_real_escape_string($mysqli, trim($_POST['marca']));
+                $modelo  = mysqli_real_escape_string($mysqli, trim($_POST['modelo']));
+                $color  = mysqli_real_escape_string($mysqli, trim($_POST['color']));
+                $alo  = mysqli_real_escape_string($mysqli, trim($_POST['alo']));
                 $updated_user = $_SESSION['id_user'];
 
                 $query = mysqli_query($mysqli, "UPDATE medicamentos SET  
@@ -183,6 +190,13 @@ else {
                                                                          fec_nacf  = '$fec_nacf',
                                                                          edadf  = '$edadf',
                                                                          inf_medf  = '$inf_medf',
+                                                                         tipo_v  = '$tipo_v',
+                                                                         placa  = '$placa',
+                                                                         serial_carro  = '$serial_carro',
+                                                                         marca  = '$marca',
+                                                                         modelo  = '$modelo',
+                                                                         color  = '$color',
+                                                                         alo  = '$alo',
                                                                     updated_user    = '$updated_user'
                                                               WHERE codigo       = '$codigo'")
                                                 or die('error: '.mysqli_error($mysqli));

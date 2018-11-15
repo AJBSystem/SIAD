@@ -1221,7 +1221,10 @@ elseif ($_GET['form']=='edit') {
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Combustible</label>
-                  <input type="text" class="form-control" name=combustible autocomplete="off" value="<?php echo $data['combustible']; ?>">
+                  <select type="text" class="form-control" name="combustible" autocomplete="off" value="<?php echo $data['combustible']; ?>">
+                  <option>Gasolina</option>
+                <option>Gasoil</option>
+              </select>
               </div>
 
               <div class="col-md-2">
@@ -1246,7 +1249,7 @@ elseif ($_GET['form']=='edit') {
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Año</label>
-                  <input type="text" class="form-control" name="alo" autocomplete="off" value="<?php echo $data['alo']; ?>">
+                  <input type="number" class="form-control" name="alo" autocomplete="off" value="<?php echo $data['alo']; ?>">
               </div>
 
             </div>
