@@ -145,6 +145,11 @@ else {
                 $modelo  = mysqli_real_escape_string($mysqli, trim($_POST['modelo']));
                 $color  = mysqli_real_escape_string($mysqli, trim($_POST['color']));
                 $alo  = mysqli_real_escape_string($mysqli, trim($_POST['alo']));
+                $tipo_d  = mysqli_real_escape_string($mysqli, trim($_POST['tipo_d']));
+                $n_serial  = mysqli_real_escape_string($mysqli, trim($_POST['n_serial']));
+                $marca_d  = mysqli_real_escape_string($mysqli, trim($_POST['marca_d']));
+                $modelo_d  = mysqli_real_escape_string($mysqli, trim($_POST['modelo_d']));
+                $calibre  = mysqli_real_escape_string($mysqli, trim($_POST['calibre']));
                 $updated_user = $_SESSION['id_user'];
 
                 $query = mysqli_query($mysqli, "UPDATE medicamentos SET  
@@ -197,6 +202,11 @@ else {
                                                                          modelo  = '$modelo',
                                                                          color  = '$color',
                                                                          alo  = '$alo',
+                                                                         tipo_d  = '$tipo_d',
+                                                                         n_serial  = '$n_serial',
+                                                                         marca_d  = '$marca_d',
+                                                                         modelo_d  = '$modelo_d',
+                                                                         calibre  = '$calibre',
                                                                     updated_user    = '$updated_user'
                                                               WHERE codigo       = '$codigo'")
                                                 or die('error: '.mysqli_error($mysqli));
