@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-11-2018 a las 15:43:07
+-- Tiempo de generación: 16-11-2018 a las 19:22:02
 -- Versión del servidor: 10.1.36-MariaDB
 -- Versión de PHP: 5.6.38
 
@@ -52,6 +52,92 @@ INSERT INTO `familiares` (`cedula`, `p_nombre`, `s_nombre`, `p_apellido`, `s_ape
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `funcionarios`
+--
+
+CREATE TABLE `funcionarios` (
+  `alergias` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `alo` int(4) NOT NULL,
+  `avenida` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `calibre` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `calle` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `cargo` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `casa` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `cedula` int(13) NOT NULL,
+  `cedulaf` int(13) NOT NULL,
+  `ciudad` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `codigo` int(25) NOT NULL,
+  `codigo_cp` int(25) NOT NULL,
+  `color` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `combustible` varchar(10) COLLATE utf8_spanish_ci NOT NULL,
+  `correo_e` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `correo_i` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `created_date` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `created_user` int(3) NOT NULL,
+  `credencial` int(20) NOT NULL,
+  `discapacidad` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `edad` int(3) NOT NULL,
+  `edadf` int(3) NOT NULL,
+  `estado_c` varchar(20) COLLATE utf8_spanish_ci NOT NULL,
+  `estatus` varchar(10) COLLATE utf8_spanish_ci NOT NULL,
+  `estudiante` varchar(10) COLLATE utf8_spanish_ci NOT NULL,
+  `fec_ing` date NOT NULL,
+  `fec_nac` date NOT NULL,
+  `fec_nacf` date NOT NULL,
+  `funcionario` varchar(10) COLLATE utf8_spanish_ci NOT NULL,
+  `genero` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `generof` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `grado_inst` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `inf_med` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `lugar_nac` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `marca` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `marca_d` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `medicamen` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `modelo` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `modelo_d` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `municipio` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `notas` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `n_serial` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `parentesco` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `parroquia` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `placa` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `p_apellido` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `p_apellidof` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `p_nombre` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `p_nombref` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `rango` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `rif` int(13) NOT NULL,
+  `selec_div` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `serial_carro` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `serial_cp` int(25) NOT NULL,
+  `s_apellido` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `s_apellidof` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `s_nombre` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `s_nombref` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `tel_cel` int(12) NOT NULL,
+  `tel_emerg` int(12) NOT NULL,
+  `tel_hab` int(12) NOT NULL,
+  `tiempo_s` int(12) NOT NULL,
+  `tipo_d` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `tipo_s` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `tipo_v` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `ubic_fis` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `uptated_date` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `updated_user` int(4) NOT NULL,
+  `estado` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `inf_medf` varchar(100) COLLATE utf8_spanish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `funcionarios`
+--
+
+INSERT INTO `funcionarios` (`alergias`, `alo`, `avenida`, `calibre`, `calle`, `cargo`, `casa`, `cedula`, `cedulaf`, `ciudad`, `codigo`, `codigo_cp`, `color`, `combustible`, `correo_e`, `correo_i`, `created_date`, `created_user`, `credencial`, `discapacidad`, `edad`, `edadf`, `estado_c`, `estatus`, `estudiante`, `fec_ing`, `fec_nac`, `fec_nacf`, `funcionario`, `genero`, `generof`, `grado_inst`, `inf_med`, `lugar_nac`, `marca`, `marca_d`, `medicamen`, `modelo`, `modelo_d`, `municipio`, `notas`, `n_serial`, `parentesco`, `parroquia`, `placa`, `p_apellido`, `p_apellidof`, `p_nombre`, `p_nombref`, `rango`, `rif`, `selec_div`, `serial_carro`, `serial_cp`, `s_apellido`, `s_apellidof`, `s_nombre`, `s_nombref`, `tel_cel`, `tel_emerg`, `tel_hab`, `tiempo_s`, `tipo_d`, `tipo_s`, `tipo_v`, `ubic_fis`, `uptated_date`, `updated_user`, `estado`, `inf_medf`) VALUES
+('gj', 0, 'gu', '', 'giu', '', '45', 26435880, 14545, 'iu', 0, 7, '', 'Gasolina', 'uug@f.com', 'dfg@gfg.com', '', 1, 26435, 'gj', 254, 54, 'Soltero/a', '', 'Si', '2018-11-15', '2018-11-16', '2018-11-14', 'Si', 'Femenina', 'Femenina', 'Primaria', '', 'Amazonas', '', '', 'gj', '', '', 'ui', 'hghj', '', 'Hijo/a', 'ugu', '', 'MArtinez', 'gui', 'Darly', 'ugui', '', 156226, '', '', 657, '', 'g', '', 'giu', 65, 65, 65, 14, '', 'gh', '', 'dg', '', 1, 'Amazonas', 'dg');
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `medicamentos`
 --
 
@@ -70,7 +156,7 @@ CREATE TABLE `medicamentos` (
   `cedula` int(10) NOT NULL,
   `credencial` int(20) NOT NULL,
   `p_apellido` varchar(50) NOT NULL,
-  `fec_nac` varchar(50) NOT NULL,
+  `fec_nac` date NOT NULL,
   `edad` int(3) NOT NULL,
   `s_nombre` varchar(50) NOT NULL,
   `s_apellido` varchar(50) NOT NULL,
@@ -138,8 +224,8 @@ CREATE TABLE `medicamentos` (
 --
 
 INSERT INTO `medicamentos` (`codigo`, `nombre`, `precio_compra`, `precio_venta`, `unidad`, `stock`, `created_user`, `created_date`, `updated_user`, `updated_date`, `p_nombre`, `cedula`, `credencial`, `p_apellido`, `fec_nac`, `edad`, `s_nombre`, `s_apellido`, `rif`, `genero`, `tel_cel`, `tel_hab`, `tel_emerg`, `municipio`, `calle`, `casa`, `parroquia`, `estado`, `ciudad`, `avenida`, `codigo_cp`, `serial_cp`, `estado_c`, `lugar_nac`, `correo_e`, `grado_inst`, `correo_i`, `tipo_s`, `medicamen`, `discapacidad`, `alergias`, `nota`, `notas`, `fec_ing`, `tiempo_s`, `ubic_fis`, `p_nombref`, `s_nombref`, `p_apellidof`, `s_apellidof`, `cedulaf`, `fec_nacf`, `edadf`, `generof`, `parentesco`, `estudiante`, `funcionario`, `inf_medf`, `tipo_v`, `placa`, `combustible`, `serial_carro`, `marca`, `modelo`, `color`, `alo`, `tipo_d`, `n_serial`, `marca_d`, `modelo_d`, `calibre`, `estatus`, `selec_div`, `cargo`, `rango`) VALUES
-('B000002', '', 0, 0, '', 0, 1, '2018-11-08 15:19:17', 1, '2018-11-15 14:42:14', '5', 659, 59, '498', '2018-11-15', 9845, '985', '98', 59, 0, 489, 8, 89, 'jhk', '8', '98', '78', 'Amazonas', '889', 'yjt', 8, 798, 'Soltero/a', 'Amazonas', '89', 'Primaria', 'fds@ff.con', 'bd', 'fds', 'dfsf', 'sdf', '', 'fsd', '2018-11-30', '2', 'dsa', 'Agustin', 'Fortunato', 'Martinez', 'ggdf', 10887210, '2018-11-09', '50', '', '', '', '', 'ninguna', 'carro', 'sfaaf25', '', 'sad1D', 'mazda', '3', 'rojo', '2015', 'arma', 'sfs41585', 'glock', 'vereta', '.47', '', '', '', ''),
-('B000003', '', 0, 0, '', 0, 1, '2018-11-13 19:39:54', 1, '2018-11-15 14:12:44', 'Darly', 26435885, 26480, 'Martinez', '29/10/1998', 20, 'Naiduth', 'Barreto', 264358803, 0, 2147483647, 2124170277, 2147483647, 'Libertador', 'callejojn pinto salina', '88', 'Antimano', 'Amazonas', 'Caracas', 'Primera entrada de carapita subida del caballo', 0, 98986, 'Soltero/a', 'Amazonas', 'darlynmartinezb@gmail.com', 'Primaria', 'darlynmartinezb@cicpc.com.ve', 'B+', 'Antibioticos', 'Ninguna', 'Zancudo', '', 'NP', '2018-11-08', '2', 'Direccion de tecnologia', 'Yoseida', 'Maria', 'Barreto', 'Carvajal', 11201693, '21/12/1972', '40', 'Femenino', 'Madre', 'No', 'No', 'NP', 'Particular', '564da64', 'Gasolina', '456d69df5s96', 'Mazda', '3', 'Rojo', '2018', 'Arma', '54654da6', 'Glock', '47', '20', '', '', '', '');
+('B000003', '', 0, 0, '', 0, 1, '2018-11-13 19:39:54', 1, '2018-11-16 14:49:34', 'Dauli', 26435885, 54564, 'g', '2018-10-16', 20, 'giu', 'giu', 4545, 0, 45448, 8948, 89, 'gf', 'ug', '51514', 'yu', 'Amazonas', 'yugfyg', 'ug', 51, 51, 'Soltero/a', 'Amazonas', 'darlynmartinezb@gmail.com', 'Primaria', 'sadf@sd.com', 'uigu', 'igi', 'u', 'gu', '', 'g', '2018-11-21', '232', 'dsaf', 'giugu', 'gu', 'gu', 'ig', 6526, '2018-11-15', '552', 'Femenino', 'Madre', 'No', 'No', 'hg', '', '', 'Gasolina', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
+('B000004', '', 0, 0, '', 0, 1, '2018-11-15 15:20:50', 1, '2018-11-15 19:20:18', 'Darly', 26435885, 54564, 'Martinez', '1998-10-29', 20, 'Naiduth', 'Barreto', 4545, 0, 45448, 8948, 89, 'gf', 'ug', '51514', 'yu', 'Amazonas', 'yugfyg', 'ug', 51, 51, 'Soltero/a', 'Amazonas', 'fdds@fd.com', 'Primaria', 'sadf@sd.com', 'uigu', 'igi', 'u', 'gu', '', 'g', '2018-11-21', '232', 'dsaf', 'giugu', 'gu', 'gu', 'ig', 6526, '2018-11-15', '552', 'Femenina', 'Hijo/a', 'Si', 'Si', 'hg', '', '', 'Gasolina', '', '', '', '', '', '', '', '', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -453,10 +539,18 @@ INSERT INTO `usuarios` (`id_user`, `username`, `name_user`, `password`, `correo_
 --
 
 --
+-- Indices de la tabla `funcionarios`
+--
+ALTER TABLE `funcionarios`
+  ADD PRIMARY KEY (`cedula`) USING BTREE,
+  ADD UNIQUE KEY `created_user` (`created_user`),
+  ADD UNIQUE KEY `updated_user` (`updated_user`) USING BTREE;
+
+--
 -- Indices de la tabla `medicamentos`
 --
 ALTER TABLE `medicamentos`
-  ADD PRIMARY KEY (`codigo`),
+  ADD PRIMARY KEY (`codigo`) USING BTREE,
   ADD KEY `created_user` (`created_user`),
   ADD KEY `updated_user` (`updated_user`);
 
