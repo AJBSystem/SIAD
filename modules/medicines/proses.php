@@ -121,6 +121,11 @@ else {
                 $casa = mysqli_real_escape_string($mysqli, trim($_POST['casa']));
                 $serial_cp  = mysqli_real_escape_string($mysqli, trim($_POST['serial_cp']));
                 $codigo_cp  = mysqli_real_escape_string($mysqli, trim($_POST['codigo_cp']));
+                $tipo_s  = mysqli_real_escape_string($mysqli, trim($_POST['tipo_s']));
+                $medicamen  = mysqli_real_escape_string($mysqli, trim($_POST['medicamen']));
+                $discapacidad  = mysqli_real_escape_string($mysqli, trim($_POST['discapacidad']));
+                $alergias  = mysqli_real_escape_string($mysqli, trim($_POST['alergias']));
+                $notas  = mysqli_real_escape_string($mysqli, trim($_POST['notas']));
                 $updated_user = $_SESSION['id_user'];
 
                 $query = mysqli_query($mysqli, "UPDATE medicamentos SET  
@@ -149,6 +154,11 @@ else {
                                                                          casa      = '$casa',
                                                                          codigo_cp    = '$codigo_cp',
                                                                          serial_cp    = '$serial_cp',
+                                                                         tipo_s    = '$tipo_s',
+                                                                         medicamen    = '$medicamen',
+                                                                         discapacidad    = '$discapacidad',
+                                                                         alergias    = '$alergias',
+                                                                         notas    = '$notas',
                                                                     updated_user    = '$updated_user'
                                                               WHERE codigo       = '$codigo'")
                                                 or die('error: '.mysqli_error($mysqli));
