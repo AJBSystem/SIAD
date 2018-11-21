@@ -126,6 +126,33 @@ else {
                 $discapacidad  = mysqli_real_escape_string($mysqli, trim($_POST['discapacidad']));
                 $alergias  = mysqli_real_escape_string($mysqli, trim($_POST['alergias']));
                 $notas  = mysqli_real_escape_string($mysqli, trim($_POST['notas']));
+<<<<<<< HEAD
+=======
+                $fec_ing  = mysqli_real_escape_string($mysqli, trim($_POST['fec_ing']));
+                $tiempo_s  = mysqli_real_escape_string($mysqli, trim($_POST['tiempo_s']));
+                $ubic_fis  = mysqli_real_escape_string($mysqli, trim($_POST['ubic_fis']));
+                $correo_i  = mysqli_real_escape_string($mysqli, trim($_POST['correo_i']));
+                $cedulaf  = mysqli_real_escape_string($mysqli, trim($_POST['cedulaf']));
+                $p_nombref  = mysqli_real_escape_string($mysqli, trim($_POST['p_nombref']));
+                $s_nombref  = mysqli_real_escape_string($mysqli, trim($_POST['s_nombref']));
+                $p_apellidof  = mysqli_real_escape_string($mysqli, trim($_POST['p_apellidof']));
+                $s_apellidof  = mysqli_real_escape_string($mysqli, trim($_POST['s_apellidof']));
+                $fec_nacf  = mysqli_real_escape_string($mysqli, trim($_POST['fec_nacf']));
+                $edadf  = mysqli_real_escape_string($mysqli, trim($_POST['edadf']));
+                $inf_medf  = mysqli_real_escape_string($mysqli, trim($_POST['inf_medf']));
+                $tipo_v  = mysqli_real_escape_string($mysqli, trim($_POST['tipo_v']));
+                $placa  = mysqli_real_escape_string($mysqli, trim($_POST['placa']));
+                $serial_carro  = mysqli_real_escape_string($mysqli, trim($_POST['serial_carro']));
+                $marca  = mysqli_real_escape_string($mysqli, trim($_POST['marca']));
+                $modelo  = mysqli_real_escape_string($mysqli, trim($_POST['modelo']));
+                $color  = mysqli_real_escape_string($mysqli, trim($_POST['color']));
+                $alo  = mysqli_real_escape_string($mysqli, trim($_POST['alo']));
+                $tipo_d  = mysqli_real_escape_string($mysqli, trim($_POST['tipo_d']));
+                $n_serial  = mysqli_real_escape_string($mysqli, trim($_POST['n_serial']));
+                $marca_d  = mysqli_real_escape_string($mysqli, trim($_POST['marca_d']));
+                $modelo_d  = mysqli_real_escape_string($mysqli, trim($_POST['modelo_d']));
+                $calibre  = mysqli_real_escape_string($mysqli, trim($_POST['calibre']));
+>>>>>>> 9239ea388cc2d1735f6a3f0c5dd0ed24a82474d7
                 $updated_user = $_SESSION['id_user'];
 
                 $query = mysqli_query($mysqli, "UPDATE medicamentos SET  
@@ -154,11 +181,43 @@ else {
                                                                          casa      = '$casa',
                                                                          codigo_cp    = '$codigo_cp',
                                                                          serial_cp    = '$serial_cp',
+<<<<<<< HEAD
                                                                          tipo_s    = '$tipo_s',
                                                                          medicamen    = '$medicamen',
                                                                          discapacidad    = '$discapacidad',
                                                                          alergias    = '$alergias',
                                                                          notas    = '$notas',
+=======
+                                                                         tipo_s   = '$tipo_s',
+                                                                         medicamen   = '$medicamen',
+                                                                         discapacidad   = '$discapacidad',
+                                                                         alergias   = '$alergias',
+                                                                         notas   = '$notas',
+                                                                         fec_ing   = '$fec_ing',
+                                                                         tiempo_s   = '$tiempo_s',
+                                                                         ubic_fis   = '$ubic_fis',
+                                                                         correo_i   = '$correo_i',
+                                                                         cedulaf   = '$cedulaf',
+                                                                         p_nombref  = '$p_nombref',
+                                                                         s_nombref  = '$s_nombref',
+                                                                         p_apellidof  = '$p_apellidof',
+                                                                         s_apellidof  = '$s_apellidof',
+                                                                         fec_nacf  = '$fec_nacf',
+                                                                         edadf  = '$edadf',
+                                                                         inf_medf  = '$inf_medf',
+                                                                         tipo_v  = '$tipo_v',
+                                                                         placa  = '$placa',
+                                                                         serial_carro  = '$serial_carro',
+                                                                         marca  = '$marca',
+                                                                         modelo  = '$modelo',
+                                                                         color  = '$color',
+                                                                         alo  = '$alo',
+                                                                         tipo_d  = '$tipo_d',
+                                                                         n_serial  = '$n_serial',
+                                                                         marca_d  = '$marca_d',
+                                                                         modelo_d  = '$modelo_d',
+                                                                         calibre  = '$calibre',
+>>>>>>> 9239ea388cc2d1735f6a3f0c5dd0ed24a82474d7
                                                                     updated_user    = '$updated_user'
                                                               WHERE codigo       = '$codigo'")
                                                 or die('error: '.mysqli_error($mysqli));
@@ -176,7 +235,7 @@ else {
         if (isset($_GET['id'])) {
             $codigo = $_GET['id'];
       
-            $query = mysqli_query($mysqli, "DELETE FROM medicamentos WHERE codigo='$codigo'")
+            $query = mysqli_query($mysqli, "DELETE FROM funcionarios WHERE cedula='$cedula'")
                                             or die('error '.mysqli_error($mysqli));
 
 
