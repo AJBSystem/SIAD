@@ -96,7 +96,7 @@ if ($_GET['form']=='add') { ?>
                   <div class="x_content">
                   <div class="col-md-2">
                 <label for="exampleInputEmail1">Codigo</label>
-                <input type="text" class="form-control" name="codigo" value="<?php echo $codigo; ?>"  required>
+                <input type="text" class="form-control" name="codigo" value="<?php echo $codigo; ?>">
               </div>
 
              <div class="col-md-2">
@@ -741,7 +741,7 @@ elseif ($_GET['form']=='edit') {
                   <div class="x_content">
                   <div class="col-md-2">
                 <label for="exampleInputEmail1">Codigo</label>
-                  <input type="text" class="form-control" name="codigo" value="<?php echo $data['codigo']; ?>" required>
+                  <input type="text" class="form-control" name="codigo" value="<?php echo $data['codigo']; ?>">
               </div>
 
              <div class="col-md-2">
@@ -767,7 +767,7 @@ elseif ($_GET['form']=='edit') {
 
              <div class="col-md-2">
               <label for="exampleInputEmail1">Segundo Nombre</label>
-                  <input type="text" class="form-control" name="s_nombre" autocomplete="off" value="<?php echo $data['s_nombre']; ?>" required>
+                  <input type="text" class="form-control" name="s_nombre" autocomplete="off" value="<?php echo $data['s_nombre']; ?>">
               </div>
 
                <div class="col-md-2">
@@ -777,7 +777,7 @@ elseif ($_GET['form']=='edit') {
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Segundo Apellido</label>
-                  <input type="text" class="form-control" name="s_apellido" autocomplete="off" value="<?php echo $data['s_apellido']; ?>" required>
+                  <input type="text" class="form-control" name="s_apellido" autocomplete="off" value="<?php echo $data['s_apellido']; ?>">
               </div>
 
                 <div class="col-md-2">
@@ -1053,7 +1053,7 @@ elseif ($_GET['form']=='edit') {
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Segundo Nombre</label>
-                  <input type="text" class="form-control" name=s_nombref autocomplete="off" value="<?php echo $data['s_nombref']; ?>" required>
+                  <input type="text" class="form-control" name=s_nombref autocomplete="off" value="<?php echo $data['s_nombref']; ?>">
               </div>
 
               <div class="col-md-2">
@@ -1063,7 +1063,7 @@ elseif ($_GET['form']=='edit') {
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Segundo Apellido</label>
-                  <input type="text" class="form-control" name=s_apellidof autocomplete="off" value="<?php echo $data['s_apellidof']; ?>" required>
+                  <input type="text" class="form-control" name=s_apellidof autocomplete="off" value="<?php echo $data['s_apellidof']; ?>">
               </div>
 
               <div class="col-md-2">
@@ -1111,42 +1111,42 @@ elseif ($_GET['form']=='edit') {
 
                     <div class="col-md-2">
               <label for="exampleInputEmail1">Tipo de Vehiculo</label>
-                  <input type="text" class="form-control" name="tipo_v" autocomplete="off" value="<?php echo $data['tipo_v']; ?>" required>
+                  <input type="text" class="form-control" name="tipo_v" autocomplete="off" value="<?php echo $data['tipo_v']; ?>">
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Placa</label>
-                  <input type="text" class="form-control" name="placa" autocomplete="off" value="<?php echo $data['placa']; ?>" required>
+                  <input type="text" class="form-control" name="placa" autocomplete="off" value="<?php echo $data['placa']; ?>">
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Combustible</label>
-                  <input type="text" class="form-control" name=combustible autocomplete="off" value="<?php echo $data['combustible']; ?>" required>
+                  <input type="text" class="form-control" name=combustible autocomplete="off" value="<?php echo $data['combustible']; ?>">
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Serial de la Carroceria</label>
-                  <input type="text" class="form-control" name="serial_carro" autocomplete="off" value="<?php echo $data['serial_carro']; ?>" required>
+                  <input type="text" class="form-control" name="serial_carro" autocomplete="off" value="<?php echo $data['serial_carro']; ?>">
               </div> 
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Marca</label>
-                  <input type="text" class="form-control" name="marca" autocomplete="off" value="<?php echo $data['marca']; ?>" required>
+                  <input type="text" class="form-control" name="marca" autocomplete="off" value="<?php echo $data['marca']; ?>">
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Modelo</label>
-                  <input type="text" class="form-control" name="modelo" autocomplete="off" value="<?php echo $data['modelo']; ?>" required>
+                  <input type="text" class="form-control" name="modelo" autocomplete="off" value="<?php echo $data['modelo']; ?>">
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Color</label>
-                  <input type="text" class="form-control" name="color" autocomplete="off" value="<?php echo $data['color']; ?>" required>
+                  <input type="text" class="form-control" name="color" autocomplete="off" value="<?php echo $data['color']; ?>">
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Año</label>
-                  <input type="text" class="form-control" name="alo" autocomplete="off" value="<?php echo $data['alo']; ?>" required>
+                  <input type="text" class="form-control" name="alo" autocomplete="off" value="<?php echo $data['alo']; ?>">
               </div>
 
             </div>
@@ -1159,28 +1159,28 @@ elseif ($_GET['form']=='edit') {
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Tipo</label>
-                  <input type="text" class="form-control" name="tipo_d" autocomplete="off" value="<?php echo $data['tipo_d']; ?>" required>
+                  <input type="text" class="form-control" name="tipo_d" autocomplete="off" value="<?php echo $data['tipo_d']; ?>">
               </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">N° de Serial</label>
-                  <input type="text" class="form-control" name="n_serial" autocomplete="off" value="<?php echo $data['n_serial']; ?>" required>
+                  <input type="text" class="form-control" name="n_serial" autocomplete="off" value="<?php echo $data['n_serial']; ?>">
               </div>
 
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Marca</label>
-                  <input type="text" class="form-control" name="marca_d" autocomplete="off" value="<?php echo $data['marca_d']; ?>" required>
+                  <input type="text" class="form-control" name="marca_d" autocomplete="off" value="<?php echo $data['marca_d']; ?>">
               </div>
 
                <div class="col-md-2">
               <label for="exampleInputEmail1">Modelo</label>
-                  <input type="text" class="form-control" name="modelo_d" autocomplete="off" value="<?php echo $data['modelo_d']; ?>" required>
+                  <input type="text" class="form-control" name="modelo_d" autocomplete="off" value="<?php echo $data['modelo_d']; ?>">
               </div>
 
                <div class="col-md-2">
               <label for="exampleInputEmail1">Calibre</label>
-                  <input type="text" class="form-control" name="calibre" autocomplete="off" value="<?php echo $data['calibre']; ?>" required>
+                  <input type="text" class="form-control" name="calibre" autocomplete="off" value="<?php echo $data['calibre']; ?>">
               </div>
 
             </div>
