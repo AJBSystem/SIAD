@@ -98,11 +98,6 @@ if ($_GET['form']=='add') { ?>
                 <input type="text" class="form-control" name="codigo" value="<?php echo $codigo; ?>">
               </div>
 
-<div class="col-md-2">
-  <label for="exampleInputEmail1">Codigo</label>
-    <input type="text" class="form-control" name="codigo" value="<?php echo $codigo; ?>"  required>
-</div>
-
   <div class="col-md-2">
     <label for="exampleInputEmail1">Cedula</label>
       <input type="number" class="form-control" name="cedula" autocomplete="off" required> 
