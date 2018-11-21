@@ -126,8 +126,6 @@ else {
                 $discapacidad  = mysqli_real_escape_string($mysqli, trim($_POST['discapacidad']));
                 $alergias  = mysqli_real_escape_string($mysqli, trim($_POST['alergias']));
                 $notas  = mysqli_real_escape_string($mysqli, trim($_POST['notas']));
-<<<<<<< HEAD
-=======
                 $fec_ing  = mysqli_real_escape_string($mysqli, trim($_POST['fec_ing']));
                 $tiempo_s  = mysqli_real_escape_string($mysqli, trim($_POST['tiempo_s']));
                 $ubic_fis  = mysqli_real_escape_string($mysqli, trim($_POST['ubic_fis']));
@@ -152,7 +150,6 @@ else {
                 $marca_d  = mysqli_real_escape_string($mysqli, trim($_POST['marca_d']));
                 $modelo_d  = mysqli_real_escape_string($mysqli, trim($_POST['modelo_d']));
                 $calibre  = mysqli_real_escape_string($mysqli, trim($_POST['calibre']));
->>>>>>> 9239ea388cc2d1735f6a3f0c5dd0ed24a82474d7
                 $updated_user = $_SESSION['id_user'];
 
                 $query = mysqli_query($mysqli, "UPDATE medicamentos SET  
@@ -181,13 +178,6 @@ else {
                                                                          casa      = '$casa',
                                                                          codigo_cp    = '$codigo_cp',
                                                                          serial_cp    = '$serial_cp',
-<<<<<<< HEAD
-                                                                         tipo_s    = '$tipo_s',
-                                                                         medicamen    = '$medicamen',
-                                                                         discapacidad    = '$discapacidad',
-                                                                         alergias    = '$alergias',
-                                                                         notas    = '$notas',
-=======
                                                                          tipo_s   = '$tipo_s',
                                                                          medicamen   = '$medicamen',
                                                                          discapacidad   = '$discapacidad',
@@ -217,7 +207,6 @@ else {
                                                                          marca_d  = '$marca_d',
                                                                          modelo_d  = '$modelo_d',
                                                                          calibre  = '$calibre',
->>>>>>> 9239ea388cc2d1735f6a3f0c5dd0ed24a82474d7
                                                                     updated_user    = '$updated_user'
                                                               WHERE codigo       = '$codigo'")
                                                 or die('error: '.mysqli_error($mysqli));
@@ -235,7 +224,7 @@ else {
         if (isset($_GET['id'])) {
             $codigo = $_GET['id'];
       
-            $query = mysqli_query($mysqli, "DELETE FROM funcionarios WHERE cedula='$cedula'")
+            $query = mysqli_query($mysqli, "DELETE FROM medicamentos WHERE codigo='$codigo'")
                                             or die('error '.mysqli_error($mysqli));
 
 

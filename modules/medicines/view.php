@@ -66,7 +66,7 @@
             <tbody>
             <?php  
             $no = 1;
-            $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,p_apellido,p_nombre,fec_nac,edad FROM funcionarios ORDER BY cedula DESC")
+            $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,p_apellido,p_nombre,fec_nac,edad FROM medicamentos ORDER BY codigo DESC")
                                             or die('error: '.mysqli_error($mysqli));
 
             while ($data = mysqli_fetch_assoc($query)) { 

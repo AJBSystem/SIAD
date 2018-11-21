@@ -1127,7 +1127,7 @@ elseif ($_GET['form']=='edit') {
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Segundo Nombre</label>
-                  <input type="text" class="form-control" name=s_nombref autocomplete="off" value="<?php echo $data['s_nombref']; ?>">
+                  <input type="text" class="form-control" name="s_nombref" autocomplete="off" value="<?php echo $data['s_nombref']; ?>">
               </div>
 
       <div class="col-md-2">
@@ -1137,7 +1137,7 @@ elseif ($_GET['form']=='edit') {
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Segundo Apellido</label>
-                  <input type="text" class="form-control" name=s_apellidof autocomplete="off" value="<?php echo $data['s_apellidof']; ?>">
+                  <input type="text" class="form-control" name="s_apellidof" autocomplete="off" value="<?php echo $data['s_apellidof']; ?>">
               </div>
 
           <div class="col-md-2">
@@ -1210,8 +1210,11 @@ elseif ($_GET['form']=='edit') {
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Combustible</label>
-                  <input type="text" class="form-control" name=combustible autocomplete="off" value="<?php echo $data['combustible']; ?>">
-              </div>
+                  <select type="text" class="form-control" name="combustible" autocomplete="off" value="<?php echo $data['combustible']; ?>">
+                    <option>Gasolina</option>
+                    <option>Gasoil</option>
+                    <select>
+             </div>
 
               <div class="col-md-2">
               <label for="exampleInputEmail1">Serial de la Carroceria</label>
@@ -1272,20 +1275,7 @@ elseif ($_GET['form']=='edit') {
                   <input type="text" class="form-control" name="calibre" autocomplete="off" value="<?php echo $data['calibre']; ?>">
               </div>
 
-    <div class="col-md-2">
-      <label for="exampleInputEmail1">Marca</label>
-        <input type="text" class="form-control" name="marca_d" autocomplete="off" value="<?php echo $data['marca_d']; ?>">
-    </div>
 
-      <div class="col-md-2">
-        <label for="exampleInputEmail1">Modelo</label>
-          <input type="text" class="form-control" name="modelo_d" autocomplete="off" value="<?php echo $data['modelo_d']; ?>">
-      </div>
-
-        <div class="col-md-2">
-          <label for="exampleInputEmail1">Calibre</label>
-            <input type="text" class="form-control" name="calibre" autocomplete="off" value="<?php echo $data['calibre']; ?>">
-        </div>
 </div>
 
 <!-- Aqui termina el activador 6 -->
