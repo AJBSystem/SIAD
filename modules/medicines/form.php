@@ -151,7 +151,7 @@ if ($_GET['form']=='add') { ?>
                         </select>
                     </div>
 
-                      <div class="col-md-2">
+                      <!-- <div class="col-md-2">
                         <label for="exampleInputEmail1">Lugar de Nacimiento</label>
                           <select class="form-control" name="lugar_nac"  required>
                             <option>Amazonas</option>
@@ -179,7 +179,7 @@ if ($_GET['form']=='add') { ?>
                             <option>Yaracuy</option>
                             <option>Zulia</option>
                           </select>
-                      </div>
+                      </div> -->
 
                         <div class="col-md-2">
                           <label for="exampleInputEmail1">Estado Civil</label>
@@ -225,7 +225,7 @@ if ($_GET['form']=='add') { ?>
                                       <input type="text" class="form-control" name="tel_emerg" autocomplete="off" required> 
                                   </div>
 
-                                    <div class="col-md-2">
+                                    <!-- <div class="col-md-2">
                                       <label for="exampleInputEmail1">Estado</label>
                                         <select type="text" class="form-control" name="estado" autocomplete="off" required> 
                                           <option>Amazonas</option>
@@ -283,7 +283,7 @@ if ($_GET['form']=='add') { ?>
                                                 <div class="col-md-2">
                                                   <label for="exampleInputEmail1">Casa N°</label>
                                                     <input type="number" class="form-control" name="casa" autocomplete="off" required> 
-                                                </div>
+                                                </div> -->
 
                                                   <div class="col-md-2">
                                                     <label for="exampleInputEmail1">Codigo del CP</label>
