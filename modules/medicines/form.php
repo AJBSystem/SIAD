@@ -225,6 +225,8 @@ if ($_GET['form']=='add') { ?>
                                       <input type="text" class="form-control" name="tel_emerg" autocomplete="off" required> 
                                   </div>
 
+
+
                                     <!-- <div class="col-md-2">
                                       <label for="exampleInputEmail1">Estado</label>
                                         <select type="text" class="form-control" name="estado" autocomplete="off" required> 
@@ -294,6 +296,11 @@ if ($_GET['form']=='add') { ?>
                                                       <label for="exampleInputEmail1">Serial del CP</label>
                                                         <input type="number" class="form-control" name="serial_cp" autocomplete="off"> 
                                                     </div>
+
+                                      <div class="col-md-5">
+                                    <label for="exampleInputEmail1">Dirección</label>
+                                      <textarea rows="2" class="form-control" name="direccion" autocomplete="off" required></textarea> 
+                                  </div>
                                                   </div>
                                                 </div>
                                               </div>
@@ -722,7 +729,7 @@ if ($_GET['form']=='add') { ?>
 elseif ($_GET['form']=='edit') { 
   if (isset($_GET['id'])) {
 
-      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,selec_div,cargo,rango,fec_ing,tiempo_s,ubic_fis,correo_i,estatus,cedulaf,p_nombref,s_nombref,p_apellidof,s_apellidof,fec_nacf,edadf,generof,parentesco,estudiante,funcionario,inf_medf,tipo_v,placa,combustible,serial_carro,marca,modelo,color,alo,tipo_d,n_serial,marca_d,modelo_d,calibre FROM medicamentos WHERE codigo='$_GET[id]'") 
+      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,selec_div,cargo,rango,fec_ing,tiempo_s,ubic_fis,correo_i,estatus,cedulaf,p_nombref,s_nombref,p_apellidof,s_apellidof,fec_nacf,edadf,generof,parentesco,estudiante,funcionario,inf_medf,tipo_v,placa,combustible,serial_carro,marca,modelo,color,alo,tipo_d,n_serial,marca_d,modelo_d,calibre,direccion FROM medicamentos WHERE codigo='$_GET[id]'") 
 
                                       or die('error: '.mysqli_error($mysqli));
       $data  = mysqli_fetch_assoc($query);
@@ -854,7 +861,7 @@ elseif ($_GET['form']=='edit') {
                         </select>
                     </div>
 
-                      <div class="col-md-2">
+                      <!-- <div class="col-md-2">
                         <label for="exampleInputEmail1">Lugar de Nacimiento</label>
                           <select type="text" class="form-control" name="lugar_nac" autocomplete="off" value="<?php echo $data['lugar_nac']; ?>" required>
                             <option>Amazonas</option>
@@ -882,7 +889,7 @@ elseif ($_GET['form']=='edit') {
                             <option>Yaracuy</option>
                             <option>Zulia</option>
                           </select>
-                      </div>
+                      </div> -->
 
                         <div class="col-md-2">
                           <label for="exampleInputEmail1">Estado Civil</label>
@@ -928,7 +935,7 @@ elseif ($_GET['form']=='edit') {
                                       <input type="text" class="form-control" name="tel_emerg" autocomplete="off" value="<?php echo $data['tel_emerg']; ?>" required>
                                   </div>
 
-                                    <div class="col-md-2">
+                                    <!-- <div class="col-md-2">
                                       <label for="exampleInputEmail1">Estado</label>
                                         <select type="text" class="form-control" name="estado" autocomplete="off" value="<?php echo $data['estado']; ?>" required>
                                           <option>Amazonas</option>
@@ -986,7 +993,7 @@ elseif ($_GET['form']=='edit') {
                                                 <div class="col-md-2">
                                                   <label for="exampleInputEmail1">Casa N°</label>
                                                     <input type="text" class="form-control" name="casa" autocomplete="off" value="<?php echo $data['casa']; ?>" required>
-                                                </div>
+                                                </div> -->
 
                                                   <div class="col-md-2">
                                                     <label for="exampleInputEmail1">Codigo del CP</label>
@@ -997,6 +1004,14 @@ elseif ($_GET['form']=='edit') {
                                                       <label for="exampleInputEmail1">Serial del CP</label>
                                                         <input type="text" class="form-control" name="serial_cp" autocomplete="off" value="<?php echo $data['serial_cp']; ?>">
                                                     </div>
+
+
+                                                    <div class="col-md-5">
+                                                      <label for="exampleInputEmail1">Dirección</label>
+                                                        <textarea rows="2" class="form-control" name="direccion" autocomplete="off" value="<?php echo $data['direccion']; ?>"></textarea>
+                                                    </div>
+
+
 </div>
 </div>
 </div>
