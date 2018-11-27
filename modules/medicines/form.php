@@ -100,17 +100,17 @@ if ($_GET['form']=='add') { ?>
 
   <div class="col-md-2">
     <label for="exampleInputEmail1">Cedula</label>
-      <input type="number" class="form-control" name="cedula" autocomplete="off" required> 
+      <input type="text" class="form-control" name="cedula" autocomplete="off" required> 
  </div>
 
     <div class="col-md-2">
       <label for="exampleInputEmail1">N° de Credencial</label>
-        <input type="number" class="form-control" name="credencial" autocomplete="off" required> 
+        <input type="text" class="form-control" name="credencial" autocomplete="off" required> 
     </div>
 
       <div class="col-md-2">
         <label for="exampleInputEmail1">Rif</label>
-          <input type="number" class="form-control" name="rif" autocomplete="off" required> 
+          <input type="text" class="form-control" name="rif" autocomplete="off" required> 
       </div>
 
         <div class="col-md-2">
@@ -140,7 +140,7 @@ if ($_GET['form']=='add') { ?>
 
                   <div class="col-md-2">
                     <label for="exampleInputEmail1">Edad</label>
-                      <input type="number" class="form-control" name="edad" autocomplete="off" required> 
+                      <input type="text" class="form-control" name="edad" autocomplete="off" required> 
                   </div>
 
                     <div class="col-md-2">
@@ -289,12 +289,12 @@ if ($_GET['form']=='add') { ?>
 
                                                   <div class="col-md-2">
                                                     <label for="exampleInputEmail1">Codigo del CP</label>
-                                                      <input type="number" class="form-control" name="codigo_cp" autocomplete="off"> 
+                                                      <input type="text" class="form-control" name="codigo_cp" autocomplete="off"> 
                                                   </div>
 
                                                     <div class="col-md-2">
                                                       <label for="exampleInputEmail1">Serial del CP</label>
-                                                        <input type="number" class="form-control" name="serial_cp" autocomplete="off"> 
+                                                        <input type="text" class="form-control" name="serial_cp" autocomplete="off"> 
                                                     </div>
 
                                       <div class="col-md-5">
@@ -363,7 +363,7 @@ if ($_GET['form']=='add') { ?>
 
       <div class="col-md-2">
         <label for="exampleInputEmail1">Tiempo de Servicio</label>
-          <input type="number" class="form-control" name="tiempo_s" autocomplete="off" required> 
+          <input type="text" class="form-control" name="tiempo_s" autocomplete="off" required> 
       </div>     
 
         <div class="col-md-2">
@@ -478,7 +478,7 @@ if ($_GET['form']=='add') { ?>
 
   <div class="col-md-2">
     <label for="exampleInputEmail1">Cedula</label>
-      <input type="number" class="form-control" name="cedulaf" autocomplete="off" required> 
+      <input type="text" class="form-control" name="cedulaf" autocomplete="off" required> 
   </div> 
 
     <div class="col-md-2">
@@ -508,7 +508,7 @@ if ($_GET['form']=='add') { ?>
 
               <div class="col-md-2">
                 <label for="exampleInputEmail1">Edad</label>
-                  <input type="number" class="form-control" name="edadf" autocomplete="off" required> 
+                  <input type="text" class="form-control" name="edadf" autocomplete="off" required> 
               </div> 
 
                 <div class="col-md-2">
@@ -598,7 +598,7 @@ if ($_GET['form']=='add') { ?>
 
                 <div class="col-md-2">
                   <label for="exampleInputEmail1">Año</label>
-                    <select type="number" class="form-control" name="alo" autocomplete="off"> 
+                    <select type="text" class="form-control" name="alo" autocomplete="off"> 
                 <option>2023</option>
                 <option>2022</option>
                 <option>2021</option>
@@ -1074,7 +1074,7 @@ elseif ($_GET['form']=='edit') {
 
     <div class="col-md-2">
       <label for="exampleInputEmail1">Tiempo de Servicio</label>
-        <input type="number" class="form-control" name="tiempo_s" autocomplete="off" value="<?php echo $data['tiempo_s']; ?>" required>
+        <input type="text" class="form-control" name="tiempo_s" autocomplete="off" value="<?php echo $data['tiempo_s']; ?>" required>
     </div>
 
       <div class="col-md-2">
@@ -1189,7 +1189,7 @@ elseif ($_GET['form']=='edit') {
 
 <div class="col-md-2">
   <label for="exampleInputEmail1">Cedula</label>
-    <input type="number" class="form-control" name="cedulaf" autocomplete="off" value="<?php echo $data['cedulaf']; ?>" required>
+    <input type="text" class="form-control" name="cedulaf" autocomplete="off" value="<?php echo $data['cedulaf']; ?>" required>
 </div>
 
   <div class="col-md-2">
@@ -1219,7 +1219,7 @@ elseif ($_GET['form']=='edit') {
 
             <div class="col-md-2">
               <label for="exampleInputEmail1">Edad</label>
-                <input type="number" class="form-control" name="edadf" autocomplete="off" value="<?php echo $data['edadf']; ?>" required>
+                <input type="text" class="form-control" name="edadf" autocomplete="off" value="<?php echo $data['edadf']; ?>" required>
             </div>
 
               <div class="col-md-2">
