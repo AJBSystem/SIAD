@@ -2,10 +2,10 @@
 
 <section class="content-header">
   <h1>
-    <i class="fa fa-sign-in icon-title"></i> Registro de Funcionarios
+    <i class="fa fa-sign-in icon-title"></i> Funcionarios
 
     <a class="btn btn-primary btn-social pull-right" href="?module=form_medicines_transaction&form=add" title="Agregar" data-toggle="tooltip">
-      <i class="fa fa-plus"></i> Entradas / Salidas
+      <i class="fa fa-plus"></i> VER PERFIL 
     </a>
   </h1>
 </section>
@@ -46,8 +46,11 @@
                 <th class="center">Unidad</th>
               </tr>
             </thead>
+
+
          
             <tbody>
+
             <?php  
             $no = 1;
            
@@ -77,6 +80,17 @@
             ?>
             </tbody>
           </table>
+          
+
+<!-- Revisar para poner los botones de siguiente luego -->
+
+          <ul class="pagination pagination-split">
+                              <li><a href="#">A</a></li>
+                              <li><a href="#">B</a></li>
+                              <li><a href="#">Y</a></li>
+                              <li><a href="#">Z</a></li>
+          </ul>
+
         </div><!-- /.box-body -->
       </div><!-- /.box -->
     </div><!--/.col -->

@@ -148,14 +148,14 @@ if ($_GET['form']=='add') { ?>
   <table class='table table-bordered'>
                   
     <tr><th><span>Cedula</th><td>26.435.880</span></td></tr>
-                        
-    <tr><th><span>N° de Credencial</th><td>26435</span> </td></tr>
-                        
+       
     <tr><th><span>Rif</th><td>26435880-5</span> </td></tr>
-
-    <tr><th><span>Primer Nombre</th><td>Darly</span></td></tr>
                         
     <tr><th><span>Segundo Nombre</th><td>Naiduth</span></td></tr>
+
+    <tr><th><span>Segundo Apellido</th><td>Barreto</span> </td></tr>
+
+    <tr><th><span>Edad</th><td>20 Años</span></td></tr>
 
   </table>
 
@@ -164,35 +164,33 @@ if ($_GET['form']=='add') { ?>
 <div class="col-sm-4 col-md-5 col-xs-6 text-left">
 
   <table class='table table-bordered'>
+
+    <tr><th><span>N° de Credencial</th><td>26435</span> </td></tr>
+
+    <tr><th><span>Primer Nombre</th><td>Darly</span></td></tr>
                     
     <tr><th><span>Primer Apellido</th><td>Martinez</span></td></tr>
-                        
-    <tr><th><span>Segundo Apellido</th><td>Barreto</span> </td></tr>
-                        
+                                          
     <tr><th><span>Fecha de Nacimiento</th><td>29/10/1998</span> </td></tr>
-      
-    <tr><th><span>Edad</th><td>20 Años</span></td></tr>
-                        
+                       
     <tr><th><span>Género</th><td>Femenina</span></td></tr>
     
   </table>
                     
 </div>
 
-<div class="col-sm-4 col-md-5 col-xs-6 text-left">
+<div class="col-sm-3 col-md-5 col-xs-6 text-left">
                     
   <table class='table table-bordered'>
                                           
     <tr><th><span>Estado Civil</th><td>Soltera</span></td></tr>
-                      
-    <tr><th><span>Grado de Instrucción</th><td>Tecnico Superior</span> </td></tr>
-                                                
+                                                             
     <tr><th><span>Correo Electronico</th><td>Darlynmartinezb@gmail.com</span> </td></tr>
-                              
-    <tr><th><span>Teléfono Celular</th><td>0414-027-23-30</span></td></tr>
-                                                
+                                        
     <tr><th><span>Teléfono de Habitación</th><td>0212-417-02-77</span></td></tr>
-                              
+
+    <tr><th><span>Codigo del CP</th><td>45871265</span> </td></tr>
+
   </table>
                           
 </div>                   
@@ -200,18 +198,28 @@ if ($_GET['form']=='add') { ?>
 <div class="col-sm-4 col-md-5 col-xs-6 text-left">
                     
   <table class='table table-bordered'>
-                                              
+
+    <tr><th><span>Grado de Instrucción</th><td>Tecnico Superior</span> </td></tr>
+
+    <tr><th><span>Teléfono Celular</th><td>0414-027-23-30</span></td></tr> 
+
     <tr><th><span>Teléfono de Emergencias</th><td>0414-279-10-61</span></td></tr>
-                          
-    <tr><th><span>Codigo del CP</th><td>45871265</span> </td></tr>
-                                                    
+                                               
     <tr><th><span>Serial del CP</th><td>95478136</span> </td></tr>
-                                  
-    <tr><th><span>Dirección</th><td>Primera entrada de carapita,Subida del caballo callejon pinto salina,casa 88</span></td></tr>
-                                                                            
+                                                                                                    
   </table>
                               
-</div>                   
+</div>    
+
+<div class="col-sm-4 col-md-5 col-xs-6 text-left">
+                    
+  <table class='table table-bordered'>
+    
+    <tr><th><span>Dirección</th><td>Primera entrada de carapita,Subida del caballo callejon pinto salina,casa 88</span></td></tr>
+    
+  </table>
+
+</div>
 
 </div>  
 <!-- Final del Primer Activador -->
@@ -225,10 +233,10 @@ if ($_GET['form']=='add') { ?>
   <table class='table table-bordered'>
                        
     <tr><th><span>Tipo de Sangre</th><td>B +</span></td></tr>
-                              
-    <tr><th><span>Medicamentos</th><td>Antibioticos</span> </td></tr>
-                              
+                            
     <tr><th><span>Discapacidad</th><td>Ninguna</span> </td></tr>
+
+    <tr><th><span>Notas</th><td>Ninguna</span> </td></tr>
                      
   </table>
                            
@@ -237,11 +245,11 @@ if ($_GET['form']=='add') { ?>
 <div class="col-sm-4 col-md-5 col-xs-6 text-left">
 
   <table class='table table-bordered'>
+
+    <tr><th><span>Medicamentos</th><td>Antibioticos</span> </td></tr>
                      
     <tr><th><span>Alergias</th><td>Ninguna</span></td></tr>
-                            
-    <tr><th><span>Notas</th><td>Ninguna</span> </td></tr>
-                                       
+                                 
   </table>
                          
 </div>
@@ -259,13 +267,13 @@ if ($_GET['form']=='add') { ?>
   <table class='table table-bordered'>
                      
     <tr><th><span>Seleccionar División</th><td>División de Sistemas</span></td></tr>
-                            
-    <tr><th><span>Fecha de Ingreso</th><td>01/10/2018</span> </td></tr>
-                            
+                    
     <tr><th><span>Tiempo De Servicio</th><td>2 Meses</span> </td></tr>
           
-    <tr><th><span>Cargo</th><td>No Aplica</span></td></tr>
-                                
+    <tr><th><span>Rango</th><td>Experto Técnico I</span></td></tr>
+
+    <tr><th><span>Correo Institucional</th><td>darlymartinez@cicpc.gob.ve</span> </td></tr>
+          
   </table>
                          
 </div>
@@ -273,13 +281,13 @@ if ($_GET['form']=='add') { ?>
 <div class="col-sm-4 col-md-5 col-xs-6 text-left">
 
   <table class='table table-bordered'>
-                         
-    <tr><th><span>Rango</th><td>Experto Técnico I</span></td></tr>
-                          
+
+    <tr><th><span>Fecha de Ingreso</th><td>01/10/2018</span> </td></tr>
+  
+    <tr><th><span>Cargo</th><td>No Aplica</span></td></tr>                     
+                       
     <tr><th><span>Ubicación Fisica</th><td>Dirección de Tecnología</span> </td></tr>
                           
-    <tr><th><span>Correo Institucional</th><td>darlymartinez@cicpc.gob.ve</span> </td></tr>
-        
     <tr><th><span>Estatus</th><td>Activo</span></td></tr>
                               
   </table>
@@ -298,14 +306,14 @@ if ($_GET['form']=='add') { ?>
 
   <table class='table table-bordered'>
                         
-    <tr><th><span>Cedula</th><td>26.435.880</span></td></tr>
-                         
-    <tr><th><span>Primer Nombre</th><td>Yoseida</span> </td></tr>
-                         
+    <tr><th><span>Parenteco</th><td>Madre</span></td></tr>
+    
+    <tr><th><span>Cedula</th><td>11.201.693</span></td></tr>
+                  
     <tr><th><span>Segundo Nombre</th><td>Maria</span> </td></tr>
-       
-    <tr><th><span>Primer Apellido</th><td>Barreto</span></td></tr>
-                             
+
+    <tr><th><span>Segundo Apellido</th><td>Carvajal</span></td></tr>
+                      
   </table>
                         
 </div>
@@ -314,14 +322,14 @@ if ($_GET['form']=='add') { ?>
 
   <table class='table table-bordered'>
 
-    <tr><th><span>Segundo Apellido</th><td>Carvajal</span></td></tr>
+    <tr><th><span>Edad</th><td>45 Años</span> </td></tr>
+
+    <tr><th><span>Primer Nombre</th><td>Yoseida</span> </td></tr>
+
+    <tr><th><span>Primer Apellido</th><td>Barreto</span></td></tr>
                                               
-    <tr><th><span>Fecha de Nacimiento</th><td>26.435.880</span></td></tr>
-                                               
-    <tr><th><span>Edad</th><td>Yoseida</span> </td></tr>
-                                               
-    <tr><th><span>Género</th><td>Maria</span> </td></tr>
-                                                                                                     
+    <tr><th><span>Fecha de Nacimiento</th><td>21/12/1971</span></td></tr>
+                                                                                              
   </table>
                                               
 </div>
@@ -330,16 +338,24 @@ if ($_GET['form']=='add') { ?>
 
   <table class='table table-bordered'>
 
-    <tr><th><span>Parenteco</th><td>Barreto</span></td></tr>
-                                                
-    <tr><th><span>Estudiante</th><td>26.435.880</span></td></tr>
-                                                 
-    <tr><th><span>Funcionario</th><td>Yoseida</span> </td></tr>
-                                                 
-    <tr><th><span>Información Médica</th><td>Maria</span> </td></tr>
-                                                                                                  
+      <tr><th><span>Género</th><td>Femenina</span></td></tr>   
+                                  
+      <tr><th><span>Estudiante</th><td>No</span></td></tr>                                           
+                                                                                           
   </table>
                                                 
+</div>
+
+<div class="col-sm-4 col-md-5 col-xs-6 text-left">
+
+  <table class='table table-bordered'>
+                                      
+    <tr><th><span>Funcionario</th><td>No</span> </td></tr>
+                                                
+    <tr><th><span>Información Médica</th><td>Ninguna</span> </td></tr>
+                                                                                                
+  </table>
+                                              
 </div>
 
 </div>
@@ -354,13 +370,13 @@ if ($_GET['form']=='add') { ?>
   <table class='table table-bordered'>
                         
     <tr><th><span>Tipo de Vehiculo</th><td>Carro</span></td></tr>
-                         
-    <tr><th><span>Placa</th><td>A67 B36</span> </td></tr>
-                         
+                   
     <tr><th><span>Combustible</th><td>Gasolina</span> </td></tr>
        
-    <tr><th><span>Serial de la Carroceria</th><td>Ax469CU548DCG</span></td></tr>
-                         
+    <tr><th><span>Marca</th><td>Mazda</span></td></tr>   
+
+    <tr><th><span>Color</th><td>Negro</span> </td></tr>    
+
   </table>
                         
 </div>
@@ -369,12 +385,12 @@ if ($_GET['form']=='add') { ?>
 
   <table class='table table-bordered'>
                     
-    <tr><th><span>Marca</th><td>Mazda</span></td></tr>
-                       
+    <tr><th><span>Placa</th><td>A67 B36</span> </td></tr>
+
+    <tr><th><span>Serial de la Carroceria</th><td>Ax469CU548DCG</span></td></tr>
+               
     <tr><th><span>Modelo</th><td>M3</span> </td></tr>
                        
-    <tr><th><span>Color</th><td>Negro</span> </td></tr>
-     
     <tr><th><span>Año</th><td>2016</span></td></tr>
                      
   </table>
@@ -392,11 +408,11 @@ if ($_GET['form']=='add') { ?>
 
   <table class='table table-bordered'>
                            
-    <tr><th><span>Tipo</th><td>Martinez</span></td></tr>
-                            
-    <tr><th><span>N° Serial</th><td>Barreto</span> </td></tr>
-                            
-    <tr><th><span>Marca</th><td>29/10/1998</span> </td></tr>
+    <tr><th><span>Tipo</th><td>Arma</span></td></tr>
+
+    <tr><th><span>Marca</th><td>Glock</span> </td></tr>
+
+    <tr><th><span>Calibre</th><td>9mm</span></td></tr>
 
   </table>
                            
@@ -406,9 +422,11 @@ if ($_GET['form']=='add') { ?>
 
   <table class='table table-bordered'>
                                                  
-    <tr><th><span>Modelo</th><td>20 Años</span></td></tr>
+  <tr><th><span>N° Serial</th><td>AXC345</span> </td></tr>
+
+  <tr><th><span>Modelo</th><td>Glock 34</span></td></tr>
                             
-    <tr><th><span>Calibre</th><td>Femenina</span></td></tr>
+    
     
   </table>
   
