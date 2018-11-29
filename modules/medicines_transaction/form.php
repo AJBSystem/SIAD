@@ -306,46 +306,48 @@ if ($_GET['form']=='add') { ?>
 
 <div class="accordion" id="accordion1" role="tablist" aria-multiselectable="true">
 
-<a class="panel-heading" role="tab" id="headingOne1" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne">
-<h4 class="panel-title">Madre</h4></a>
+  <a class="panel-heading" role="tab" id="headingOne1" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne">
+      <h4 class="panel-title">Madre</h4></a>
 
 <div id="collapseOne1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 <div class="panel-body">
 
 <div class="col-md-6 col-sm-6 col-xs-12">
-<table class='table table-bordered'>
 
-  <tr><th><span>Cedula</th><td>11.201.693</span> </td></tr>
+  <table class='table table-bordered'>
 
-  <tr><th><span>Segundo Nombre</th><td>Maria</span> </td></tr>
+    <tr><th><span>Cedula</th><td>11.201.693</span> </td></tr>
 
-  <tr><th><span>Segundo Apellido</th><td>Carvajal</span></td></tr>
-                                            
-  <tr><th><span>Edad</th><td>45 Años</span></td></tr>
-     
-  <tr><th><span>Estudiante</th><td>No</span> </td></tr>
+    <tr><th><span>Segundo Nombre</th><td>Maria</span> </td></tr>
 
-  <tr><th><span>Información Medica</th><td>Ninguna</span> </td></tr>
+    <tr><th><span>Segundo Apellido</th><td>Carvajal</span></td></tr>
+                                              
+    <tr><th><span>Edad</th><td>45 Años</span></td></tr>
+      
+    <tr><th><span>Estudiante</th><td>No</span> </td></tr>
 
-</table>
+    <tr><th><span>Información Medica</th><td>Ninguna</span> </td></tr>
+
+  </table>
 </div>
 
 <div class="col-md-6 col-sm-6 col-xs-12">
-<table class='table table-bordered'>
+  
+  <table class='table table-bordered'>
 
-  <tr><th><span>Primer Nombre</th><td>Yoseida</span> </td></tr>
+    <tr><th><span>Primer Nombre</th><td>Yoseida</span> </td></tr>
 
-  <tr><th><span>Primer Apellido</th><td>Barreto</span> </td></tr>
+    <tr><th><span>Primer Apellido</th><td>Barreto</span> </td></tr>
 
-  <tr><th><span>Fecha de Nacimiento</th><td>21/12/1971</span></td></tr>
-                                            
-  <tr><th><span>Genero</th><td>Femenina</span></td></tr>
+    <tr><th><span>Fecha de Nacimiento</th><td>21/12/1971</span></td></tr>
+                                              
+    <tr><th><span>Genero</th><td>Femenina</span></td></tr>
 
-  <tr><th><span>Funcionario</th><td>No</span> </td></tr>
-                                                                                            
-</table>
+    <tr><th><span>Funcionario</th><td>No</span> </td></tr>
+                                                                                              
+  </table>
+
 </div>
-
 </div>
 </div>
        
@@ -354,43 +356,47 @@ if ($_GET['form']=='add') { ?>
 <!-- Inicio del activador 2 de familiares -->
 
 <div class="panel">
-<a class="panel-heading collapsed" role="tab" id="headingTwo1" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo">
-<h4 class="panel-title">Padre</h4></a>
+  <a class="panel-heading collapsed" role="tab" id="headingTwo1" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo">
+    <h4 class="panel-title">Padre</h4></a>
 
 <div id="collapseTwo1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 <div class="panel-body">
 <div class="col-md-6 col-sm-6 col-xs-12">
-<table class='table table-bordered'>
+  
+  <table class='table table-bordered'>
 
-  <tr><th><span>Cedula</th><td>10.877.210</span> </td></tr>
+    <tr><th><span>Cedula</th><td>10.877.210</span> </td></tr>
 
-  <tr><th><span>Segundo Nombre</th><td>Fortunato</span> </td></tr>
+    <tr><th><span>Segundo Nombre</th><td>Fortunato</span> </td></tr>
 
-  <tr><th><span>Segundo Apellido</th><td></span></td></tr>
-                                            
-  <tr><th><span>Edad</th><td>55 Años</span></td></tr>
-     
-  <tr><th><span>Estudiante</th><td>No</span> </td></tr>
+    <tr><th><span>Segundo Apellido</th><td></span></td></tr>
+                                              
+    <tr><th><span>Edad</th><td>55 Años</span></td></tr>
+      
+    <tr><th><span>Estudiante</th><td>No</span> </td></tr>
 
-  <tr><th><span>Información Medica</th><td>Ninguna</span> </td></tr>
+    <tr><th><span>Información Medica</th><td>Ninguna</span> </td></tr>
 
-</table>
+  </table>
+
 </div>
 
 <div class="col-md-6 col-sm-6 col-xs-12">
-<table class='table table-bordered'>
+  
+  <table class='table table-bordered'>
 
-  <tr><th><span>Primer Nombre</th><td>Agustin</span> </td></tr>
+    <tr><th><span>Primer Nombre</th><td>Agustin</span> </td></tr>
 
-  <tr><th><span>Primer Apellido</th><td>Martinez</span> </td></tr>
+    <tr><th><span>Primer Apellido</th><td>Martinez</span> </td></tr>
 
-  <tr><th><span>Fecha de Nacimiento</th><td>28/08/1967</span></td></tr>
-                                            
-  <tr><th><span>Genero</th><td>Masculino</span></td></tr>
+    <tr><th><span>Fecha de Nacimiento</th><td>28/08/1967</span></td></tr>
+                                              
+    <tr><th><span>Genero</th><td>Masculino</span></td></tr>
 
-  <tr><th><span>Funcionario</th><td>No</span> </td></tr>
-                                                                                            
-</table>
+    <tr><th><span>Funcionario</th><td>No</span> </td></tr>
+                                                                                              
+  </table>
+
 </div>
 </div>
 </div>
@@ -401,8 +407,8 @@ if ($_GET['form']=='add') { ?>
 <!-- Inicio del activador 3 de familiares -->
 
 <div class="panel">
-<a class="panel-heading collapsed" role="tab" id="headingThree1" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1" aria-expanded="false" aria-controls="collapseThree">
-<h4 class="panel-title">Hijos</h4></a>
+  <a class="panel-heading collapsed" role="tab" id="headingThree1" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1" aria-expanded="false" aria-controls="collapseThree">
+    <h4 class="panel-title">Hijos</h4></a>
 <div id="collapseThree1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 <div class="panel-body">
 
@@ -417,42 +423,46 @@ if ($_GET['form']=='add') { ?>
 <!-- Inicio del activador 4 de familiares -->
 
 <div class="panel">
-<a class="panel-heading collapsed" role="tab" id="headingFive1" data-toggle="collapse" data-parent="#accordion1" href="#collapseFive1" aria-expanded="false" aria-controls="collapseFive">
-<h4 class="panel-title">Hermanos</h4></a>
+  <a class="panel-heading collapsed" role="tab" id="headingFive1" data-toggle="collapse" data-parent="#accordion1" href="#collapseFive1" aria-expanded="false" aria-controls="collapseFive">
+    <h4 class="panel-title">Hermanos</h4></a>
 <div id="collapseFive1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
 <div class="panel-body">
 <div class="col-md-6 col-sm-6 col-xs-12">
-<table class='table table-bordered'>
+  
+  <table class='table table-bordered'>
 
-  <tr><th><span>Cedula</th><td>23.641.099</span> </td></tr>
+    <tr><th><span>Cedula</th><td>23.641.099</span> </td></tr>
 
-  <tr><th><span>Segundo Nombre</th><td>Agustin</span> </td></tr>
+    <tr><th><span>Segundo Nombre</th><td>Agustin</span> </td></tr>
 
-  <tr><th><span>Segundo Apellido</th><td>Barreto</span></td></tr>
-                                            
-  <tr><th><span>Edad</th><td>25 Años</span></td></tr>
-     
-  <tr><th><span>Estudiante</th><td>No</span> </td></tr>
+    <tr><th><span>Segundo Apellido</th><td>Barreto</span></td></tr>
+                                              
+    <tr><th><span>Edad</th><td>25 Años</span></td></tr>
+      
+    <tr><th><span>Estudiante</th><td>No</span> </td></tr>
 
-  <tr><th><span>Información Medica</th><td>Ninguna</span> </td></tr>
+    <tr><th><span>Información Medica</th><td>Ninguna</span> </td></tr>
 
-</table>
+  </table>
+
 </div>
 
 <div class="col-md-6 col-sm-6 col-xs-12">
-<table class='table table-bordered'>
 
-  <tr><th><span>Primer Nombre</th><td>Dauli</span> </td></tr>
+  <table class='table table-bordered'>
 
-  <tr><th><span>Primer Apellido</th><td>Martinez</span> </td></tr>
+    <tr><th><span>Primer Nombre</th><td>Dauli</span> </td></tr>
 
-  <tr><th><span>Fecha de Nacimiento</th><td>15/12/1994</span></td></tr>
-                                            
-  <tr><th><span>Genero</th><td>Masculino</span></td></tr>
+    <tr><th><span>Primer Apellido</th><td>Martinez</span> </td></tr>
 
-  <tr><th><span>Funcionario</th><td>Si</span> </td></tr>
+    <tr><th><span>Fecha de Nacimiento</th><td>15/12/1994</span></td></tr>
+                                              
+    <tr><th><span>Genero</th><td>Masculino</span></td></tr>
+
+    <tr><th><span>Funcionario</th><td>Si</span> </td></tr>
                                                                                             
-</table>
+  </table>
+
 </div>
 </div>
 </div>
@@ -462,42 +472,45 @@ if ($_GET['form']=='add') { ?>
 <!-- Inicio del activador 5 de familiares -->
 
 <div class="panel">
-<a class="panel-heading collapsed" role="tab" id="headingFor1" data-toggle="collapse" data-parent="#accordion1" href="#collapseFor1" aria-expanded="false" aria-controls="collapseFor">
-<h4 class="panel-title">Otros</h4></a>
+  <a class="panel-heading collapsed" role="tab" id="headingFor1" data-toggle="collapse" data-parent="#accordion1" href="#collapseFor1" aria-expanded="false" aria-controls="collapseFor">
+    <h4 class="panel-title">Otros</h4></a>
 <div id="collapseFor1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFor">
 <div class="panel-body">
 <div class="col-md-6 col-sm-6 col-xs-12">
-<table class='table table-bordered'>
 
-  <tr><th><span>Cedula</th><td>20.096.158</span> </td></tr>
+  <table class='table table-bordered'>
 
-  <tr><th><span>Segundo Nombre</th><td>Dayana</span> </td></tr>
+    <tr><th><span>Cedula</th><td>20.096.158</span> </td></tr>
 
-  <tr><th><span>Segundo Apellido</th><td>Martinez</span></td></tr>
-                                            
-  <tr><th><span>Edad</th><td>29 Años</span></td></tr>
-     
-  <tr><th><span>Estudiante</th><td>No</span> </td></tr>
+    <tr><th><span>Segundo Nombre</th><td>Dayana</span> </td></tr>
 
-  <tr><th><span>Información Medica</th><td>Ninguna</span> </td></tr>
+    <tr><th><span>Segundo Apellido</th><td>Martinez</span></td></tr>
+                                              
+    <tr><th><span>Edad</th><td>29 Años</span></td></tr>
+      
+    <tr><th><span>Estudiante</th><td>No</span> </td></tr>
 
-</table>
+    <tr><th><span>Información Medica</th><td>Ninguna</span> </td></tr>
+
+  </table>
+
 </div>
 
 <div class="col-md-6 col-sm-6 col-xs-12">
-<table class='table table-bordered'>
+  <table class='table table-bordered'>
 
-  <tr><th><span>Primer Nombre</th><td>Trinny</span> </td></tr>
+    <tr><th><span>Primer Nombre</th><td>Trinny</span> </td></tr>
 
-  <tr><th><span>Primer Apellido</th><td>Carvajal</span> </td></tr>
+    <tr><th><span>Primer Apellido</th><td>Carvajal</span> </td></tr>
 
-  <tr><th><span>Fecha de Nacimiento</th><td>20/06/1990</span></td></tr>
-                                            
-  <tr><th><span>Genero</th><td>Femenina</span></td></tr>
+    <tr><th><span>Fecha de Nacimiento</th><td>20/06/1990</span></td></tr>
+                                              
+    <tr><th><span>Genero</th><td>Femenina</span></td></tr>
 
-  <tr><th><span>Funcionario</th><td>No</span> </td></tr>
-                                                                                            
-</table>
+    <tr><th><span>Funcionario</th><td>No</span> </td></tr>
+                                                                                              
+  </table>
+
 </div>
 </div>
 </div>
@@ -568,16 +581,13 @@ if ($_GET['form']=='add') { ?>
 
   <table class='table table-bordered'>
                                                  
-  <tr><th><span>N° Serial</th><td>AXC345</span> </td></tr>
+    <tr><th><span>N° Serial</th><td>AXC345</span> </td></tr>
 
-  <tr><th><span>Modelo</th><td>Glock 34</span></td></tr>
-                            
-    
+    <tr><th><span>Modelo</th><td>Glock 34</span></td></tr>
     
   </table>
   
 </div>                      
-
 </div>
 <!-- Final del Sexto Activador -->  
 

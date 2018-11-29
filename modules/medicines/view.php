@@ -1,18 +1,17 @@
 <section class="content-header">
   <h1>
     <i class="fa fa-folder-o icon-title"></i> Datos de Funcionarios
-
-    <a class="btn btn-primary btn-social pull-right" href="?module=form_medicines&form=add" title="agregar" data-toggle="tooltip">
-      <i class="fa fa-plus"></i> Agregar
-    </a>
+      <a class="btn btn-primary btn-social pull-right" href="?module=form_medicines&form=add" title="agregar" data-toggle="tooltip">
+    <i class="fa fa-plus"></i> Agregar
+      </a>
   </h1>
 
 </section>
 
-
 <section class="content">
-  <div class="row">
-    <div class="col-md-12">
+
+<div class="row">
+<div class="col-md-12">
 
     <?php  
 
@@ -45,25 +44,24 @@
     }
     ?>
 
-      <div class="box box-primary">
-        <div class="box-body">
+<div class="box box-primary">
+<div class="box-body">
     
-          <table id="dataTables1" class="table table-bordered table-striped table-hover">
+  <table id="dataTables1" class="table table-bordered table-striped table-hover">
       
-            <thead>
-              <tr>
-                <th class="center">No.</th>
-                <th class="center">Codigo</th>         
-                <th class="center">Cedula</th>
-                <th class="center">N° de Credencial</th>
-                <th class="center">Primer Nombre</th>
-                <th class="center">Primer Apellido</th>
-                <th class="center">Fecha de Nacimiento</th>
-                <th class="center">Edad</th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody>
+    <thead>
+      <tr>
+        <th class="center">No.</th>
+        <th class="center">Codigo</th>         
+        <th class="center">Cedula</th>
+        <th class="center">N° de Credencial</th>
+        <th class="center">Primer Nombre</th>
+        <th class="center">Primer Apellido</th>
+        <th class="center">Fecha de Nacimiento</th>
+        <th class="center">Edad</th>
+      </tr>
+    </thead>
+          <tbody>
             <?php  
             $no = 1;
             $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,p_apellido,p_nombre,fec_nac,edad FROM medicamentos ORDER BY codigo DESC")
@@ -98,10 +96,10 @@
               $no++;
             }
             ?>
-            </tbody>
-          </table>
-        </div><!-- /.box-body -->
-      </div><!-- /.box -->
-    </div><!--/.col -->
-  </div>   <!-- /.row -->
+</tbody>
+</table>
+</div><!-- /.box-body -->
+</div><!-- /.box -->
+</div><!--/.col -->
+</div>   <!-- /.row -->
 </section><!-- /.content

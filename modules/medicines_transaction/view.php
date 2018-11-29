@@ -1,18 +1,15 @@
-
-
 <section class="content-header">
   <h1>
     <i class="fa fa-sign-in icon-title"></i> Funcionarios
-
-    <a class="btn btn-primary btn-social pull-right" href="?module=form_medicines_transaction&form=add" title="Agregar" data-toggle="tooltip">
-      <i class="fa fa-plus"></i> VER PERFIL 
-    </a>
+      <a class="btn btn-primary btn-social pull-right" href="?module=form_medicines_transaction&form=add" title="Agregar" data-toggle="tooltip">
+    <i class="fa fa-plus"></i> VER PERFIL 
+      </a>
   </h1>
 </section>
 
 <section class="content">
   <div class="row">
-    <div class="col-md-12">
+  <div class="col-md-12">
 
     <?php  
 
@@ -29,27 +26,25 @@
     }
     ?>
 
-      <div class="box box-primary">
-        <div class="box-body">
+<div class="box box-primary">
+<div class="box-body">
          
-          <table id="dataTables1" class="table table-bordered table-striped table-hover">
+  <table id="dataTables1" class="table table-bordered table-striped table-hover">
            
-            <thead>
-              <tr>
-                <th class="center">No.</th>
-                <th class="center">Codigo de Transación</th>
-                <th class="center">Fecha</th>
-                <th class="center">Codigo</th>
-                <th class="center">Medicamento</th>
+    <thead>
+      <tr>
+        <th class="center">No.</th>
+        <th class="center">Codigo de Transación</th>
+        <th class="center">Fecha</th>
+        <th class="center">Codigo</th>
+        <th class="center">Medicamento</th>
 				<th class="center">Tipo</th>
-                <th class="center">Cant.</th>
-                <th class="center">Unidad</th>
-              </tr>
-            </thead>
+        <th class="center">Cant.</th>
+        <th class="center">Unidad</th>
+      </tr>
+    </thead>
 
-
-         
-            <tbody>
+          <tbody>
 
             <?php  
             $no = 1;
@@ -78,21 +73,21 @@
               $no++;
             }
             ?>
-            </tbody>
-          </table>
+          </tbody>
+  </table>
           
 
 <!-- Revisar para poner los botones de siguiente luego -->
 
-          <ul class="pagination pagination-split">
-                              <li><a href="#">A</a></li>
-                              <li><a href="#">B</a></li>
-                              <li><a href="#">Y</a></li>
-                              <li><a href="#">Z</a></li>
-          </ul>
+<ul class="pagination pagination-split">
+  <li><a href="#">A</a></li>
+  <li><a href="#">B</a></li>
+  <li><a href="#">Y</a></li>
+  <li><a href="#">Z</a></li>
+</ul>
 
-        </div><!-- /.box-body -->
-      </div><!-- /.box -->
-    </div><!--/.col -->
-  </div>   <!-- /.row -->
+</div><!-- /.box-body -->
+</div><!-- /.box -->
+</div><!--/.col -->
+</div>   <!-- /.row -->
 </section><!-- /.content

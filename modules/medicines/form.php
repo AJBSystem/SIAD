@@ -2,28 +2,32 @@
 
 if ($_GET['form']=='add') { ?> 
 
-  <section class="content-header">
-    <h1>
+<section class="content-header">
+  <h1>
 
-      <i class="fa fa-edit icon-title"></i> Agregar Funcionario
-    </h1>
-    <ol class="breadcrumb">
-      <li><a href="?module=start"><i class="fa fa-home"></i> Inicio </a></li>
-      <li><a href="?module=medicines"> Funcionario </a></li>
-      <li class="active"> Más </li>
-    </ol>
+    <i class="fa fa-edit icon-title"></i> Agregar Funcionario
+  </h1>
+      <ol class="breadcrumb">
+        <li><a href="?module=start"><i class="fa fa-home"></i> Inicio </a></li>
+        <li><a href="?module=medicines"> Funcionario </a></li>
+        <li class="active"> Más </li>
+      </ol>
 
-  </section>
+</section>
 
-  <!-- Main content -->
-  <section class="content">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="box box-primary">
-          <!-- form start -->
-          <form role="form" class="form-horizontal" action="modules/medicines/proses.php?act=insert" method="POST">
-            <div class="box-body">
-              <?php  
+<section class="content">
+
+<div class="row">
+
+<div class="col-md-12">
+
+<div class="box box-primary">
+        
+  <form role="form" class="form-horizontal" action="modules/medicines/proses.php?act=insert" method="POST">
+
+<div class="box-body">
+  
+  <?php  
           
               $query_id = mysqli_query($mysqli, "SELECT RIGHT(codigo,6) as codigo FROM medicamentos
                                                 ORDER BY codigo DESC LIMIT 1")
@@ -49,8 +53,7 @@ if ($_GET['form']=='add') { ?>
 <div class="col-md-12 col-sm-6 col-xs-12">
 <div class="x_panel">
 <div class="x_title">
-  <ul class="nav navbar-right panel_toolbox"></ul>
-<div class="clearfix"></div>
+<ul class="nav navbar-right panel_toolbox"></ul>
 </div>
 
 <div class="x_content">
@@ -61,20 +64,20 @@ if ($_GET['form']=='add') { ?>
     <li  role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true" class="fa fa-user"> Datos Basicos</a>
     </li>
 
-      <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false" class="fa fa-heart"> Información Médica</a>
-      </li>
+    <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false" class="fa fa-heart"> Información Médica</a>
+    </li>
 
-        <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-suitcase"> Datos Laborales</a>
-        </li>
+    <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-suitcase"> Datos Laborales</a>
+    </li>
 
-          <li role="presentation" class=""><a href="#tab_content4" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-users"> Datos Familiares</a>
-          </li>
+    <li role="presentation" class=""><a href="#tab_content4" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-users"> Datos Familiares</a>
+    </li>
 
-            <li role="presentation" class=""><a href="#tab_content5" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-car"> Datos de Vehiculo</a>
-            </li> 
+    <li role="presentation" class=""><a href="#tab_content5" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-car"> Datos de Vehiculo</a>
+    </li> 
 
-              <li role="presentation" class=""><a href="#tab_content6" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-clipboard"> Dotaciones</a>
-              </li>
+    <li role="presentation" class=""><a href="#tab_content6" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-clipboard"> Dotaciones</a>
+    </li>
 
   </ul>
 
@@ -92,16 +95,16 @@ if ($_GET['form']=='add') { ?>
 
 <div class="clearfix"></div>
              
-                  <div class="x_content">
-                  <div class="col-md-2">
-                <label for="exampleInputEmail1">Codigo</label>
-                <input type="text" class="form-control" name="codigo" value="<?php echo $codigo; ?>">
-              </div>
+<div class="x_content">
+<div class="col-md-2">
+  <label for="exampleInputEmail1">Codigo</label>
+    <input type="text" class="form-control" name="codigo" value="<?php echo $codigo; ?>">
+</div>
 
   <div class="col-md-2">
     <label for="exampleInputEmail1">Cedula</label>
       <input type="text" class="form-control" name="cedula" autocomplete="off" required> 
- </div>
+  </div>
 
     <div class="col-md-2">
       <label for="exampleInputEmail1">N° de Credencial</label>
@@ -225,8 +228,6 @@ if ($_GET['form']=='add') { ?>
                                       <input type="text" class="form-control" name="tel_emerg" autocomplete="off" required> 
                                   </div>
 
-
-
                                     <!-- <div class="col-md-2">
                                       <label for="exampleInputEmail1">Estado</label>
                                         <select type="text" class="form-control" name="estado" autocomplete="off" required> 
@@ -297,20 +298,20 @@ if ($_GET['form']=='add') { ?>
                                                         <input type="text" class="form-control" name="serial_cp" autocomplete="off"> 
                                                     </div>
 
-                                      <div class="col-md-5">
-                                    <label for="exampleInputEmail1">Dirección</label>
-                                      <textarea rows="2" class="form-control" name="direccion" autocomplete="off" required></textarea> 
-                                  </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
+                                                      <div class="col-md-5">
+                                                        <label for="exampleInputEmail1">Dirección</label>
+                                                          <textarea rows="2" class="form-control" name="direccion" autocomplete="off" required></textarea> 
+                                                      </div>
+</div>
+</div>
+</div>
+</div>
 
 <!-- Aqui termina el activador 1 -->  
 
 <!-- Aqui empieza el activador 2 -->  
 
- <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
+<div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
 
   <div class="col-md-2">
     <label for="exampleInputEmail1">Tipo de Sangre</label>
@@ -702,21 +703,21 @@ if ($_GET['form']=='add') { ?>
 </div>
 
 <!-- Aqui termina el activador 6 -->   
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div><!-- /.box body -->
 
-  <div class="box-footer">
-    <div class="form-group">
-      <div class="col-sm-offset-2 col-sm-10">
-        <input type="submit" class="btn btn-primary btn-submit" name="Guardar" value="Guardar">
-          <a href="?module=medicines" class="btn btn-default btn-reset">Cancelar</a>
-      </div>
-    </div>
-  </div><!-- /.box footer -->
+<div class="box-footer">
+<div class="form-group">
+<div class="col-sm-offset-2 col-sm-10">
+  <input type="submit" class="btn btn-primary btn-submit" name="Guardar" value="Guardar">
+    <a href="?module=medicines" class="btn btn-default btn-reset">Cancelar</a>
+</div>
+</div>
+</div><!-- /.box footer -->
 </form>
 </div><!-- /.box -->
 </div><!--/.col -->
@@ -736,58 +737,54 @@ elseif ($_GET['form']=='edit') {
     }
 ?>
 
-  <section class="content-header">
-    <h1>
-      <i class="fa fa-edit icon-title"></i> Modificar Funcionario
-    </h1>
+<section class="content-header">
+  <h1>
+    <i class="fa fa-edit icon-title"></i> Modificar Funcionario
+  </h1>
       <ol class="breadcrumb">
         <li><a href="?module=start"><i class="fa fa-home"></i> Inicio </a></li>
         <li><a href="?module=medicines"> Funcionario </a></li>
         <li class="active"> Modificar </li>
       </ol>
-  </section>
+</section>
 
-  <!-- Main content -->
-  <section class="content">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="box box-primary">
-          <!-- form start -->
-          <form role="form" class="form-horizontal" action="modules/medicines/proses.php?act=update" method="POST">
-            <div class="box-body">
+<section class="content">
+  <div class="row">
+  <div class="col-md-12">
+  <div class="box box-primary">
+    <form role="form" class="form-horizontal" action="modules/medicines/proses.php?act=update" method="POST">
+  <div class="box-body">
 
 <div class="form-group">
 
 <div class="">
-  <div class="col-md-12 col-sm-6 col-xs-12">
-    <div class="x_panel">
-      <div class="x_title">
-        <ul class="nav navbar-right panel_toolbox">
-        </ul>
-      <div class="clearfix"></div>
-    </div>
-  <div class="x_content">
-
+<div class="col-md-12 col-sm-6 col-xs-12">
+<div class="x_panel">
+<div class="x_title">
+  <ul class="nav navbar-right panel_toolbox"></ul>
+<div class="clearfix"></div>
+</div>
+<div class="x_content">
 <div class="" role="tabpanel" data-example-id="togglable-tabs">
   <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
 
-     <li  role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true" class="fa fa-user"> Datos Basicos</a>
+    <li  role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true" class="fa fa-user"> Datos Basicos</a>
     </li>
 
-      <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false" class="fa fa-heart"> Información Médica</a>
-      </li>
+    <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false" class="fa fa-heart"> Información Médica</a>
+    </li>
 
-        <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-suitcase"> Datos Laborales</a>
-        </li>
+    <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-suitcase"> Datos Laborales</a>
+    </li>
 
-          <li role="presentation" class=""><a href="#tab_content4" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-users"> Datos Familiares</a>
-          </li>
+    <li role="presentation" class=""><a href="#tab_content4" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-users"> Datos Familiares</a>
+    </li>
 
-            <li role="presentation" class=""><a href="#tab_content5" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-car"> Datos de Vehiculo</a>
-            </li> 
+    <li role="presentation" class=""><a href="#tab_content5" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-car"> Datos de Vehiculo</a>
+    </li> 
 
-              <li role="presentation" class=""><a href="#tab_content6" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-clipboard"> Dotaciones</a>
-              </li>
+    <li role="presentation" class=""><a href="#tab_content6" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-clipboard"> Dotaciones</a>
+    </li>
   </ul>
 
 <div id="myTabContent" class="tab-content">
@@ -798,20 +795,17 @@ elseif ($_GET['form']=='edit') {
 <div class="col-md-12 col-sm-6 col-xs-12">
 <div class="x_panel">               
   <ul class="nav navbar-right panel_toolbox"></ul>
+<div class="x_content">
 
+<div class="col-md-2">
+  <label for="exampleInputEmail1">Codigo</label>
+    <input type="text" class="form-control" name="codigo" value="<?php echo $data['codigo']; ?>">
+</div>
 
-                  <div class="x_content">
-                  <div class="col-md-2">
-                <label for="exampleInputEmail1">Codigo</label>
-                  <input type="text" class="form-control" name="codigo" value="<?php echo $data['codigo']; ?>">
-              </div>
-
-             <div class="col-md-2">
-              <label for="exampleInputEmail1">Cedula</label>
-                  <input type="text" class="form-control" name="cedula" autocomplete="off" value="<?php echo $data['cedula']; ?>" required>
-              </div>
-
-
+  <div class="col-md-2">
+    <label for="exampleInputEmail1">Cedula</label>
+      <input type="text" class="form-control" name="cedula" autocomplete="off" value="<?php echo $data['cedula']; ?>" required>
+  </div>
 
     <div class="col-md-2">
       <label for="exampleInputEmail1">N° de Credencial</label>
@@ -828,10 +822,10 @@ elseif ($_GET['form']=='edit') {
             <input type="text" class="form-control" name="p_nombre" autocomplete="off" value="<?php echo $data['p_nombre']; ?>" required>
         </div>
 
-             <div class="col-md-2">
-              <label for="exampleInputEmail1">Segundo Nombre</label>
-                  <input type="text" class="form-control" name="s_nombre" autocomplete="off" value="<?php echo $data['s_nombre']; ?>">
-              </div>
+          <div class="col-md-2">
+            <label for="exampleInputEmail1">Segundo Nombre</label>
+              <input type="text" class="form-control" name="s_nombre" autocomplete="off" value="<?php echo $data['s_nombre']; ?>">
+          </div>
 
             <div class="col-md-2">
               <label for="exampleInputEmail1">Primer Apellido</label>
@@ -1005,12 +999,10 @@ elseif ($_GET['form']=='edit') {
                                                         <input type="text" class="form-control" name="serial_cp" autocomplete="off" value="<?php echo $data['serial_cp']; ?>">
                                                     </div>
 
-
-                                                    <div class="col-md-5">
-                                                      <label for="exampleInputEmail1">Dirección</label>
-                                                        <textarea rows="2" class="form-control" name="direccion" autocomplete="off" value="<?php echo $data['direccion']; ?>"></textarea>
-                                                    </div>
-
+                                                      <div class="col-md-5">
+                                                        <label for="exampleInputEmail1">Dirección</label>
+                                                          <textarea rows="2" class="form-control" name="direccion" autocomplete="off" value="<?php echo $data['direccion']; ?>"></textarea>
+                                                      </div>
 
 </div>
 </div>
@@ -1197,20 +1189,20 @@ elseif ($_GET['form']=='edit') {
       <input type="text" class="form-control" name="p_nombref" autocomplete="off" value="<?php echo $data['p_nombref']; ?>" required>
   </div>
 
-              <div class="col-md-2">
-              <label for="exampleInputEmail1">Segundo Nombre</label>
-                  <input type="text" class="form-control" name="s_nombref" autocomplete="off" value="<?php echo $data['s_nombref']; ?>">
-              </div>
+    <div class="col-md-2">
+      <label for="exampleInputEmail1">Segundo Nombre</label>
+        <input type="text" class="form-control" name="s_nombref" autocomplete="off" value="<?php echo $data['s_nombref']; ?>">
+    </div>
 
       <div class="col-md-2">
         <label for="exampleInputEmail1">Primer Apellido</label>
           <input type="text" class="form-control" name="p_apellidof" autocomplete="off" value="<?php echo $data['p_apellidof']; ?>" required>
       </div>
 
-              <div class="col-md-2">
-              <label for="exampleInputEmail1">Segundo Apellido</label>
-                  <input type="text" class="form-control" name="s_apellidof" autocomplete="off" value="<?php echo $data['s_apellidof']; ?>">
-              </div>
+        <div class="col-md-2">
+          <label for="exampleInputEmail1">Segundo Apellido</label>
+            <input type="text" class="form-control" name="s_apellidof" autocomplete="off" value="<?php echo $data['s_apellidof']; ?>">
+        </div>
 
           <div class="col-md-2">
             <label for="exampleInputEmail1">Fecha de Nacimiento</label>
@@ -1270,112 +1262,112 @@ elseif ($_GET['form']=='edit') {
 
 <div role="tabpanel" class="tab-pane fade" id="tab_content5" aria-labelledby="profile-tab">
 
-                    <div class="col-md-2">
-              <label for="exampleInputEmail1">Tipo de Vehiculo</label>
-                  <input type="text" class="form-control" name="tipo_v" autocomplete="off" value="<?php echo $data['tipo_v']; ?>">
-              </div>
+<div class="col-md-2">
+  <label for="exampleInputEmail1">Tipo de Vehiculo</label>
+    <input type="text" class="form-control" name="tipo_v" autocomplete="off" value="<?php echo $data['tipo_v']; ?>">
+</div>
 
-              <div class="col-md-2">
-              <label for="exampleInputEmail1">Placa</label>
-                  <input type="text" class="form-control" name="placa" autocomplete="off" value="<?php echo $data['placa']; ?>">
-              </div>
+  <div class="col-md-2">
+    <label for="exampleInputEmail1">Placa</label>
+      <input type="text" class="form-control" name="placa" autocomplete="off" value="<?php echo $data['placa']; ?>">
+  </div>
 
-              <div class="col-md-2">
-              <label for="exampleInputEmail1">Combustible</label>
-                  <select type="text" class="form-control" name="combustible" autocomplete="off" value="<?php echo $data['combustible']; ?>">
-                    <option>Gasolina</option>
-                    <option>Gasoil</option>
-                    <select>
-             </div>
+    <div class="col-md-2">
+      <label for="exampleInputEmail1">Combustible</label>
+        <select type="text" class="form-control" name="combustible" autocomplete="off" value="<?php echo $data['combustible']; ?>">
+          <option>Gasolina</option>
+          <option>Gasoil</option>
+        <select>
+    </div>
 
-              <div class="col-md-2">
-              <label for="exampleInputEmail1">Serial de la Carroceria</label>
-                  <input type="text" class="form-control" name="serial_carro" autocomplete="off" value="<?php echo $data['serial_carro']; ?>">
-              </div> 
+      <div class="col-md-2">
+        <label for="exampleInputEmail1">Serial de la Carroceria</label>
+          <input type="text" class="form-control" name="serial_carro" autocomplete="off" value="<?php echo $data['serial_carro']; ?>">
+      </div> 
 
-              <div class="col-md-2">
-              <label for="exampleInputEmail1">Marca</label>
-                  <input type="text" class="form-control" name="marca" autocomplete="off" value="<?php echo $data['marca']; ?>">
-              </div>
+        <div class="col-md-2">
+          <label for="exampleInputEmail1">Marca</label>
+            <input type="text" class="form-control" name="marca" autocomplete="off" value="<?php echo $data['marca']; ?>">
+        </div>
 
-              <div class="col-md-2">
-              <label for="exampleInputEmail1">Modelo</label>
-                  <input type="text" class="form-control" name="modelo" autocomplete="off" value="<?php echo $data['modelo']; ?>">
-              </div>
+          <div class="col-md-2">
+            <label for="exampleInputEmail1">Modelo</label>
+              <input type="text" class="form-control" name="modelo" autocomplete="off" value="<?php echo $data['modelo']; ?>">
+          </div>
 
             <div class="col-md-2">
               <label for="exampleInputEmail1">Color</label>
-                  <input type="text" class="form-control" name="color" autocomplete="off" value="<?php echo $data['color']; ?>">
-              </div>
+                <input type="text" class="form-control" name="color" autocomplete="off" value="<?php echo $data['color']; ?>">
+            </div>
 
               <div class="col-md-2">
-              <label for="exampleInputEmail1">Año</label>
+                <label for="exampleInputEmail1">Año</label>
                   <select type="text" class="form-control" name="alo" autocomplete="off" value="<?php echo $data['alo']; ?>">
-                  <option>2023</option>
-                <option>2022</option>
-                <option>2021</option>
-                <option>2020</option>
-                <option>2019</option>
-                <option>2018</option>
-                <option>2017</option>
-                <option>2016</option>
-                <option>2015</option>
-                <option>2014</option>
-                <option>2013</option>
-                <option>2012</option>
-                <option>2011</option>
-                <option>2010</option>
-                <option>2009</option>
-                <option>2008</option>
-                <option>2007</option>
-                <option>2006</option>
-                <option>2005</option>
-                <option>2004</option>
-                <option>2003</option>
-                <option>2002</option>
-                <option>2001</option>
-                <option>2000</option>
-                <option>1999</option>
-                <option>1998</option>
-                <option>1997</option>
-                <option>1996</option>
-                <option>1995</option>
-                <option>1994</option>
-                <option>1993</option>
-                <option>1992</option>
-                <option>1991</option>
-                <option>1990</option>
-                <option>1989</option>
-                <option>1988</option>
-                <option>1987</option>
-                <option>1986</option>
-                <option>1985</option>
-                <option>1984</option>
-                <option>1983</option>
-                <option>1982</option>
-                <option>1981</option>
-                <option>1980</option>
-                <option>1979</option>
-                <option>1978</option>
-                <option>1977</option>
-                <option>1976</option>
-                <option>1975</option>
-                <option>1974</option>
-                <option>1973</option>
-                <option>1972</option>
-                <option>1971</option>
-                <option>1970</option>
-                <option>1969</option>
-                <option>1968</option>
-                <option>1967</option>
-                <option>1966</option>
-                <option>1965</option>
-                <option>1964</option>
-                <option>1963</option>
-                <option>1962</option>
-                <option>1961</option>
-                <option>1960</option>
-                </select>
+                    <option>2023</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2012</option>
+                    <option>2011</option>
+                    <option>2010</option>
+                    <option>2009</option>
+                    <option>2008</option>
+                    <option>2007</option>
+                    <option>2006</option>
+                    <option>2005</option>
+                    <option>2004</option>
+                    <option>2003</option>
+                    <option>2002</option>
+                    <option>2001</option>
+                    <option>2000</option>
+                    <option>1999</option>
+                    <option>1998</option>
+                    <option>1997</option>
+                    <option>1996</option>
+                    <option>1995</option>
+                    <option>1994</option>
+                    <option>1993</option>
+                    <option>1992</option>
+                    <option>1991</option>
+                    <option>1990</option>
+                    <option>1989</option>
+                    <option>1988</option>
+                    <option>1987</option>
+                    <option>1986</option>
+                    <option>1985</option>
+                    <option>1984</option>
+                    <option>1983</option>
+                    <option>1982</option>
+                    <option>1981</option>
+                    <option>1980</option>
+                    <option>1979</option>
+                    <option>1978</option>
+                    <option>1977</option>
+                    <option>1976</option>
+                    <option>1975</option>
+                    <option>1974</option>
+                    <option>1973</option>
+                    <option>1972</option>
+                    <option>1971</option>
+                    <option>1970</option>
+                    <option>1969</option>
+                    <option>1968</option>
+                    <option>1967</option>
+                    <option>1966</option>
+                    <option>1965</option>
+                    <option>1964</option>
+                    <option>1963</option>
+                    <option>1962</option>
+                    <option>1961</option>
+                    <option>1960</option>
+                    </select>
               </div>
 
 </div>
@@ -1386,32 +1378,30 @@ elseif ($_GET['form']=='edit') {
 
 <div role="tabpanel" class="tab-pane fade" id="tab_content6" aria-labelledby="profile-tab">
 
-              <div class="col-md-2">
-              <label for="exampleInputEmail1">Tipo</label>
-                  <input type="text" class="form-control" name="tipo_d" autocomplete="off" value="<?php echo $data['tipo_d']; ?>">
-              </div>
+<div class="col-md-2">
+  <label for="exampleInputEmail1">Tipo</label>
+    <input type="text" class="form-control" name="tipo_d" autocomplete="off" value="<?php echo $data['tipo_d']; ?>">
+</div>
 
-              <div class="col-md-2">
-              <label for="exampleInputEmail1">N° de Serial</label>
-                  <input type="text" class="form-control" name="n_serial" autocomplete="off" value="<?php echo $data['n_serial']; ?>">
-              </div>
+  <div class="col-md-2">
+    <label for="exampleInputEmail1">N° de Serial</label>
+      <input type="text" class="form-control" name="n_serial" autocomplete="off" value="<?php echo $data['n_serial']; ?>">
+  </div>
 
+    <div class="col-md-2">
+      <label for="exampleInputEmail1">Marca</label>
+        <input type="text" class="form-control" name="marca_d" autocomplete="off" value="<?php echo $data['marca_d']; ?>">
+    </div>
 
-              <div class="col-md-2">
-              <label for="exampleInputEmail1">Marca</label>
-                  <input type="text" class="form-control" name="marca_d" autocomplete="off" value="<?php echo $data['marca_d']; ?>">
-              </div>
+      <div class="col-md-2">
+        <label for="exampleInputEmail1">Modelo</label>
+          <input type="text" class="form-control" name="modelo_d" autocomplete="off" value="<?php echo $data['modelo_d']; ?>">
+      </div>
 
-               <div class="col-md-2">
-              <label for="exampleInputEmail1">Modelo</label>
-                  <input type="text" class="form-control" name="modelo_d" autocomplete="off" value="<?php echo $data['modelo_d']; ?>">
-              </div>
-
-               <div class="col-md-2">
-              <label for="exampleInputEmail1">Calibre</label>
-                  <input type="text" class="form-control" name="calibre" autocomplete="off" value="<?php echo $data['calibre']; ?>">
-              </div>
-
+        <div class="col-md-2">
+          <label for="exampleInputEmail1">Calibre</label>
+            <input type="text" class="form-control" name="calibre" autocomplete="off" value="<?php echo $data['calibre']; ?>">
+        </div>
 
 </div>
 
@@ -1426,12 +1416,12 @@ elseif ($_GET['form']=='edit') {
 </div><!-- /.box body -->
 
 <div class="box-footer">
-  <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <input type="submit" class="btn btn-primary btn-submit" name="Guardar" value="Guardar">
-        <a href="?module=medicines" class="btn btn-default btn-reset">Cancelar</a>
-    </div>
-  </div>
+<div class="form-group">
+<div class="col-sm-offset-2 col-sm-10">
+  <input type="submit" class="btn btn-primary btn-submit" name="Guardar" value="Guardar">
+    <a href="?module=medicines" class="btn btn-default btn-reset">Cancelar</a>
+</div>
+</div>
 </div><!-- /.box footer -->
 </form>
 </div><!-- /.box -->
