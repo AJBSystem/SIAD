@@ -82,8 +82,11 @@
                       <td width='20' align='center'>$data[tel_cel]</td>
                       <td class='center' width='80'>
                       <div>
-                      <a data-toggle='tooltip' data-placement='top' title='modificar' style='margin-right:5px' class='btn btn-primary btn-sm' href='?module=form_medicines&form=edit&id=$data[codigo]'>
+                      <a data-toggle='tooltip' data-placement='top' title='Modificar' style='margin-right:5px' class='btn btn-primary btn-sm' href='?module=form_medicines&form=edit&id=$data[codigo]'>
                           <i style='color:#fff' class='glyphicon glyphicon-edit'></i>
+                      </a>
+                      <a data-toggle='tooltip' data-placement='top' title='Ver Perfil' style='margin-right:5px' class='btn btn-primary btn-sm' href='?module=form_medicines_transaction&form=add&id=$data[codigo]'>
+                          <i style='color:#fff' class='fa fa-plus'></i>
                       </a>";
             ?>
                           <a data-toggle="tooltip" data-placement="top" title="Eliminar" class="btn btn-danger btn-sm" href="modules/medicines/proses.php?act=delete&id=<?php echo $data['codigo'];?>" onclick="return confirm('estas seguro de eliminar <?php echo $data['p_nombre']; ?> ?');">
