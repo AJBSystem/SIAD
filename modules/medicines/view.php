@@ -51,20 +51,20 @@
       
     <thead>
       <tr>
-        <th class="center">No.</th>
-        <th class="center">Codigo</th>         
+        <th class="center">No.</th>         
         <th class="center">Cedula</th>
         <th class="center">N° de Credencial</th>
         <th class="center">Primer Nombre</th>
         <th class="center">Primer Apellido</th>
         <th class="center">Fecha de Nacimiento</th>
         <th class="center">Edad</th>
+        <th class="center">Telefono Celular</th>
       </tr>
     </thead>
           <tbody>
             <?php  
             $no = 1;
-            $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,p_apellido,p_nombre,fec_nac,edad FROM medicamentos ORDER BY codigo DESC")
+            $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,p_apellido,p_nombre,fec_nac,edad,tel_cel FROM medicamentos ORDER BY codigo DESC")
                                             or die('error: '.mysqli_error($mysqli));
 
             while ($data = mysqli_fetch_assoc($query)) { 
@@ -73,13 +73,13 @@
            
               echo "<tr>
                       <td width='30' class='center'>$no</td>
-                      <td width='80' class='center'>$data[codigo]</td>
                       <td width='70' align='center'>$cedula</td>
                       <td width='100' align='center'>$credencial</td>
                       <td width='80' align='left'>$data[p_nombre]</td>
                       <td width='80' align='left'>$data[p_apellido]</td>
                       <td width='100' align='center'>$data[fec_nac]</td>
                       <td width='20' align='center'>$data[edad]</td>
+                      <td width='20' align='center'>$data[tel_cel]</td>
                       <td class='center' width='80'>
                       <div>
                       <a data-toggle='tooltip' data-placement='top' title='modificar' style='margin-right:5px' class='btn btn-primary btn-sm' href='?module=form_medicines&form=edit&id=$data[codigo]'>

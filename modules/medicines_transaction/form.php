@@ -519,7 +519,7 @@ if ($_GET['form']=='add') { ?>
 
 </div>
 <!-- Final del Cuarto Activador -->
-
+</div>
 <!-- Inicio del Quinto Activador -->
 
 <div role="tabpanel" class="tab-pane fade" id="tab_content5" aria-labelledby="profile-tab">
