@@ -26,7 +26,6 @@ $pdf->Cell(55,7,utf8_decode('Tipo de Dotación'),1,0,'C',1);
 $pdf->Cell(55,7,utf8_decode('Numero de Serial'),1,0,'C',1);
 $pdf->Cell(55,7,utf8_decode('Marca'),1,0,'C',1);
 $pdf->Cell(55,7,utf8_decode('Modelo'),1,0,'C',1);
-$pdf->Cell(55,7,utf8_decode('Estatus'),1,0,'C',1);
 $pdf->Cell(40,7,utf8_decode('Calibre'),1,1,'C',1);
 
   // <!-- Final de titulos -->
@@ -40,8 +39,7 @@ $pdf->Cell(40,7,utf8_decode('Calibre'),1,1,'C',1);
    $pdf->Cell(55,7,utf8_decode($row['tipo_d']),1,0,'C',0);
    $pdf->Cell(55,7,utf8_decode($row['n_serial']),1,0,'C',0);
    $pdf->Cell(55,7,utf8_decode($row['marca_d']),1,0,'C',0);
-   $pdf->Cell(55,7,utf8_decode($row['modelo_d']),1,0,'C',0);
-   $pdf->Cell(55,7,utf8_decode($row['estatus']),1,0,'C',0);     
+   $pdf->Cell(55,7,utf8_decode($row['modelo_d']),1,0,'C',0);    
    $pdf->Cell(40,7,utf8_decode($row['calibre']),1,1,'C',0);  
 
   }
