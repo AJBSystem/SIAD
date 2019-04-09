@@ -675,10 +675,15 @@ if ($_GET['form']=='add') { ?>
 
 <div role="tabpanel" class="tab-pane fade" id="tab_content6" aria-labelledby="profile-tab">
 
-  <div class="col-md-2">
-    <label for="exampleInputEmail1">Tipo</label>
-      <input type="text" class="form-control" name="tipo_d" autocomplete="off"> 
-  </div> 
+      <div class="col-md-2">
+        <label for="exampleInputEmail1">Tipo</label>
+          <select type="text" class="form-control" name="tipo_d" autocomplete="off"> 
+            <option>Arma</option>
+            <option>Chaleco</option>
+            <option>Esposas</option>
+          </select>
+      </div>  
+
 
     <div class="col-md-2">
       <label for="exampleInputEmail1">N° de Serial</label>
@@ -1378,10 +1383,15 @@ elseif ($_GET['form']=='edit') {
 
 <div role="tabpanel" class="tab-pane fade" id="tab_content6" aria-labelledby="profile-tab">
 
-<div class="col-md-2">
-  <label for="exampleInputEmail1">Tipo</label>
-    <input type="text" class="form-control" name="tipo_d" autocomplete="off" value="<?php echo $data['tipo_d']; ?>">
-</div>
+    <div class="col-md-2">
+      <label for="exampleInputEmail1">Tipo</label>
+        <select type="text" class="form-control" name="tipo_d" autocomplete="off" value="<?php echo $data['tipo_d']; ?>">
+          <option>Arma</option>
+          <option>Chaleco</option>
+          <option>Esposas</option>
+        <select>
+    </div>
+
 
   <div class="col-md-2">
     <label for="exampleInputEmail1">N° de Serial</label>
