@@ -10,7 +10,6 @@ if ($_GET['form']=='add') { ?>
       <ol class="breadcrumb">
         <li><a href="?module=start"><i class="fa fa-home"></i> Inicio </a></li>
         <li><a href="?module=medicines"> Funcionario </a></li>
-        <li class="active"> Más </li>
       </ol>
 
 </section>

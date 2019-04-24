@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Login | Inventario de Medicamentos</title>
+    <title>Login | Sistema de Actualización de Datos</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="description" content="Aplikasi Persediaan Obat pada Apotek">
@@ -38,7 +38,7 @@
       elseif ($_GET['alert'] == 1) {
         echo "<div class='alert alert-danger alert-dismissable'>
                 <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                <h4>  <i class='icon fa fa-times-circle'></i> Error al entrar!</h4>
+                <h4>  <i class='icon fa fa-times-circle'></i> Error al ingresar!</h4>
                Usuario o la contraseña es incorrecta, vuelva a verificar su nombre de usuario y contraseña.
               </div>";
       }
@@ -46,7 +46,7 @@
       elseif ($_GET['alert'] == 2) {
         echo "<div class='alert alert-success alert-dismissable'>
                 <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                <h4>  <i class='icon fa fa-check-circle'></i> Exito!!</h4>
+                <h4>  <i class='icon fa fa-check-circle'></i> Exito!</h4>
               Has salido con éxito.
               </div>";
       }
