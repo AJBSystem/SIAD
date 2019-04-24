@@ -1,17 +1,15 @@
-
-
 <section class="content-header">
   <h1>
-    <i class="fa fa-file-text-o icon-title"></i> Datos de Funcionarios 
-
-    <a class="btn btn-primary btn-social pull-right" href="modules/stock_inventory/print.php" target="_blank">
-      <i class="fa fa-print"></i> Imprimir
-    </a>
+    <i class="fa fa-folder-o icon-title"></i> Datos de Funcionarios
+      <a class="btn btn-primary btn-social pull-right" href="?module=form_medicines&form=add" title="agregar" data-toggle="tooltip">
+    <i class="fa fa-plus"></i> Agregar
+      </a>
   </h1>
 
 </section>
 
 <!-- Main content -->
+
 <section class="content">
   <div class="row">
     <div class="col-md-12">

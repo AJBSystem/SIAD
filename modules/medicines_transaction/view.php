@@ -69,7 +69,14 @@
 					  <td width='80' class='center'>$data[tipo_transaccion]</td>
                       <td width='100' align='right'>$data[numero]</td>
                       <td width='80' class='center'>$data[unidad]</td>
-                    </tr>";
+                    </tr>
+                    <div>
+                      <a data-toggle='tooltip' data-placement='top' title='Modificar' style='margin-right:5px' class='btn btn-primary btn-sm' href='?module=form_medicines&form=edit&id=$data[codigo]'>
+                          <i style='color:#fff' class='glyphicon glyphicon-edit'></i>
+                      </a>
+                      <a data-toggle='tooltip' data-placement='top' title='Ver Perfil' style='margin-right:5px' class='btn btn-primary btn-sm' href='?module=form_medicines_transaction&form=add'>
+                          <i style='color:#fff' class='fa fa-plus'></i>
+                      </a>";
               $no++;
             }
             ?>
