@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 16-11-2018 a las 19:22:02
--- Versión del servidor: 10.1.36-MariaDB
--- Versión de PHP: 5.6.38
+-- Tiempo de generación: 24-04-2019 a las 16:57:17
+-- Versión del servidor: 10.1.37-MariaDB
+-- Versión de PHP: 7.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -216,16 +216,17 @@ CREATE TABLE `medicamentos` (
   `estatus` varchar(50) NOT NULL,
   `selec_div` varchar(50) NOT NULL,
   `cargo` varchar(50) NOT NULL,
-  `rango` varchar(50) NOT NULL
+  `rango` varchar(50) NOT NULL,
+  `direccion` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `medicamentos`
 --
 
-INSERT INTO `medicamentos` (`codigo`, `nombre`, `precio_compra`, `precio_venta`, `unidad`, `stock`, `created_user`, `created_date`, `updated_user`, `updated_date`, `p_nombre`, `cedula`, `credencial`, `p_apellido`, `fec_nac`, `edad`, `s_nombre`, `s_apellido`, `rif`, `genero`, `tel_cel`, `tel_hab`, `tel_emerg`, `municipio`, `calle`, `casa`, `parroquia`, `estado`, `ciudad`, `avenida`, `codigo_cp`, `serial_cp`, `estado_c`, `lugar_nac`, `correo_e`, `grado_inst`, `correo_i`, `tipo_s`, `medicamen`, `discapacidad`, `alergias`, `nota`, `notas`, `fec_ing`, `tiempo_s`, `ubic_fis`, `p_nombref`, `s_nombref`, `p_apellidof`, `s_apellidof`, `cedulaf`, `fec_nacf`, `edadf`, `generof`, `parentesco`, `estudiante`, `funcionario`, `inf_medf`, `tipo_v`, `placa`, `combustible`, `serial_carro`, `marca`, `modelo`, `color`, `alo`, `tipo_d`, `n_serial`, `marca_d`, `modelo_d`, `calibre`, `estatus`, `selec_div`, `cargo`, `rango`) VALUES
-('B000003', '', 0, 0, '', 0, 1, '2018-11-13 19:39:54', 1, '2018-11-16 14:49:34', 'Dauli', 26435885, 54564, 'g', '2018-10-16', 20, 'giu', 'giu', 4545, 0, 45448, 8948, 89, 'gf', 'ug', '51514', 'yu', 'Amazonas', 'yugfyg', 'ug', 51, 51, 'Soltero/a', 'Amazonas', 'darlynmartinezb@gmail.com', 'Primaria', 'sadf@sd.com', 'uigu', 'igi', 'u', 'gu', '', 'g', '2018-11-21', '232', 'dsaf', 'giugu', 'gu', 'gu', 'ig', 6526, '2018-11-15', '552', 'Femenino', 'Madre', 'No', 'No', 'hg', '', '', 'Gasolina', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
-('B000004', '', 0, 0, '', 0, 1, '2018-11-15 15:20:50', 1, '2018-11-15 19:20:18', 'Darly', 26435885, 54564, 'Martinez', '1998-10-29', 20, 'Naiduth', 'Barreto', 4545, 0, 45448, 8948, 89, 'gf', 'ug', '51514', 'yu', 'Amazonas', 'yugfyg', 'ug', 51, 51, 'Soltero/a', 'Amazonas', 'fdds@fd.com', 'Primaria', 'sadf@sd.com', 'uigu', 'igi', 'u', 'gu', '', 'g', '2018-11-21', '232', 'dsaf', 'giugu', 'gu', 'gu', 'ig', 6526, '2018-11-15', '552', 'Femenina', 'Hijo/a', 'Si', 'Si', 'hg', '', '', 'Gasolina', '', '', '', '', '', '', '', '', '', '', '', '', '', '');
+INSERT INTO `medicamentos` (`codigo`, `nombre`, `precio_compra`, `precio_venta`, `unidad`, `stock`, `created_user`, `created_date`, `updated_user`, `updated_date`, `p_nombre`, `cedula`, `credencial`, `p_apellido`, `fec_nac`, `edad`, `s_nombre`, `s_apellido`, `rif`, `genero`, `tel_cel`, `tel_hab`, `tel_emerg`, `municipio`, `calle`, `casa`, `parroquia`, `estado`, `ciudad`, `avenida`, `codigo_cp`, `serial_cp`, `estado_c`, `lugar_nac`, `correo_e`, `grado_inst`, `correo_i`, `tipo_s`, `medicamen`, `discapacidad`, `alergias`, `nota`, `notas`, `fec_ing`, `tiempo_s`, `ubic_fis`, `p_nombref`, `s_nombref`, `p_apellidof`, `s_apellidof`, `cedulaf`, `fec_nacf`, `edadf`, `generof`, `parentesco`, `estudiante`, `funcionario`, `inf_medf`, `tipo_v`, `placa`, `combustible`, `serial_carro`, `marca`, `modelo`, `color`, `alo`, `tipo_d`, `n_serial`, `marca_d`, `modelo_d`, `calibre`, `estatus`, `selec_div`, `cargo`, `rango`, `direccion`) VALUES
+('B000003', '', 0, 0, '', 0, 1, '2018-11-13 19:39:54', 1, '2019-04-24 14:51:15', 'Dauli', 26435885, 54564, 'g', '2018-10-16', 20, 'giu', 'giu', 4545, 0, 45448, 8948, 89, '', '', '', '', '', '', '', 51, 51, 'Soltero/a', '', 'darlynmartinezb@gmail.com', 'Primaria', 'sadf@sd.com', 'uigu', 'igi', 'u', 'gu', '', 'g', '2018-11-21', '232', 'dsaf', 'giugu', 'gu', 'gu', 'ig', 6526, '2018-11-15', '552', 'Femenino', 'Madre', 'No', 'No', 'hg', '', '', 'Gasolina', '', '', '', '', '2023', '', '', '', '', '', 'Activo', 'Base de Datos', 'Jefe de Investigaciones', 'Auxiliar Adm. VII', ''),
+('B000004', '', 0, 0, '', 0, 1, '2018-11-15 15:20:50', 1, '2019-04-24 14:53:05', 'Darly', 26435885, 47259, 'Martinez', '1998-10-29', 20, 'Naiduth', 'Barreto', 4545, 0, 45448, 8948, 89, '', '', '', '', '', '', '', 51, 51, 'Soltero/a', '', 'fdds@fd.com', 'Primaria', 'sadf@sd.com', 'uigu', 'igi', 'u', 'gu', '', 'g', '2018-11-21', '232', 'dsaf', 'giugu', 'gu', 'gu', 'ig', 6526, '2018-11-15', '552', 'Femenina', 'Hijo/a', 'Si', 'Si', 'hg', 'Carro', 'ad15616', 'Gasolina', '652d69s6sd6d', 'Toyota', 'Camry', 'Negro', '2019', '', '', '', '', '', 'Activo', 'Base de Datos', 'Adjunto', 'Asesor Juridico', '');
 
 -- --------------------------------------------------------
 
