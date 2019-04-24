@@ -40,30 +40,30 @@ else {
             $casa        = mysqli_real_escape_string($mysqli, trim($_POST['casa']));
             $codigo_cp   = mysqli_real_escape_string($mysqli, trim($_POST['codigo_cp']));
             $serial_cp   = mysqli_real_escape_string($mysqli, trim($_POST['serial_cp']));
-            $tipo_s  = mysqli_real_escape_string($mysqli, trim($_POST['tipo_s']));
-            $medicamen  = mysqli_real_escape_string($mysqli, trim($_POST['medicamen']));
+            $tipo_s      = mysqli_real_escape_string($mysqli, trim($_POST['tipo_s']));
+            $medicamen   = mysqli_real_escape_string($mysqli, trim($_POST['medicamen']));
             $discapacidad  = mysqli_real_escape_string($mysqli, trim($_POST['discapacidad']));
-            $alergias  = mysqli_real_escape_string($mysqli, trim($_POST['alergias']));
-            $notas  = mysqli_real_escape_string($mysqli, trim($_POST['notas']));
-            $fec_ing  = mysqli_real_escape_string($mysqli, trim($_POST['fec_ing']));
-            $tiempo_s  = mysqli_real_escape_string($mysqli, trim($_POST['tiempo_s']));
-            $ubic_fis  = mysqli_real_escape_string($mysqli, trim($_POST['ubic_fis']));
-            $correo_i  = mysqli_real_escape_string($mysqli, trim($_POST['correo_i']));
-            $cedulaf  = mysqli_real_escape_string($mysqli, trim($_POST['cedulaf']));
-            $p_nombref  = mysqli_real_escape_string($mysqli, trim($_POST['p_nombref']));
-            $s_nombref  = mysqli_real_escape_string($mysqli, trim($_POST['s_nombref']));
-            $p_apellidof  = mysqli_real_escape_string($mysqli, trim($_POST['p_apellidof']));
-            $s_apellidof  = mysqli_real_escape_string($mysqli, trim($_POST['s_apellidof']));
-            $fec_nacf  = mysqli_real_escape_string($mysqli, trim($_POST['fec_nacf']));
-            $edadf  = mysqli_real_escape_string($mysqli, trim($_POST['edadf']));
-            $generof  = mysqli_real_escape_string($mysqli, trim($_POST['generof']));
-            $parentesco  = mysqli_real_escape_string($mysqli, trim($_POST['parentesco']));
-            $estudiante  = mysqli_real_escape_string($mysqli, trim($_POST['estudiante']));
-            $funcionario  = mysqli_real_escape_string($mysqli, trim($_POST['funcionario']));
-            $inf_medf  = mysqli_real_escape_string($mysqli, trim($_POST['inf_medf']));
-            $tipo_v  = mysqli_real_escape_string($mysqli, trim($_POST['tipo_v']));
-            $placa  = mysqli_real_escape_string($mysqli, trim($_POST['placa']));
-            $combustible  = mysqli_real_escape_string($mysqli, trim($_POST['combustible']));
+            $alergias      = mysqli_real_escape_string($mysqli, trim($_POST['alergias']));
+            $notas         = mysqli_real_escape_string($mysqli, trim($_POST['notas']));
+            $fec_ing       = mysqli_real_escape_string($mysqli, trim($_POST['fec_ing']));
+            $tiempo_s      = mysqli_real_escape_string($mysqli, trim($_POST['tiempo_s']));
+            $ubic_fis      = mysqli_real_escape_string($mysqli, trim($_POST['ubic_fis']));
+            $correo_i      = mysqli_real_escape_string($mysqli, trim($_POST['correo_i']));
+            $cedulaf       = mysqli_real_escape_string($mysqli, trim($_POST['cedulaf']));
+            $p_nombref     = mysqli_real_escape_string($mysqli, trim($_POST['p_nombref']));
+            $s_nombref     = mysqli_real_escape_string($mysqli, trim($_POST['s_nombref']));
+            $p_apellidof   = mysqli_real_escape_string($mysqli, trim($_POST['p_apellidof']));
+            $s_apellidof   = mysqli_real_escape_string($mysqli, trim($_POST['s_apellidof']));
+            $fec_nacf      = mysqli_real_escape_string($mysqli, trim($_POST['fec_nacf']));
+            $edadf         = mysqli_real_escape_string($mysqli, trim($_POST['edadf']));
+            $generof       = mysqli_real_escape_string($mysqli, trim($_POST['generof']));
+            $parentesco    = mysqli_real_escape_string($mysqli, trim($_POST['parentesco']));
+            $estudiante    = mysqli_real_escape_string($mysqli, trim($_POST['estudiante']));
+            $funcionario   = mysqli_real_escape_string($mysqli, trim($_POST['funcionario']));
+            $inf_medf      = mysqli_real_escape_string($mysqli, trim($_POST['inf_medf']));
+            $tipo_v        = mysqli_real_escape_string($mysqli, trim($_POST['tipo_v']));
+            $placa         = mysqli_real_escape_string($mysqli, trim($_POST['placa']));
+            $combustible   = mysqli_real_escape_string($mysqli, trim($_POST['combustible']));
             $serial_carro  = mysqli_real_escape_string($mysqli, trim($_POST['serial_carro']));
             $marca  = mysqli_real_escape_string($mysqli, trim($_POST['marca']));
             $modelo  = mysqli_real_escape_string($mysqli, trim($_POST['modelo']));
@@ -82,11 +82,28 @@ else {
             $created_user = $_SESSION['id_user'];
   
 
-            $query = mysqli_query($mysqli, "INSERT INTO medicamentos(codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,lugar_nac,estado_c,grado_inst,correo_e,tel_cel,tel_hab,tel_emerg,estado,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,fec_ing,tiempo_s,ubic_fis,correo_i,cedulaf,p_nombref,s_nombref,p_apellidof,s_apellidof,fec_nacf,edadf,generof,parentesco,estudiante,funcionario,inf_medf,tipo_v,placa,combustible,serial_carro,marca,modelo,color,alo,tipo_d,n_serial,marca_d,modelo_d,calibre,direccion,selec_div,estatus,cargo,rangocreated_user,updated_user) 
-                                            VALUES('$codigo','$cedula','$credencial','$rif','$p_nombre','$s_nombre','$p_apellido','$s_apellido','$fec_nac','$edad','$genero','$lugar_nac','$estado_c','$grado_inst','$correo_e','$tel_cel','$tel_hab','$tel_emerg','$estado','$municipio','$ciudad','$parroquia','$avenida','$calle','$casa','$codigo_cp','$serial_cp','$tipo_s','$medicamen','$discapacidad','$alergias','$notas','$fec_ing','$tiempo_s','$ubic_fis','$correo_i','$cedulaf','$p_nombref','$s_nombref','$p_apellidof','$s_apellidof','$fec_nacf','$edadf','$generof','$parentesco','$estudiante','$funcionario','$inf_medf','$tipo_v','$placa','$combustible','$serial_carro','$marca','$modelo','$color','$alo','$tipo_d','$n_serial','$marca_d','$modelo_d','$calibre','$direccion','$selec_div','$estatus','$cargo','$rango','$created_user','$created_user')")
+            $query = mysqli_query($mysqli, "INSERT INTO medicamentos(codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,
+                                                                     fec_nac,edad,genero,lugar_nac,estado_c,grado_inst,correo_e,tel_cel,
+                                                                     tel_hab,tel_emerg,estado,municipio,ciudad,parroquia,avenida,calle,
+                                                                     casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,
+                                                                     notas,fec_ing,tiempo_s,ubic_fis,correo_i,cedulaf,p_nombref,s_nombref,
+                                                                     p_apellidof,s_apellidof,fec_nacf,edadf,generof,parentesco,estudiante,
+                                                                     funcionario,inf_medf,tipo_v,placa,combustible,serial_carro,marca,modelo,
+                                                                     color,alo,tipo_d,n_serial,marca_d,modelo_d,calibre,direccion,selec_div,
+                                                                     estatus,cargo,rangocreated_user,updated_user) 
+                                            VALUES('$codigo','$cedula','$credencial','$rif','$p_nombre','$s_nombre',
+                                            '$p_apellido','$s_apellido','$fec_nac','$edad','$genero','$lugar_nac',
+                                            '$estado_c','$grado_inst','$correo_e','$tel_cel','$tel_hab','$tel_emerg',
+                                            '$estado','$municipio','$ciudad','$parroquia','$avenida','$calle','$casa',
+                                            '$codigo_cp','$serial_cp','$tipo_s','$medicamen','$discapacidad','$alergias',
+                                            '$notas','$fec_ing','$tiempo_s','$ubic_fis','$correo_i','$cedulaf','$p_nombref',
+                                            '$s_nombref','$p_apellidof','$s_apellidof','$fec_nacf','$edadf','$generof','$parentesco',
+                                            '$estudiante','$funcionario','$inf_medf','$tipo_v','$placa','$combustible','$serial_carro',
+                                            '$marca','$modelo','$color','$alo','$tipo_d','$n_serial','$marca_d','$modelo_d','$calibre',
+                                            '$direccion','$selec_div','$estatus','$cargo','$rango','$created_user','$created_user')")
 
                                             or die('error '.mysqli_error($mysqli));    
-
+print_r($query);
         
             if ($query) {
          
