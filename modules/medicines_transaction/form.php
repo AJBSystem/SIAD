@@ -53,7 +53,7 @@ if ($_GET['form']=='add') { ?>
   </h1>
       <ol class="breadcrumb">
     <li><a href="?module=start"><i class="fa fa-home"></i> Inicio </a></li>
-    <li><a href="?module=medicines"> Funcionario </a></li>
+    <li><a href="?module=form_medicines_transaction&form=add"> Funcionario </a></li>
       </ol>     
 </section>
 
