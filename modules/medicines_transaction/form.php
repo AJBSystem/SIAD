@@ -98,7 +98,7 @@ if ($_GET['form']=='add') { ?>
 <div class="col-md-2 profile_left">
   <img class="img-responsive avatar-view" src="images/picture.jpg" alt="Avatar" title="Change the avatar">
     <li>Titulo de prueba</li>
-      <a class="btn btn-primary"><i class="fa fa-edit m-right-xs"></i> Editar</a>
+      <a class="btn btn-primary" href='?module=form_medicines&form=edit&id=$data[codigo]'><i class="fa fa-edit m-right-xs"></i> Editar</a>
       <a class="btn btn-warning"><i class="fa fa-print m-right-xs"></i> Imprimir</a>
         <br />
 </div>
