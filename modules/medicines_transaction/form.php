@@ -61,7 +61,7 @@ if ($_GET['form']=='add') { ?>
   <div class="row">
   <div class="col-md-12">
   <div class="box box-primary">
-    <form role="form" class="form-horizontal" action="modules/medicines_transaction/proses.php?act=insert" method="POST" name="formObatMasuk">
+    <form role="form" class="form-horizontal" action="modules/medicines/proses.php?act=update" method="POST" name="formObatMasuk">
   <div class="box-body">
 
 <?php  
