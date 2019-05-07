@@ -321,25 +321,75 @@ if ($_GET['form']=='add') { ?>
 
     <tr><th><span>Cedula</th><td>11.201.693</span> </td></tr>
 
-    <tr><th><span>Segundo Nombre</th><td>Maria</span> </td></tr>
-
-    <tr><th><span>Segundo Apellido</th><td>Carvajal</span></td></tr>
-                                              
-    <tr><th><span>Edad</th><td>45 Años</span></td></tr>
-      
-    <tr><th><span>Estudiante</th><td>No</span> </td></tr>
-
-    <tr><th><span>Información Medica</th><td>Ninguna</span> </td></tr>
-
     <tr><th><span>Primer Nombre</th><td>Yoseida</span> </td></tr>
+
+    <tr><th><span>Segundo Nombre</th><td>Maria</span> </td></tr>
 
     <tr><th><span>Primer Apellido</th><td>Barreto</span> </td></tr>
 
+    <tr><th><span>Segundo Apellido</th><td>Carvajal</span></td></tr>
+
     <tr><th><span>Fecha de Nacimiento</th><td>21/12/1971</span></td></tr>
                                               
+    <tr><th><span>Edad</th><td>45 Años</span></td></tr>
+
     <tr><th><span>Genero</th><td>Femenina</span></td></tr>
+      
+    <tr><th><span>Estudiante</th><td>No</span> </td></tr>
 
     <tr><th><span>Funcionario</th><td>No</span> </td></tr>
+
+    <tr><th><span>Información Medica</th><td>Ninguna</span> </td></tr>
+
+  </table>
+
+     
+    </div>
+  </div>
+</div>
+
+
+<!-- Final del modal 1 de familiares -->
+
+<!-- Inicio del modal 2 de familiares -->
+
+<div class="contenedor-modal">
+  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#miModal1">Padre</button>
+</div>
+
+<div class="modal fade" id="miModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Datos Del Padre</h4>
+      </div>
+     
+  <table class='table table-bordered'>
+
+    <tr><th><span>Cedula</th><td>10.877.210</span> </td></tr>
+
+    <tr><th><span>Primer Nombre</th><td>Agustin</span> </td></tr>
+
+    <tr><th><span>Segundo Nombre</th><td>Fortunato</span> </td></tr>
+
+    <tr><th><span>Primer Apellido</th><td>Martinez</span> </td></tr>
+
+    <tr><th><span>Segundo Apellido</th><td></span></td></tr>
+
+    <tr><th><span>Fecha de Nacimiento</th><td>28/08/1967</span></td></tr>
+                                              
+    <tr><th><span>Edad</th><td>51 Años</span></td></tr>
+
+    <tr><th><span>Genero</th><td>Masculino</span></td></tr>
+      
+    <tr><th><span>Estudiante</th><td>No</span> </td></tr>
+
+    <tr><th><span>Funcionario</th><td>No</span> </td></tr>
+
+    <tr><th><span>Información Medica</th><td>Ninguna</span> </td></tr>
 
   </table>
 
@@ -350,34 +400,192 @@ if ($_GET['form']=='add') { ?>
 
 
 
+<!-- Final del modal 2 de familiares -->
 
-<!-- Final del activador 1 de familiares -->
+<!-- Inicio del modal 3 de familiares -->
 
-<!-- Inicio del activador 2 de familiares -->
-
-
+<div class="contenedor-modal">
+  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#miModal2">Hijos</button>
 </div>
 
-<!-- Final del activador 2 de familiares -->
+<div class="modal fade" id="miModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Datos Del Hijo</h4>
+      </div>
+     
+  <table class='table table-bordered'>
 
-<!-- Inicio del activador 3 de familiares -->
+    <tr>Ninguno</tr>
+
+  </table>
+     
+    </div>
+  </div>
+</div>
+
+<!-- Final del modal 3 de familiares -->
+
+<!-- Inicio del modal 4 de familiares -->
+
+<div class="contenedor-modal">
+  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#miModal3">Esposo</button>
+</div>
+
+<div class="modal fade" id="miModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Datos Del Esposo</h4>
+      </div>
+     
+  <table class='table table-bordered'>
+
+    <tr>Ninguno</tr>
+
+  </table>
+     
+    </div>
+  </div>
+</div>
+
+<!-- Final del modal 4 de familiares -->
+
+<!-- Inicio del modal 5 de familiares -->
+
+<div class="contenedor-modal">
+  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#miModal4">Hermanos</button>
+</div>
+
+<div class="modal fade" id="miModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Datos De Hermanos</h4>
+      </div>
+     
+  <table class='table table-bordered'>
+
+    <tr><th><span>Cedula</th><td>23.641.099</span> </td></tr>
+
+    <tr><th><span>Primer Nombre</th><td>Dauli</span> </td></tr>
+
+    <tr><th><span>Segundo Nombre</th><td>Agustin</span> </td></tr>
+
+    <tr><th><span>Primer Apellido</th><td>Martinez</span> </td></tr>
+
+    <tr><th><span>Segundo Apellido</th><td>Barreto</span></td></tr>
+
+    <tr><th><span>Fecha de Nacimiento</th><td>15/12/1991</span></td></tr>
+                                              
+    <tr><th><span>Edad</th><td>25 Años</span></td></tr>
+
+    <tr><th><span>Genero</th><td>Masculino</span></td></tr>
+      
+    <tr><th><span>Estudiante</th><td>No</span> </td></tr>
+
+    <tr><th><span>Funcionario</th><td>No</span> </td></tr>
+
+    <tr><th><span>Información Medica</th><td>Ninguna</span> </td></tr>
+
+  </table>
+
+  <tr>2 Hermano</tr>
+
+  <table class='table table-bordered'>
+
+    <tr><th><span>Cedula</th><td></span> </td></tr>
+
+    <tr><th><span>Primer Nombre</th><td>Leidys</span> </td></tr>
+
+    <tr><th><span>Segundo Nombre</th><td>Dayana</span> </td></tr>
+
+    <tr><th><span>Primer Apellido</th><td>Martinez</span> </td></tr>
+
+    <tr><th><span>Segundo Apellido</th><td>Gonzales</span></td></tr>
+
+    <tr><th><span>Fecha de Nacimiento</th><td>10/10/2004</span></td></tr>
+                                              
+    <tr><th><span>Edad</th><td>15 Años</span></td></tr>
+
+    <tr><th><span>Genero</th><td>Femenina</span></td></tr>
+      
+    <tr><th><span>Estudiante</th><td>Si</span> </td></tr>
+
+    <tr><th><span>Funcionario</th><td>No</span> </td></tr>
+
+    <tr><th><span>Información Medica</th><td>Ninguna</span> </td></tr>
+
+  </table>
+
+     
+    </div>
+  </div>
+</div>
 
 
+<!-- Final del modal 5 de familiares -->
 
-<!-- Final del activador 3 de familiares -->
+<!-- Inicio del modal 6 de familiares -->
 
-<!-- Inicio del activador 4 de familiares -->
+<div class="contenedor-modal">
+  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#miModal5">Otros</button>
+</div>
 
+<div class="modal fade" id="miModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Datos De Familiares</h4>
+      </div>
+     
+  <table class='table table-bordered'>
 
+    <tr><th><span>Cedula</th><td>20.096.158</span> </td></tr>
 
-<!-- Final del activador 4 de familiares -->
+    <tr><th><span>Primer Nombre</th><td>Trinny</span> </td></tr>
 
-<!-- Inicio del activador 5 de familiares -->
+    <tr><th><span>Segundo Nombre</th><td>Dayana</span> </td></tr>
 
+    <tr><th><span>Primer Apellido</th><td>Carvajal</span> </td></tr>
 
-<!-- Final del activador 5 de familiares -->
+    <tr><th><span>Segundo Apellido</th><td>Martinez</span></td></tr>
 
+    <tr><th><span>Fecha de Nacimiento</th><td>28/08/1995</span></td></tr>
+                                              
+    <tr><th><span>Edad</th><td>30 Años</span></td></tr>
 
+    <tr><th><span>Genero</th><td>Femenina</span></td></tr>
+      
+    <tr><th><span>Estudiante</th><td>No</span> </td></tr>
+
+    <tr><th><span>Funcionario</th><td>No</span> </td></tr>
+
+    <tr><th><span>Información Medica</th><td>Ninguna</span> </td></tr>
+
+  </table>
+
+     
+    </div>
+  </div>
+</div>
+
+<!-- Final del modal 6 de familiares -->
+
+</div>
 <!-- Final del Cuarto Activador -->
 
 
