@@ -302,7 +302,7 @@ if ($_GET['form']=='add') { ?>
 <div role="tabpanel" class="tab-pane fade" id="tab_content4" aria-labelledby="profile-tab">
  
 <!-- Inicio del modal 1 de familiares -->
-
+<br>
 <div class="contenedor-modal">
   <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#miModal">Madre</button>
 </div>
@@ -352,7 +352,7 @@ if ($_GET['form']=='add') { ?>
 <!-- Final del modal 1 de familiares -->
 
 <!-- Inicio del modal 2 de familiares -->
-
+<br>
 <div class="contenedor-modal">
   <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#miModal1">Padre</button>
 </div>
@@ -403,7 +403,7 @@ if ($_GET['form']=='add') { ?>
 <!-- Final del modal 2 de familiares -->
 
 <!-- Inicio del modal 3 de familiares -->
-
+<br>
 <div class="contenedor-modal">
   <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#miModal2">Hijos</button>
 </div>
@@ -431,7 +431,7 @@ if ($_GET['form']=='add') { ?>
 <!-- Final del modal 3 de familiares -->
 
 <!-- Inicio del modal 4 de familiares -->
-
+<br>
 <div class="contenedor-modal">
   <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#miModal3">Esposo</button>
 </div>
@@ -459,7 +459,7 @@ if ($_GET['form']=='add') { ?>
 <!-- Final del modal 4 de familiares -->
 
 <!-- Inicio del modal 5 de familiares -->
-
+<br>
 <div class="contenedor-modal">
   <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#miModal4">Hermanos</button>
 </div>
@@ -537,7 +537,7 @@ if ($_GET['form']=='add') { ?>
 <!-- Final del modal 5 de familiares -->
 
 <!-- Inicio del modal 6 de familiares -->
-
+<br>
 <div class="contenedor-modal">
   <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#miModal5">Otros</button>
 </div>
