@@ -519,32 +519,36 @@ if ($_GET['form']=='add') { ?>
                     </select> 
                 </div>  
 
-                  <div class="col-md-2">
-                    <label for="exampleInputEmail1">Parentesco</label>
-                      <select type="text" class="form-control" name="parentesco" autocomplete="off" required> 
-                        <option>Hijo/a</option>
-                        <option>Padre</option>
-                        <option>Madre</option>
-                        <option>Hermano/a</option>
-                        <option>Otro/a</option>
+
+                <div class="col-md-2">
+                  <label for="exampleInputEmail1">Parantesco</label>
+                    <select type="text" class="form-control" name="parentesco" autocomplete="off"  required>
+                      <option>Hijo/a</option>
+                      <option>Padre</option>
+                      <option>Madre</option>
+                      <option>Cónyuge</option>
+                      <option>Hermano/a</option>
+                      <option>Otro/a</option>
+                    </select>
+                </div>
+
+ 
+
+                  <div class="col-md-1">
+                    <label for="exampleInputEmail1">Estudiante</label>
+                      <select type="text" class="form-control" name="estudiante" autocomplete="off" required>
+                        <option>Si</option>
+                        <option>No</option>
                       </select>
                   </div>
 
                     <div class="col-md-1">
-                      <label for="exampleInputEmail1">Estudiante</label>
-                        <select type="text" class="form-control" name="estudiante" autocomplete="off" required> 
+                      <label for="exampleInputEmail1">Funcionario</label>
+                        <select type="text" class="form-control" name="funcionario" autocomplete="off" required>
                           <option>Si</option>
                           <option>No</option>
-                        </select>
-                    </div> 
-   
-                      <div class="col-md-1">
-                        <label for="exampleInputEmail1">Funcionario</label>
-                          <select type="text" class="form-control" name="funcionario" autocomplete="off" required> 
-                            <option>Si</option>
-                            <option>No</option>
-                          </select>  
-                      </div> 
+                        </select>  
+                    </div>
 
                       <div class="col-md-2">
                         <label for="exampleInputEmail1">Información Medica</label>
@@ -1221,12 +1225,13 @@ elseif ($_GET['form']=='edit') {
                   </select>
               </div>
 
-                <div class="col-md-1">
+                <div class="col-md-2">
                   <label for="exampleInputEmail1">Parantesco</label>
                     <select type="text" class="form-control" name="parentesco" autocomplete="off" value="<?php echo $data['parentesco']; ?>" required>
                       <option>Hijo/a</option>
                       <option>Padre</option>
                       <option>Madre</option>
+                      <option>Cónyuge</option>
                       <option>Hermano/a</option>
                       <option>Otro/a</option>
                     </select>

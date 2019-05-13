@@ -302,7 +302,9 @@ if ($_GET['form']=='add') { ?>
 <div role="tabpanel" class="tab-pane fade" id="tab_content4" aria-labelledby="profile-tab">
  
 <!-- Inicio del modal 1 de familiares -->
-<br>
+
+
+<br />
 <div class="contenedor-modal">
   <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#miModal">Madre</button>
 </div>
@@ -352,7 +354,7 @@ if ($_GET['form']=='add') { ?>
 <!-- Final del modal 1 de familiares -->
 
 <!-- Inicio del modal 2 de familiares -->
-<br>
+<br />
 <div class="contenedor-modal">
   <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#miModal1">Padre</button>
 </div>
@@ -433,7 +435,7 @@ if ($_GET['form']=='add') { ?>
 <!-- Inicio del modal 4 de familiares -->
 <br>
 <div class="contenedor-modal">
-  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#miModal3">Esposo</button>
+  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#miModal3">Cónyuge</button>
 </div>
 
 <div class="modal fade" id="miModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -443,7 +445,7 @@ if ($_GET['form']=='add') { ?>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-        <h4 class="modal-title" id="myModalLabel">Datos Del Esposo</h4>
+        <h4 class="modal-title" id="myModalLabel">Datos Del Cónyuge</h4>
       </div>
      
   <table class='table table-bordered'>
