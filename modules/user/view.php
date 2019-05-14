@@ -5,7 +5,7 @@
     <i class="fa fa-user icon-title"></i> Gestión de Usuarios
 
     <a class="btn btn-primary btn-social pull-right" href="?module=form_user&form=add" title="Agregar" data-toggle="tooltip">
-      <i class="fa fa-plus"></i> Agregar
+      <i class="fa fa-plus"></i> Agregar Usuario
     </a>
   </h1>
 
@@ -26,7 +26,7 @@
       echo "<div class='alert alert-success alert-dismissable'>
               <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
               <h4>  <i class='icon fa fa-check-circle'></i> Exito!</h4>
-              Los nuevos datos de usuario se ha registrado correcamente.
+              Los nuevos datos del usuario se ha registrado correcamente.
             </div>";
     }
 
@@ -34,7 +34,7 @@
       echo "<div class='alert alert-success alert-dismissable'>
               <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
               <h4>  <i class='icon fa fa-check-circle'></i> Exito!</h4>
-           Los datos de usuario ha sido cambiado satisfactoriamente.
+           Los datos del usuario han sido modificados satisfactoriamente.
             </div>";
     }
 
@@ -50,7 +50,7 @@
       echo "<div class='alert alert-success alert-dismissable'>
               <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
               <h4>  <i class='icon fa fa-check-circle'></i> Exito!</h4>
-             El usuario se bloqueó con éxito.
+             El usuario se bloqueó.
             </div>";
     }
    

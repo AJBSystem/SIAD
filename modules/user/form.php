@@ -1,5 +1,3 @@
-
-
 <?php  
 
 if ($_GET['form']=='add') { ?>
@@ -11,7 +9,7 @@ if ($_GET['form']=='add') { ?>
     <ol class="breadcrumb">
       <li><a href="?module=start"><i class="fa fa-home"></i> Inicio </a></li>
       <li><a href="?module=user"> Usuario </a></li>
-      <li class="active"> agregar </li>
+      <li class="active"> Agregar </li>
     </ol>
   </section>
 
@@ -24,7 +22,7 @@ if ($_GET['form']=='add') { ?>
             <div class="box-body">
 
               <div class="form-group">
-                <label class="col-sm-2 control-label">Nombre de usuario</label>
+                <label class="col-sm-2 control-label">Nombre de Usuario</label>
                 <div class="col-sm-5">
                   <input type="text" class="form-control" name="username" autocomplete="off" required>
                 </div>
@@ -38,7 +36,7 @@ if ($_GET['form']=='add') { ?>
               </div>
 
               <div class="form-group">
-                <label class="col-sm-2 control-label">Nombre</label>
+                <label class="col-sm-2 control-label">Nombre del Funcionario</label>
                 <div class="col-sm-5">
                   <input type="text" class="form-control" name="name_user" autocomplete="off" required>
                 </div>
@@ -49,9 +47,9 @@ if ($_GET['form']=='add') { ?>
                 <div class="col-sm-5">
                   <select class="form-control" name="permisos_acceso" required>
                     <option value=""></option>
-                    <option value="Super Admin">Super Admin</option>
-                    <option value="Gerente">Gerente</option>
-                    <option value="Almacen">Almacén</option>
+                      <option value="Super Admin">Super Admin</option>
+                        <option value="Gerente">Gerente</option>
+                          <option value="Almacen">Almacén</option>
                   </select>
                 </div>
               </div>
@@ -111,28 +109,26 @@ elseif ($_GET['form']=='edit') {
                 </div>
               </div>
 
-              
-
-              <div class="form-group">
-                <label class="col-sm-2 control-label">Nombre</label>
-                <div class="col-sm-5">
-                  <input type="text" class="form-control" name="name_user" autocomplete="off" value="<?php echo $data['name_user']; ?>" required>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">Nombre</label>
+                  <div class="col-sm-5">
+                    <input type="text" class="form-control" name="name_user" autocomplete="off" value="<?php echo $data['name_user']; ?>" required>
+                  </div>
                 </div>
-              </div>
 
-              <div class="form-group">
-                <label class="col-sm-2 control-label">Correo Institucional</label>
-                <div class="col-sm-5">
-                  <input type="email" class="form-control" name="correo_i" autocomplete="off" value="<?php echo $data['correo_i']; ?>">
-                </div>
-              </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Correo Institucional</label>
+                    <div class="col-sm-5">
+                      <input type="email" class="form-control" name="correo_i" autocomplete="off" value="<?php echo $data['correo_i']; ?>">
+                    </div>
+                  </div>
             
-              <div class="form-group">
-                <label class="col-sm-2 control-label">Telefono</label>
-                <div class="col-sm-5">
-                  <input type="text" class="form-control" name="telefono" autocomplete="off" maxlength="13" onKeyPress="return goodchars(event,'0123456789',this)" value="<?php echo $data['telefono']; ?>">
-                </div>
-              </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">Telefono</label>
+                      <div class="col-sm-5">
+                        <input type="text" class="form-control" name="telefono" autocomplete="off" maxlength="13" onKeyPress="return goodchars(event,'0123456789',this)" value="<?php echo $data['telefono']; ?>">
+                      </div>
+                    </div>
 
             <div class="form-group">
                 <label class="col-sm-2 control-label">Foto</label>
@@ -157,9 +153,9 @@ elseif ($_GET['form']=='edit') {
                 <div class="col-sm-5">
                   <select class="form-control" name="permisos_acceso" required>
                     <option value="<?php echo $data['permisos_acceso']; ?>"><?php echo $data['permisos_acceso']; ?></option>
-                    <option value="Super Admin">Super Admin</option>
-                    <option value="Gerente">Gerente</option>
-                    <option value="Almacen">Almacén</option>
+                      <option value="Super Admin">Super Admin</option>
+                        <option value="Gerente">Gerente</option>
+                          <option value="Almacen">Almacén</option>
                   </select>
                 </div>
               </div>

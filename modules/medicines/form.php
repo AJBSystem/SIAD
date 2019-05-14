@@ -336,27 +336,27 @@ if ($_GET['form']=='add') { ?>
 
   <div class="col-md-2">
     <label for="exampleInputEmail1">Tipo de Sangre</label>
-      <input type="text" class="form-control" name="tipo_s" autocomplete="off" required> 
+      <input type="text" class="form-control" name="tipo_s" autocomplete="off"> 
   </div>
 
     <div class="col-md-2">
       <label for="exampleInputEmail1">Medicamentos</label>
-        <input type="text" class="form-control" name="medicamen" autocomplete="off" required> 
+        <input type="text" class="form-control" name="medicamen" autocomplete="off"> 
     </div>
 
       <div class="col-md-2">
         <label for="exampleInputEmail1">Discapacidad</label>
-          <input type="text" class="form-control" name="discapacidad" autocomplete="off" required> 
+          <input type="text" class="form-control" name="discapacidad" autocomplete="off"> 
       </div>
 
         <div class="col-md-2">
           <label for="exampleInputEmail1">Alergias</label>
-            <input type="text" class="form-control" name="alergias" autocomplete="off" required> 
+            <input type="text" class="form-control" name="alergias" autocomplete="off"> 
         </div>
 
           <div class="col-md-2">
             <label for="exampleInputEmail1">Notas</label>
-              <input type="text" class="form-control" name="notas" autocomplete="off" required> 
+              <input type="text" class="form-control" name="notas" autocomplete="off"> 
           </div>
 </div>
 
