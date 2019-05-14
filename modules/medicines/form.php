@@ -227,65 +227,6 @@ if ($_GET['form']=='add') { ?>
                                       <input type="text" class="form-control" name="tel_emerg" autocomplete="off" required> 
                                   </div>
 
-                                    <!-- <div class="col-md-2">
-                                      <label for="exampleInputEmail1">Estado</label>
-                                        <select type="text" class="form-control" name="estado" autocomplete="off" required> 
-                                          <option>Amazonas</option>
-                                          <option>Anzoategui</option>
-                                          <option>Apure</option>
-                                          <option>Aragua</option>
-                                          <option>Barinas</option>
-                                          <option>Bolívar</option>
-                                          <option>Carabobo</option>
-                                          <option>Cojedes</option>
-                                          <option>Delta Amacuro</option>
-                                          <option>Distrito Capital</option>
-                                          <option>Falcón</option>
-                                          <option>Guárico</option>
-                                          <option>Lara</option>
-                                          <option>Mérida</option>
-                                          <option>Miranda</option>
-                                          <option>Monagas</option>
-                                          <option>Nueva Esparta</option>
-                                          <option>Portuguesa</option>
-                                          <option>Sucre</option>
-                                          <option>Táchira</option>
-                                          <option>Trujillo</option>
-                                          <option>Vargas</option>
-                                          <option>Yaracuy</option>
-                                          <option>Zulia</option>
-                                        </select>
-                                    </div>
-
-                                      <div class="col-md-2">
-                                        <label for="exampleInputEmail1">Municipio</label>
-                                          <input type="text" class="form-control" name="municipio" autocomplete="off" required> 
-                                      </div>
-
-                                        <div class="col-md-2">
-                                          <label for="exampleInputEmail1">Ciudad</label>
-                                            <input type="text" class="form-control" name="ciudad" autocomplete="off" required> 
-                                        </div>
-
-                                          <div class="col-md-2">
-                                            <label for="exampleInputEmail1">Parroquia</label>
-                                              <input type="text" class="form-control" name="parroquia" autocomplete="off" required> 
-                                          </div>
-
-                                            <div class="col-md-2">
-                                              <label for="exampleInputEmail1">Avenida</label>
-                                                <input type="text" class="form-control" name="avenida" autocomplete="off" required> 
-                                            </div>
-
-                                              <div class="col-md-2">
-                                                <label for="exampleInputEmail1">Calle</label>
-                                                  <input type="text" class="form-control" name="calle" autocomplete="off" required> 
-                                              </div>
-
-                                                <div class="col-md-2">
-                                                  <label for="exampleInputEmail1">Casa N°</label>
-                                                    <input type="number" class="form-control" name="casa" autocomplete="off" required> 
-                                                </div> -->
 
                                                   <div class="col-md-2">
                                                     <label for="exampleInputEmail1">Codigo del CP</label>
@@ -300,7 +241,7 @@ if ($_GET['form']=='add') { ?>
 <!-- Inicio del modal de direecion -->           
                                             
 <div class="contenedor-modal">
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal">Direeción</button>
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal">Direción</button>
 </div>
 
 <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -376,8 +317,7 @@ if ($_GET['form']=='add') { ?>
             </div>
 
   </table>
-  <input type="submit" class="btn btn-primary btn-submit" name="Guardar" value="Guardar">
-     
+  
     </div>
   </div>
 </div>
