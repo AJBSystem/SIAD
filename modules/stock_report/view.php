@@ -1,7 +1,7 @@
 <!-- Content Header (Page header) -->
 <section class="content-header">
   <h1>
-    <i class="fa fa-file-text-o icon-title"></i>Informe de datos de registro de medicamentos
+    <i class="fa fa-file-text-o icon-title"></i>Informe de funcionarios de la dirección de tecnologia
   </h1>
   <ol class="breadcrumb">
     <li><a href="?module=start"><i class="fa fa-home"></i> Inicio</a></li>
