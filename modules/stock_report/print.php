@@ -34,12 +34,12 @@ if (isset($_GET['tgl_awal'])) {
 <html xmlns="http://www.w3.org/1999/xhtml"> 
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Reporte de Hijos de Funcionarios</title>
+        <title>REPORTE DE MEDICAMENTOS</title>
         <link rel="stylesheet" type="text/css" href="../../assets/css/laporan.css" />
     </head>
     <body>
         <div id="title">
-           Datos de Hijos
+           DATOS DE REGISTROS DE MEDICAMENTOS
         </div>
     <?php  
     if ($tgl_awal==$tgl_akhir) { ?>

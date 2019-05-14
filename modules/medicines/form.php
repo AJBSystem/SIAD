@@ -1079,8 +1079,8 @@ elseif ($_GET['form']=='edit') {
 </div>
 
   <div class="col-md-2">
-    <label for="exampleInputEmail1">Medicamentos</label>
-      <input type="text" class="form-control" name="medicamen" autocomplete="off" value="<?php echo $data['medicamen']; ?>"
+      <label for="exampleInputEmail1">Medicamentos</label>
+        <input type="text" class="form-control" name="medicamen" autocomplete="off" value="<?php echo $data['medicamen']; ?>">
   </div>
 
     <div class="col-md-2">

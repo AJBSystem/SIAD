@@ -55,7 +55,7 @@ if ($_SESSION['permisos_acceso']=='Super Admin') { ?>
       
 <ul class="treeview-menu">
   
-  <li class="active"><a href="pdf/reportegeneral.php"><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+  <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Direcciónes </a></li>
 
     <li class="active"><a href="listado_rep.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
           
@@ -84,7 +84,7 @@ if ($_SESSION['permisos_acceso']=='Super Admin') { ?>
 
 <ul class="treeview-menu">
   
-  <li class="active"><a href="pdf/reportegeneral.php"><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+    <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Direcciónes </a></li>
   
     <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
       
@@ -113,7 +113,7 @@ if ($_SESSION['permisos_acceso']=='Super Admin') { ?>
 
 <ul class="treeview-menu">
   
-  <li class="active"><a href="pdf/reportegeneral.php"><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+   <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Direcciónes </a></li>
     
     <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
       
@@ -198,7 +198,7 @@ elseif ($_SESSION['permisos_acceso']=='Gerente') { ?>
 
 <ul class="treeview-menu">
   
-  <li class="active"><a href="pdf/reportegeneral.php"><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+    <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Direcciónes </a></li>
     
     <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
       
@@ -225,7 +225,7 @@ elseif ($_SESSION['permisos_acceso']=='Gerente') { ?>
   </a>
 
 <ul class="treeview-menu">
-  <li class="active"><a href="pdf/reportegeneral.php"><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+   <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Direcciónes </a></li>
     
     <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
       
@@ -254,7 +254,7 @@ elseif ($_SESSION['permisos_acceso']=='Gerente') { ?>
 
 <ul class="treeview-menu">
   
-  <li class="active"><a href="pdf/reportegeneral.php"><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+   <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Direcciónes </a></li>
     
     <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
       
@@ -347,7 +347,7 @@ if ($_SESSION['permisos_acceso']=='Almacen') { ?>
 
 <ul class="treeview-menu">
   
-  <li class="active"><a href="pdf/reportegeneral.php"><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+   <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Direcciónes </a></li>
     
     <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
       
@@ -376,7 +376,7 @@ if ($_SESSION['permisos_acceso']=='Almacen') { ?>
 
 <ul class="treeview-menu">
   
-  <li class="active"><a href="pdf/reportegeneral.php"><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+   <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Direcciónes </a></li>
     
     <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
       
@@ -405,7 +405,7 @@ if ($_SESSION['permisos_acceso']=='Almacen') { ?>
  
 <ul class="treeview-menu">
   
-  <li class="active"><a href="pdf/reportegeneral.php"><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+   <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Direcciónes </a></li>
     
     <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
       
