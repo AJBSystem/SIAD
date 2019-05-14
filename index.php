@@ -24,10 +24,14 @@
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 
   </head>
-  <body class="login-page bg-login">
-    <div class="login-box">
+    
+    <body class="login-page bg-login">
+      
+      <div class="login-box">
       <div style="color:#3c8dbc" class="login-logo">
+        
         <img style="margin-top:-12px" src="assets/img/logo-blue.png" alt="Logo" height="50"> <b>SIAD</b>
+      
       </div><!-- /.login-logo -->
       <?php  
  

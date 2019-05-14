@@ -6,7 +6,7 @@ session_start();
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Panel de administración | Sistema de Actualizacion de Datos</title>
+      <title>Panel de Administración | Sistema de Actualizacion de Datos</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="description" content="Sistema de Actualizacion de Datos">
@@ -127,7 +127,7 @@ session_start();
                     <h4 class="modal-title"><i class="fa fa-sign-out"> Salir</i></h4>
                 </div>
                 <div class="modal-body">
-                    <p>¿Seguro que quieres salir? </p>
+                    <p>¿Seguro que desea salir? </p>
                 </div>
                 <div class="modal-footer">
                     <a type="button" class="btn btn-danger" href="logout.php"> Salir</a>

@@ -967,94 +967,102 @@ elseif ($_GET['form']=='edit') {
                                                         <input type="text" class="form-control" name="serial_cp" autocomplete="off" value="<?php echo $data['serial_cp']; ?>">
                                                     </div>
 
-<!-- Final del modal de direccion -->
+<!-- Inicio del modal de direccion -->
 
-                                                    <div class="contenedor-modal">
+<div class="contenedor-modal">
+  
   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal">Direción</button>
+
 </div>
 
 <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  
   <div class="modal-dialog" role="document">
+    
     <div class="modal-content">
+      
       <div class="modal-header">
+        
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          
           <span aria-hidden="true">&times;</span>
+        
         </button>
-        <h4 class="modal-title" id="myModalLabel">Agregar Dirección</h4>
+        
+          <h4 class="modal-title" id="myModalLabel">Agregar Dirección</h4>
+      
       </div>
      
-  <table class='table table-bordered'>
+<table class='table table-bordered'>
 
 <div class="col-md-4">
-                                      <label for="exampleInputEmail1">Estado</label>
-                                        <select type="text" class="form-control" name="estado" autocomplete="off" value="<?php echo $data['estado']; ?>" required>
-                                          <option>Amazonas</option>
-                                          <option>Anzoategui</option>
-                                          <option>Apure</option>
-                                          <option>Aragua</option>
-                                          <option>Barinas</option>
-                                          <option>Bolívar</option>
-                                          <option>Carabobo</option>
-                                          <option>Cojedes</option>
-                                          <option>Delta Amacuro</option>
-                                          <option>Distrito Capital</option>
-                                          <option>Falcón</option>
-                                          <option>Guárico</option>
-                                          <option>Lara</option>
-                                          <option>Mérida</option>
-                                          <option>Miranda</option>
-                                          <option>Monagas</option>
-                                          <option>Nueva Esparta</option>
-                                          <option>Portuguesa</option>
+  <label for="exampleInputEmail1">Estado</label>
+    <select type="text" class="form-control" name="estado" autocomplete="off" value="<?php echo $data['estado']; ?>">
+      <option>Amazonas</option>
+        <option>Anzoategui</option>
+          <option>Apure</option>
+            <option>Aragua</option>
+              <option>Barinas</option>
+                <option>Bolívar</option>
+                  <option>Carabobo</option>
+                    <option>Cojedes</option>
+                      <option>Delta Amacuro</option>
+                        <option>Distrito Capital</option>
+                          <option>Falcón</option>
+                            <option>Guárico</option>
+                              <option>Lara</option>
+                                <option>Mérida</option>
+                                  <option>Miranda</option>
+                                    <option>Monagas</option>
+                                      <option>Nueva Esparta</option>
+                                        <option>Portuguesa</option>
                                           <option>Sucre</option>
-                                          <option>Táchira</option>
-                                          <option>Trujillo</option>
-                                          <option>Vargas</option>
-                                          <option>Yaracuy</option>
-                                          <option>Zulia</option>
-                                        </select>
-                                    </div> 
+                                            <option>Táchira</option>
+                                              <option>Trujillo</option>
+                                                <option>Vargas</option>
+                                                  <option>Yaracuy</option>
+                                                    <option>Zulia</option>
+    </select>
+</div> 
 
-                                      <div class="col-md-4">
-                                        <label for="exampleInputEmail1">Municipio</label>
-                                          <input type="text" class="form-control" name="municipio" autocomplete="off" value="<?php echo $data['municipio']; ?>" required>
-                                      </div> 
+  <div class="col-md-4">
+    <label for="exampleInputEmail1">Municipio</label>
+      <input type="text" class="form-control" name="municipio" autocomplete="off" value="<?php echo $data['municipio']; ?>">
+  </div> 
 
-                                        <div class="col-md-4">
-                                          <label for="exampleInputEmail1">Ciudad</label>
-                                            <input type="text" class="form-control" name="ciudad" autocomplete="off" value="<?php echo $data['ciudad']; ?>" required>
-                                        </div>
+    <div class="col-md-4">
+      <label for="exampleInputEmail1">Ciudad</label>
+        <input type="text" class="form-control" name="ciudad" autocomplete="off" value="<?php echo $data['ciudad']; ?>">
+    </div>
 
-                                          <div class="col-md-4">
-                                            <label for="exampleInputEmail1">Parroquia</label>
-                                              <input type="text" class="form-control" name="parroquia" autocomplete="off" value="<?php echo $data['parroquia']; ?>" required>
-                                          </div>
+      <div class="col-md-4">
+        <label for="exampleInputEmail1">Parroquia</label>
+          <input type="text" class="form-control" name="parroquia" autocomplete="off" value="<?php echo $data['parroquia']; ?>">
+      </div>
 
-                                            <div class="col-md-4">
-                                              <label for="exampleInputEmail1">Avenida</label>
-                                                <input type="text" class="form-control" name="avenida" autocomplete="off" value="<?php echo $data['avenida']; ?>" required>
-                                            </div>
+        <div class="col-md-4">
+          <label for="exampleInputEmail1">Avenida</label>
+            <input type="text" class="form-control" name="avenida" autocomplete="off" value="<?php echo $data['avenida']; ?>">
+        </div>
 
-                                              <div class="col-md-4">
-                                                <label for="exampleInputEmail1">Calle</label>
-                                                  <input type="text" class="form-control" name="calle" autocomplete="off" value="<?php echo $data['calle']; ?>" required>
-                                              </div>
-
+          <div class="col-md-4">
+            <label for="exampleInputEmail1">Calle</label>
+              <input type="text" class="form-control" name="calle" autocomplete="off" value="<?php echo $data['calle']; ?>">
+          </div>
 
             <div class="col-md-4">
-                                                  <label for="exampleInputEmail1">Casa N°</label>
-                                                    <input type="text" class="form-control" name="casa" autocomplete="off" value="<?php echo $data['casa']; ?>" required>
-                                                </div>
+              <label for="exampleInputEmail1">Casa N°</label>
+                <input type="text" class="form-control" name="casa" autocomplete="off" value="<?php echo $data['casa']; ?>">
+            </div>
 
-  </table>
+</table>
   
-    </div>
-  </div>
+</div>
+</div>
 </div>
 
 <!-- Final del modal de direccion -->
                                            
-
 </div>
 </div>
 </div>

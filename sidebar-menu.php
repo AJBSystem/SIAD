@@ -49,55 +49,85 @@ if ($_SESSION['permisos_acceso']=='Super Admin') { ?>
 
   if ($_GET["module"]=="stock_inventory") { ?>
     <li class="active treeview">
-            <a href="javascript:void(0);">
-              <i class="fa fa-file-text"></i> <span>Reportes</span> <i class="fa fa-angle-left pull-right"></i>
-            </a>
-          <ul class="treeview-menu">
-            <li class="active"><a href="pdf/reportegeneral.php"><i class="fa fa-user"></i> Reporte de Dirección </a></li>
-            <li class="active"><a href="listado_rep.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
-            <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
-            <li class="active"><a href="pdf/reporte_padres.php"><i class="fa fa-users"></i> Reporte de Padres </a></li>
-            <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-odnoklassniki"></i> Reporte de Hijos </a></li>
+      <a href="javascript:void(0);">
+        <i class="fa fa-file-text"></i> <span>Reportes</span> <i class="fa fa-angle-left pull-right"></i>
+      </a>
+      
+<ul class="treeview-menu">
+  
+  <li class="active"><a href="pdf/reportegeneral.php"><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+
+    <li class="active"><a href="listado_rep.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
+          
+      <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
+      
+        <li class="active"><a href="pdf/reporte_padres.php"><i class="fa fa-users"></i> Reporte de Padres </a></li>
+            
+          <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-odnoklassniki"></i> Reporte de Hijos </a></li>
+            
             <li class="active"><a href="pdf/reporte_vehiculo.php"><i class="fa fa-car"></i> Reporte de Vehiculo </a></li>
-            <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
-          </ul>
-      </li>
+              
+              <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+</ul>
+    </li>
     <?php
   }
 
   elseif ($_GET["module"]=="stock_report") { ?>
-    <li class="active treeview">
-            <a href="javascript:void(0);">
-              <i class="fa fa-file-text"></i> <span>Reportes</span> <i class="fa fa-angle-left pull-right"></i>
-            </a>
-          <ul class="treeview-menu">
-            <li class="active"><a href="pdf/reportegeneral.php"><i class="fa fa-user"></i> Reporte de Dirección </a></li>
-            <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
-            <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
-            <li class="active"><a href="pdf/reporte_padres.php"><i class="fa fa-users"></i> Reporte de Padres </a></li>
-            <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-odnoklassniki"></i> Reporte de Hijos </a></li>
+    
+<li class="active treeview">
+  
+  <a href="javascript:void(0);">
+    
+    <i class="fa fa-file-text"></i> <span>Reportes</span> <i class="fa fa-angle-left pull-right"></i>
+  </a>
+
+<ul class="treeview-menu">
+  
+  <li class="active"><a href="pdf/reportegeneral.php"><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+  
+    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
+      
+      <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
+        
+        <li class="active"><a href="pdf/reporte_padres.php"><i class="fa fa-users"></i> Reporte de Padres </a></li>
+          
+          <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-odnoklassniki"></i> Reporte de Hijos </a></li>
+            
             <li class="active"><a href="pdf/reporte_vehiculo.php"><i class="fa fa-car"></i> Reporte de Vehiculo </a></li>
-            <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
-          </ul>
-      </li>
+              
+              <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+</ul>
+</li>
     <?php
   }
 
   else { ?>
-    <li class="treeview">
-            <a href="javascript:void(0);">
-              <i class="fa fa-file-text"></i> <span>Reportes</span> <i class="fa fa-angle-left pull-right"></i>
-            </a>
-          <ul class="treeview-menu">
-            <li class="active"><a href="pdf/reportegeneral.php"><i class="fa fa-user"></i> Reporte de Dirección </a></li>
-            <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
-            <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
-            <li class="active"><a href="pdf/reporte_padres.php"><i class="fa fa-users"></i> Reporte de Padres </a></li>
-            <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-odnoklassniki"></i> Reporte de Hijos </a></li>
+<li class="treeview">
+  
+  <a href="javascript:void(0);">
+    
+    <i class="fa fa-file-text"></i> <span>Reportes</span> <i class="fa fa-angle-left pull-right"></i>
+  
+  </a>
+
+<ul class="treeview-menu">
+  
+  <li class="active"><a href="pdf/reportegeneral.php"><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+    
+    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
+      
+      <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
+        
+        <li class="active"><a href="pdf/reporte_padres.php"><i class="fa fa-users"></i> Reporte de Padres </a></li>
+          
+          <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-odnoklassniki"></i> Reporte de Hijos </a></li>
+          
             <li class="active"><a href="pdf/reporte_vehiculo.php"><i class="fa fa-car"></i> Reporte de Vehiculo </a></li>
-            <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
-          </ul>
-      </li>
+              
+              <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+</ul>
+</li>
     <?php
   }
 
@@ -159,54 +189,86 @@ elseif ($_SESSION['permisos_acceso']=='Gerente') { ?>
 
 
   if ($_GET["module"]=="stock_inventory") { ?>
-    <li class="active treeview">
-            <a href="javascript:void(0);">
-              <i class="fa fa-file-text"></i> <span>Reportes</span> <i class="fa fa-angle-left pull-right"></i>
-            </a>
-          <ul class="treeview-menu">
-            <li class="active"><a href="pdf/reportegeneral.php"><i class="fa fa-user"></i> Reporte de Dirección </a></li>
-            <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
-            <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
-            <li class="active"><a href="pdf/reporte_padres.php"><i class="fa fa-users"></i> Reporte de Padres </a></li>
-            <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-odnoklassniki"></i> Reporte de Hijos </a></li>
+<li class="active treeview">
+  
+  <a href="javascript:void(0);">
+    
+    <i class="fa fa-file-text"></i> <span>Reportes</span> <i class="fa fa-angle-left pull-right"></i>
+  </a>
+
+<ul class="treeview-menu">
+  
+  <li class="active"><a href="pdf/reportegeneral.php"><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+    
+    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
+      
+      <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
+        
+        <li class="active"><a href="pdf/reporte_padres.php"><i class="fa fa-users"></i> Reporte de Padres </a></li>
+          
+          <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-odnoklassniki"></i> Reporte de Hijos </a></li>
+            
             <li class="active"><a href="pdf/reporte_vehiculo.php"><i class="fa fa-car"></i> Reporte de Vehiculo </a></li>
-            <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
-          </ul>
-      </li>
+              
+              <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+</ul>
+</li>
     <?php
   }
   elseif ($_GET["module"]=="stock_report") { ?>
-    <li class="active treeview">
-            <a href="javascript:void(0);">
-              <i class="fa fa-file-text"></i> <span>Reportes</span> <i class="fa fa-angle-left pull-right"></i>
-            </a>
-          <ul class="treeview-menu">
-            <li class="active"><a href="pdf/reportegeneral.php"><i class="fa fa-user"></i> Reporte de Dirección </a></li>
-            <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
-            <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
-            <li class="active"><a href="pdf/reporte_padres.php"><i class="fa fa-users"></i> Reporte de Padres </a></li>
-            <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-odnoklassniki"></i> Reporte de Hijos </a></li>
+<li class="active treeview">
+  
+  <a href="javascript:void(0);">
+    
+    <i class="fa fa-file-text"></i> <span>Reportes</span> <i class="fa fa-angle-left pull-right"></i>
+  
+  </a>
+
+<ul class="treeview-menu">
+  <li class="active"><a href="pdf/reportegeneral.php"><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+    
+    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
+      
+      <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
+        
+        <li class="active"><a href="pdf/reporte_padres.php"><i class="fa fa-users"></i> Reporte de Padres </a></li>
+          
+          <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-odnoklassniki"></i> Reporte de Hijos </a></li>
+            
             <li class="active"><a href="pdf/reporte_vehiculo.php"><i class="fa fa-car"></i> Reporte de Vehiculo </a></li>
-            <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
-          </ul>
-      </li>
+              
+              <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+</ul>
+</li>
     <?php
   }
   else { ?>
-    <li class="treeview">
-            <a href="javascript:void(0);">
-              <i class="fa fa-file-text"></i> <span>Reportes</span> <i class="fa fa-angle-left pull-right"></i>
-            </a>
-          <ul class="treeview-menu">
-            <li class="active"><a href="pdf/reportegeneral.php"><i class="fa fa-user"></i> Reporte de Dirección </a></li>
-            <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
-            <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
-            <li class="active"><a href="pdf/reporte_padres.php"><i class="fa fa-users"></i> Reporte de Padres </a></li>
-            <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-odnoklassniki"></i> Reporte de Hijos </a></li>
+
+<li class="treeview">
+  
+  <a href="javascript:void(0);">
+    
+    <i class="fa fa-file-text"></i> <span>Reportes</span> <i class="fa fa-angle-left pull-right"></i>
+  
+  </a>
+
+<ul class="treeview-menu">
+  
+  <li class="active"><a href="pdf/reportegeneral.php"><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+    
+    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
+      
+      <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
+        
+        <li class="active"><a href="pdf/reporte_padres.php"><i class="fa fa-users"></i> Reporte de Padres </a></li>
+          
+          <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-odnoklassniki"></i> Reporte de Hijos </a></li>
+            
             <li class="active"><a href="pdf/reporte_vehiculo.php"><i class="fa fa-car"></i> Reporte de Vehiculo </a></li>
-            <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
-          </ul>
-      </li>
+              
+              <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+</ul>
+</li>
     <?php
   }
 
@@ -274,54 +336,90 @@ if ($_SESSION['permisos_acceso']=='Almacen') { ?>
   }
 
   if ($_GET["module"]=="stock_inventory") { ?>
-    <li class="active treeview">
-            <a href="javascript:void(0);">
-              <i class="fa fa-file-text"></i> <span>Reportes</span> <i class="fa fa-angle-left pull-right"></i>
-            </a>
-          <ul class="treeview-menu">
-            <li class="active"><a href="pdf/reportegeneral.php"><i class="fa fa-user"></i> Reporte de Dirección </a></li>
-            <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
-            <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
-            <li class="active"><a href="pdf/reporte_padres.php"><i class="fa fa-users"></i> Reporte de Padres </a></li>
-            <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-odnoklassniki"></i> Reporte de Hijos </a></li>
+  
+<li class="active treeview">
+  
+  <a href="javascript:void(0);">
+    
+    <i class="fa fa-file-text"></i> <span>Reportes</span> <i class="fa fa-angle-left pull-right"></i>
+  
+  </a>
+
+<ul class="treeview-menu">
+  
+  <li class="active"><a href="pdf/reportegeneral.php"><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+    
+    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
+      
+      <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
+        
+        <li class="active"><a href="pdf/reporte_padres.php"><i class="fa fa-users"></i> Reporte de Padres </a></li>
+          
+          <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-odnoklassniki"></i> Reporte de Hijos </a></li>
+            
             <li class="active"><a href="pdf/reporte_vehiculo.php"><i class="fa fa-car"></i> Reporte de Vehiculo </a></li>
-            <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
-          </ul>
-      </li>
+            
+              <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+</ul>
+</li>
+    
     <?php
   }
   elseif ($_GET["module"]=="stock_report") { ?>
-    <li class="active treeview">
-            <a href="javascript:void(0);">
-              <i class="fa fa-file-text"></i> <span>Reportes</span> <i class="fa fa-angle-left pull-right"></i>
-            </a>
-          <ul class="treeview-menu">
-            <li class="active"><a href="pdf/reportegeneral.php"><i class="fa fa-user"></i> Reporte de Dirección </a></li>
-            <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
-            <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
-            <li class="active"><a href="pdf/reporte_padres.php"><i class="fa fa-users"></i> Reporte de Padres </a></li>
-            <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-odnoklassniki"></i> Reporte de Hijos </a></li>
+<li class="active treeview">
+  
+  <a href="javascript:void(0);">
+    
+    <i class="fa fa-file-text"></i> <span>Reportes</span> <i class="fa fa-angle-left pull-right"></i>
+  
+  </a>
+
+<ul class="treeview-menu">
+  
+  <li class="active"><a href="pdf/reportegeneral.php"><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+    
+    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
+      
+      <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
+        
+        <li class="active"><a href="pdf/reporte_padres.php"><i class="fa fa-users"></i> Reporte de Padres </a></li>
+          
+          <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-odnoklassniki"></i> Reporte de Hijos </a></li>
+            
             <li class="active"><a href="pdf/reporte_vehiculo.php"><i class="fa fa-car"></i> Reporte de Vehiculo </a></li>
-            <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
-          </ul>
-      </li>
+              
+              <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+</ul>
+</li>
     <?php
   }
   else { ?>
-    <li class="treeview">
-            <a href="javascript:void(0);">
-              <i class="fa fa-file-text"></i> <span>Reportes</span> <i class="fa fa-angle-left pull-right"></i>
-            </a>
-          <ul class="treeview-menu">
-            <li class="active"><a href="pdf/reportegeneral.php"><i class="fa fa-user"></i> Reporte de Dirección </a></li>
-            <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
-            <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
-            <li class="active"><a href="pdf/reporte_padres.php"><i class="fa fa-users"></i> Reporte de Padres </a></li>
-            <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-odnoklassniki"></i> Reporte de Hijos </a></li>
+
+<li class="treeview">
+  
+  <a href="javascript:void(0);">
+    
+    <i class="fa fa-file-text"></i> <span>Reportes</span> <i class="fa fa-angle-left pull-right"></i>
+  
+  </a>
+ 
+<ul class="treeview-menu">
+  
+  <li class="active"><a href="pdf/reportegeneral.php"><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+    
+    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
+      
+      <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
+        
+        <li class="active"><a href="pdf/reporte_padres.php"><i class="fa fa-users"></i> Reporte de Padres </a></li>
+          
+          <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-odnoklassniki"></i> Reporte de Hijos </a></li>
+            
             <li class="active"><a href="pdf/reporte_vehiculo.php"><i class="fa fa-car"></i> Reporte de Vehiculo </a></li>
-            <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
-          </ul>
-      </li>
+              
+              <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+</ul>
+</li>
     <?php
   }
 
