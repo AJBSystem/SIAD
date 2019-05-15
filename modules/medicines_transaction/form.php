@@ -99,7 +99,7 @@ if ($_GET['form']=='add') { ?>
   <img class="img-responsive avatar-view" src="images/picture.jpg" alt="Avatar" title="Change the avatar">
     <li>Titulo de prueba</li>
       <a class="btn btn-primary" ><i class="fa fa-edit m-right-xs"></i> Editar</a>
-      <a class="btn btn-warning" href="pdf/reporte_funcionario.php"><i class="fa fa-print m-right-xs"></i> Imprimir</a>
+      <a class="btn btn-warning" href="pdf/reporte_funcionarios.php"><i class="fa fa-print m-right-xs"></i> Imprimir</a>
         <br />
 </div>
             
@@ -306,7 +306,7 @@ if ($_GET['form']=='add') { ?>
 
 <br />
 <div class="contenedor-modal">
-  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#miModal">Madre</button>
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal">Madre</button>
 </div>
 
 <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -356,7 +356,7 @@ if ($_GET['form']=='add') { ?>
 <!-- Inicio del modal 2 de familiares -->
 <br />
 <div class="contenedor-modal">
-  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#miModal1">Padre</button>
+  <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#miModal1">Padre</button>
 </div>
 
 <div class="modal fade" id="miModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -407,7 +407,7 @@ if ($_GET['form']=='add') { ?>
 <!-- Inicio del modal 3 de familiares -->
 <br>
 <div class="contenedor-modal">
-  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#miModal2">Hijos</button>
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal2">Hijos</button>
 </div>
 
 <div class="modal fade" id="miModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -435,7 +435,7 @@ if ($_GET['form']=='add') { ?>
 <!-- Inicio del modal 4 de familiares -->
 <br>
 <div class="contenedor-modal">
-  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#miModal3">Cónyuge</button>
+  <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#miModal3">Cónyuge</button>
 </div>
 
 <div class="modal fade" id="miModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -463,7 +463,7 @@ if ($_GET['form']=='add') { ?>
 <!-- Inicio del modal 5 de familiares -->
 <br>
 <div class="contenedor-modal">
-  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#miModal4">Hermanos</button>
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal4">Hermanos</button>
 </div>
 
 <div class="modal fade" id="miModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -541,7 +541,7 @@ if ($_GET['form']=='add') { ?>
 <!-- Inicio del modal 6 de familiares -->
 <br>
 <div class="contenedor-modal">
-  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#miModal5">Otros</button>
+  <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#miModal5">Otros</button>
 </div>
 
 <div class="modal fade" id="miModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

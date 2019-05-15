@@ -221,6 +221,8 @@ else {
                                                                          cargo  = '$cargo',
                                                                          rango  = '$rango',
                                                                          estatus  = '$estatus',
+                                                                         correo_e  = '$correo_e',
+                                                                        
                                                                          selec_div  = '$selec_div',
                                                                     updated_user    = '$updated_user'
                                                               WHERE codigo       = '$codigo'")

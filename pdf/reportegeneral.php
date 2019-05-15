@@ -16,6 +16,7 @@
 
 	$pdf->SetX(20);
 
+	
 	$pdf->Cell(50,10,utf8_decode('Nombre de División'),1,0,'C',1);
 	$pdf->Cell(30,10,'Cedula',1,0,'C',1);
 	$pdf->Cell(30,10,utf8_decode('Credencial'),1,0,'C',1);
@@ -39,7 +40,7 @@
 	{
 	
 	$pdf->SetX(20);
-
+		
 	$pdf->Cell(50,10,utf8_decode($row['selec_div']),1,0,'C',0);
 	$pdf->Cell(30,10,utf8_decode($row['cedula']),1,0,'C',0);
 	$pdf->Cell(30,10,utf8_decode($row['credencial']),1,0,'C',0);
