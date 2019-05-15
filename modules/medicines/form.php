@@ -138,6 +138,7 @@ if ($_GET['form']=='add') { ?>
                 <div class="col-md-2">
                   <label for="exampleInputEmail1">Fecha de Nacimiento</label>
                     <input type="date" class="form-control" name="fec_nac" autocomplete="off" required> 
+                    
                 </div>
 
                   <div class="col-md-2">
