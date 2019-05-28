@@ -99,10 +99,7 @@ if ($_GET['form']=='add') { ?>
 <div class="clearfix"></div>
              
 <div class="x_content">
-<div class="col-md-2">
-  <label for="exampleInputEmail1">Codigo</label>
-    <input type="text" class="form-control" name="codigo" value="<?php echo $codigo; ?>">
-</div>
+
 
   <div class="col-md-2">
     <label for="exampleInputEmail1">Cedula</label>
@@ -791,6 +788,8 @@ elseif ($_GET['form']=='edit') {
 
 <div class="form-group">
 
+<label>Nota: No se guardara hasta que llene los modales obligatorios que estan marcados con un asterico * </label>
+
 <div class="">
 <div class="col-md-12 col-sm-6 col-xs-12">
 <div class="x_panel">
@@ -802,16 +801,16 @@ elseif ($_GET['form']=='edit') {
 <div class="" role="tabpanel" data-example-id="togglable-tabs">
   <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
 
-    <li  role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true" class="fa fa-user"> Datos Basicos</a>
+    <li  role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true" class="fa fa-user"> Datos Basicos * </a>
     </li>
 
     <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false" class="fa fa-heart"> Información Médica</a>
     </li>
 
-    <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-suitcase"> Datos Laborales</a>
+    <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-suitcase"> Datos Laborales * </a>
     </li>
 
-    <li role="presentation" class=""><a href="#tab_content4" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-users"> Datos Familiares</a>
+    <li role="presentation" class=""><a href="#tab_content4" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-users"> Datos Familiares * </a>
     </li>
 
     <li role="presentation" class=""><a href="#tab_content5" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-car"> Datos de Vehiculo</a>
@@ -830,11 +829,6 @@ elseif ($_GET['form']=='edit') {
 <div class="x_panel">               
   <ul class="nav navbar-right panel_toolbox"></ul>
 <div class="x_content">
-
-<div class="col-md-2">
-  <label for="exampleInputEmail1">Codigo</label>
-    <input type="text" class="form-control" name="codigo" value="<?php echo $data['codigo']; ?>">
-</div>
 
   <div class="col-md-2">
     <label for="exampleInputEmail1">Cedula</label>
