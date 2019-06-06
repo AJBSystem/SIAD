@@ -48,10 +48,6 @@ if ($_GET['form']=='add') { ?>
               ?>
 
 
-
-<label>Nota: No se guardara hasta que llene los modales obligatorios que estan marcados con un asterico * </label>
-
-
 <div class="">
 <div class="col-md-12 col-sm-6 col-xs-12">
 <div class="x_panel">
@@ -64,16 +60,16 @@ if ($_GET['form']=='add') { ?>
 <div class="" role="tabpanel" data-example-id="togglable-tabs">
   <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
            
-    <li  role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true" class="fa fa-user"> Datos Basicos * </a>
+    <li  role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true" class="fa fa-user"> Datos Basicos</a>
     </li>
 
     <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false" class="fa fa-heart"> Información Médica</a>
     </li>
 
-    <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-suitcase"> Datos Laborales * </a>
+    <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-suitcase"> Datos Laborales</a>
     </li>
 
-    <li role="presentation" class=""><a href="#tab_content4" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-users"> Datos Familiares * </a>
+    <li role="presentation" class=""><a href="#tab_content4" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-users"> Datos Familiares</a>
     </li>
 
     <li role="presentation" class=""><a href="#tab_content5" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-car"> Datos de Vehiculo</a>
@@ -99,7 +95,10 @@ if ($_GET['form']=='add') { ?>
 <div class="clearfix"></div>
              
 <div class="x_content">
-
+<div class="col-md-2">
+  <label for="exampleInputEmail1">Codigo</label>
+    <input type="text" class="form-control" name="codigo" value="<?php echo $codigo; ?>">
+</div>
 
   <div class="col-md-2">
     <label for="exampleInputEmail1">Cedula</label>
@@ -108,17 +107,17 @@ if ($_GET['form']=='add') { ?>
 
     <div class="col-md-2">
       <label for="exampleInputEmail1">N° de Credencial</label>
-        <input type="text" class="form-control" name="credencial" autocomplete="off" required> 
+        <input type="text" class="form-control" name="credencial" autocomplete="off" > 
     </div>
 
       <div class="col-md-2">
         <label for="exampleInputEmail1">Rif</label>
-          <input type="text" class="form-control" name="rif" autocomplete="off" required> 
+          <input type="text" class="form-control" name="rif" autocomplete="off" > 
       </div>
 
         <div class="col-md-2">
           <label for="exampleInputEmail1">Primer Nombre</label>
-            <input type="text" class="form-control" name="p_nombre" autocomplete="off" required> 
+            <input type="text" class="form-control" name="p_nombre" autocomplete="off" > 
         </div>
 
           <div class="col-md-2">
@@ -128,7 +127,7 @@ if ($_GET['form']=='add') { ?>
 
             <div class="col-md-2">
               <label for="exampleInputEmail1">Primer Apellido</label>
-                <input type="text" class="form-control" name="p_apellido" autocomplete="off" required> 
+                <input type="text" class="form-control" name="p_apellido" autocomplete="off" > 
             </div>
 
               <div class="col-md-2">
@@ -138,200 +137,112 @@ if ($_GET['form']=='add') { ?>
 
                 <div class="col-md-2">
                   <label for="exampleInputEmail1">Fecha de Nacimiento</label>
-                    <input type="date" class="form-control" name="fec_nac" autocomplete="off" required> 
-                    
+                    <input type="date" class="form-control" name="fec_nac" autocomplete="off" > 
                 </div>
 
                   <div class="col-md-2">
                     <label for="exampleInputEmail1">Edad</label>
-                      <input type="text" class="form-control" name="edad" autocomplete="off" required> 
+                      <input type="text" class="form-control" name="edad" autocomplete="off" > 
                   </div>
 
                     <div class="col-md-2">
                       <label for="exampleInputEmail1">Género</label>
-                        <select class="form-control" name="genero"  required>
+                        <select class="form-control" name="genero"  >
                           <option>Femenino</option>
-                            <option>Masculino</option>
+                          <option>Masculino</option>
                         </select>
                     </div>
 
-                      <!-- <div class="col-md-2">
-                        <label for="exampleInputEmail1">Lugar de Nacimiento</label>
-                          <select class="form-control" name="lugar_nac"  required>
-                            <option>Amazonas</option>
-                            <option>Anzoategui</option>
-                            <option>Apure</option>
-                            <option>Aragua</option>
-                            <option>Barinas</option>
-                            <option>Bolívar</option>
-                            <option>Carabobo</option>
-                            <option>Cojedes</option>
-                            <option>Delta Amacuro</option>
-                            <option>Distrito Capital</option>
-                            <option>Falcón</option>
-                            <option>Guárico</option>
-                            <option>Lara</option>
-                            <option>Mérida</option>
-                            <option>Miranda</option>
-                            <option>Monagas</option>
-                            <option>Nueva Esparta</option>
-                            <option>Portuguesa</option>
-                            <option>Sucre</option>
-                            <option>Táchira</option>
-                            <option>Trujillo</option>
-                            <option>Vargas</option>
-                            <option>Yaracuy</option>
-                            <option>Zulia</option>
-                          </select>
-                      </div> -->
 
                         <div class="col-md-2">
                           <label for="exampleInputEmail1">Estado Civil</label>
-                            <select class="form-control" name="estado_c"  required>
+                            <select class="form-control" name="estado_c"  >
                               <option>Soltero/a </option>
-                                <option>Casado/a</option>
-                                  <option>Divorciado/a</option>
-                                    <option>Viudo/a</option>
-                                      <option>Concubinato/a</option>
+                              <option>Casado/a</option>
+                              <option>Divorciado/a</option>
+                              <option>Viudo/a</option>
+                              <option>Concubinato/a</option>
                             </select>
                         </div>                  
 
                           <div class="col-md-2">
                             <label for="exampleInputEmail1">Grado de Instrucción</label>
-                              <select class="form-control" name="grado_inst"  required>
+                              <select class="form-control" name="grado_inst"  >
                                 <option>Primaria</option>
-                                  <option>Secundaria</option>
-                                    <option>Tecnico Superior</option>
-                                      <option>Universitario</option>
-                                        <option>Grado</option>
-                                          <option>Magister</option>
-                                            <option>Doctorado</option>
+                                <option>Secundaria</option>
+                                <option>Tecnico Superior</option>
+                                <option>Universitario</option>
+                                <option>Grado</option>
+                                <option>Magister</option>
+                                <option>Doctorado</option>
                               </select>
                           </div>
 
                             <div class="col-md-2">
                               <label for="exampleInputEmail1">Correo Electronico</label>
-                                <input type="email" class="form-control" name="correo_e" autocomplete="off" required> 
+                                <input type="email" class="form-control" name="correo_e" autocomplete="off" > 
                             </div>
 
                               <div class="col-md-2">
                                 <label for="exampleInputEmail1">Telefono Celular</label>
-                                  <input type="text" class="form-control" name="tel_cel" autocomplete="off" required> 
+                                  <input type="text" class="form-control" name="tel_cel" autocomplete="off" > 
                               </div>
 
                                 <div class="col-md-2">
                                   <label for="exampleInputEmail1">Telefono Habitacion</label>
-                                    <input type="text" class="form-control" name="tel_hab" autocomplete="off" required> 
+                                    <input type="text" class="form-control" name="tel_hab" autocomplete="off" > 
                                 </div>
 
                                   <div class="col-md-2">
                                     <label for="exampleInputEmail1">Telefono Emergencias</label>
-                                      <input type="text" class="form-control" name="tel_emerg" autocomplete="off" required> 
+                                      <input type="text" class="form-control" name="tel_emerg" autocomplete="off" > 
                                   </div>
 
-                                    <div class="col-md-2">
-                                      <label for="exampleInputEmail1">Codigo del CP</label>
-                                        <input type="text" class="form-control" name="codigo_cp" autocomplete="off"> 
-                                    </div>
 
-                                      <div class="col-md-2">
-                                        <label for="exampleInputEmail1">Serial del CP</label>
-                                          <input type="text" class="form-control" name="serial_cp" autocomplete="off">
-                                      </div>
+                                                  <div class="col-md-2">
+                                                    <label for="exampleInputEmail1">Codigo del CP</label>
+                                                      <input type="text" class="form-control" name="codigo_cp" autocomplete="off"> 
+                                                  </div>
 
-<!-- Inicio del modal de direccion -->           
-                                            
-<div class="contenedor-modal">
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal">Direción</button>
-</div>
+                                                    <div class="col-md-2">
+                                                      <label for="exampleInputEmail1">Serial del CP</label>
+                                                        <input type="text" class="form-control" name="serial_cp" autocomplete="off"> 
+                                                    </div>
 
-<div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <h4 class="modal-title" id="myModalLabel">Agregar Dirección</h4>
-      </div>
-     
-  <table class='table table-bordered'>
+                                                    <div class="col-md-2">
+                                                      <label for="exampleInputEmail1">Estado</label>
+                                                        <input type="text" class="form-control" name="estado" autocomplete="off"> 
+                                                    </div>
 
-<div class="col-md-4">
-             <label for="exampleInputEmail1">Estado</label>
-              <select type="text" class="form-control" name="estado" autocomplete="off" required> 
-                        <option>Amazonas</option>
-                          <option>Anzoategui</option>
-                            <option>Apure</option>
-                              <option>Aragua</option>
-                                <option>Barinas</option>
-                                  <option>Bolívar</option>
-                                    <option>Carabobo</option>
-                                      <option>Cojedes</option>
-                                        <option>Delta Amacuro</option>
-                                          <option>Distrito Capital</option>
-                                            <option>Falcón</option>
-                                              <option>Guárico</option>
-                                                <option>Lara</option>
-                                                  <option>Mérida</option>
-                                                    <option>Miranda</option>
-                                                      <option>Monagas</option>
-                                                        <option>Nueva Esparta</option>
-                                                          <option>Portuguesa</option>
-                                                            <option>Sucre</option>
-                                                              <option>Táchira</option>
-                                                                <option>Trujillo</option>
-                                                                  <option>Vargas</option>
-                                                                    <option>Yaracuy</option>
-                                                                      <option>Zulia</option>
-              </select>
-</div>
+                                                    <div class="col-md-2">
+                                                      <label for="exampleInputEmail1">Municipio</label>
+                                                        <input type="text" class="form-control" name="municipio" autocomplete="off"> 
+                                                    </div>
+                                                     
+                                                     <div class="col-md-2">
+                                                      <label for="exampleInputEmail1">Parroquia</label>
+                                                        <input type="text" class="form-control" name="parroquia" autocomplete="off"> 
+                                                    </div>
 
-  <div class="col-md-4">
-    <label for="exampleInputEmail1">Municipio</label>
-      <input type="text" class="form-control" name="municipio" autocomplete="off" required> 
-  </div>
+                                                    <div class="col-md-2">
+                                                      <label for="exampleInputEmail1">Avenida</label>
+                                                        <input type="text" class="form-control" name="avenida" autocomplete="off"> 
+                                                    </div>
 
-    <div class="col-md-4">
-      <label for="exampleInputEmail1">Ciudad</label>
-        <input type="text" class="form-control" name="ciudad" autocomplete="off" required> 
-    </div>
+                                                    <div class="col-md-2">
+                                                      <label for="exampleInputEmail1">Calle</label>
+                                                        <input type="text" class="form-control" name="calle" autocomplete="off"> 
+                                                    </div>
 
-      <div class="col-md-4">
-        <label for="exampleInputEmail1">Parroquia</label>
-          <input type="text" class="form-control" name="parroquia" autocomplete="off" required> 
-      </div>
-
-        <div class="col-md-4">
-          <label for="exampleInputEmail1">Avenida</label>
-            <input type="text" class="form-control" name="avenida" autocomplete="off" required> 
-        </div>
-
-          <div class="col-md-4">
-            <label for="exampleInputEmail1">Calle</label>
-              <input type="text" class="form-control" name="calle" autocomplete="off" required> 
-          </div>
-
-            <div class="col-md-4">
-              <label for="exampleInputEmail1">Casa N°</label>
-                <input type="text" class="form-control" name="casa" autocomplete="off" required> 
-            </div>
-
-  </table>
-  
-</div>
-</div>
-</div>
-
-
-
-<!-- Final del modal de direccion -->  
+                                                     <div class="col-md-2">
+                                                      <label for="exampleInputEmail1">Casa</label>
+                                                        <input type="text" class="form-control" name="casa" autocomplete="off"> 
+                                                    </div>                                                   
 
 </div>
 </div>
 </div>
 </div>
-
 
 <!-- Aqui termina el activador 1 -->  
 
@@ -341,27 +252,27 @@ if ($_GET['form']=='add') { ?>
 
   <div class="col-md-2">
     <label for="exampleInputEmail1">Tipo de Sangre</label>
-      <input type="text" class="form-control" name="tipo_s" autocomplete="off"> 
+      <input type="text" class="form-control" name="tipo_s" autocomplete="off" > 
   </div>
 
     <div class="col-md-2">
       <label for="exampleInputEmail1">Medicamentos</label>
-        <input type="text" class="form-control" name="medicamen" autocomplete="off"> 
+        <input type="text" class="form-control" name="medicamen" autocomplete="off" > 
     </div>
 
       <div class="col-md-2">
         <label for="exampleInputEmail1">Discapacidad</label>
-          <input type="text" class="form-control" name="discapacidad" autocomplete="off"> 
+          <input type="text" class="form-control" name="discapacidad" autocomplete="off" > 
       </div>
 
         <div class="col-md-2">
           <label for="exampleInputEmail1">Alergias</label>
-            <input type="text" class="form-control" name="alergias" autocomplete="off"> 
+            <input type="text" class="form-control" name="alergias" autocomplete="off" > 
         </div>
 
           <div class="col-md-2">
             <label for="exampleInputEmail1">Notas</label>
-              <input type="text" class="form-control" name="notas" autocomplete="off"> 
+              <input type="text" class="form-control" name="notas" autocomplete="off" > 
           </div>
 </div>
 
@@ -373,126 +284,126 @@ if ($_GET['form']=='add') { ?>
 
   <div class="col-md-2">
     <label for="exampleInputEmail1">Seleccionar División</label>
-      <select class="form-control" name="selec_div"  required>
+      <select class="form-control" name="selec_div"  >
         <option>Base de Datos</option>
-          <option>Dirección</option>
-            <option>División de Operaciones</option>
-              <option>División de Proyectos</option>
-                <option>División de Sistemas</option>
-                  <option>División de Telematica</option>
+        <option>Dirección</option>
+        <option>División de Operaciones</option>
+        <option>División de Proyectos</option>
+        <option>División de Sistemas</option>
+        <option>División de Telematica</option>
       </select>
   </div>
 
     <div class="col-md-2">
       <label for="exampleInputEmail1">Fecha de Ingreso</label>
-        <input type="date" class="form-control" name="fec_ing" autocomplete="off" required> 
+        <input type="date" class="form-control" name="fec_ing" autocomplete="off" > 
     </div>                  
 
       <div class="col-md-2">
         <label for="exampleInputEmail1">Tiempo de Servicio</label>
-          <input type="text" class="form-control" name="tiempo_s" autocomplete="off" required> 
+          <input type="text" class="form-control" name="tiempo_s" autocomplete="off" > 
       </div>     
 
         <div class="col-md-2">
           <label for="exampleInputEmail1">Cargo</label>
-            <select class="form-control" name="cargo"  required>
+            <select class="form-control" name="cargo"  >
               <option>Adjunto</option>
-                <option>Agente de Seguridad I</option>
-                  <option>Agente de Seguridad II</option>
-                    <option>Asesor Juridico General</option>
-                      <option>Director</option>
-                        <option>Director de Investigaciones</option>
-                          <option>Experto Profesional Especialista I</option>
-                            <option>Experto Profesional Especialista II</option>
-                              <option>Experto Profesional Especialista III</option>
-                                <option>Jefe de Área</option>
-                                  <option>Jefe de Bloque</option>
-                                    <option>Jefe de Delegación</option>
-                                      <option>Jefe de Departamento</option>
-                                        <option>Jefe de División</option>
-                                          <option>Jefe de Escolta</option>
-                                            <option>Jefe de Inspectoría</option>
-                                              <option>Jefe de Investigaciones</option>
-                                                <option>Jefe de Sub Delegación</option>                            
-                                                  <option>Jefe del Eje</option>
-                                                    <option>Miembro Principal  Comisión Permanente Evaluación Y Seguim</option>
-                                                      <option>Miembro Principal del Consejo Disciplinario</option>
-                                                        <option>No Aplica</option>
-                                                          <option>Secretario General</option>
-                                                            <option>Secretario General Nacional</option>
-                                                              <option>Secretario Principal Consejo Disciplinario</option>
-                                                                <option>Sub Director General</option>
-                                                                  <option>Supervisor</option>
-                                                                    <option>Supervisor de Investigaciones</option>
-                                                                      <option>Supervisor de los Servicios</option>
-                                                                        <option>Supervisor de Región</option>
-                                                                          <option>Supervisor de Sub Delegaciones</option>
+              <option>Agente de Seguridad I</option>
+              <option>Agente de Seguridad II</option>
+              <option>Asesor Juridico General</option>
+              <option>Director</option>
+              <option>Director de Investigaciones</option>
+              <option>Experto Profesional Especialista I</option>
+              <option>Experto Profesional Especialista II</option>
+              <option>Experto Profesional Especialista III</option>
+              <option>Jefe de Área</option>
+              <option>Jefe de Bloque</option>
+              <option>Jefe de Delegación</option>
+              <option>Jefe de Departamento</option>
+              <option>Jefe de División</option>
+              <option>Jefe de Escolta</option>
+              <option>Jefe de Inspectoría</option>
+              <option>Jefe de Investigaciones</option>
+              <option>Jefe de Sub Delegación</option>                            
+              <option>Jefe del Eje</option>
+              <option>Miembro Principal  Comisión Permanente Evaluación Y Seguim</option>
+              <option>Miembro Principal del Consejo Disciplinario</option>
+              <option>No Aplica</option>
+              <option>Secretario General</option>
+              <option>Secretario General Nacional</option>
+              <option>Secretario Principal Consejo Disciplinario</option>
+              <option>Sub Director General</option>
+              <option>Supervisor</option>
+              <option>Supervisor de Investigaciones</option>
+              <option>Supervisor de los Servicios</option>
+              <option>Supervisor de Región</option>
+              <option>Supervisor de Sub Delegaciones</option>
             </select>
         </div>                         
 
           <div class="col-md-2">
             <label for="exampleInputEmail1">Rango</label>
-              <select class="form-control" name="rango"  required>
+              <select class="form-control" name="rango"  >
                 <option>Asesor Juridico</option>
-                  <option>Asist. Administrativo I</option>
-                    <option>Asist. Administrativo II</option>
-                      <option>Asist. Administrativo III</option>
-                        <option>Asist. Administrativo IIIV</option>
-                          <option>Asist. Administrativo V</option>
-                            <option>Asist. Administrativo VI</option>
-                              <option>Asist. Administrativo VII</option>
-                                <option>Aspirante</option>
-                                  <option>Auxiliar Adm. I</option>
-                                    <option>Auxiliar Adm. II</option>
-                                      <option>Auxiliar Adm. III</option>
-                                        <option>Auxiliar Adm. IV</option>
-                                          <option>Auxiliar Adm. V</option>
-                                            <option>Auxiliar Adm. VI</option>                  
-                                              <option>Auxiliar Adm. VII</option>
-                                                <option>Comisario</option>                        
-                                                  <option>Comisario General</option>
-                                                    <option>Comisario Jefe</option>
-                                                      <option>Detective</option>
-                                                        <option>Detective Agregado</option>
-                                                          <option>Detective Jefe</option>
-                                                            <option>Director General Nacional</option>
-                                                              <option>Experto Profesional  I</option>
-                                                                <option>Experto Profesional  II</option>
-                                                                  <option>Experto Profesional  III</option>
-                                                                    <option>Experto Profesional IV</option>
-                                                                      <option>Experto Tecnico I</option>
-                                                                        <option>Experto Tecnico II</option>
-                                                                          <option>Experto Tecnico III</option>
-                                                                            <option>Experto Tecnico IV</option>
-                                                                              <option>Experto Tecnico VI</option>
-                                                                                <option>Experto Tecnico VII</option>
-                                                                                  <option>Inspector</option>
-                                                                                    <option>Inspector Agregado</option>
-                                                                                      <option>Inspector General</option>
-                                                                                        <option>Inspector Jefe</option>
-                                                                                          <option>Sub-Director</option>
-                                                                                            <option>Pasantes</option>
-                                                                                              <option>No Aplica</option>
+                <option>Asist. Administrativo I</option>
+                <option>Asist. Administrativo II</option>
+                <option>Asist. Administrativo III</option>
+                <option>Asist. Administrativo IIIV</option>
+                <option>Asist. Administrativo V</option>
+                <option>Asist. Administrativo VI</option>
+                <option>Asist. Administrativo VII</option>
+                <option>Aspirante</option>
+                <option>Auxiliar Adm. I</option>
+                <option>Auxiliar Adm. II</option>
+                <option>Auxiliar Adm. III</option>
+                <option>Auxiliar Adm. IV</option>
+                <option>Auxiliar Adm. V</option>
+                <option>Auxiliar Adm. VI</option>                  
+                <option>Auxiliar Adm. VII</option>
+                <option>Comisario</option>                        
+                <option>Comisario General</option>
+                <option>Comisario Jefe</option>
+                <option>Detective</option>
+                <option>Detective Agregado</option>
+                <option>Detective Jefe</option>
+                <option>Director General Nacional</option>
+                <option>Experto Profesional  I</option>
+                <option>Experto Profesional  II</option>
+                <option>Experto Profesional  III</option>
+                <option>Experto Profesional IV</option>
+                <option>Experto Tecnico I</option>
+                <option>Experto Tecnico II</option>
+                <option>Experto Tecnico III</option>
+                <option>Experto Tecnico IV</option>
+                <option>Experto Tecnico VI</option>
+                <option>Experto Tecnico VII</option>
+                <option>Inspector</option>
+                <option>Inspector Agregado</option>
+                <option>Inspector General</option>
+                <option>Inspector Jefe</option>
+                <option>Sub-Director</option>
+                <option>Pasantes</option>
+                <option>No Aplica</option>
               </select>
           </div>  
 
             <div class="col-md-2">
               <label for="exampleInputEmail1">Ubicación Fisica</label>
-                <input type="text" class="form-control" name="ubic_fis" autocomplete="off" required> 
+                <input type="text" class="form-control" name="ubic_fis" autocomplete="off" > 
             </div>
 
               <div class="col-md-2">
                 <label for="exampleInputEmail1">Correo Institucional</label>
-                  <input type="email" class="form-control" name="correo_i" autocomplete="off" required> 
+                  <input type="email" class="form-control" name="correo_i" autocomplete="off" > 
               </div>  
 
                 <div class="col-md-2">
                   <label for="exampleInputEmail1">Estatus</label>
-                    <select type="text" class="form-control" name="estatus" autocomplete="off" required>
+                    <select type="text" class="form-control" name="estatus" autocomplete="off" >
                       <option>Activo</option>
-                        <option>Reposo</option>
-                          <option>Vacaciones</option>
-                            <option>Comision</option>
+                      <option>Reposo</option>
+                      <option>Vacaciones</option>
+                      <option>Comision</option>
                     </select>
                 </div>                        
 </div>
@@ -505,12 +416,12 @@ if ($_GET['form']=='add') { ?>
 
   <div class="col-md-2">
     <label for="exampleInputEmail1">Cedula</label>
-      <input type="text" class="form-control" name="cedulaf" autocomplete="off" required> 
+      <input type="text" class="form-control" name="cedulaf" autocomplete="off" > 
   </div> 
 
     <div class="col-md-2">
       <label for="exampleInputEmail1">Primer Nombre</label>
-        <input type="text" class="form-control" name="p_nombref" autocomplete="off" required> 
+        <input type="text" class="form-control" name="p_nombref" autocomplete="off" > 
     </div> 
 
       <div class="col-md-2">
@@ -520,7 +431,7 @@ if ($_GET['form']=='add') { ?>
 
         <div class="col-md-2">
           <label for="exampleInputEmail1">Primer Apellido</label>
-            <input type="text" class="form-control" name="p_apellidof" autocomplete="off" required> 
+            <input type="text" class="form-control" name="p_apellidof" autocomplete="off" > 
         </div> 
 
           <div class="col-md-2">
@@ -530,54 +441,52 @@ if ($_GET['form']=='add') { ?>
 
             <div class="col-md-2">
               <label for="exampleInputEmail1">Fecha de Nacimiento</label>
-                <input type="date" class="form-control" name="fec_nacf" autocomplete="off" required> 
+                <input type="date" class="form-control" name="fec_nacf" autocomplete="off" > 
             </div> 
 
               <div class="col-md-2">
                 <label for="exampleInputEmail1">Edad</label>
-                  <input type="text" class="form-control" name="edadf" autocomplete="off" required> 
+                  <input type="text" class="form-control" name="edadf" autocomplete="off" > 
               </div> 
 
                 <div class="col-md-2">
                   <label for="exampleInputEmail1">Genero</label>
-                    <select type="text" class="form-control" name="generof" autocomplete="off" required> 
+                    <select type="text" class="form-control" name="generof" autocomplete="off" > 
                       <option>Femenina</option>
-                        <option>Masculino</option>
+                      <option>Masculino</option>
                     </select> 
                 </div>  
 
-
-                <div class="col-md-2">
-                  <label for="exampleInputEmail1">Parantesco</label>
-                    <select type="text" class="form-control" name="parentesco" autocomplete="off"  required>
-                      <option>Hijo/a</option>
+                  <div class="col-md-2">
+                    <label for="exampleInputEmail1">Parentesco</label>
+                      <select type="text" class="form-control" name="parentesco" autocomplete="off" > 
+                        <option>Hijo/a</option>
                         <option>Padre</option>
-                          <option>Madre</option>
-                            <option>Cónyuge</option>
-                              <option>Hermano/a</option>
-                                <option>Otro/a</option>
-                    </select>
-                </div>
-
-                  <div class="col-md-1">
-                    <label for="exampleInputEmail1">Estudiante</label>
-                      <select type="text" class="form-control" name="estudiante" autocomplete="off" required>
-                        <option>Si</option>
-                          <option>No</option>
+                        <option>Madre</option>
+                        <option>Hermano/a</option>
+                        <option>Otro/a</option>
                       </select>
                   </div>
 
                     <div class="col-md-1">
-                      <label for="exampleInputEmail1">Funcionario</label>
-                        <select type="text" class="form-control" name="funcionario" autocomplete="off" required>
+                      <label for="exampleInputEmail1">Estudiante</label>
+                        <select type="text" class="form-control" name="estudiante" autocomplete="off" > 
                           <option>Si</option>
+                          <option>No</option>
+                        </select>
+                    </div> 
+   
+                      <div class="col-md-1">
+                        <label for="exampleInputEmail1">Funcionario</label>
+                          <select type="text" class="form-control" name="funcionario" autocomplete="off" required> 
+                            <option>Si</option>
                             <option>No</option>
-                        </select>  
-                    </div>
+                          </select>  
+                      </div> 
 
                       <div class="col-md-2">
                         <label for="exampleInputEmail1">Información Medica</label>
-                          <input type="text" class="form-control" name="inf_medf" autocomplete="off" required> 
+                          <input type="text" class="form-control" name="inf_medf" autocomplete="off" > 
                       </div>                                
 </div>
 
@@ -601,7 +510,7 @@ if ($_GET['form']=='add') { ?>
         <label for="exampleInputEmail1">Combustible</label>
           <select type="text" class="form-control" name="combustible" autocomplete="off"> 
             <option>Gasolina</option>
-              <option>Gasoil</option>
+            <option>Gasoil</option>
           </select>
       </div>  
 
@@ -628,71 +537,71 @@ if ($_GET['form']=='add') { ?>
                 <div class="col-md-2">
                   <label for="exampleInputEmail1">Año</label>
                     <select type="text" class="form-control" name="alo" autocomplete="off"> 
-                      <option>2023</option>
-                      <option>2022</option>
-                        <option>2021</option>
-                          <option>2020</option>
-                            <option>2019</option>
-                              <option>2018</option>
-                                <option>2017</option>
-                                  <option>2016</option>
-                                    <option>2015</option>
-                                      <option>2014</option>
-                                        <option>2013</option>
-                                          <option>2012</option>
-                                            <option>2011</option>
-                                              <option>2010</option>
-                                                <option>2009</option>
-                                                  <option>2008</option>
-                                                    <option>2007</option>
-                                                      <option>2006</option>
-                                                        <option>2005</option>
-                                                          <option>2004</option>
-                                                            <option>2003</option>
-                                                              <option>2002</option>
-                                                                <option>2001</option>
-                                                                  <option>2000</option>
-                                                                    <option>1999</option>
-                                                                      <option>1998</option>
-                                                                        <option>1997</option>
-                                                                          <option>1996</option>
-                                                                            <option>1995</option>
-                                                                              <option>1994</option>
-                                                                                <option>1993</option>
-                                                                                  <option>1992</option>
-                                                                                    <option>1991</option>
-                                                                                      <option>1990</option>
-                                                                                        <option>1989</option>
-                                                                                          <option>1988</option>
-                                                                                            <option>1987</option>
-                                                                                              <option>1986</option>
-                                                                                                <option>1985</option>
-                                                                                                  <option>1984</option>
-                                                                                                    <option>1983</option>
-                                                                                                      <option>1982</option>
-                                                                                                        <option>1981</option>
-                                                                                                          <option>1980</option>
-                                                                                                            <option>1979</option>
-                                                                                                              <option>1978</option>
-                                                                                                              <option>1977</option>
-                                                                                                            <option>1976</option>
-                                                                                                          <option>1975</option>
-                                                                                                        <option>1974</option>
-                                                                                                      <option>1973</option>
-                                                                                                    <option>1972</option>
-                                                                                                  <option>1971</option>
-                                                                                                <option>1970</option>
-                                                                                              <option>1969</option>
-                                                                                            <option>1968</option>
-                                                                                          <option>1967</option>
-                                                                                        <option>1966</option>
-                                                                                      <option>1965</option>
-                                                                                    <option>1964</option>
-                                                                                  <option>1963</option>
-                                                                                <option>1962</option>
-                                                                              <option>1961</option>
-                                                                            <option>1960</option>
-                    </select>
+                <option>2023</option>
+                <option>2022</option>
+                <option>2021</option>
+                <option>2020</option>
+                <option>2019</option>
+                <option>2018</option>
+                <option>2017</option>
+                <option>2016</option>
+                <option>2015</option>
+                <option>2014</option>
+                <option>2013</option>
+                <option>2012</option>
+                <option>2011</option>
+                <option>2010</option>
+                <option>2009</option>
+                <option>2008</option>
+                <option>2007</option>
+                <option>2006</option>
+                <option>2005</option>
+                <option>2004</option>
+                <option>2003</option>
+                <option>2002</option>
+                <option>2001</option>
+                <option>2000</option>
+                <option>1999</option>
+                <option>1998</option>
+                <option>1997</option>
+                <option>1996</option>
+                <option>1995</option>
+                <option>1994</option>
+                <option>1993</option>
+                <option>1992</option>
+                <option>1991</option>
+                <option>1990</option>
+                <option>1989</option>
+                <option>1988</option>
+                <option>1987</option>
+                <option>1986</option>
+                <option>1985</option>
+                <option>1984</option>
+                <option>1983</option>
+                <option>1982</option>
+                <option>1981</option>
+                <option>1980</option>
+                <option>1979</option>
+                <option>1978</option>
+                <option>1977</option>
+                <option>1976</option>
+                <option>1975</option>
+                <option>1974</option>
+                <option>1973</option>
+                <option>1972</option>
+                <option>1971</option>
+                <option>1970</option>
+                <option>1969</option>
+                <option>1968</option>
+                <option>1967</option>
+                <option>1966</option>
+                <option>1965</option>
+                <option>1964</option>
+                <option>1963</option>
+                <option>1962</option>
+                <option>1961</option>
+                <option>1960</option>
+                </select>
                 </div> 
 
 </div>
@@ -752,7 +661,6 @@ if ($_GET['form']=='add') { ?>
 </div>   <!-- /.row -->
 </section><!-- /.content -->
 
-
 <!--Aqui empieza el editar -->
 
 <?php
@@ -768,6 +676,7 @@ elseif ($_GET['form']=='edit') {
     }
 ?>
 
+
 <section class="content-header">
   <h1>
     <i class="fa fa-edit icon-title"></i> Modificar Funcionario
@@ -778,6 +687,7 @@ elseif ($_GET['form']=='edit') {
         <li class="active"> Modificar </li>
       </ol>
 </section>
+
 
 <section class="content">
   <div class="row">
@@ -797,6 +707,7 @@ elseif ($_GET['form']=='edit') {
   <ul class="nav navbar-right panel_toolbox"></ul>
 <div class="clearfix"></div>
 </div>
+
 <div class="x_content">
 <div class="" role="tabpanel" data-example-id="togglable-tabs">
   <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
@@ -830,7 +741,12 @@ elseif ($_GET['form']=='edit') {
   <ul class="nav navbar-right panel_toolbox"></ul>
 <div class="x_content">
 
-  <div class="col-md-2">
+<div class="col-md-2">
+  <label for="exampleInputEmail1">Codigo</label>
+    <input type="text" class="form-control" name="codigo" value="<?php echo $data['codigo']; ?>">
+</div>
+
+   <div class="col-md-2">
     <label for="exampleInputEmail1">Cedula</label>
       <input type="text" class="form-control" name="cedula" autocomplete="off" value="<?php echo $data['cedula']; ?>" required>
   </div>
@@ -1240,7 +1156,7 @@ elseif ($_GET['form']=='edit') {
 <div role="tabpanel" class="tab-pane fade" id="tab_content4" aria-labelledby="profile-tab">
 
 <div class="col-md-2">
-  <label for="exampleInputEmail1">Cedula</label>
+<label for="exampleInputEmail1">Cedula</label>
     <input type="text" class="form-control" name="cedulaf" autocomplete="off" value="<?php echo $data['cedulaf']; ?>" required>
 </div>
 

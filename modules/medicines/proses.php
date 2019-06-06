@@ -24,7 +24,6 @@ else {
             $fec_nac  = mysqli_real_escape_string($mysqli, trim($_POST['fec_nac']));
             $edad  = mysqli_real_escape_string($mysqli, trim($_POST['edad']));
             $genero  = mysqli_real_escape_string($mysqli, trim($_POST['genero']));
-            $lugar_nac  = mysqli_real_escape_string($mysqli, trim($_POST['lugar_nac']));
             $estado_c  = mysqli_real_escape_string($mysqli, trim($_POST['estado_c']));
             $grado_inst  = mysqli_real_escape_string($mysqli, trim($_POST['grado_inst']));
             $correo_e  = mysqli_real_escape_string($mysqli, trim($_POST['correo_e']));
@@ -74,7 +73,6 @@ else {
             $marca_d  = mysqli_real_escape_string($mysqli, trim($_POST['marca_d']));
             $modelo_d  = mysqli_real_escape_string($mysqli, trim($_POST['modelo_d']));
             $calibre  = mysqli_real_escape_string($mysqli, trim($_POST['calibre']));
-            $direccion  = mysqli_real_escape_string($mysqli, trim($_POST['direccion']));
             $cargo  = mysqli_real_escape_string($mysqli, trim($_POST['cargo']));
             $rango  = mysqli_real_escape_string($mysqli, trim($_POST['rango']));
             $estatus  = mysqli_real_escape_string($mysqli, trim($_POST['estatus']));
@@ -82,8 +80,8 @@ else {
             $created_user = $_SESSION['id_user'];
   
 
-            $query = mysqli_query($mysqli, "INSERT INTO medicamentos(codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,lugar_nac,estado_c,grado_inst,correo_e,tel_cel,tel_hab,tel_emerg,estado,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,fec_ing,tiempo_s,ubic_fis,correo_i,cedulaf,p_nombref,s_nombref,p_apellidof,s_apellidof,fec_nacf,edadf,generof,parentesco,estudiante,funcionario,inf_medf,tipo_v,placa,combustible,serial_carro,marca,modelo,color,alo,tipo_d,n_serial,marca_d,modelo_d,calibre,direccion,cargo,rango,estatus,selec_div,created_user,updated_user) 
-                                            VALUES('$codigo','$cedula','$credencial','$rif','$p_nombre','$s_nombre','$p_apellido','$s_apellido','$fec_nac','$edad','$genero','$lugar_nac','$estado_c','$grado_inst','$correo_e','$tel_cel','$tel_hab','$tel_emerg','$estado','$municipio','$ciudad','$parroquia','$avenida','$calle','$casa','$codigo_cp','$serial_cp','$tipo_s','$medicamen','$discapacidad','$alergias','$notas','$fec_ing','$tiempo_s','$ubic_fis','$correo_i','$cedulaf','$p_nombref','$s_nombref','$p_apellidof','$s_apellidof','$fec_nacf','$edadf','$generof','$parentesco','$estudiante','$funcionario','$inf_medf','$tipo_v','$placa','$combustible','$serial_carro','$marca','$modelo','$color','$alo','$tipo_d','$n_serial','$marca_d','$modelo_d','$calibre','$direccion','$cargo','$rango','$estatus','$selec_div','$created_user','$created_user')")
+            $query = mysqli_query($mysqli, "INSERT INTO medicamentos(codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,estado_c,grado_inst,correo_e,tel_cel,tel_hab,tel_emerg,estado,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,fec_ing,tiempo_s,ubic_fis,correo_i,cedulaf,p_nombref,s_nombref,p_apellidof,s_apellidof,fec_nacf,edadf,generof,parentesco,estudiante,funcionario,inf_medf,tipo_v,placa,combustible,serial_carro,marca,modelo,color,alo,tipo_d,n_serial,marca_d,modelo_d,calibre,cargo,rango,estatus,selec_div,created_user,updated_user) 
+                                            VALUES('$codigo','$cedula','$credencial','$rif','$p_nombre','$s_nombre','$p_apellido','$s_apellido','$fec_nac','$edad','$genero','$estado_c','$grado_inst','$correo_e','$tel_cel','$tel_hab','$tel_emerg','$estado','$municipio','$ciudad','$parroquia','$avenida','$calle','$casa','$codigo_cp','$serial_cp','$tipo_s','$medicamen','$discapacidad','$alergias','$notas','$fec_ing','$tiempo_s','$ubic_fis','$correo_i','$cedulaf','$p_nombref','$s_nombref','$p_apellidof','$s_apellidof','$fec_nacf','$edadf','$generof','$parentesco','$estudiante','$funcionario','$inf_medf','$tipo_v','$placa','$combustible','$serial_carro','$marca','$modelo','$color','$alo','$tipo_d','$n_serial','$marca_d','$modelo_d','$calibre','$cargo','$rango','$estatus','$selec_div','$created_user','$created_user')")
 
                                             or die('error '.mysqli_error($mysqli));    
 
