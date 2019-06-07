@@ -3,11 +3,12 @@
 <section class="content-header">
   <h1>
     <i class="fa fa-file-text-o icon-title"></i>Informe de funcionarios de la dirección de tecnologia
+      <div class="btn-group pull-right"><a href="pdf/reportegeneral.php">
+  <button type='button'class="btn btn-primary" data-toggle="modal">
+    <span class="glyphicon glyphicon-print" ></span> Imprimir</button></a>
+</div>
   </h1>
-  <ol class="breadcrumb">
-    <li><a href="?module=start"><i class="fa fa-home"></i> Inicio</a></li>
-    <li class="active">Informe</li>
-  </ol>
+
 </section>
 
 <!-- Fin del contenedor del titulo -->
@@ -18,10 +19,7 @@
 
 <!-- Inicio del Formulario -->
 
-<div class="btn-group pull-right"><a href="pdf/reportegeneral.php">
-  <button type='button'class="btn btn-primary" data-toggle="modal">
-    <span class="glyphicon glyphicon-print" ></span> Imprimir</button></a>
-</div>
+
 
 
 <div class="box-body">

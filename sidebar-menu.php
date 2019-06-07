@@ -55,14 +55,14 @@ if ($_SESSION['permisos_acceso']=='Super Admin') { ?>
       
 <ul class="treeview-menu">
   
-  <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+    <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
 
-    <li class="active"><a href="?module=stock_report&viewdivision"><i class="fa fa-sitemap"></i> Reporte de Divisiónfs </a></li>
-          
-      <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
+    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
       
+      <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
+        
         <li class="active"><a href="pdf/reporte_padres.php"><i class="fa fa-users"></i> Reporte de Padres </a></li>
-            
+          
           <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-odnoklassniki"></i> Reporte de Hijos </a></li>
             
             <li class="active"><a href="pdf/reporte_vehiculo.php"><i class="fa fa-car"></i> Reporte de Vehiculo </a></li>
@@ -86,7 +86,7 @@ if ($_SESSION['permisos_acceso']=='Super Admin') { ?>
   
     <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
 
-    <li class="active"><a href="?module=stock_reportviewd.php"><i class="fa fa-sitemap"></i> Reporte de Divisiónff </a></li>
+    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
       
       <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
         
@@ -113,20 +113,21 @@ if ($_SESSION['permisos_acceso']=='Super Admin') { ?>
 
 <ul class="treeview-menu">
   
-   <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
-    
-    <li class="active"><a href="module/stock_report/viewd.php"><i class="fa fa-suitcase"></i> Reporte Division </a></li>
+    <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+
+    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
       
       <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
         
         <li class="active"><a href="pdf/reporte_padres.php"><i class="fa fa-users"></i> Reporte de Padres </a></li>
           
           <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-odnoklassniki"></i> Reporte de Hijos </a></li>
-          
+            
             <li class="active"><a href="pdf/reporte_vehiculo.php"><i class="fa fa-car"></i> Reporte de Vehiculo </a></li>
               
               <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
 </ul>
+
 </li>
     <?php
   }
@@ -199,8 +200,8 @@ elseif ($_SESSION['permisos_acceso']=='Gerente') { ?>
 <ul class="treeview-menu">
   
     <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
-    
-    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de Divisiónt </a></li>
+
+    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
       
       <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
         
@@ -254,9 +255,9 @@ elseif ($_SESSION['permisos_acceso']=='Gerente') { ?>
 
 <ul class="treeview-menu">
   
-   <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
-    
-    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de Divisiónrr </a></li>
+    <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+
+    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
       
       <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
         
@@ -347,9 +348,9 @@ if ($_SESSION['permisos_acceso']=='Almacen') { ?>
 
 <ul class="treeview-menu">
   
-   <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
-    
-    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de Divisiónes </a></li>
+    <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+
+    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
       
       <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
         
@@ -358,7 +359,7 @@ if ($_SESSION['permisos_acceso']=='Almacen') { ?>
           <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-odnoklassniki"></i> Reporte de Hijos </a></li>
             
             <li class="active"><a href="pdf/reporte_vehiculo.php"><i class="fa fa-car"></i> Reporte de Vehiculo </a></li>
-            
+              
               <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
 </ul>
 </li>
@@ -376,9 +377,9 @@ if ($_SESSION['permisos_acceso']=='Almacen') { ?>
 
 <ul class="treeview-menu">
   
-   <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
-    
-    <li class="active"><a href="?module=stock_report/viewdivision.php"><i class="fa fa-sitemap"></i> Reporte de Divisiónes </a></li>
+    <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+
+    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
       
       <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
         
