@@ -39,17 +39,19 @@
     elseif ($_GET['alert'] == 3) {
       echo "<div class='alert alert-success alert-dismissable'>
               <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-              <h4>  <i class='icon fa fa-check-circle'></i> Exitp!</h4>
+              <h4>  <i class='icon fa fa-check-circle'></i> Exito!</h4>
           Contraseña cambiada con éxito.
             </div>";
     }
     ?>
 
 
+<label>Nota: Se recomienda poner una clave alfanumerica </label>
       <div class="box box-primary">
         <!-- form start -->
         <form role="form" class="form-horizontal" method="POST" action="modules/password/proses.php">
           <div class="box-body">
+
 
             <div class="form-group">
               <label class="col-sm-2 control-label">Contraseña Antigua</label>
