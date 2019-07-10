@@ -774,32 +774,32 @@ if ($_GET['form']=='add') { ?>
 
   <div class="col-md-2">
     <label for="exampleInputEmail1">Tiempo de Servicio</label>
-      <input type="text" class="form-control" name="tipo_d" autocomplete="off"> 
+      <input type="text" class="form-control" name="tiempo_s" autocomplete="off"> 
   </div> 
 
   <div class="col-md-2">
     <label for="exampleInputEmail1">Fecha de Inicio</label>
-      <input type="date" class="form-control" name="tipo_d" autocomplete="off"> 
+      <input type="date" class="form-control" name="fec_iniv" autocomplete="off"> 
   </div> 
 
     <div class="col-md-2">
       <label for="exampleInputEmail1">Fecha de Regreso</label>
-        <input type="date" class="form-control" name="n_serial" autocomplete="off"> 
+        <input type="date" class="form-control" name="fec_regv" autocomplete="off"> 
     </div> 
 
       <div class="col-md-2">
         <label for="exampleInputEmail1">Dias de Vacaciones</label>
-          <input type="text" class="form-control" name="marca_d" autocomplete="off"> 
+          <input type="text" class="form-control" name="dia_v" autocomplete="off"> 
       </div> 
 
         <div class="col-md-2">
           <label for="exampleInputEmail1">N° Vacaciones Solicitadas</label>
-            <input type="text" class="form-control" name="modelo_d" autocomplete="off"> 
+            <input type="text" class="form-control" name="vac_sol" autocomplete="off"> 
         </div> 
 
           <div class="col-md-2">
             <label for="exampleInputEmail1">N° Vacaciones Vencidas</label>
-              <input type="text" class="form-control" name="calibre" autocomplete="off"> 
+              <input type="text" class="form-control" name="vac_ven" autocomplete="off"> 
           </div> 
 
 </div>
@@ -840,7 +840,7 @@ if ($_GET['form']=='add') { ?>
 elseif ($_GET['form']=='edit') { 
   if (isset($_GET['id'])) {
 
-      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,selec_div,cargo,rango,fec_ing,tiempo_s,ubic_fis,correo_i,estatus,cedulaf,p_nombref,s_nombref,p_apellidof,s_apellidof,fec_nacf,edadf,generof,parentesco,estudiante,funcionario,inf_medf,tipo_v,placa,combustible,serial_carro,marca,modelo,color,alo,tipo_d,n_serial,marca_d,modelo_d,calibre,fec_inir,fec_regr,dia_r,motivo_r FROM medicamentos WHERE codigo='$_GET[id]'") 
+      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,selec_div,cargo,rango,fec_ing,tiempo_s,ubic_fis,correo_i,estatus,cedulaf,p_nombref,s_nombref,p_apellidof,s_apellidof,fec_nacf,edadf,generof,parentesco,estudiante,funcionario,inf_medf,tipo_v,placa,combustible,serial_carro,marca,modelo,color,alo,tipo_d,n_serial,marca_d,modelo_d,calibre,fec_inir,fec_regr,dia_r,motivo_r,fec_iniv,fec_regv,dia_v,vac_sol,vac_ven FROM medicamentos WHERE codigo='$_GET[id]'") 
 
                                       or die('error: '.mysqli_error($mysqli));
       $data  = mysqli_fetch_assoc($query);
@@ -1595,29 +1595,35 @@ elseif ($_GET['form']=='edit') {
 <div role="tabpanel" class="tab-pane fade" id="tab_content8" aria-labelledby="profile-tab">
 
 <div class="col-md-2">
-  <label for="exampleInputEmail1">Tipo</label>
-    <input type="text" class="form-control" name="tipo_d" autocomplete="off" value="<?php echo $data['tipo_d']; ?>">
+  <label for="exampleInputEmail1">Tiempo de Servicio</label>
+    <input type="text" class="form-control" name="tiempo_s" autocomplete="off" value="<?php echo $data['tipo_d']; ?>">
 </div>
 
   <div class="col-md-2">
-    <label for="exampleInputEmail1">N° de Serial</label>
-      <input type="text" class="form-control" name="n_serial" autocomplete="off" value="<?php echo $data['n_serial']; ?>">
+    <label for="exampleInputEmail1">Fecha de Inicio</label>
+      <input type="date" class="form-control" name="fec_iniv" autocomplete="off" value="<?php echo $data['fec_iniv']; ?>">
   </div>
 
     <div class="col-md-2">
-      <label for="exampleInputEmail1">Marca</label>
-        <input type="text" class="form-control" name="marca_d" autocomplete="off" value="<?php echo $data['marca_d']; ?>">
+      <label for="exampleInputEmail1">Fecha de Regreso</label>
+        <input type="date" class="form-control" name="fec_regv" autocomplete="off" value="<?php echo $data['fec_regv']; ?>">
     </div>
 
       <div class="col-md-2">
-        <label for="exampleInputEmail1">Modelo</label>
-          <input type="text" class="form-control" name="modelo_d" autocomplete="off" value="<?php echo $data['modelo_d']; ?>">
+        <label for="exampleInputEmail1">Dias de Vacaciones</label>
+          <input type="text" class="form-control" name="dia_v" autocomplete="off" value="<?php echo $data['dia_v']; ?>">
       </div>
 
         <div class="col-md-2">
-          <label for="exampleInputEmail1">Calibre</label>
-            <input type="text" class="form-control" name="calibre" autocomplete="off" value="<?php echo $data['calibre']; ?>">
+          <label for="exampleInputEmail1">N° Vacaciones Solicitadas</label>
+            <input type="text" class="form-control" name="vac_sol" autocomplete="off" value="<?php echo $data['vac_sol']; ?>">
         </div>
+
+        <div class="col-md-2">
+          <label for="exampleInputEmail1">N° Vacaciones Vencidas</label>
+            <input type="text" class="form-control" name="vac_ven" autocomplete="off" value="<?php echo $data['vac_ven']; ?>">
+        </div>
+
 
 </div>
 

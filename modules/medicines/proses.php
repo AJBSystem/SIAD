@@ -164,6 +164,12 @@ else {
                 $fec_regr  = mysqli_real_escape_string($mysqli, trim($_POST['fec_regr']));
                 $dia_r  = mysqli_real_escape_string($mysqli, trim($_POST['dia_r']));
                 $motivo_r = mysqli_real_escape_string($mysqli, trim($_POST['motivo_r']));
+                $fec_iniv = mysqli_real_escape_string($mysqli, trim($_POST['fec_iniv']));
+                $fec_regv = mysqli_real_escape_string($mysqli, trim($_POST['fec_regv']));
+                 $dia_v = mysqli_real_escape_string($mysqli, trim($_POST['dia_v']));
+                $vac_sol = mysqli_real_escape_string($mysqli, trim($_POST['vac_sol']));
+                $vac_ven = mysqli_real_escape_string($mysqli, trim($_POST['vac_ven']));
+
                 $updated_user = $_SESSION['id_user'];
 
                 $query = mysqli_query($mysqli, "UPDATE medicamentos SET  
@@ -231,7 +237,11 @@ else {
                                                                     fec_regr  = '$fec_regr',
                                                                     dia_r  = '$dia_r',
                                                                     motivo_r  = '$motivo_r',
-                                                                         
+                                                                    fec_iniv  = '$fec_iniv', 
+                                                                    fec_regv  = '$fec_regv',   
+                                                                    dia_v  = '$dia_v', 
+                                                                    vac_sol  = '$vac_sol',
+                                                                    vac_ven  = '$vac_ven',     
 
                                                                     
 
