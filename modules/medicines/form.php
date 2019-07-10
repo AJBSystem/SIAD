@@ -72,14 +72,15 @@ if ($_GET['form']=='add') { ?>
 
     <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-suitcase"> Datos Laborales * </a>
     </li>
-
-    <li role="presentation" class=""><a href="#tab_content4" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-users"> Datos Familiares * </a>
-    </li>
-
-    <li role="presentation" class=""><a href="#tab_content5" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-car"> Datos de Vehiculo</a>
     </li> 
 
     <li role="presentation" class=""><a href="#tab_content6" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-clipboard"> Dotaciones</a>
+    </li>
+
+    <li role="presentation" class=""><a href="#tab_content7" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-clipboard"> Reposo</a>
+    </li>
+
+    <li role="presentation" class=""><a href="#tab_content8" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-clipboard"> Vacaciones</a>
     </li>
 
   </ul>
@@ -734,7 +735,73 @@ if ($_GET['form']=='add') { ?>
 
 </div>
 
-<!-- Aqui termina el activador 6 -->   
+<!-- Aqui termina el activador 6 --> 
+
+<!-- Aqui empieza el activador 7 --> 
+
+<div role="tabpanel" class="tab-pane fade" id="tab_content7" aria-labelledby="profile-tab">
+
+  <div class="col-md-2">
+    <label for="exampleInputEmail1">Fecha de Inicio</label>
+      <input type="date" class="form-control" name="tipo_d" autocomplete="off"> 
+  </div> 
+
+    <div class="col-md-2">
+      <label for="exampleInputEmail1">Fecha de Regreso</label>
+        <input type="date" class="form-control" name="n_serial" autocomplete="off"> 
+    </div> 
+
+      <div class="col-md-2">
+        <label for="exampleInputEmail1">Dias de Reposo</label>
+          <input type="text" class="form-control" name="marca_d" autocomplete="off"> 
+      </div> 
+
+        <div class="col-md-2">
+          <label for="exampleInputEmail1">Motivo</label>
+            <input type="text" class="form-control" name="modelo_d" autocomplete="off"> 
+        </div> 
+
+</div>
+
+<!-- Aqui termina el activador 7 --> 
+
+<!-- Aqui empieza el activador 8 --> 
+
+<div role="tabpanel" class="tab-pane fade" id="tab_content8" aria-labelledby="profile-tab">
+
+  <div class="col-md-2">
+    <label for="exampleInputEmail1">Fecha de Inicio</label>
+      <input type="date" class="form-control" name="tipo_d" autocomplete="off"> 
+  </div> 
+
+    <div class="col-md-2">
+      <label for="exampleInputEmail1">Fecha de Regreso</label>
+        <input type="date" class="form-control" name="n_serial" autocomplete="off"> 
+    </div> 
+
+      <div class="col-md-2">
+        <label for="exampleInputEmail1">Dias de Vacaciones</label>
+          <input type="text" class="form-control" name="marca_d" autocomplete="off"> 
+      </div> 
+
+        <div class="col-md-2">
+          <label for="exampleInputEmail1">N° Vacaciones Solicitadas</label>
+            <input type="text" class="form-control" name="modelo_d" autocomplete="off"> 
+        </div> 
+
+          <div class="col-md-2">
+            <label for="exampleInputEmail1">N° Vacaciones Vencidas</label>
+              <input type="text" class="form-control" name="calibre" autocomplete="off"> 
+          </div> 
+
+</div>
+
+
+<!-- Aqui termina el activador 8 --> 
+
+
+
+
 </div>
 </div>
 </div>
