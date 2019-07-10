@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 02-07-2019 a las 16:13:38
+-- Tiempo de generación: 10-07-2019 a las 19:32:04
 -- Versión del servidor: 10.1.37-MariaDB
 -- Versión de PHP: 5.6.40
 
@@ -47,6 +47,7 @@ CREATE TABLE `familiares` (
 --
 
 INSERT INTO `familiares` (`cedula`, `p_nombre`, `s_nombre`, `p_apellido`, `s_apellido`, `fec_nac`, `edad`, `parentesco`, `estudiante`, `funcionario`, `inf_med`) VALUES
+(26435880, 'darly', 'naiduth', 'martinez', 'barreto', '2017-05-24', 20, 'Hija', 'Si', 'Si', 'Ninguna'),
 (26435880, 'darly', 'naiduth', 'martinez', 'barreto', '2017-05-24', 20, 'Hija', 'Si', 'Si', 'Ninguna');
 
 -- --------------------------------------------------------
@@ -217,15 +218,28 @@ CREATE TABLE `medicamentos` (
   `selec_div` varchar(50) NOT NULL,
   `cargo` varchar(50) NOT NULL,
   `rango` varchar(50) NOT NULL,
-  `direccion` varchar(100) NOT NULL
+  `direccion` varchar(100) NOT NULL,
+  `fec_inir` varchar(15) NOT NULL,
+  `fec_regr` varchar(15) NOT NULL,
+  `dia_r` varchar(15) NOT NULL,
+  `motivo_r` varchar(100) NOT NULL,
+  `fec_iniv` varchar(15) NOT NULL,
+  `fec_regv` varchar(15) NOT NULL,
+  `dia_v` varchar(15) NOT NULL,
+  `vac_sol` varchar(20) NOT NULL,
+  `vac_ven` varchar(20) NOT NULL,
+  `tipo_fun` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `medicamentos`
 --
 
-INSERT INTO `medicamentos` (`codigo`, `nombre`, `precio_compra`, `precio_venta`, `unidad`, `stock`, `created_user`, `created_date`, `updated_user`, `updated_date`, `p_nombre`, `cedula`, `credencial`, `p_apellido`, `fec_nac`, `edad`, `s_nombre`, `s_apellido`, `rif`, `genero`, `tel_cel`, `tel_hab`, `tel_emerg`, `municipio`, `calle`, `casa`, `parroquia`, `estado`, `ciudad`, `avenida`, `codigo_cp`, `serial_cp`, `estado_c`, `lugar_nac`, `correo_e`, `grado_inst`, `correo_i`, `tipo_s`, `medicamen`, `discapacidad`, `alergias`, `nota`, `notas`, `fec_ing`, `tiempo_s`, `ubic_fis`, `p_nombref`, `s_nombref`, `p_apellidof`, `s_apellidof`, `cedulaf`, `fec_nacf`, `edadf`, `generof`, `parentesco`, `estudiante`, `funcionario`, `inf_medf`, `tipo_v`, `placa`, `combustible`, `serial_carro`, `marca`, `modelo`, `color`, `alo`, `tipo_d`, `n_serial`, `marca_d`, `modelo_d`, `calibre`, `estatus`, `selec_div`, `cargo`, `rango`, `direccion`) VALUES
-('B000003', '', 0, 0, '', 0, 1, '2018-11-13 19:39:54', 1, '2019-07-02 14:11:49', 'Dauli', 26435885, 54564, 'g', '2018-10-16', '20', 'giu', 'giu', 4545, 0, '04140272330', 8948, 89, '', '', '', '', 'Amazonas', '', '', '51', 51, 'Soltero/a', '', 'darlynmartinezb@gmail.com', 'Primaria', 'sadf@sd.com', 'uigu', 'igi', 'u', 'gu', '', 'g', '2018-11-21', '232', 'dsaf', 'giugu', 'gu', 'gu', 'ig', 6526, '2018-11-15', '552', 'Femenino', 'Madre', 'No', 'No', 'hg', '', '', 'Gasolina', '', '', '', '', '2023', '', '', '', '', '', 'Activo', 'Base de Datos', 'Adjunto', 'Asesor Juridico', '');
+INSERT INTO `medicamentos` (`codigo`, `nombre`, `precio_compra`, `precio_venta`, `unidad`, `stock`, `created_user`, `created_date`, `updated_user`, `updated_date`, `p_nombre`, `cedula`, `credencial`, `p_apellido`, `fec_nac`, `edad`, `s_nombre`, `s_apellido`, `rif`, `genero`, `tel_cel`, `tel_hab`, `tel_emerg`, `municipio`, `calle`, `casa`, `parroquia`, `estado`, `ciudad`, `avenida`, `codigo_cp`, `serial_cp`, `estado_c`, `lugar_nac`, `correo_e`, `grado_inst`, `correo_i`, `tipo_s`, `medicamen`, `discapacidad`, `alergias`, `nota`, `notas`, `fec_ing`, `tiempo_s`, `ubic_fis`, `p_nombref`, `s_nombref`, `p_apellidof`, `s_apellidof`, `cedulaf`, `fec_nacf`, `edadf`, `generof`, `parentesco`, `estudiante`, `funcionario`, `inf_medf`, `tipo_v`, `placa`, `combustible`, `serial_carro`, `marca`, `modelo`, `color`, `alo`, `tipo_d`, `n_serial`, `marca_d`, `modelo_d`, `calibre`, `estatus`, `selec_div`, `cargo`, `rango`, `direccion`, `fec_inir`, `fec_regr`, `dia_r`, `motivo_r`, `fec_iniv`, `fec_regv`, `dia_v`, `vac_sol`, `vac_ven`, `tipo_fun`) VALUES
+('B000001', '', 0, 0, '', 0, 1, '2019-07-10 14:40:25', 1, '2019-07-10 17:19:41', 'gdsfg', 45345, 345, 'gsd', '2019-07-16', '5', 'sgd', 'sdg', 345, 0, '5345', 435, 5435, 'df', 'sfd', 'fsdf', 'dsfsd', 'Amazonas', 'sdf', 'sdf', '', 0, 'Soltero/a', '', 'sdg@dc.com', 'Primaria', 'rfwer@c.om', '', '', '', '', '', '', '2019-07-17', '', 'fdsg', 'dsg', 'gsd', 'dg', 'sdg', 54, '2019-07-17', '43', 'Femenina', 'Hijo/a', 'Si', 'Si', 'sdg', '', '', 'Gasolina', '', '', '', '', '2023', '', '', '', '', '', 'Activo', 'Base de Datos', 'Adjunto', 'Asesor Juridico', '', '2019-07-18', '2019-07-18', '4', 'Operacion de cordales', '2019-07-25', '', '', '', '', 'Administrativo'),
+('B000002', '', 0, 0, '', 0, 1, '2019-07-10 14:41:31', 1, '2019-07-10 14:41:31', 'dfg', 54, 35345, 'wet', '2019-07-16', '345', 'dfgf', '', 5345, 0, '435', 34534, 35345, 'dssa', 'sad', 'dsa', 'sadas', 'Amazonas', 'sad', 'dasd', '', 0, 'Soltero/a', '', 'ffwq@cc.om', 'Primaria', 'werew@c.com', '', '', '', '', '', '', '2019-07-15', '43', 'fsdf', 'dfs', 'dsg', 'sdg', 'gds', 21, '2019-07-11', '23', 'Femenina', 'Hijo/a', 'Si', 'Si', 'dsg', '', '', 'Gasolina', '', '', '', '', '2023', '', '', '', '', '', 'Activo', 'Base de Datos', 'Adjunto', 'Asesor Juridico', '', '', '', '', '', '2019-07-10', '', '', '', '', ''),
+('B000003', '', 0, 0, '', 0, 1, '2019-07-10 14:43:53', 1, '2019-07-10 17:28:30', 'jo', 25852895, 0, 'oj', '2019-07-10', 'oj', 'j', 'oj', 0, 0, '65', 6546, 546, 'fds', 'sdf', 'dsf', 'dsf', 'Amazonas', 'dsf', 'dsf', '', 0, 'Soltero/a', '', 'ojo@ddc.com', 'Primaria', 'fsdfsd@fc.com', '', '', '', '', '', '', '2019-07-16', '', 'gdsfg', 'fsdf', 'dfsdf', 'sdfds', 'fdsf', 5435, '2019-07-11', '34', 'Femenina', 'Hijo/a', 'Si', 'Si', 'dsfsd', '', '', 'Gasolina', '', '', '', '', '2023', '', '', '', '', '', 'Activo', 'Base de Datos', 'Adjunto', 'Asesor Juridico', '', '', '', '', '', '2019-07-10', '2019-07-17', '5 dias', '', '', 'Administrativo'),
+('B000004', '', 0, 0, '', 0, 1, '2019-07-10 14:45:56', 1, '2019-07-10 17:18:18', 'fsad', 234, 32432, 'asf', '2019-07-16', '34', 'fsaf', 'fasd', 432, 0, '5435', 4534, 554, 'saf', 'fsa', 'asf', 'fsa', 'Amazonas', 'fas', 'af', '', 0, 'Soltero/a', '', 'fasasfa@dfc.om', 'Primaria', 'efafg@c.om', '', '', '', '', '', '', '2019-07-23', '', 'dsg', 'sfd', 'dfsfds', 'fsdf', 'sdf', 3, '2019-07-11', '3', 'Femenina', 'Hijo/a', 'Si', 'Si', 'dsf', '', '', 'Gasolina', '', '', '', '', '2023', '', '', '', '', '', 'Activo', 'Base de Datos', 'Adjunto', 'Asesor Juridico', '', '', '', '', '', '2019-07-10', '2019-07-18', '3', '4', '4', 'Policial');
 
 -- --------------------------------------------------------
 
