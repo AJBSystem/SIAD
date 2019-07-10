@@ -112,7 +112,6 @@ else {
                 $fec_nac  = mysqli_real_escape_string($mysqli, trim($_POST['fec_nac']));      
                 $edad  = mysqli_real_escape_string($mysqli, trim($_POST['edad']));
                 $genero  = mysqli_real_escape_string($mysqli, trim($_POST['genero']));
-                $lugar_nac  = mysqli_real_escape_string($mysqli, trim($_POST['lugar_nac']));
                 $estado_c  = mysqli_real_escape_string($mysqli, trim($_POST['estado_c']));
                 $estado  = mysqli_real_escape_string($mysqli, trim($_POST['estado']));
                 $grado_inst  = mysqli_real_escape_string($mysqli, trim($_POST['grado_inst']));
@@ -157,11 +156,14 @@ else {
                 $marca_d  = mysqli_real_escape_string($mysqli, trim($_POST['marca_d']));
                 $modelo_d  = mysqli_real_escape_string($mysqli, trim($_POST['modelo_d']));
                 $calibre  = mysqli_real_escape_string($mysqli, trim($_POST['calibre']));
-                $direccion  = mysqli_real_escape_string($mysqli, trim($_POST['direccion']));
                 $cargo  = mysqli_real_escape_string($mysqli, trim($_POST['cargo']));
                 $rango  = mysqli_real_escape_string($mysqli, trim($_POST['rango']));
                 $estatus  = mysqli_real_escape_string($mysqli, trim($_POST['estatus']));
                 $selec_div  = mysqli_real_escape_string($mysqli, trim($_POST['selec_div']));
+                $fec_inir  = mysqli_real_escape_string($mysqli, trim($_POST['fec_inir']));
+                $fec_regr  = mysqli_real_escape_string($mysqli, trim($_POST['fec_regr']));
+                $dia_r  = mysqli_real_escape_string($mysqli, trim($_POST['dia_r']));
+                $motivo_r = mysqli_real_escape_string($mysqli, trim($_POST['motivo_r']));
                 $updated_user = $_SESSION['id_user'];
 
                 $query = mysqli_query($mysqli, "UPDATE medicamentos SET  
@@ -175,7 +177,7 @@ else {
                                                                         fec_nac       = '$fec_nac',
                                                                         edad       = '$edad',
                                                                         genero       = '$genero',
-                                                                        lugar_nac       = '$lugar_nac',
+                                                                       
                                                                         estado_c       = '$estado_c',
                                                                         estado       = '$estado',
                                                                         grado_inst       = '$grado_inst',
@@ -219,14 +221,22 @@ else {
                                                                         marca_d  = '$marca_d',
                                                                         modelo_d  = '$modelo_d',
                                                                         calibre  = '$calibre',
-                                                                        direccion  = '$direccion',
+                                                                       
                                                                         cargo  = '$cargo',
                                                                         rango  = '$rango',
                                                                         estatus  = '$estatus',
                                                                         correo_e  = '$correo_e',
-                                                                        
-                                                                         selec_div  = '$selec_div',
+                                                                        selec_div  = '$selec_div',
+                                                                                    fec_inir  = '$fec_inir',
+                                                                    fec_regr  = '$fec_regr',
+                                                                    dia_r  = '$dia_r',
+                                                                    motivo_r  = '$motivo_r',
+                                                                         
+
+                                                                    
+
                                                                     updated_user    = '$updated_user'
+                                                        
                                                               WHERE codigo       = '$codigo'")
                                                 or die('error: '.mysqli_error($mysqli));
 

@@ -840,7 +840,7 @@ if ($_GET['form']=='add') { ?>
 elseif ($_GET['form']=='edit') { 
   if (isset($_GET['id'])) {
 
-      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,lugar_nac,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,selec_div,cargo,rango,fec_ing,tiempo_s,ubic_fis,correo_i,estatus,cedulaf,p_nombref,s_nombref,p_apellidof,s_apellidof,fec_nacf,edadf,generof,parentesco,estudiante,funcionario,inf_medf,tipo_v,placa,combustible,serial_carro,marca,modelo,color,alo,tipo_d,n_serial,marca_d,modelo_d,calibre,direccion FROM medicamentos WHERE codigo='$_GET[id]'") 
+      $query = mysqli_query($mysqli, "SELECT codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,tel_cel,tel_hab,tel_emerg,estado,estado_c,grado_inst,correo_e,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,selec_div,cargo,rango,fec_ing,tiempo_s,ubic_fis,correo_i,estatus,cedulaf,p_nombref,s_nombref,p_apellidof,s_apellidof,fec_nacf,edadf,generof,parentesco,estudiante,funcionario,inf_medf,tipo_v,placa,combustible,serial_carro,marca,modelo,color,alo,tipo_d,n_serial,marca_d,modelo_d,calibre,fec_inir,fec_regr,dia_r,motivo_r FROM medicamentos WHERE codigo='$_GET[id]'") 
 
                                       or die('error: '.mysqli_error($mysqli));
       $data  = mysqli_fetch_assoc($query);
@@ -900,6 +900,13 @@ elseif ($_GET['form']=='edit') {
 
     <li role="presentation" class=""><a href="#tab_content6" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-clipboard"> Dotaciones</a>
     </li>
+
+    <li role="presentation" class=""><a href="#tab_content7" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-clipboard"> Reposo</a>
+    </li>
+
+    <li role="presentation" class=""><a href="#tab_content8" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-clipboard"> Vacaciones</a>
+    </li>
+
   </ul>
 
 <div id="myTabContent" class="tab-content">
@@ -1554,6 +1561,68 @@ elseif ($_GET['form']=='edit') {
 </div>
 
 <!-- Aqui termina el activador 6 -->
+
+<!-- Aqui empieza el activador 7 -->
+
+<div role="tabpanel" class="tab-pane fade" id="tab_content7" aria-labelledby="profile-tab">
+
+<div class="col-md-2">
+  <label for="exampleInputEmail1">Fecha de Inicio</label>
+    <input type="date" class="form-control" name="fec_inir" autocomplete="off" value="<?php echo $data['fec_inir']; ?>">
+</div>
+
+  <div class="col-md-2">
+    <label for="exampleInputEmail1">Fecha de Regreso</label>
+      <input type="date" class="form-control" name="fec_regr" autocomplete="off" value="<?php echo $data['fec_regr']; ?>">
+  </div>
+
+    <div class="col-md-2">
+      <label for="exampleInputEmail1">Dias de Reposo</label>
+        <input type="text" class="form-control" name="dia_r" autocomplete="off" value="<?php echo $data['dia_r']; ?>">
+    </div>
+
+      <div class="col-md-2">
+        <label for="exampleInputEmail1">Motivo del Reposo</label>
+          <input type="text" class="form-control" name="motivo_r" autocomplete="off" value="<?php echo $data['motivo_r']; ?>">
+      </div>
+
+</div>
+
+<!-- Aqui termina el activador 7 -->
+
+<!-- Aqui empieza el activador 8 -->
+
+<div role="tabpanel" class="tab-pane fade" id="tab_content8" aria-labelledby="profile-tab">
+
+<div class="col-md-2">
+  <label for="exampleInputEmail1">Tipo</label>
+    <input type="text" class="form-control" name="tipo_d" autocomplete="off" value="<?php echo $data['tipo_d']; ?>">
+</div>
+
+  <div class="col-md-2">
+    <label for="exampleInputEmail1">N° de Serial</label>
+      <input type="text" class="form-control" name="n_serial" autocomplete="off" value="<?php echo $data['n_serial']; ?>">
+  </div>
+
+    <div class="col-md-2">
+      <label for="exampleInputEmail1">Marca</label>
+        <input type="text" class="form-control" name="marca_d" autocomplete="off" value="<?php echo $data['marca_d']; ?>">
+    </div>
+
+      <div class="col-md-2">
+        <label for="exampleInputEmail1">Modelo</label>
+          <input type="text" class="form-control" name="modelo_d" autocomplete="off" value="<?php echo $data['modelo_d']; ?>">
+      </div>
+
+        <div class="col-md-2">
+          <label for="exampleInputEmail1">Calibre</label>
+            <input type="text" class="form-control" name="calibre" autocomplete="off" value="<?php echo $data['calibre']; ?>">
+        </div>
+
+</div>
+
+<!-- Aqui termina el activador 8 -->
+
 </div>
 </div>
 </div>
