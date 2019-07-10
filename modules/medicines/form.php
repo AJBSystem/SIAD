@@ -401,6 +401,18 @@ if ($_GET['form']=='add') { ?>
           <input type="text" class="form-control" name="tiempo_s" autocomplete="off" required> 
       </div>     
 
+
+
+       <div class="col-md-2">
+    <label for="exampleInputEmail1">Tipo de Funcionario</label>
+      <select class="form-control" name="tipo_fun"  required>
+        <option>Administrativo</option>
+          <option>Policial</option>
+
+      </select>
+  </div>
+  
+
         <div class="col-md-2">
           <label for="exampleInputEmail1">Cargo</label>
             <select class="form-control" name="cargo"  required>
@@ -1222,6 +1234,14 @@ elseif ($_GET['form']=='edit') {
       <label for="exampleInputEmail1">Tiempo de Servicio</label>
         <input type="text" class="form-control" name="tiempo_s" autocomplete="off" value="<?php echo $data['tiempo_s']; ?>" required>
     </div>
+
+<div class="col-md-2">
+  <label for="exampleInputEmail1">Tipo de Funcionario</label>
+    <select type="text" class="form-control" name="tipo_fun" autocomplete="off" value="<?php echo $data['tipo_fun']; ?>" required>
+      <option>Administrativo</option>
+        <option>Policial</option>
+    </select>
+</div>    
 
       <div class="col-md-2">
         <label for="exampleInputEmail1">Cargo</label>
