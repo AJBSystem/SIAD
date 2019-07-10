@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-04-2019 a las 15:04:20
+-- Tiempo de generación: 02-07-2019 a las 16:13:38
 -- Versión del servidor: 10.1.37-MariaDB
--- Versión de PHP: 7.2.12
+-- Versión de PHP: 5.6.40
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -156,13 +156,13 @@ CREATE TABLE `medicamentos` (
   `cedula` int(10) NOT NULL,
   `credencial` int(20) NOT NULL,
   `p_apellido` varchar(50) NOT NULL,
-  `fec_nac` date NOT NULL,
-  `edad` int(3) NOT NULL,
+  `fec_nac` varchar(50) NOT NULL,
+  `edad` varchar(3) NOT NULL,
   `s_nombre` varchar(50) NOT NULL,
   `s_apellido` varchar(50) NOT NULL,
   `rif` int(15) NOT NULL,
   `genero` int(11) NOT NULL,
-  `tel_cel` int(11) NOT NULL,
+  `tel_cel` varchar(11) NOT NULL,
   `tel_hab` int(11) NOT NULL,
   `tel_emerg` int(11) NOT NULL,
   `municipio` varchar(50) NOT NULL,
@@ -172,7 +172,7 @@ CREATE TABLE `medicamentos` (
   `estado` varchar(50) NOT NULL,
   `ciudad` varchar(50) NOT NULL,
   `avenida` varchar(50) NOT NULL,
-  `codigo_cp` int(20) NOT NULL,
+  `codigo_cp` varchar(20) NOT NULL,
   `serial_cp` int(20) NOT NULL,
   `estado_c` varchar(50) NOT NULL,
   `lugar_nac` varchar(50) NOT NULL,
@@ -225,8 +225,7 @@ CREATE TABLE `medicamentos` (
 --
 
 INSERT INTO `medicamentos` (`codigo`, `nombre`, `precio_compra`, `precio_venta`, `unidad`, `stock`, `created_user`, `created_date`, `updated_user`, `updated_date`, `p_nombre`, `cedula`, `credencial`, `p_apellido`, `fec_nac`, `edad`, `s_nombre`, `s_apellido`, `rif`, `genero`, `tel_cel`, `tel_hab`, `tel_emerg`, `municipio`, `calle`, `casa`, `parroquia`, `estado`, `ciudad`, `avenida`, `codigo_cp`, `serial_cp`, `estado_c`, `lugar_nac`, `correo_e`, `grado_inst`, `correo_i`, `tipo_s`, `medicamen`, `discapacidad`, `alergias`, `nota`, `notas`, `fec_ing`, `tiempo_s`, `ubic_fis`, `p_nombref`, `s_nombref`, `p_apellidof`, `s_apellidof`, `cedulaf`, `fec_nacf`, `edadf`, `generof`, `parentesco`, `estudiante`, `funcionario`, `inf_medf`, `tipo_v`, `placa`, `combustible`, `serial_carro`, `marca`, `modelo`, `color`, `alo`, `tipo_d`, `n_serial`, `marca_d`, `modelo_d`, `calibre`, `estatus`, `selec_div`, `cargo`, `rango`, `direccion`) VALUES
-('B000003', '', 0, 0, '', 0, 1, '2018-11-13 19:39:54', 1, '2019-04-24 14:51:15', 'Dauli', 26435885, 54564, 'g', '2018-10-16', 20, 'giu', 'giu', 4545, 0, 45448, 8948, 89, '', '', '', '', '', '', '', 51, 51, 'Soltero/a', '', 'darlynmartinezb@gmail.com', 'Primaria', 'sadf@sd.com', 'uigu', 'igi', 'u', 'gu', '', 'g', '2018-11-21', '232', 'dsaf', 'giugu', 'gu', 'gu', 'ig', 6526, '2018-11-15', '552', 'Femenino', 'Madre', 'No', 'No', 'hg', '', '', 'Gasolina', '', '', '', '', '2023', '', '', '', '', '', 'Activo', 'Base de Datos', 'Jefe de Investigaciones', 'Auxiliar Adm. VII', ''),
-('B000004', '', 0, 0, '', 0, 1, '2018-11-15 15:20:50', 1, '2019-04-24 14:53:05', 'Darly', 26435885, 47259, 'Martinez', '1998-10-29', 20, 'Naiduth', 'Barreto', 4545, 0, 45448, 8948, 89, '', '', '', '', '', '', '', 51, 51, 'Soltero/a', '', 'fdds@fd.com', 'Primaria', 'sadf@sd.com', 'uigu', 'igi', 'u', 'gu', '', 'g', '2018-11-21', '232', 'dsaf', 'giugu', 'gu', 'gu', 'ig', 6526, '2018-11-15', '552', 'Femenina', 'Hijo/a', 'Si', 'Si', 'hg', 'Carro', 'ad15616', 'Gasolina', '652d69s6sd6d', 'Toyota', 'Camry', 'Negro', '2019', '', '', '', '', '', 'Activo', 'Base de Datos', 'Adjunto', 'Asesor Juridico', '');
+('B000003', '', 0, 0, '', 0, 1, '2018-11-13 19:39:54', 1, '2019-07-02 14:11:49', 'Dauli', 26435885, 54564, 'g', '2018-10-16', '20', 'giu', 'giu', 4545, 0, '04140272330', 8948, 89, '', '', '', '', 'Amazonas', '', '', '51', 51, 'Soltero/a', '', 'darlynmartinezb@gmail.com', 'Primaria', 'sadf@sd.com', 'uigu', 'igi', 'u', 'gu', '', 'g', '2018-11-21', '232', 'dsaf', 'giugu', 'gu', 'gu', 'ig', 6526, '2018-11-15', '552', 'Femenino', 'Madre', 'No', 'No', 'hg', '', '', 'Gasolina', '', '', '', '', '2023', '', '', '', '', '', 'Activo', 'Base de Datos', 'Adjunto', 'Asesor Juridico', '');
 
 -- --------------------------------------------------------
 
