@@ -86,11 +86,12 @@ else {
             $dia_v = mysqli_real_escape_string($mysqli, trim($_POST['dia_v']));
             $vac_sol = mysqli_real_escape_string($mysqli, trim($_POST['vac_sol']));
             $vac_ven = mysqli_real_escape_string($mysqli, trim($_POST['vac_ven']));
+            $tipo_fun = mysqli_real_escape_string($mysqli, trim($_POST['tipo_fun']));
             $created_user = $_SESSION['id_user'];
   
 
-            $query = mysqli_query($mysqli, "INSERT INTO medicamentos(codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,estado_c,grado_inst,correo_e,tel_cel,tel_hab,tel_emerg,estado,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,fec_ing,tiempo_s,ubic_fis,correo_i,cedulaf,p_nombref,s_nombref,p_apellidof,s_apellidof,fec_nacf,edadf,generof,parentesco,estudiante,funcionario,inf_medf,tipo_v,placa,combustible,serial_carro,marca,modelo,color,alo,tipo_d,n_serial,marca_d,modelo_d,calibre,cargo,rango,estatus,selec_div,fec_inir,fec_regr,dia_r,motivo_r,fec_iniv,fec_regv,dia_v,vac_sol,vac_ven,created_user,updated_user) 
-                                            VALUES('$codigo','$cedula','$credencial','$rif','$p_nombre','$s_nombre','$p_apellido','$s_apellido','$fec_nac','$edad','$genero','$estado_c','$grado_inst','$correo_e','$tel_cel','$tel_hab','$tel_emerg','$estado','$municipio','$ciudad','$parroquia','$avenida','$calle','$casa','$codigo_cp','$serial_cp','$tipo_s','$medicamen','$discapacidad','$alergias','$notas','$fec_ing','$tiempo_s','$ubic_fis','$correo_i','$cedulaf','$p_nombref','$s_nombref','$p_apellidof','$s_apellidof','$fec_nacf','$edadf','$generof','$parentesco','$estudiante','$funcionario','$inf_medf','$tipo_v','$placa','$combustible','$serial_carro','$marca','$modelo','$color','$alo','$tipo_d','$n_serial','$marca_d','$modelo_d','$calibre','$cargo','$rango','$estatus','$selec_div','$fec_inir','$fec_regr','$dia_r','$motivo_r','$fec_iniv','$fec_regv','$dia_v','$vac_sol','$vac_ven','$created_user','$created_user')")
+            $query = mysqli_query($mysqli, "INSERT INTO medicamentos(codigo,cedula,credencial,rif,p_nombre,s_nombre,p_apellido,s_apellido,fec_nac,edad,genero,estado_c,grado_inst,correo_e,tel_cel,tel_hab,tel_emerg,estado,municipio,ciudad,parroquia,avenida,calle,casa,codigo_cp,serial_cp,tipo_s,medicamen,discapacidad,alergias,notas,fec_ing,tiempo_s,ubic_fis,correo_i,cedulaf,p_nombref,s_nombref,p_apellidof,s_apellidof,fec_nacf,edadf,generof,parentesco,estudiante,funcionario,inf_medf,tipo_v,placa,combustible,serial_carro,marca,modelo,color,alo,tipo_d,n_serial,marca_d,modelo_d,calibre,cargo,rango,estatus,selec_div,fec_inir,fec_regr,dia_r,motivo_r,fec_iniv,fec_regv,dia_v,vac_sol,vac_ven,tipo_fun,created_user,updated_user) 
+                                            VALUES('$codigo','$cedula','$credencial','$rif','$p_nombre','$s_nombre','$p_apellido','$s_apellido','$fec_nac','$edad','$genero','$estado_c','$grado_inst','$correo_e','$tel_cel','$tel_hab','$tel_emerg','$estado','$municipio','$ciudad','$parroquia','$avenida','$calle','$casa','$codigo_cp','$serial_cp','$tipo_s','$medicamen','$discapacidad','$alergias','$notas','$fec_ing','$tiempo_s','$ubic_fis','$correo_i','$cedulaf','$p_nombref','$s_nombref','$p_apellidof','$s_apellidof','$fec_nacf','$edadf','$generof','$parentesco','$estudiante','$funcionario','$inf_medf','$tipo_v','$placa','$combustible','$serial_carro','$marca','$modelo','$color','$alo','$tipo_d','$n_serial','$marca_d','$modelo_d','$calibre','$cargo','$rango','$estatus','$selec_div','$fec_inir','$fec_regr','$dia_r','$motivo_r','$fec_iniv','$fec_regv','$dia_v','$vac_sol','$vac_ven','$tipo_fun','$created_user','$created_user')")
 
                                             or die('error '.mysqli_error($mysqli));    
 
@@ -174,7 +175,7 @@ else {
                  $dia_v = mysqli_real_escape_string($mysqli, trim($_POST['dia_v']));
                 $vac_sol = mysqli_real_escape_string($mysqli, trim($_POST['vac_sol']));
                 $vac_ven = mysqli_real_escape_string($mysqli, trim($_POST['vac_ven']));
-
+                $tipo_fun = mysqli_real_escape_string($mysqli, trim($_POST['tipo_fun']));
                 $updated_user = $_SESSION['id_user'];
 
                 $query = mysqli_query($mysqli, "UPDATE medicamentos SET  
@@ -247,7 +248,7 @@ else {
                                                                     dia_v  = '$dia_v', 
                                                                     vac_sol  = '$vac_sol',
                                                                     vac_ven  = '$vac_ven',     
-
+                                                                    tipo_fun  = '$tipo_fun',  
                                                                     
 
                                                                     updated_user    = '$updated_user'

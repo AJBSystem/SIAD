@@ -1,8 +1,8 @@
 <?php
-  include('plantilla_dotaciones.php');
+  include('plantilla_vacaciones.php');
   require('conexion.php');
 
-  $query = "SELECT tipo_d,n_serial,marca_d,modelo_d,calibre,p_nombre,s_nombre,credencial,estatus
+  $query = "SELECT cedula,credencial,p_nombre,p_apellido,tipo_fun,tiempo_s,fec_iniv,fec_regv,dia_v,vac_sol,vac_ven
             FROM medicamentos 
             ORDER BY tipo_d";
           
@@ -16,31 +16,37 @@
   $pdf->SetFillColor(232,232,232);
   $pdf->SetFont('Arial','B',12);
   $pdf->SetY(75);
-  $pdf->SetX(95);
+  $pdf->SetX(18);
   
    // <!-- Final de titulos -->
+$pdf->Cell(40,7,utf8_decode('Cedula'),1,0,'C',1);
+$pdf->Cell(40,7,utf8_decode('Credencial'),1,0,'C',1);
 $pdf->Cell(55,7,utf8_decode('Primer Nombre'),1,0,'C',1);
 $pdf->Cell(55,7,utf8_decode('Primer Apellido'),1,0,'C',1);
-$pdf->Cell(55,7,utf8_decode('Crendecial'),1,0,'C',1);
-$pdf->Cell(55,7,utf8_decode('Tipo de Dotación'),1,0,'C',1);
-$pdf->Cell(55,7,utf8_decode('Numero de Serial'),1,0,'C',1);
-$pdf->Cell(55,7,utf8_decode('Marca'),1,0,'C',1);
-$pdf->Cell(55,7,utf8_decode('Modelo'),1,0,'C',1);
-$pdf->Cell(40,7,utf8_decode('Calibre'),1,1,'C',1);
+$pdf->Cell(55,7,utf8_decode('Tipo de Funcionario'),1,0,'C',1);
+$pdf->Cell(45,7,utf8_decode('Tiempo de Servicio'),1,0,'C',1);
+$pdf->Cell(45,7,utf8_decode('Fecha de Inicio'),1,0,'C',1);
+$pdf->Cell(45,7,utf8_decode('Fecha de Regreso'),1,0,'C',1);
+$pdf->Cell(45,7,utf8_decode('Dias de Vacaciones'),1,0,'C',1);
+$pdf->Cell(70,7,utf8_decode('N° de Vacaciones Solicitadas'),1,0,'C',1);
+$pdf->Cell(70,7,utf8_decode('N° de Vacaciones Vencidas'),1,1,'C',1);
 
   // <!-- Final de titulos -->
   
   while ( $row = $resultado->fetch_assoc() )
   {
-   $pdf->SetX(95);
+   $pdf->SetX(18);
+   $pdf->Cell(40,7,utf8_decode($row['cedula']),1,0,'C',0);
+   $pdf->Cell(40,7,utf8_decode($row['credencial']),1,0,'C',0);
    $pdf->Cell(55,7,utf8_decode($row['p_nombre']),1,0,'C',0);
-   $pdf->Cell(55,7,utf8_decode($row['s_nombre']),1,0,'C',0);
-   $pdf->Cell(55,7,utf8_decode($row['credencial']),1,0,'C',0);
-   $pdf->Cell(55,7,utf8_decode($row['tipo_d']),1,0,'C',0);
-   $pdf->Cell(55,7,utf8_decode($row['n_serial']),1,0,'C',0);
-   $pdf->Cell(55,7,utf8_decode($row['marca_d']),1,0,'C',0);
-   $pdf->Cell(55,7,utf8_decode($row['modelo_d']),1,0,'C',0);    
-   $pdf->Cell(40,7,utf8_decode($row['calibre']),1,1,'C',0);  
+   $pdf->Cell(55,7,utf8_decode($row['p_apellido']),1,0,'C',0);
+   $pdf->Cell(55,7,utf8_decode($row['tipo_fun']),1,0,'C',0);
+   $pdf->Cell(45,7,utf8_decode($row['tiempo_s']),1,0,'C',0);
+   $pdf->Cell(45,7,utf8_decode($row['fec_iniv']),1,0,'C',0);
+   $pdf->Cell(45,7,utf8_decode($row['fec_regv']),1,0,'C',0);
+   $pdf->Cell(45,7,utf8_decode($row['dia_v']),1,0,'C',0); 
+   $pdf->Cell(70,7,utf8_decode($row['vac_sol']),1,0,'C',0);    
+   $pdf->Cell(70,7,utf8_decode($row['vac_ven']),1,1,'C',0);  
 
   }
 

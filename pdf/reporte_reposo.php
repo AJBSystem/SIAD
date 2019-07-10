@@ -1,8 +1,8 @@
 <?php
-  include('plantilla_dotaciones.php');
+  include('plantilla_reposo.php');
   require('conexion.php');
 
-  $query = "SELECT tipo_d,n_serial,marca_d,modelo_d,calibre,p_nombre,s_nombre,credencial,estatus
+  $query = "SELECT cedula,credencial,p_nombre,p_apellido,tipo_fun,fec_inir,fec_regr,dia_r,motivo_r
             FROM medicamentos 
             ORDER BY tipo_d";
           
@@ -16,31 +16,33 @@
   $pdf->SetFillColor(232,232,232);
   $pdf->SetFont('Arial','B',12);
   $pdf->SetY(75);
-  $pdf->SetX(95);
+  $pdf->SetX(32);
   
    // <!-- Final de titulos -->
+$pdf->Cell(45,7,utf8_decode('Cedula'),1,0,'C',1);
+$pdf->Cell(45,7,utf8_decode('Credencial'),1,0,'C',1);
 $pdf->Cell(55,7,utf8_decode('Primer Nombre'),1,0,'C',1);
 $pdf->Cell(55,7,utf8_decode('Primer Apellido'),1,0,'C',1);
-$pdf->Cell(55,7,utf8_decode('Crendecial'),1,0,'C',1);
-$pdf->Cell(55,7,utf8_decode('Tipo de Dotación'),1,0,'C',1);
-$pdf->Cell(55,7,utf8_decode('Numero de Serial'),1,0,'C',1);
-$pdf->Cell(55,7,utf8_decode('Marca'),1,0,'C',1);
-$pdf->Cell(55,7,utf8_decode('Modelo'),1,0,'C',1);
-$pdf->Cell(40,7,utf8_decode('Calibre'),1,1,'C',1);
+$pdf->Cell(55,7,utf8_decode('Tipo de Funcionario'),1,0,'C',1);
+$pdf->Cell(55,7,utf8_decode('Fecha de Inicio'),1,0,'C',1);
+$pdf->Cell(55,7,utf8_decode('Fecha de Regreso'),1,0,'C',1);
+$pdf->Cell(55,7,utf8_decode('Dias de Reposo'),1,0,'C',1);
+$pdf->Cell(120,7,utf8_decode('Motivo'),1,1,'C',1);
 
   // <!-- Final de titulos -->
   
   while ( $row = $resultado->fetch_assoc() )
   {
-   $pdf->SetX(95);
+   $pdf->SetX(32);
+   $pdf->Cell(45,7,utf8_decode($row['cedula']),1,0,'C',0);
+   $pdf->Cell(45,7,utf8_decode($row['credencial']),1,0,'C',0);
    $pdf->Cell(55,7,utf8_decode($row['p_nombre']),1,0,'C',0);
-   $pdf->Cell(55,7,utf8_decode($row['s_nombre']),1,0,'C',0);
-   $pdf->Cell(55,7,utf8_decode($row['credencial']),1,0,'C',0);
-   $pdf->Cell(55,7,utf8_decode($row['tipo_d']),1,0,'C',0);
-   $pdf->Cell(55,7,utf8_decode($row['n_serial']),1,0,'C',0);
-   $pdf->Cell(55,7,utf8_decode($row['marca_d']),1,0,'C',0);
-   $pdf->Cell(55,7,utf8_decode($row['modelo_d']),1,0,'C',0);    
-   $pdf->Cell(40,7,utf8_decode($row['calibre']),1,1,'C',0);  
+   $pdf->Cell(55,7,utf8_decode($row['p_apellido']),1,0,'C',0);
+   $pdf->Cell(55,7,utf8_decode($row['tipo_fun']),1,0,'C',0);
+   $pdf->Cell(55,7,utf8_decode($row['fec_inir']),1,0,'C',0);
+   $pdf->Cell(55,7,utf8_decode($row['fec_regr']),1,0,'C',0);
+   $pdf->Cell(55,7,utf8_decode($row['dia_r']),1,0,'C',0);    
+   $pdf->Cell(120,7,utf8_decode($row['motivo_r']),1,1,'C',0);  
 
   }
 
