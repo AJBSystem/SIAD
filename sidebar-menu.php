@@ -66,6 +66,8 @@ if ($_SESSION['permisos_acceso']=='Super Admin') { ?>
                 <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-book"></i> Reporte de Reposo </a></li>
 
                   <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-book"></i> Reporte de Vacaciones </a></li>
+
+                   <li class="active"><a href="pdf/reporte_operacional.php"><i class="fa fa-book"></i> Cuadro Operacional </a></li>
 </ul>
     </li>
     <?php
@@ -93,6 +95,8 @@ if ($_SESSION['permisos_acceso']=='Super Admin') { ?>
                 <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-book"></i> Reporte de Reposo </a></li>
 
                   <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-book"></i> Reporte de Vacaciones </a></li>
+
+                  <li class="active"><a href="pdf/reporte_operacional.php"><i class="fa fa-book"></i> Cuadro Operacional </a></li>
 </ul>
 </li>
     <?php
@@ -120,6 +124,8 @@ if ($_SESSION['permisos_acceso']=='Super Admin') { ?>
                 <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-book"></i> Reporte de Reposo </a></li>
 
                   <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-book"></i> Reporte de Vacaciones </a></li>
+
+                  <li class="active"><a href="pdf/reporte_operacional.php"><i class="fa fa-book"></i> Cuadro Operacional </a></li>
 </ul>
 
 </li>
@@ -204,6 +210,8 @@ elseif ($_SESSION['permisos_acceso']=='Gerente') { ?>
                 <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-book"></i> Reporte de Reposo </a></li>
 
                   <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-book"></i> Reporte de Vacaciones </a></li>
+
+                  <li class="active"><a href="pdf/reporte_operacional.php"><i class="fa fa-book"></i> Cuadro Operacional </a></li>
 </ul>
 
 </li>
@@ -231,6 +239,8 @@ elseif ($_SESSION['permisos_acceso']=='Gerente') { ?>
                 <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-book"></i> Reporte de Reposo </a></li>
 
                   <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-book"></i> Reporte de Vacaciones </a></li>
+
+                  <li class="active"><a href="pdf/reporte_operacional.php"><i class="fa fa-book"></i> Cuadro Operacional </a></li>
 </ul>
 
 </li>
@@ -259,6 +269,8 @@ elseif ($_SESSION['permisos_acceso']=='Gerente') { ?>
                 <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-book"></i> Reporte de Reposo </a></li>
 
                   <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-book"></i> Reporte de Vacaciones </a></li>
+
+                  <li class="active"><a href="pdf/reporte_operacional.php"><i class="fa fa-book"></i> Cuadro Operacional </a></li>
 </ul>
 
 </li>
@@ -351,6 +363,8 @@ if ($_SESSION['permisos_acceso']=='Almacen') { ?>
                 <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-book"></i> Reporte de Reposo </a></li>
 
                   <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-book"></i> Reporte de Vacaciones </a></li>
+
+                  <li class="active"><a href="pdf/reporte_operacional.php"><i class="fa fa-book"></i> Cuadro Operacional </a></li>
 </ul>
 
 </li>
@@ -379,6 +393,8 @@ if ($_SESSION['permisos_acceso']=='Almacen') { ?>
                 <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-book"></i> Reporte de Reposo </a></li>
 
                   <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-book"></i> Reporte de Vacaciones </a></li>
+
+                  <li class="active"><a href="pdf/reporte_operacional.php"><i class="fa fa-book"></i> Cuadro Operacional </a></li>
 </ul>
 
 </li>
@@ -407,6 +423,8 @@ if ($_SESSION['permisos_acceso']=='Almacen') { ?>
                 <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-book"></i> Reporte de Reposo </a></li>
 
                   <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-book"></i> Reporte de Vacaciones </a></li>
+
+                  <li class="active"><a href="pdf/reporte_operacional.php"><i class="fa fa-book"></i> Cuadro Operacional </a></li>
 </ul>
 
 </li>
