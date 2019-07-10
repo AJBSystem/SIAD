@@ -72,6 +72,9 @@ if ($_GET['form']=='add') { ?>
 
     <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-suitcase"> Datos Laborales * </a>
     </li>
+
+    <li role="presentation" class=""><a href="#tab_content4" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-suitcase"> Datos Familiares * </a>
+    
     </li> 
 
     <li role="presentation" class=""><a href="#tab_content6" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-clipboard"> Dotaciones</a>
@@ -743,22 +746,22 @@ if ($_GET['form']=='add') { ?>
 
   <div class="col-md-2">
     <label for="exampleInputEmail1">Fecha de Inicio</label>
-      <input type="date" class="form-control" name="tipo_d" autocomplete="off"> 
+      <input type="date" class="form-control" name="fec_inir" autocomplete="off"> 
   </div> 
 
     <div class="col-md-2">
       <label for="exampleInputEmail1">Fecha de Regreso</label>
-        <input type="date" class="form-control" name="n_serial" autocomplete="off"> 
+        <input type="date" class="form-control" name="fec_regr" autocomplete="off"> 
     </div> 
 
       <div class="col-md-2">
         <label for="exampleInputEmail1">Dias de Reposo</label>
-          <input type="text" class="form-control" name="marca_d" autocomplete="off"> 
+          <input type="text" class="form-control" name="dia_r" autocomplete="off"> 
       </div> 
 
         <div class="col-md-2">
           <label for="exampleInputEmail1">Motivo</label>
-            <input type="text" class="form-control" name="modelo_d" autocomplete="off"> 
+            <input type="text" class="form-control" name="motivo_r" autocomplete="off"> 
         </div> 
 
 </div>
