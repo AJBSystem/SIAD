@@ -129,6 +129,13 @@ if ($_GET['form']=='add') { ?>
     </li> 
        
     <li role="presentation" class=""><a href="#tab_content6" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-clipboard"> Dotaciones</a>
+
+    <li role="presentation" class=""><a href="#tab_content7" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-medkit"> Reposo</a>
+    </li>
+
+    <li role="presentation" class=""><a href="#tab_content8" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-globe"> Vacaciones</a>
+    </li>
+
     </li>
        
   </ul>
@@ -590,7 +597,45 @@ if ($_GET['form']=='add') { ?>
 </div>
 <!-- Final del Cuarto Activador -->
 
+<!-- Inicio del Tercer Activador -->
 
+<div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
+  
+<div class="col-sm-4 col-md-5 col-xs-6 text-left">
+
+  <table class='table table-bordered'>
+                     
+    <tr><th><span>Seleccionar División</th><td>División de Sistemas</span></td></tr>
+                    
+    <tr><th><span>Tiempo De Servicio</th><td>2 Meses</span> </td></tr>
+          
+    <tr><th><span>Rango</th><td>Experto Técnico I</span></td></tr>
+
+    <tr><th><span>Correo Institucional</th><td>darlymartinez@cicpc.gob.ve</span> </td></tr>
+          
+  </table>
+                         
+</div>
+
+<div class="col-sm-4 col-md-5 col-xs-6 text-left">
+
+  <table class='table table-bordered'>
+
+    <tr><th><span>Fecha de Ingreso</th><td>01/10/2018</span> </td></tr>
+  
+    <tr><th><span>Cargo</th><td>No Aplica</span></td></tr>                     
+                       
+    <tr><th><span>Ubicación Fisica</th><td>Dirección de Tecnología</span> </td></tr>
+                          
+    <tr><th><span>Estatus</th><td>Activo</span></td></tr>
+                              
+  </table>
+                 
+</div>
+
+</div>
+
+<!-- Final del Tercer Activador -->
 
 <!-- Inicio del Quinto Activador -->
 
@@ -662,6 +707,79 @@ if ($_GET['form']=='add') { ?>
 </div>                      
 </div>
 <!-- Final del Sexto Activador -->  
+
+
+<div role="tabpanel" class="tab-pane fade" id="tab_content7" aria-labelledby="profile-tab">
+  
+<div class="col-sm-4 col-md-5 col-xs-6 text-left">
+
+  <table class='table table-bordered'>
+                     
+    <tr><th><span>Fecha de Inicio</th><td>11/09/2019</span></td></tr>
+                    
+    
+          
+    <tr><th><span>Dias de Reposo</th><td>5 Meses</span></td></tr>
+
+    
+          
+  </table>
+                         
+</div>
+
+<div class="col-sm-4 col-md-5 col-xs-6 text-left">
+
+  <table class='table table-bordered'>
+
+    <tr><th><span>Fecha de Regreso</th><td>11/10/2019</span> </td></tr>
+  
+    <tr><th><span>Motivo del Reposo</th><td>Problemas de Salud</span> </td></tr>                    
+                       
+  </table>
+                 
+</div>
+
+</div>
+
+<!-- Final del Tercer Activador -->
+
+
+<!-- Final del Sexto Activador -->  
+
+
+<div role="tabpanel" class="tab-pane fade" id="tab_content8" aria-labelledby="profile-tab">
+  
+<div class="col-sm-4 col-md-5 col-xs-6 text-left">
+
+  <table class='table table-bordered'>
+                     
+    <tr><th><span>Tiempo de Servicio</th><td>5 Años</span></td></tr>
+                    
+    <tr><th><span>Fecha de Regreso</th><td>29/10/2019</span> </td></tr>
+          
+    <tr><th><span>N° de Vacaciones Solicitadas</th><td>3</span></td></tr>
+          
+  </table>
+                         
+</div>
+
+<div class="col-sm-4 col-md-5 col-xs-6 text-left">
+
+  <table class='table table-bordered'>
+
+    <tr><th><span>Fecha de Inicio</th><td>01/10/2018</span> </td></tr>
+  
+    <tr><th><span>Dias de Vacaciones</th><td>5 Meses</span></td></tr>                     
+                       
+    <tr><th><span>N° de Vacaciones Vencidas</th><td>4</span></td></tr>
+
+  </table>
+                 
+</div>
+
+</div>
+
+<!-- Final del Tercer Activador -->
 
 </div>
 </div>

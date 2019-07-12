@@ -57,17 +57,16 @@ if ($_SESSION['permisos_acceso']=='Super Admin') { ?>
   
     <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
 
-    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
+      <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
       
-      <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
+        <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
  
-              <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+          <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
 
-                <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-book"></i> Reporte de Reposo </a></li>
+            <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-medkit"></i> Reporte de Reposo </a></li>
 
-                  <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-book"></i> Reporte de Vacaciones </a></li>
+              <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-globe"></i> Reporte de Vacaciones </a></li>
 
-                   <li class="active"><a href="pdf/reporte_operacional.php"><i class="fa fa-book"></i> Cuadro Operacional </a></li>
 </ul>
     </li>
     <?php
@@ -86,17 +85,16 @@ if ($_SESSION['permisos_acceso']=='Super Admin') { ?>
   
     <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
 
-    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
+      <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
       
-      <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
+        <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
  
-              <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+          <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
 
-                <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-book"></i> Reporte de Reposo </a></li>
+            <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-medkit"></i> Reporte de Reposo </a></li>
 
-                  <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-book"></i> Reporte de Vacaciones </a></li>
+              <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-globe"></i> Reporte de Vacaciones </a></li>
 
-                  <li class="active"><a href="pdf/reporte_operacional.php"><i class="fa fa-book"></i> Cuadro Operacional </a></li>
 </ul>
 </li>
     <?php
@@ -115,19 +113,17 @@ if ($_SESSION['permisos_acceso']=='Super Admin') { ?>
   
     <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
 
-    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
+      <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
       
-      <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
+        <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
  
-              <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+          <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
 
-                <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-book"></i> Reporte de Reposo </a></li>
+            <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-medkit"></i> Reporte de Reposo </a></li>
 
-                  <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-book"></i> Reporte de Vacaciones </a></li>
+              <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-globe"></i> Reporte de Vacaciones </a></li>
 
-                  <li class="active"><a href="pdf/reporte_operacional.php"><i class="fa fa-book"></i> Cuadro Operacional </a></li>
 </ul>
-
 </li>
     <?php
   }
@@ -201,19 +197,17 @@ elseif ($_SESSION['permisos_acceso']=='Gerente') { ?>
   
     <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
 
-    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
+      <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
       
-      <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
+        <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
  
-              <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+          <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
 
-                <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-book"></i> Reporte de Reposo </a></li>
+            <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-medkit"></i> Reporte de Reposo </a></li>
 
-                  <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-book"></i> Reporte de Vacaciones </a></li>
+              <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-globe"></i> Reporte de Vacaciones </a></li>
 
-                  <li class="active"><a href="pdf/reporte_operacional.php"><i class="fa fa-book"></i> Cuadro Operacional </a></li>
 </ul>
-
 </li>
     <?php
   }
@@ -230,19 +224,17 @@ elseif ($_SESSION['permisos_acceso']=='Gerente') { ?>
   
     <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
 
-    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
+      <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
       
-      <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
+        <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
  
-              <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+          <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
 
-                <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-book"></i> Reporte de Reposo </a></li>
+            <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-medkit"></i> Reporte de Reposo </a></li>
 
-                  <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-book"></i> Reporte de Vacaciones </a></li>
+              <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-globe"></i> Reporte de Vacaciones </a></li>
 
-                  <li class="active"><a href="pdf/reporte_operacional.php"><i class="fa fa-book"></i> Cuadro Operacional </a></li>
 </ul>
-
 </li>
     <?php
   }
@@ -260,19 +252,17 @@ elseif ($_SESSION['permisos_acceso']=='Gerente') { ?>
   
     <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
 
-    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
+      <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
       
-      <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
+        <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
  
-              <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+          <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
 
-                <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-book"></i> Reporte de Reposo </a></li>
+            <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-medkit"></i> Reporte de Reposo </a></li>
 
-                  <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-book"></i> Reporte de Vacaciones </a></li>
+              <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-globe"></i> Reporte de Vacaciones </a></li>
 
-                  <li class="active"><a href="pdf/reporte_operacional.php"><i class="fa fa-book"></i> Cuadro Operacional </a></li>
 </ul>
-
 </li>
     <?php
   }
@@ -354,19 +344,17 @@ if ($_SESSION['permisos_acceso']=='Almacen') { ?>
   
     <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
 
-    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
+      <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
       
-      <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
+        <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
  
-              <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+          <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
 
-                <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-book"></i> Reporte de Reposo </a></li>
+            <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-medkit"></i> Reporte de Reposo </a></li>
 
-                  <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-book"></i> Reporte de Vacaciones </a></li>
+              <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-globe"></i> Reporte de Vacaciones </a></li>
 
-                  <li class="active"><a href="pdf/reporte_operacional.php"><i class="fa fa-book"></i> Cuadro Operacional </a></li>
 </ul>
-
 </li>
     
     <?php
@@ -384,19 +372,17 @@ if ($_SESSION['permisos_acceso']=='Almacen') { ?>
   
     <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
 
-    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
+      <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
       
-      <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
+        <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
  
-              <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+          <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
 
-                <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-book"></i> Reporte de Reposo </a></li>
+            <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-medkit"></i> Reporte de Reposo </a></li>
 
-                  <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-book"></i> Reporte de Vacaciones </a></li>
+              <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-globe"></i> Reporte de Vacaciones </a></li>
 
-                  <li class="active"><a href="pdf/reporte_operacional.php"><i class="fa fa-book"></i> Cuadro Operacional </a></li>
 </ul>
-
 </li>
     <?php
   }
@@ -414,19 +400,17 @@ if ($_SESSION['permisos_acceso']=='Almacen') { ?>
   
     <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
 
-    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
+      <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
       
-      <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
+        <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
  
-              <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+          <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
 
-                <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-book"></i> Reporte de Reposo </a></li>
+            <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-medkit"></i> Reporte de Reposo </a></li>
 
-                  <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-book"></i> Reporte de Vacaciones </a></li>
+              <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-globe"></i> Reporte de Vacaciones </a></li>
 
-                  <li class="active"><a href="pdf/reporte_operacional.php"><i class="fa fa-book"></i> Cuadro Operacional </a></li>
 </ul>
-
 </li>
     <?php
   }
