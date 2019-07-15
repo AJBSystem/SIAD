@@ -241,7 +241,9 @@
     <tr><th><span>Rango</th><td>Experto Técnico I</span></td></tr>
 
     <tr><th><span>Correo Institucional</th><td>darlymartinez@cicpc.gob.ve</span> </td></tr>
-          
+
+    <tr><th><span>Tipo de Funcionario</th><td>Administrativo</span> </td></tr>
+
   </table>
                          
 </div>
