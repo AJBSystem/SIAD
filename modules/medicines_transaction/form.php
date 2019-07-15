@@ -149,10 +149,10 @@
 <!-- Inicio del modal 6 de familiares -->
 <br>
 <div class="contenedor-modal">
-  <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#miModal6">Dirección</button>
+  <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#miModal">Dirección</button>
 </div>
 
-<div class="modal fade" id="miModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -262,6 +262,8 @@
                               
   </table>
                  
+
+                 
 </div>
 
 <!-- Final del Tercer Activador -->
@@ -275,10 +277,10 @@
 <!-- Inicio del modal 1 de familiares -->
 <br />
 <div class="contenedor-modal">
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal">Madre</button>
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal1">Madre</button>
 </div>
 
-<div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="miModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -324,10 +326,10 @@
 <!-- Inicio del modal 2 de familiares -->
 <br />
 <div class="contenedor-modal">
-  <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#miModal1">Padre</button>
+  <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#miModal2">Padre</button>
 </div>
 
-<div class="modal fade" id="miModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="miModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -373,10 +375,10 @@
 <!-- Inicio del modal 3 de familiares -->
 <br>
 <div class="contenedor-modal">
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal2">Hijos</button>
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal3">Hijos</button>
 </div>
 
-<div class="modal fade" id="miModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="miModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -401,10 +403,10 @@
 <!-- Inicio del modal 4 de familiares -->
 <br>
 <div class="contenedor-modal">
-  <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#miModal3">Cónyuge</button>
+  <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#miModal4">Cónyuge</button>
 </div>
 
-<div class="modal fade" id="miModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="miModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -429,10 +431,10 @@
 <!-- Inicio del modal 5 de familiares -->
 <br>
 <div class="contenedor-modal">
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal4">Hermanos</button>
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal5">Hermanos</button>
 </div>
 
-<div class="modal fade" id="miModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="miModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -507,10 +509,10 @@
 <!-- Inicio del modal 6 de familiares -->
 <br>
 <div class="contenedor-modal">
-  <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#miModal5">Otros</button>
+  <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#miModal6">Otros</button>
 </div>
 
-<div class="modal fade" id="miModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="miModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -637,35 +639,152 @@
 
 </div>
 
-<!-- Inicio del Sexto Activador -->           
+<!-- Inicio del Sexto Activador -->      
 
 <div role="tabpanel" class="tab-pane fade" id="tab_content6" aria-labelledby="profile-tab">
   
-<div class="col-sm-4 col-md-5 col-xs-6 text-left">
+<!-- Inicio del modal 1 de Dotaciones -->
 
-  <table class='table table-bordered'>
-                           
-    <tr><th><span>Tipo</th><td>Arma</span></td></tr>
+<br>
+<div class="contenedor-modal">
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal7">Armas</button>
+</div>
 
-    <tr><th><span>Marca</th><td>Glock</span> </td></tr>
+<div class="modal fade" id="miModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Datos Del Arma</h4>
+      </div>
+     
+<table class='table table-bordered'>
 
-    <tr><th><span>Calibre</th><td>9mm</span></td></tr>
+  <tr><th><span>Tipo de Arma</th><td>Corta</span></td></tr>
 
-  </table>
-                           
-</div> 
+  <tr><th><span>Marca</th><td>Glock</span> </td></tr>
 
-<div class="col-sm-4 col-md-5 col-xs-6 text-left">
+  <tr><th><span>Calibre</th><td>9mm</span></td></tr>
 
-  <table class='table table-bordered'>
-                                                 
-    <tr><th><span>N° Serial</th><td>AXC345</span> </td></tr>
+  <tr><th><span>N° Serial</th><td>AXC345</span> </td></tr>
 
-    <tr><th><span>Modelo</th><td>Glock 34</span></td></tr>
-    
-  </table>
+  <tr><th><span>Modelo</th><td>Glock 34</span></td></tr>
+
+</table>
+     
+    </div>
+  </div>
+</div>
+
+<!-- Final del modal de 1 de dotaciones -->
+
+<!-- Inicio del modal 2 de Dotaciones -->
+<br>
+<div class="contenedor-modal">
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal8">Chaleco</button>
+</div>
+
+<div class="modal fade" id="miModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Datos Del Chaleco</h4>
+      </div>
+     
+<table class='table table-bordered'>
+
+  <tr><th><span>Tipo de Chaleco</th><td>IV</span></td></tr>
+
+  <tr><th><span>Marca</th><td>Glock</span> </td></tr>
+
+  <tr><th><span>Modelo</th><td>Glock 34</span></td></tr>
+
+  <tr><th><span>N° Serial</th><td>AXC345</span> </td></tr>
+
+</table>
+
+     
+    </div>
+  </div>
+</div>
+
+
+<!-- Final del modal 2 -->
+
+<!-- Inicio del modal 3 de Dotaciones -->
+<br>
+<div class="contenedor-modal">
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal9">Esposas</button>
+</div>
+
+<div class="modal fade" id="miModal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Datos De Esposas</h4>
+      </div>
+     
+<table class='table table-bordered'>
+
+  <tr><th><span>Tipo de Esposas</th><td>Metal</span></td></tr>
+
+  <tr><th><span>Marca</th><td>Glock</span> </td></tr>
+
+  <tr><th><span>Modelo</th><td>Glock 34</span></td></tr>
+
+  <tr><th><span>N° Serial</th><td>AXC345</span> </td></tr>
   
-</div>        
+</table>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- Final del modal 3 -->
+
+<!-- Inicio del modal 4 de Dotaciones -->
+<br>
+<div class="contenedor-modal">
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal10">Radios Portatiles</button>
+</div>
+
+<div class="modal fade" id="miModal10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Datos Del Radio</h4>
+      </div>
+     
+<table class='table table-bordered'>
+
+  <tr><th><span>Tipo de Radio</th><td>Metal</span></td></tr>
+
+  <tr><th><span>Marca</th><td>Glock</span> </td></tr>
+
+  <tr><th><span>Modelo</th><td>Glock 34</span></td></tr>
+
+  <tr><th><span>N° Serial</th><td>AXC345</span> </td></tr>
+  
+</table>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- Final del modal 4 -->
 
 <!-- Final del Sexto Activador -->  
 
