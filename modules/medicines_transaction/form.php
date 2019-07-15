@@ -146,7 +146,8 @@
                               
 </div>    
 
-<!-- Inicio del modal 6 de familiares -->
+<!-- Inicio del modal de Direccion -->
+
 <br>
 <div class="contenedor-modal">
   <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#miModal">Dirección</button>
@@ -180,13 +181,11 @@
 
   </table>
 
-     
     </div>
   </div>
 </div>
 
-<!-- Final del modal 6 de familiares -->
-
+<!-- Final del modal de Direccion -->
 
 <!-- Final del Primer Activador -->
 
@@ -261,9 +260,7 @@
     <tr><th><span>Estatus</th><td>Activo</span></td></tr>
                               
   </table>
-                 
-
-                 
+         
 </div>
 
 <!-- Final del Tercer Activador -->
@@ -274,7 +271,8 @@
 
 <div role="tabpanel" class="tab-pane fade" id="tab_content4" aria-labelledby="profile-tab">
  
-<!-- Inicio del modal 1 de familiares -->
+<!-- Inicio del modal de Madre -->
+
 <br />
 <div class="contenedor-modal">
   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal1">Madre</button>
@@ -316,14 +314,14 @@
 
   </table>
 
-     
     </div>
   </div>
 </div>
 
-<!-- Final del modal 1 de familiares -->
+<!-- Final del modal de Madre -->
 
-<!-- Inicio del modal 2 de familiares -->
+<!-- Inicio del modal de Padre -->
+
 <br />
 <div class="contenedor-modal">
   <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#miModal2">Padre</button>
@@ -365,14 +363,13 @@
 
   </table>
 
-     
     </div>
   </div>
 </div>
 
-<!-- Final del modal 2 de familiares -->
+<!-- Final del modal de Padre -->
 
-<!-- Inicio del modal 3 de familiares -->
+<!-- Inicio del modal de Hijos -->
 <br>
 <div class="contenedor-modal">
   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal3">Hijos</button>
@@ -398,9 +395,9 @@
   </div>
 </div>
 
-<!-- Final del modal 3 de familiares -->
+<!-- Final del modal de Hijos -->
 
-<!-- Inicio del modal 4 de familiares -->
+<!-- Inicio del modal de Conyuge -->
 <br>
 <div class="contenedor-modal">
   <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#miModal4">Cónyuge</button>
@@ -426,9 +423,9 @@
   </div>
 </div>
 
-<!-- Final del modal 4 de familiares -->
+<!-- Final del modal de Conyuge -->
 
-<!-- Inicio del modal 5 de familiares -->
+<!-- Inicio del modal de Hermanos-->
 <br>
 <div class="contenedor-modal">
   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal5">Hermanos</button>
@@ -498,15 +495,14 @@
 
   </table>
 
-     
     </div>
   </div>
 </div>
 
+<!-- Final del modal de Hermanos-->
 
-<!-- Final del modal 5 de familiares -->
+<!-- Inicio del modal de Otros -->
 
-<!-- Inicio del modal 6 de familiares -->
 <br>
 <div class="contenedor-modal">
   <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#miModal6">Otros</button>
@@ -547,55 +543,14 @@
     <tr><th><span>Información Medica</th><td>Ninguna</span> </td></tr>
 
   </table>
-
      
     </div>
   </div>
 </div>
 
-<!-- Final del modal 6 de familiares -->
+<!-- Final del modal de Otros -->
 
 <!-- Final del Cuarto Activador -->
-
-</div>
-
-<!-- Inicio del Tercer Activador -->
-
-<div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
-  
-<div class="col-sm-4 col-md-5 col-xs-6 text-left">
-
-  <table class='table table-bordered'>
-                     
-    <tr><th><span>Seleccionar División</th><td>División de Sistemas</span></td></tr>
-                    
-    <tr><th><span>Tiempo De Servicio</th><td>2 Meses</span> </td></tr>
-          
-    <tr><th><span>Rango</th><td>Experto Técnico I</span></td></tr>
-
-    <tr><th><span>Correo Institucional</th><td>darlymartinez@cicpc.gob.ve</span> </td></tr>
-          
-  </table>
-                         
-</div>
-
-<div class="col-sm-4 col-md-5 col-xs-6 text-left">
-
-  <table class='table table-bordered'>
-
-    <tr><th><span>Fecha de Ingreso</th><td>01/10/2018</span> </td></tr>
-  
-    <tr><th><span>Cargo</th><td>No Aplica</span></td></tr>                     
-                       
-    <tr><th><span>Ubicación Fisica</th><td>Dirección de Tecnología</span> </td></tr>
-                          
-    <tr><th><span>Estatus</th><td>Activo</span></td></tr>
-                              
-  </table>
-                 
-</div>
-
-<!-- Final del Tercer Activador -->
 
 </div>
 
@@ -643,7 +598,7 @@
 
 <div role="tabpanel" class="tab-pane fade" id="tab_content6" aria-labelledby="profile-tab">
   
-<!-- Inicio del modal 1 de Dotaciones -->
+<!-- Inicio del modal de Armas -->
 
 <br>
 <div class="contenedor-modal">
@@ -678,9 +633,9 @@
   </div>
 </div>
 
-<!-- Final del modal de 1 de dotaciones -->
+<!-- Final del modal de Armas -->
 
-<!-- Inicio del modal 2 de Dotaciones -->
+<!-- Inicio del modal de Chaleco -->
 <br>
 <div class="contenedor-modal">
   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal8">Chaleco</button>
@@ -707,16 +662,14 @@
   <tr><th><span>N° Serial</th><td>AXC345</span> </td></tr>
 
 </table>
-
      
     </div>
   </div>
 </div>
 
+<!-- Final del modal de Chaleco -->
 
-<!-- Final del modal 2 -->
-
-<!-- Inicio del modal 3 de Dotaciones -->
+<!-- Inicio del modal de Esposas -->
 <br>
 <div class="contenedor-modal">
   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal9">Esposas</button>
@@ -748,10 +701,9 @@
   </div>
 </div>
 
+<!-- Final del modal de Esposas -->
 
-<!-- Final del modal 3 -->
-
-<!-- Inicio del modal 4 de Dotaciones -->
+<!-- Inicio del modal de Radio -->
 <br>
 <div class="contenedor-modal">
   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal10">Radios Portatiles</button>
@@ -784,7 +736,7 @@
 </div>
 
 
-<!-- Final del modal 4 -->
+<!-- Final del modal de Radio -->
 
 <!-- Final del Sexto Activador -->  
 
