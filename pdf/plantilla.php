@@ -98,7 +98,7 @@ class PDF extends FPDF
 
 				$this->Cell(805,10,'RESPONSABLE DEL USO',1,1,'C');
 				$this->Cell(75,10,'NOMBRE Y APELLIDO',1,0,'C');
-				$this->Cell(410,10,utf8_decode('ISIDRO'),1,0,'C');
+				$this->Cell(410,10,utf8_decode('ISIDRO CABRERA'),1,0,'C');
 				$this->Cell(220,10,'C.I. ',1,0,'C');
 				$this->Cell(100,10,utf8_decode('CARGO: DIRECTOR DE LA DIRECCION DE TECNOLOGIA'),1,1,'C');
 		$this->Ln(10);

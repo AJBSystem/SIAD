@@ -1,51 +1,4 @@
 
-<script type="text/javascript">
-  function tampil_obat(input){
-    var num = input.value;
-
-    $.post("modules/medicines_transaction/medicines.php", {
-      dataidobat: num,
-    }, function(response) {      
-      $('#stok').html(response)
-
-      document.getElementById('jumlah_masuk').focus();
-    });
-  }
-
-  function cek_jumlah_masuk(input) {
-    jml = document.formObatMasuk.jumlah_masuk.value;
-    var jumlah = eval(jml);
-    if(jumlah < 1){
-      alert('Jumlah Masuk Tidak Boleh Nol !!');
-      input.value = input.value.substring(0,input.value.length-1);
-    }
-  }
-
-  function hitung_total_stok() {
-    bil1 = document.formObatMasuk.stok.value;
-    bil2 = document.formObatMasuk.jumlah_masuk.value;
-	tt = document.formObatMasuk.transaccion.value;
-	
-    if (bil2 == "") {
-      var hasil = "";
-    }
-    else {
-      var salida = eval(bil1) - eval(bil2);
-	  var hasil = eval(bil1) + eval(bil2);
-    }
-
-	if (tt=="Salida"){
-		document.formObatMasuk.total_stok.value = (salida);
-	}	else {
-		document.formObatMasuk.total_stok.value = (hasil);
-	} 
-    
-  }
-</script>
-
-<?php  
-
-if ($_GET['form']=='add') { ?> 
 
 <section class="content-header">
   <h1>
@@ -58,32 +11,12 @@ if ($_GET['form']=='add') { ?>
 </section>
 
 <section class="content">
-  <div class="row">
   <div class="col-md-12">
-  <div class="box box-primary">
-    <form role="form" class="form-horizontal" action="modules/medicines/proses.php?act=update" method="POST" name="formObatMasuk">
-  <div class="box-body">
+<div class="box box-primary">
 
-<?php  
-            
-  $query_id = mysqli_query($mysqli, "SELECT RIGHT(codigo_transaccion,7) as codigo FROM transaccion_medicamentos
-                                    ORDER BY codigo_transaccion DESC LIMIT 1")
-                                    or die('Error : '.mysqli_error($mysqli));
+<form role="form" class="form-horizontal" action="modules/medicines/proses.php?act=update" method="POST" >
 
-  $count = mysqli_num_rows($query_id);
-
-    if ($count <> 0) {
-                 
-  $data_id = mysqli_fetch_assoc($query_id);
-  $codigo    = $data_id['codigo']+1;
-    } else {
-  $codigo = 1;
-    }
- 
-  $tahun          = date("Y");
-  $buat_id        = str_pad($codigo, 7, "0", STR_PAD_LEFT);
-  $codigo_transaccion = "TM-$tahun-$buat_id";
-?>
+<div class="box-body">
 
 <div class="">
 
@@ -93,11 +26,11 @@ if ($_GET['form']=='add') { ?>
 
 <div class="x_content">
 
- <!-- Inicio de las imagenes de muestra -->
+<!-- Inicio de las imagenes de muestra -->
 
 <div class="col-md-2 profile_left">
   <img class="img-responsive avatar-view" src="images/picture.jpg" alt="Avatar" title="Change the avatar">
-    <li>Titulo de prueba</li>
+    <h3>Darly Martinez</h3>
       <a class="btn btn-primary" ><i class="fa fa-edit m-right-xs"></i> Editar</a>
       <a class="btn btn-warning" href="pdf/reporte_funcionarios.php"><i class="fa fa-print m-right-xs"></i> Imprimir</a>
         <br />
@@ -136,8 +69,6 @@ if ($_GET['form']=='add') { ?>
     <li role="presentation" class=""><a href="#tab_content8" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false" class="fa fa-globe"> Vacaciones</a>
     </li>
 
-    </li>
-       
   </ul>
 
 </div>
@@ -227,8 +158,9 @@ if ($_GET['form']=='add') { ?>
 
 </div>
 
-</div>  
 <!-- Final del Primer Activador -->
+
+</div>
 
 <!-- Inicio del Segundo Activador -->
 
@@ -260,9 +192,9 @@ if ($_GET['form']=='add') { ?>
                          
 </div>
 
-</div>
-
 <!-- Final del Segundo Activador -->
+
+</div>
      
 <!-- Inicio del Tercer Activador -->
 
@@ -300,17 +232,15 @@ if ($_GET['form']=='add') { ?>
                  
 </div>
 
-</div>
-
 <!-- Final del Tercer Activador -->
+
+</div>
 
 <!-- Inicio del Cuarto Activador -->
 
 <div role="tabpanel" class="tab-pane fade" id="tab_content4" aria-labelledby="profile-tab">
  
 <!-- Inicio del modal 1 de familiares -->
-
-
 <br />
 <div class="contenedor-modal">
   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal">Madre</button>
@@ -356,7 +286,6 @@ if ($_GET['form']=='add') { ?>
     </div>
   </div>
 </div>
-
 
 <!-- Final del modal 1 de familiares -->
 
@@ -406,8 +335,6 @@ if ($_GET['form']=='add') { ?>
     </div>
   </div>
 </div>
-
-
 
 <!-- Final del modal 2 de familiares -->
 
@@ -594,8 +521,9 @@ if ($_GET['form']=='add') { ?>
 
 <!-- Final del modal 6 de familiares -->
 
-</div>
 <!-- Final del Cuarto Activador -->
+
+</div>
 
 <!-- Inicio del Tercer Activador -->
 
@@ -633,9 +561,9 @@ if ($_GET['form']=='add') { ?>
                  
 </div>
 
-</div>
-
 <!-- Final del Tercer Activador -->
+
+</div>
 
 <!-- Inicio del Quinto Activador -->
 
@@ -673,8 +601,9 @@ if ($_GET['form']=='add') { ?>
                     
 </div>
 
-</div>
 <!-- Final del Quinto Activador -->
+
+</div>
 
 <!-- Inicio del Sexto Activador -->           
 
@@ -704,10 +633,13 @@ if ($_GET['form']=='add') { ?>
     
   </table>
   
-</div>                      
-</div>
+</div>        
+
 <!-- Final del Sexto Activador -->  
 
+</div>
+
+<!-- Inicio del Septimo Activador -->  
 
 <div role="tabpanel" class="tab-pane fade" id="tab_content7" aria-labelledby="profile-tab">
   
@@ -716,12 +648,8 @@ if ($_GET['form']=='add') { ?>
   <table class='table table-bordered'>
                      
     <tr><th><span>Fecha de Inicio</th><td>11/09/2019</span></td></tr>
-                    
-    
-          
+                     
     <tr><th><span>Dias de Reposo</th><td>5 Meses</span></td></tr>
-
-    
           
   </table>
                          
@@ -739,12 +667,11 @@ if ($_GET['form']=='add') { ?>
                  
 </div>
 
+<!-- Final del Septimo Activador -->
+
 </div>
 
-<!-- Final del Tercer Activador -->
-
-
-<!-- Final del Sexto Activador -->  
+<!-- Final del Octavo Activador -->  
 
 
 <div role="tabpanel" class="tab-pane fade" id="tab_content8" aria-labelledby="profile-tab">
@@ -777,10 +704,12 @@ if ($_GET['form']=='add') { ?>
                  
 </div>
 
+<!-- Final del Octavo Activador -->
+
 </div>
 
-<!-- Final del Tercer Activador -->
-
+<!-- Fin
+ -->
 </div>
 </div>
 </div>
@@ -796,6 +725,3 @@ if ($_GET['form']=='add') { ?>
 </div>   <!-- /.row -->
 </section><!-- /.content -->
 
-<?php
-}
-?>
