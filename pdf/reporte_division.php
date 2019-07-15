@@ -2,7 +2,7 @@
   include('plantilla_division.php');
   require('conexion.php');
 
-  $query = "SELECT p_nombre,p_apellido,credencial,fec_ing,tiempo_s,cargo,rango,ubic_fis,correo_i,estatus,edad,tel_cel
+  $query = "SELECT p_nombre,p_apellido,credencial,fec_ing,tiempo_s,cargo,rango,ubic_fis,correo_i,estatus,edad,tel_cel,tipo_fun
             FROM medicamentos 
             ORDER BY p_nombre";
           
@@ -16,38 +16,40 @@
   $pdf->SetFillColor(232,232,232);
   $pdf->SetFont('Arial','B',12);
   $pdf->SetY(75);
-  $pdf->SetX(20);
+  $pdf->SetX(10);
   
    // <!-- Final de titulos -->
   $pdf->Cell(40,7,utf8_decode('Primer Nombre'),1,0,'C',1);
   $pdf->Cell(40,7,utf8_decode('Primer Apellido'),1,0,'C',1);
-  $pdf->Cell(30,7,utf8_decode('Credencial'),1,0,'C',1);
-  $pdf->Cell(30,7,utf8_decode('Edad'),1,0,'C',1);
-  $pdf->Cell(50,7,utf8_decode('Fecha de Ingreso'),1,0,'C',1);
-  $pdf->Cell(50,7,utf8_decode('Tiempo de Servicio'),1,0,'C',1);
+  $pdf->Cell(27,7,utf8_decode('Credencial'),1,0,'C',1);
+  $pdf->Cell(25,7,utf8_decode('Edad'),1,0,'C',1);
+  $pdf->Cell(40,7,utf8_decode('Fecha de Ingreso'),1,0,'C',1);
+  $pdf->Cell(45,7,utf8_decode('Tiempo de Servicio'),1,0,'C',1);
   $pdf->Cell(60,7,utf8_decode('Cargo'),1,0,'C',1);
   $pdf->Cell(60,7,utf8_decode('Rango'),1,0,'C',1);
-  $pdf->Cell(60,7,utf8_decode('Ubicación Fisica'),1,0,'C',1);
-  $pdf->Cell(65,7,utf8_decode('Correo Institucional'),1,0,'C',1);
-  $pdf->Cell(45,7,utf8_decode('Telefono Celular'),1,0,'C',1);
+  $pdf->Cell(50,7,utf8_decode('Tipo de Funcionario'),1,0,'C',1);
+  $pdf->Cell(55,7,utf8_decode('Ubicación Fisica'),1,0,'C',1);
+  $pdf->Cell(67,7,utf8_decode('Correo Institucional'),1,0,'C',1);
+  $pdf->Cell(40,7,utf8_decode('Telefono Celular'),1,0,'C',1);
   $pdf->Cell(30,7,utf8_decode('Estatus'),1,1,'C',1);
 
   // <!-- Final de titulos -->
   
   while ( $row = $resultado->fetch_assoc() )
   {
-   $pdf->SetX(20);
+   $pdf->SetX(10);
    $pdf->Cell(40,7,utf8_decode($row['p_nombre']),1,0,'C',0);
    $pdf->Cell(40,7,utf8_decode($row['p_apellido']),1,0,'C',0);
-   $pdf->Cell(30,7,utf8_decode($row['credencial']),1,0,'C',0);
-   $pdf->Cell(30,7,utf8_decode($row['edad']),1,0,'C',0);
-   $pdf->Cell(50,7,utf8_decode($row['fec_ing']),1,0,'C',0);
-   $pdf->Cell(50,7,utf8_decode($row['tiempo_s']),1,0,'C',0);
+   $pdf->Cell(27,7,utf8_decode($row['credencial']),1,0,'C',0);
+   $pdf->Cell(25,7,utf8_decode($row['edad']),1,0,'C',0);
+   $pdf->Cell(40,7,utf8_decode($row['fec_ing']),1,0,'C',0);
+   $pdf->Cell(45,7,utf8_decode($row['tiempo_s']),1,0,'C',0);
    $pdf->Cell(60,7,utf8_decode($row['cargo']),1,0,'C',0);
    $pdf->Cell(60,7,utf8_decode($row['rango']),1,0,'C',0);
-   $pdf->Cell(60,7,utf8_decode($row['ubic_fis']),1,0,'C',0);
-   $pdf->Cell(65,7,utf8_decode($row['correo_i']),1,0,'C',0);
-   $pdf->Cell(45,7,utf8_decode($row['tel_cel']),1,0,'C',0);
+   $pdf->Cell(50,7,utf8_decode($row['tipo_fun']),1,0,'C',0);
+   $pdf->Cell(55,7,utf8_decode($row['ubic_fis']),1,0,'C',0);
+   $pdf->Cell(67,7,utf8_decode($row['correo_i']),1,0,'C',0);
+   $pdf->Cell(40,7,utf8_decode($row['tel_cel']),1,0,'C',0);
    $pdf->Cell(30,7,utf8_decode($row['estatus']),1,1,'C',0);  
 
   }
