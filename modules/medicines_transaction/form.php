@@ -1,5 +1,3 @@
-
-
 <section class="content-header">
   <h1>
     <i class="fa fa-edit icon-title"></i> Datos del Funcionario
@@ -148,15 +146,47 @@
                               
 </div>    
 
-<div class="col-sm-4 col-md-5 col-xs-6 text-left">
-                    
+<!-- Inicio del modal 6 de familiares -->
+<br>
+<div class="contenedor-modal">
+  <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#miModal6">Dirección</button>
+</div>
+
+<div class="modal fade" id="miModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Datos De La Dirección</h4>
+      </div>
+     
   <table class='table table-bordered'>
-    
-    <tr><th><span>Dirección</th><td>Primera entrada de carapita,Subida del caballo callejon pinto salina,casa 88</span></td></tr>
-    
+
+    <tr><th><span>Estado</th><td>20.096.158</span> </td></tr>
+
+    <tr><th><span>Municipio</th><td>Trinny</span> </td></tr>
+
+    <tr><th><span>Ciudad</th><td>Dayana</span> </td></tr>
+
+    <tr><th><span>Parroquia</th><td>Carvajal</span> </td></tr>
+
+    <tr><th><span>Avenida</th><td>Martinez</span></td></tr>
+
+    <tr><th><span>Calle</th><td>28/08/1995</span></td></tr>
+                                              
+    <tr><th><span>Casa N°</th><td>30 Años</span></td></tr>
+
   </table>
 
+     
+    </div>
+  </div>
 </div>
+
+<!-- Final del modal 6 de familiares -->
+
 
 <!-- Final del Primer Activador -->
 
