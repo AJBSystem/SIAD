@@ -49,7 +49,7 @@ if ($_GET['form']=='add') { ?>
 
 
 
-<label>Nota: No se guardara hasta que llene los modales obligatorios que estan marcados con un asterico * </label>
+<label>Nota: No se guardara hasta que llene los modales obligatorios que estan marcados con un asterico ( * ) al terminar de llenar los campos presione guardar</label>
 
 
 <div class="">
@@ -250,7 +250,7 @@ if ($_GET['form']=='add') { ?>
 <!-- Inicio del modal de direccion -->           
                                             
 <div class="contenedor-modal">
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal">Direción</button>
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal">Dirección</button>
 </div>
 
 <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -1079,7 +1079,7 @@ elseif ($_GET['form']=='edit') {
 
 <div class="contenedor-modal">
   
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal">Direción</button>
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal">Dirección</button>
 
 </div>
 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-07-2019 a las 19:32:04
+-- Tiempo de generación: 15-07-2019 a las 18:01:33
 -- Versión del servidor: 10.1.37-MariaDB
 -- Versión de PHP: 5.6.40
 
@@ -57,84 +57,32 @@ INSERT INTO `familiares` (`cedula`, `p_nombre`, `s_nombre`, `p_apellido`, `s_ape
 --
 
 CREATE TABLE `funcionarios` (
-  `alergias` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `alo` int(4) NOT NULL,
-  `avenida` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
-  `calibre` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
-  `calle` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
-  `cargo` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `casa` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
   `cedula` int(13) NOT NULL,
-  `cedulaf` int(13) NOT NULL,
-  `ciudad` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
   `codigo` int(25) NOT NULL,
-  `codigo_cp` int(25) NOT NULL,
-  `color` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
-  `combustible` varchar(10) COLLATE utf8_spanish_ci NOT NULL,
-  `correo_e` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
-  `correo_i` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
   `created_date` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
   `created_user` int(3) NOT NULL,
-  `credencial` int(20) NOT NULL,
-  `discapacidad` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
-  `edad` int(3) NOT NULL,
-  `edadf` int(3) NOT NULL,
-  `estado_c` varchar(20) COLLATE utf8_spanish_ci NOT NULL,
-  `estatus` varchar(10) COLLATE utf8_spanish_ci NOT NULL,
-  `estudiante` varchar(10) COLLATE utf8_spanish_ci NOT NULL,
-  `fec_ing` date NOT NULL,
-  `fec_nac` date NOT NULL,
-  `fec_nacf` date NOT NULL,
-  `funcionario` varchar(10) COLLATE utf8_spanish_ci NOT NULL,
-  `genero` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `generof` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `grado_inst` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `inf_med` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
-  `lugar_nac` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
-  `marca` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `marca_d` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `medicamen` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
-  `modelo` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `modelo_d` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `municipio` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
-  `notas` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
-  `n_serial` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `parentesco` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `parroquia` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
-  `placa` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `p_apellido` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `p_apellidof` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `p_nombre` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `p_nombref` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `rango` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `rif` int(13) NOT NULL,
-  `selec_div` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `serial_carro` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `serial_cp` int(25) NOT NULL,
-  `s_apellido` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `s_apellidof` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `s_nombre` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `s_nombref` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `tel_cel` int(12) NOT NULL,
-  `tel_emerg` int(12) NOT NULL,
-  `tel_hab` int(12) NOT NULL,
-  `tiempo_s` int(12) NOT NULL,
-  `tipo_d` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `tipo_s` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `tipo_v` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `ubic_fis` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
   `uptated_date` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
   `updated_user` int(4) NOT NULL,
-  `estado` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `inf_medf` varchar(100) COLLATE utf8_spanish_ci NOT NULL
+  `pol_act` varchar(15) COLLATE utf8_spanish_ci NOT NULL,
+  `pol_vac` varchar(15) COLLATE utf8_spanish_ci NOT NULL,
+  `pol_rep` varchar(15) COLLATE utf8_spanish_ci NOT NULL,
+  `adm_act` varchar(15) COLLATE utf8_spanish_ci NOT NULL,
+  `adm_rep` varchar(15) COLLATE utf8_spanish_ci NOT NULL,
+  `adm_vac` varchar(15) COLLATE utf8_spanish_ci NOT NULL,
+  `arm_pol` varchar(15) COLLATE utf8_spanish_ci NOT NULL,
+  `chalecos` varchar(15) COLLATE utf8_spanish_ci NOT NULL,
+  `armas_l` varchar(15) COLLATE utf8_spanish_ci NOT NULL,
+  `vehiculos` varchar(15) COLLATE utf8_spanish_ci NOT NULL,
+  `motos` varchar(15) COLLATE utf8_spanish_ci NOT NULL,
+  `radios_por` varchar(15) COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `funcionarios`
 --
 
-INSERT INTO `funcionarios` (`alergias`, `alo`, `avenida`, `calibre`, `calle`, `cargo`, `casa`, `cedula`, `cedulaf`, `ciudad`, `codigo`, `codigo_cp`, `color`, `combustible`, `correo_e`, `correo_i`, `created_date`, `created_user`, `credencial`, `discapacidad`, `edad`, `edadf`, `estado_c`, `estatus`, `estudiante`, `fec_ing`, `fec_nac`, `fec_nacf`, `funcionario`, `genero`, `generof`, `grado_inst`, `inf_med`, `lugar_nac`, `marca`, `marca_d`, `medicamen`, `modelo`, `modelo_d`, `municipio`, `notas`, `n_serial`, `parentesco`, `parroquia`, `placa`, `p_apellido`, `p_apellidof`, `p_nombre`, `p_nombref`, `rango`, `rif`, `selec_div`, `serial_carro`, `serial_cp`, `s_apellido`, `s_apellidof`, `s_nombre`, `s_nombref`, `tel_cel`, `tel_emerg`, `tel_hab`, `tiempo_s`, `tipo_d`, `tipo_s`, `tipo_v`, `ubic_fis`, `uptated_date`, `updated_user`, `estado`, `inf_medf`) VALUES
-('gj', 0, 'gu', '', 'giu', '', '45', 26435880, 14545, 'iu', 0, 7, '', 'Gasolina', 'uug@f.com', 'dfg@gfg.com', '', 1, 26435, 'gj', 254, 54, 'Soltero/a', '', 'Si', '2018-11-15', '2018-11-16', '2018-11-14', 'Si', 'Femenina', 'Femenina', 'Primaria', '', 'Amazonas', '', '', 'gj', '', '', 'ui', 'hghj', '', 'Hijo/a', 'ugu', '', 'MArtinez', 'gui', 'Darly', 'ugui', '', 156226, '', '', 657, '', 'g', '', 'giu', 65, 65, 65, 14, '', 'gh', '', 'dg', '', 1, 'Amazonas', 'dg');
+INSERT INTO `funcionarios` (`cedula`, `codigo`, `created_date`, `created_user`, `uptated_date`, `updated_user`, `pol_act`, `pol_vac`, `pol_rep`, `adm_act`, `adm_rep`, `adm_vac`, `arm_pol`, `chalecos`, `armas_l`, `vehiculos`, `motos`, `radios_por`) VALUES
+(26435880, 0, '', 1, '', 1, '', '', '', '', '', '', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -158,11 +106,11 @@ CREATE TABLE `medicamentos` (
   `credencial` int(20) NOT NULL,
   `p_apellido` varchar(50) NOT NULL,
   `fec_nac` varchar(50) NOT NULL,
-  `edad` varchar(3) NOT NULL,
+  `edad` varchar(10) NOT NULL,
   `s_nombre` varchar(50) NOT NULL,
   `s_apellido` varchar(50) NOT NULL,
   `rif` int(15) NOT NULL,
-  `genero` int(11) NOT NULL,
+  `genero` varchar(11) NOT NULL,
   `tel_cel` varchar(11) NOT NULL,
   `tel_hab` int(11) NOT NULL,
   `tel_emerg` int(11) NOT NULL,
@@ -195,7 +143,7 @@ CREATE TABLE `medicamentos` (
   `s_apellidof` varchar(50) NOT NULL,
   `cedulaf` int(9) NOT NULL,
   `fec_nacf` varchar(100) NOT NULL,
-  `edadf` varchar(3) NOT NULL,
+  `edadf` varchar(10) NOT NULL,
   `generof` varchar(50) NOT NULL,
   `parentesco` varchar(50) NOT NULL,
   `estudiante` varchar(50) NOT NULL,
@@ -236,10 +184,10 @@ CREATE TABLE `medicamentos` (
 --
 
 INSERT INTO `medicamentos` (`codigo`, `nombre`, `precio_compra`, `precio_venta`, `unidad`, `stock`, `created_user`, `created_date`, `updated_user`, `updated_date`, `p_nombre`, `cedula`, `credencial`, `p_apellido`, `fec_nac`, `edad`, `s_nombre`, `s_apellido`, `rif`, `genero`, `tel_cel`, `tel_hab`, `tel_emerg`, `municipio`, `calle`, `casa`, `parroquia`, `estado`, `ciudad`, `avenida`, `codigo_cp`, `serial_cp`, `estado_c`, `lugar_nac`, `correo_e`, `grado_inst`, `correo_i`, `tipo_s`, `medicamen`, `discapacidad`, `alergias`, `nota`, `notas`, `fec_ing`, `tiempo_s`, `ubic_fis`, `p_nombref`, `s_nombref`, `p_apellidof`, `s_apellidof`, `cedulaf`, `fec_nacf`, `edadf`, `generof`, `parentesco`, `estudiante`, `funcionario`, `inf_medf`, `tipo_v`, `placa`, `combustible`, `serial_carro`, `marca`, `modelo`, `color`, `alo`, `tipo_d`, `n_serial`, `marca_d`, `modelo_d`, `calibre`, `estatus`, `selec_div`, `cargo`, `rango`, `direccion`, `fec_inir`, `fec_regr`, `dia_r`, `motivo_r`, `fec_iniv`, `fec_regv`, `dia_v`, `vac_sol`, `vac_ven`, `tipo_fun`) VALUES
-('B000001', '', 0, 0, '', 0, 1, '2019-07-10 14:40:25', 1, '2019-07-10 17:19:41', 'gdsfg', 45345, 345, 'gsd', '2019-07-16', '5', 'sgd', 'sdg', 345, 0, '5345', 435, 5435, 'df', 'sfd', 'fsdf', 'dsfsd', 'Amazonas', 'sdf', 'sdf', '', 0, 'Soltero/a', '', 'sdg@dc.com', 'Primaria', 'rfwer@c.om', '', '', '', '', '', '', '2019-07-17', '', 'fdsg', 'dsg', 'gsd', 'dg', 'sdg', 54, '2019-07-17', '43', 'Femenina', 'Hijo/a', 'Si', 'Si', 'sdg', '', '', 'Gasolina', '', '', '', '', '2023', '', '', '', '', '', 'Activo', 'Base de Datos', 'Adjunto', 'Asesor Juridico', '', '2019-07-18', '2019-07-18', '4', 'Operacion de cordales', '2019-07-25', '', '', '', '', 'Administrativo'),
-('B000002', '', 0, 0, '', 0, 1, '2019-07-10 14:41:31', 1, '2019-07-10 14:41:31', 'dfg', 54, 35345, 'wet', '2019-07-16', '345', 'dfgf', '', 5345, 0, '435', 34534, 35345, 'dssa', 'sad', 'dsa', 'sadas', 'Amazonas', 'sad', 'dasd', '', 0, 'Soltero/a', '', 'ffwq@cc.om', 'Primaria', 'werew@c.com', '', '', '', '', '', '', '2019-07-15', '43', 'fsdf', 'dfs', 'dsg', 'sdg', 'gds', 21, '2019-07-11', '23', 'Femenina', 'Hijo/a', 'Si', 'Si', 'dsg', '', '', 'Gasolina', '', '', '', '', '2023', '', '', '', '', '', 'Activo', 'Base de Datos', 'Adjunto', 'Asesor Juridico', '', '', '', '', '', '2019-07-10', '', '', '', '', ''),
-('B000003', '', 0, 0, '', 0, 1, '2019-07-10 14:43:53', 1, '2019-07-10 17:28:30', 'jo', 25852895, 0, 'oj', '2019-07-10', 'oj', 'j', 'oj', 0, 0, '65', 6546, 546, 'fds', 'sdf', 'dsf', 'dsf', 'Amazonas', 'dsf', 'dsf', '', 0, 'Soltero/a', '', 'ojo@ddc.com', 'Primaria', 'fsdfsd@fc.com', '', '', '', '', '', '', '2019-07-16', '', 'gdsfg', 'fsdf', 'dfsdf', 'sdfds', 'fdsf', 5435, '2019-07-11', '34', 'Femenina', 'Hijo/a', 'Si', 'Si', 'dsfsd', '', '', 'Gasolina', '', '', '', '', '2023', '', '', '', '', '', 'Activo', 'Base de Datos', 'Adjunto', 'Asesor Juridico', '', '', '', '', '', '2019-07-10', '2019-07-17', '5 dias', '', '', 'Administrativo'),
-('B000004', '', 0, 0, '', 0, 1, '2019-07-10 14:45:56', 1, '2019-07-10 17:18:18', 'fsad', 234, 32432, 'asf', '2019-07-16', '34', 'fsaf', 'fasd', 432, 0, '5435', 4534, 554, 'saf', 'fsa', 'asf', 'fsa', 'Amazonas', 'fas', 'af', '', 0, 'Soltero/a', '', 'fasasfa@dfc.om', 'Primaria', 'efafg@c.om', '', '', '', '', '', '', '2019-07-23', '', 'dsg', 'sfd', 'dfsfds', 'fsdf', 'sdf', 3, '2019-07-11', '3', 'Femenina', 'Hijo/a', 'Si', 'Si', 'dsf', '', '', 'Gasolina', '', '', '', '', '2023', '', '', '', '', '', 'Activo', 'Base de Datos', 'Adjunto', 'Asesor Juridico', '', '', '', '', '', '2019-07-10', '2019-07-18', '3', '4', '4', 'Policial');
+('B000001', '', 0, 0, '', 0, 1, '2019-07-10 14:40:25', 1, '2019-07-10 17:19:41', 'gdsfg', 45345, 345, 'gsd', '2019-07-16', '5', 'sgd', 'sdg', 345, '0', '5345', 435, 5435, 'df', 'sfd', 'fsdf', 'dsfsd', 'Amazonas', 'sdf', 'sdf', '', 0, 'Soltero/a', '', 'sdg@dc.com', 'Primaria', 'rfwer@c.om', '', '', '', '', '', '', '2019-07-17', '', 'fdsg', 'dsg', 'gsd', 'dg', 'sdg', 54, '2019-07-17', '43', 'Femenina', 'Hijo/a', 'Si', 'Si', 'sdg', '', '', 'Gasolina', '', '', '', '', '2023', '', '', '', '', '', 'Activo', 'Base de Datos', 'Adjunto', 'Asesor Juridico', '', '2019-07-18', '2019-07-18', '4', 'Operacion de cordales', '2019-07-25', '', '', '', '', 'Administrativo'),
+('B000002', '', 0, 0, '', 0, 1, '2019-07-10 14:41:31', 1, '2019-07-10 14:41:31', 'dfg', 54, 35345, 'wet', '2019-07-16', '345', 'dfgf', '', 5345, '0', '435', 34534, 35345, 'dssa', 'sad', 'dsa', 'sadas', 'Amazonas', 'sad', 'dasd', '', 0, 'Soltero/a', '', 'ffwq@cc.om', 'Primaria', 'werew@c.com', '', '', '', '', '', '', '2019-07-15', '43', 'fsdf', 'dfs', 'dsg', 'sdg', 'gds', 21, '2019-07-11', '23', 'Femenina', 'Hijo/a', 'Si', 'Si', 'dsg', '', '', 'Gasolina', '', '', '', '', '2023', '', '', '', '', '', 'Activo', 'Base de Datos', 'Adjunto', 'Asesor Juridico', '', '', '', '', '', '2019-07-10', '', '', '', '', ''),
+('B000003', '', 0, 0, '', 0, 1, '2019-07-10 14:43:53', 1, '2019-07-10 17:28:30', 'jo', 25852895, 0, 'oj', '2019-07-10', 'oj', 'j', 'oj', 0, '0', '65', 6546, 546, 'fds', 'sdf', 'dsf', 'dsf', 'Amazonas', 'dsf', 'dsf', '', 0, 'Soltero/a', '', 'ojo@ddc.com', 'Primaria', 'fsdfsd@fc.com', '', '', '', '', '', '', '2019-07-16', '', 'gdsfg', 'fsdf', 'dfsdf', 'sdfds', 'fdsf', 5435, '2019-07-11', '34', 'Femenina', 'Hijo/a', 'Si', 'Si', 'dsfsd', '', '', 'Gasolina', '', '', '', '', '2023', '', '', '', '', '', 'Activo', 'Base de Datos', 'Adjunto', 'Asesor Juridico', '', '', '', '', '', '2019-07-10', '2019-07-17', '5 dias', '', '', 'Administrativo'),
+('B000004', '', 0, 0, '', 0, 1, '2019-07-10 14:45:56', 1, '2019-07-15 14:14:04', 'fsad', 234, 32432, 'asf', '2019-07-16', '20 AÃ±os', 'fsaf', 'fasd', 432, '0', '04140272330', 4534, 554, 'saf', 'fsa', 'asf', 'fsa', 'Amazonas', 'fas', 'af', '', 0, 'Soltero/a', '', 'fasasfa@dfc.om', 'Primaria', 'DMARTINEZ@CICPC.GOB.VE', '', '', '', '', '', '', '2019-07-23', '', 'Direccion de Tecnologia', 'sfd', 'dfsfds', 'fsdf', 'sdf', 3, '2019-07-11', '3', 'Femenina', 'Hijo/a', 'Si', 'Si', 'dsf', '', '', 'Gasolina', '', '', '', '', '2023', '', '', '', '', '', 'Activo', 'Base de Datos', 'Adjunto', 'Asesor Juridico', '', '', '', '', '', '2019-07-10', '2019-07-18', '3', '4', '4', 'Administrativo');
 
 -- --------------------------------------------------------
 
