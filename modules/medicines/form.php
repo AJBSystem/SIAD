@@ -1,17 +1,15 @@
- <?php  
+<?php  
 
 if ($_GET['form']=='add') { ?> 
 
 <section class="content-header">
   <h1>
-
     <i class="fa fa-edit icon-title"></i> Agregar Funcionario
   </h1>
       <ol class="breadcrumb">
         <li><a href="?module=start"><i class="fa fa-home"></i> Inicio </a></li>
         <li><a href="?module=medicines"> Funcionario </a></li>
       </ol>
-
 </section>
 
 <section class="content">
@@ -26,8 +24,7 @@ if ($_GET['form']=='add') { ?>
 
 <div class="box-body">
   
-  <?php  
-          
+<?php   
               $query_id = mysqli_query($mysqli, "SELECT RIGHT(codigo,6) as codigo FROM medicamentos
                                                 ORDER BY codigo DESC LIMIT 1")
                                                 or die('error '.mysqli_error($mysqli));
