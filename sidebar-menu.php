@@ -63,9 +63,11 @@ if ($_SESSION['permisos_acceso']=='Super Admin') { ?>
  
           <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
 
-            <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-medkit"></i> Reporte de Reposo </a></li>
+            <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-medkit"></i> Reporte de Hijos </a></li>
 
-              <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-globe"></i> Reporte de Vacaciones </a></li>
+              <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-medkit"></i> Reporte de Reposo </a></li>
+
+                <li class="active"><a href="pdf/reporte_vacaciones.php"><i class="fa fa-globe"></i> Reporte de Vacaciones </a></li>
 
 </ul>
     </li>
@@ -81,15 +83,17 @@ if ($_SESSION['permisos_acceso']=='Super Admin') { ?>
     <i class="fa fa-file-text"></i> <span>Reportes</span> <i class="fa fa-angle-left pull-right"></i>
   </a>
 
-<ul class="treeview-menu">
+  <ul class="treeview-menu">
   
-    <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+  <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
 
-      <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
-      
-        <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
- 
-          <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
+    
+      <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
+
+        <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+
+          <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-medkit"></i> Reporte de Hijos </a></li>
 
             <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-medkit"></i> Reporte de Reposo </a></li>
 
@@ -109,15 +113,17 @@ if ($_SESSION['permisos_acceso']=='Super Admin') { ?>
   
   </a>
 
-<ul class="treeview-menu">
+  <ul class="treeview-menu">
   
-    <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+  <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
 
-      <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
-      
-        <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
- 
-          <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
+    
+      <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
+
+        <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+
+          <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-medkit"></i> Reporte de Hijos </a></li>
 
             <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-medkit"></i> Reporte de Reposo </a></li>
 
@@ -193,15 +199,17 @@ elseif ($_SESSION['permisos_acceso']=='Gerente') { ?>
     <i class="fa fa-file-text"></i> <span>Reportes</span> <i class="fa fa-angle-left pull-right"></i>
   </a>
 
-<ul class="treeview-menu">
+  <ul class="treeview-menu">
   
-    <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+  <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
 
-      <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
-      
-        <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
- 
-          <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
+    
+      <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
+
+        <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+
+          <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-medkit"></i> Reporte de Hijos </a></li>
 
             <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-medkit"></i> Reporte de Reposo </a></li>
 
@@ -220,15 +228,17 @@ elseif ($_SESSION['permisos_acceso']=='Gerente') { ?>
   
   </a>
 
-<ul class="treeview-menu">
+  <ul class="treeview-menu">
   
-    <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+  <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
 
-      <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
-      
-        <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
- 
-          <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
+    
+      <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
+
+        <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+
+          <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-medkit"></i> Reporte de Hijos </a></li>
 
             <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-medkit"></i> Reporte de Reposo </a></li>
 
@@ -248,15 +258,17 @@ elseif ($_SESSION['permisos_acceso']=='Gerente') { ?>
   
   </a>
 
-<ul class="treeview-menu">
+  <ul class="treeview-menu">
   
-    <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+  <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
 
-      <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
-      
-        <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
- 
-          <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
+    
+      <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
+
+        <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+
+          <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-medkit"></i> Reporte de Hijos </a></li>
 
             <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-medkit"></i> Reporte de Reposo </a></li>
 
@@ -368,15 +380,17 @@ if ($_SESSION['permisos_acceso']=='Almacen') { ?>
   
   </a>
 
-<ul class="treeview-menu">
+  <ul class="treeview-menu">
   
-    <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+  <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
 
-      <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
-      
-        <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
- 
-          <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
+    
+      <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
+
+        <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+
+          <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-medkit"></i> Reporte de Hijos </a></li>
 
             <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-medkit"></i> Reporte de Reposo </a></li>
 
@@ -396,15 +410,17 @@ if ($_SESSION['permisos_acceso']=='Almacen') { ?>
   
   </a>
  
-<ul class="treeview-menu">
+  <ul class="treeview-menu">
   
-    <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
+  <li class="active"><a href="?module=stock_report" ><i class="fa fa-user"></i> Reporte de Dirección </a></li>
 
-      <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
-      
-        <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
- 
-          <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+    <li class="active"><a href="pdf/reporte_division.php"><i class="fa fa-sitemap"></i> Reporte de División </a></li>
+    
+      <li class="active"><a href="pdf/reporte_laboral.php"><i class="fa fa-suitcase"></i> Reporte Laboral </a></li>
+
+        <li class="active"><a href="pdf/reporte_dotaciones.php"><i class="fa fa-book"></i> Reporte de Dotaciones </a></li>
+
+          <li class="active"><a href="pdf/reporte_hijos.php"><i class="fa fa-medkit"></i> Reporte de Hijos </a></li>
 
             <li class="active"><a href="pdf/reporte_reposo.php"><i class="fa fa-medkit"></i> Reporte de Reposo </a></li>
 
