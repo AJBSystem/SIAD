@@ -337,8 +337,8 @@ if ($_GET['form']=='add') { ?>
 <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
 
 <div class="col-md-2">
-  <label for="exampleInputEmail1">Tipo de Sangre</label>
-    <input type="text" class="form-control" name="tipo_s" autocomplete="off"> 
+  <label for="exampleInputEmail1">Tipo de Sangre *</label>
+    <input type="text" class="form-control" name="tipo_s" autocomplete="off" required> 
 </div>
 
   <div class="col-md-2">
@@ -1162,8 +1162,8 @@ elseif ($_GET['form']=='edit') {
 <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
 
 <div class="col-md-2">
-  <label for="exampleInputEmail1">Tipo de Sangre</label>
-    <input type="text" class="form-control" name="tipo_s" autocomplete="off" value="<?php echo $data['tipo_s']; ?>">
+  <label for="exampleInputEmail1">Tipo de Sangre *</label>
+    <input type="text" class="form-control" name="tipo_s" autocomplete="off" value="<?php echo $data['tipo_s']; ?>" required>
 </div>
 
   <div class="col-md-2">
