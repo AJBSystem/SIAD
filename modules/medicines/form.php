@@ -44,7 +44,7 @@ if ($_GET['form']=='add') { ?>
 
 ?>
 
-<label>Nota: No se guardara hasta que llene los modales obligatorios que estan marcados con un asterico ( * ) al terminar de llenar los campos presione guardar</label>
+<label>Nota: No se guardara hasta que llene los datos obligatorios que estan marcados con un asterico ( * ) al terminar de llenar los campos presione guardar</label>
 
 <div class="">
 <div class="col-md-12 col-sm-6 col-xs-12">
@@ -861,8 +861,7 @@ elseif ($_GET['form']=='edit') {
 
 <div class="form-group">
 
-<label>Nota: No se guardara hasta que llene los modulos obligatorios que estan marcados con un asterico * </label>
-
+<label>Nota: No se guardara hasta que llene los datos obligatorios que estan marcados con un asterico ( * ) al terminar de llenar los campos presione guardar</label>
 <div class="">
 <div class="col-md-12 col-sm-6 col-xs-12">
 <div class="x_panel">
